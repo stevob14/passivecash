@@ -30,7 +30,13 @@ Please be cautious when looking at the Dividend Yield. Generally, the higher the
 
 Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
 
-[Robinhood](https://share.robinhood.com/stephec1028) offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). 
+Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we both receive a free stock!
+
+### Honeygain
+
+Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the net. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused net traffic with data scientist. In return, you get paid. 
+
+Is it safe? Honeygain is safe to use as the app faciliates proxy services to third parties, such as data scientist, Fortune 500, and other trustworth companies. Payouts are done with paypal and the minimum payout threshold is $20. Sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. 
 
 ### Contact
 
