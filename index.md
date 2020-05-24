@@ -6,27 +6,27 @@ In general, making cash with little to no effort to earn and maintain is primari
 
 ### High Yield Savings Accounts
 
-High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to your traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 is now equal to $100.09 (100 * .0009) + 100. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 is now equal to $101.75 (100 * .0175) + 100. 
+High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 is now equal to $100.09 (100 * .0009) + 100. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 is now equal to $101.75 (100 * .0175) + 100. 
 
 Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or anually. While this still seems small, remember what I said about breaking down your cash to the smallest value. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
 
 ### Earn Interest on Crypto
 
-Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like bitcoin or ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. [Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates)
+Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. [Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates).
 
 ### Earn Interest on Crypto (Alternative)
 
 Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
 
-Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as reward for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/)
+Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as reward for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/).
 
-Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Earn staking rewards on Coinbase](https://www.coinbase.com/price/tezos)
+Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Earn staking rewards on Coinbase](https://www.coinbase.com/price/tezos).
 
 ### Dividends
 
 Dividends are a great way to earn passive cash. A Dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or anually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
 
-Please be **cautious** when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100)
+Please be **cautious** when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
 Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
 
@@ -42,7 +42,7 @@ Is it safe? Honeygain is safe to use as the app facilitates proxy services to th
 
 An Autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to Honeygain, all you need is a computer and an internet connection.
 
-Taking into account electricity cost, you may want to run a device such as a raspberry pi. By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimum electricity cost due to the nature of the device. 
+Taking into account electricity cost, you may want to run a device such as a raspberry pi. By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
 1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/) - mini computer that uses very little energy
 1. Install Raspbian - free lightweight operating system for raspberry pi
