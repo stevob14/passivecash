@@ -1,6 +1,6 @@
 # PassiveCash.xyz
 
-Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants fire(financial independence and early retirement), passive cash is what you want to focus on. 
+Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
 In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value - a penny. From there, you can view every penny as an indivual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
 
