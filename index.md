@@ -64,3 +64,7 @@ In conclusion, I have listed proven methods as well as having demonstrated one l
 ### Contact
 
 Need help getting started or have any questions? Contact me at stephen@passivecash.xyz
+
+### Extra
+
+Keep up with stock and crypto news at [Marketinfo.io](https://www.marketinfo.io) - Crypto and stock news aggregator
