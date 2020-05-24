@@ -1,6 +1,10 @@
 # PassiveCash.xyz
 
-In order to make passive cash, having cash to start with is generally required. I have compiled a list of ideas for passive cash.
+Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants fire(financial independence and early retirement), passive cash is what you want to focus on. In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value, a penny. From there, you can view every penny as an indivual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
+
+### High Yield Savings Accounts
+
+High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to your traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 is now equal to $100.09 (100 * .0009) + 100. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 is now equal to $101.75 (100 * .0175) + 100. Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or anually. While this still seems small, remember what I said about breaking down your cash to the smallest value. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
 
 ### Contact
 
