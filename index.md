@@ -1,10 +1,14 @@
 # PassiveCash.xyz
 
-Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants fire(financial independence and early retirement), passive cash is what you want to focus on. In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value, a penny. From there, you can view every penny as an indivual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
+Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants fire(financial independence and early retirement), passive cash is what you want to focus on. 
+
+In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value, a penny. From there, you can view every penny as an indivual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
 
 ### High Yield Savings Accounts
 
-High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to your traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 is now equal to $100.09 (100 * .0009) + 100. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 is now equal to $101.75 (100 * .0175) + 100. Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or anually. While this still seems small, remember what I said about breaking down your cash to the smallest value. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
+High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to your traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 is now equal to $100.09 (100 * .0009) + 100. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 is now equal to $101.75 (100 * .0175) + 100. 
+
+Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or anually. While this still seems small, remember what I said about breaking down your cash to the smallest value. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
 
 ### Earn Interest on Crypto
 
@@ -17,6 +21,16 @@ Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in 
 Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as reward for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/)
 
 Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Earn staking rewards on Coinbase](https://www.coinbase.com/price/tezos)
+
+### Dividends
+
+Dividends are a great way to earn passive cash. A Dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or anually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
+
+Please be cautious when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high divident stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100)
+
+Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
+
+[Robinhood](https://share.robinhood.com/stephec1028) offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). 
 
 ### Contact
 
