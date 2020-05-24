@@ -36,7 +36,7 @@ Robinhood offers users a platform to invest in stocks, ETFs, options, and crypto
 
 ### Honeygain
 
-Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the net. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused net traffic with data scientist. In return, you get paid. 
+Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
 
 Is it safe? Honeygain is safe to use as the app facilitates proxy services to third parties, such as data scientist, Fortune 500, and other trustworth companies. Payouts are done with paypal and the minimum payout threshold is $20. Sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. 
 
