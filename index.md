@@ -61,7 +61,7 @@ Next, you'll want to register for autosurfers that payout.
 
 ### Conclusion
 
-In conclusion, I have listed proven methods as well as having demonstrated one last method that you, yourself can do. That is a static website such as this one utilizing affiliate links to help generate passive cash. I hope this serves useful and is a viable resouce to your step in the right direction towards financial freedom. 
+In conclusion, I have listed proven methods as well as having demonstrated one last method that you, yourself can do. That is a static website such as this one utilizing affiliate links to help generate passive cash. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
 
 ### Contact
 
