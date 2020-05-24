@@ -26,7 +26,7 @@ Tezos offers staking rewards. Staking is the process of holding funds in a crypt
 
 Dividends are a great way to earn passive cash. A Dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or anually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
 
-Please be cautious when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100)
+Please be **cautious** when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100)
 
 Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
 
@@ -37,6 +37,29 @@ Robinhood offers users a platform to invest in stocks, ETFs, options, and crypto
 Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the net. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused net traffic with data scientist. In return, you get paid. 
 
 Is it safe? Honeygain is safe to use as the app faciliates proxy services to third parties, such as data scientist, Fortune 500, and other trustworth companies. Payouts are done with paypal and the minimum payout threshold is $20. Sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. 
+
+### Autosurfers
+
+An Autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to Honeygain, all you need is a computer and an internet connection.
+
+Taking into account electricity cost, you may want to run a device such as a raspberry pi. By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimum electricity cost due to the nature of the device. 
+
+1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/) - mini computer that uses very little energy
+1. Install Raspbian - free lightweight operating system for raspberry pi
+1. Install Puffin Browser - lightweight browser
+1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your pc. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
+
+Next, you'll want to register for autosurfers that payout.
+
+* [Ebesucher]( http://www.ebesucher.com/?ref=notevenbuttery ): Available in all countries and payouts are conducted in Paypal
+* [AlexaMaster](https://axm.am/am_144296): Available in all countries. In addition to running the autosurfer, you can earn points by rating websites and watching videos. AlexaMaster also has the most requirements to request payout out of the list.
+* [RadioEarn](https://RadioEarn.com/?ref=116166): Earn passive cash by listening to the radio. Simply keep it playing and earn cash while you sleep.
+* [CashMiningBot](https://cashminingbot.com/?ref=7970): Offers a high payout compared to other autosurfers. 
+* [MoneysPais](https://moneyspais.com/?ref=2734): Similar to CashMiningBot. Offers payment in Bitcoin.
+
+### Conclusion
+
+In conclusion, I have listed proven methods as well as having demonstrated one last method that you, yourself can do. That is a static website such as this one utilizing affiliate links to help generate passive income. I hope this serves useful and is a viable resouce to your step in the right direction towards financial freedom. 
 
 ### Contact
 
