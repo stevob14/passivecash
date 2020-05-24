@@ -8,7 +8,15 @@ High yield savings accounts are online accounts that pay multitudes more than a 
 
 ### Earn Interest on Crypto
 
-Earning interest on cryptocurrency is a fairly new opportunity. If you currently hold cryptocurrency like bitcoin or ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. [Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates)
+Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like bitcoin or ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. [Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates)
+
+## Earn Interest on Crypto (Alternative)
+
+Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
+
+Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as reward for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/)
+
+Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Earn staking rewards on Coinbase](https://www.coinbase.com/price/tezos)
 
 ### Contact
 
