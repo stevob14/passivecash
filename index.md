@@ -10,7 +10,7 @@ High yield savings accounts are online accounts that pay multitudes more than a 
 
 Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like bitcoin or ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. [Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates)
 
-## Earn Interest on Crypto (Alternative)
+### Earn Interest on Crypto (Alternative)
 
 Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
 
