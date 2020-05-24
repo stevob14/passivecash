@@ -32,7 +32,7 @@ Please be **cautious** when looking at the Dividend Yield. Generally, the higher
 
 Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
 
-Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we both receive a free stock!
+Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10. 
 
 ### Honeygain
 
