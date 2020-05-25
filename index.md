@@ -30,9 +30,41 @@ Dividends are a great way to earn passive cash. A Dividend is the distribution o
 
 Please be **cautious** when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
-Also, make sure to take into consideration taxes as you may be taxed on your dividends. Municipal bonds, however, are typically exempt from federal taxation. iShares National Muni Bond ETF(MUB) is one such example that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another example that has a yield of ~4.66 and pays monthly.
+There are two types of dividends, qualified and nonqualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and nonqualified dividends are taxed at a person's regualar income tax rate. One main focus on investing in dividend paying assets is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
 
-Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10. 
+#### 2020 Single Filer Tax Brackets
+
+Income Tax Bracket | Tax Rate | Capital Gains Rate
+------------ | ------------- | -------------
+**$0 - $9,875** | 10% | **0%**
+**$9,876 – $40,000** | 12% | **0%**
+$40,001 – $40,125 | 12% | 15%
+$40,126 – $85,525 | 22% | 15%
+$85,526 – $163,300 | 24% | 15%
+$163,301 – $207,350 | 32% | 15%
+$207,351 – $441,450 | 35% | 15%
+$441,451 – $518,400 | 35% | 20%
+$518,401+ | 37% | 20%
+
+#### 2020 Joint Filer Tax Brackets
+
+Income Tax Bracket | Tax Rate | Capital Gains Rate
+------------ | ------------- | -------------
+**$0 – $19,750** | 10% | **0%**
+**$19,751 – $80,000** | 12% | **0%**
+$80,001 – $80,250 | 12% | 15%
+$80,251 – $171,050 | 22% | 15%
+$171,051 – $326,600 | 24% | 15%
+$326,601 – $414,700 | 32% | 15%
+$414,701- $496,600 | 35% | 15%
+$496,601 – $622,050 | 35% | 20%
+$622,051+ | 37% | 20%
+
+If you want to avoid dividend taxes alltogether, investing in dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account.
+
+There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66 and pays monthly.
+
+Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10. 
 
 ### Honeygain
 
