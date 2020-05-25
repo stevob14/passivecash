@@ -97,7 +97,7 @@ In conclusion, I have listed methods as well as having demonstrated one last met
 
 ### Contact
 
-Need help getting started or have any questions? Contact me at stephen@passivecash.xyz
+Need help getting started or have any questions? Contact me at **stephen@passivecash.xyz**
 
 ### About Me
 
