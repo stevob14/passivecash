@@ -30,7 +30,7 @@ Dividends are a great way to earn passive cash. A dividend is the distribution o
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
-There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
+There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of a non-qualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
 
 #### 2020 Single Filer Tax Brackets
 
