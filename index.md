@@ -30,7 +30,7 @@ Dividends are a great way to earn passive cash. A Dividend is the distribution o
 
 Please be **cautious** when looking at the Dividend Yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
-There are two types of dividends, qualified and nonqualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and nonqualified dividends are taxed at a person's regualar income tax rate. One main focus on investing in dividend paying assets is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
+There are two types of dividends, qualified and nonqualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and nonqualified dividends are taxed at a person's regular income tax rate. One main focus on investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
 
 #### 2020 Single Filer Tax Brackets
 
@@ -60,7 +60,7 @@ $414,701- $496,600 | 35% | 15%
 $496,601 – $622,050 | 35% | 20%
 $622,051+ | 37% | 20%
 
-If you want to avoid dividend taxes alltogether, investing in dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account.
+From this, you can see that individuals making <=$40,000 and joint couples making <=$80,000 are tax exempt from qualifying dividends. If you want to avoid dividend taxes alltogether, investing in dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66 and pays monthly.
 
