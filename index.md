@@ -22,7 +22,7 @@ Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in 
 
 Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as rewards for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/).
 
-Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Earn staking rewards on Coinbase](https://www.coinbase.com/price/tezos).
+Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Coinbase](https://www.coinbase.com/?r=5192f46085e1c325b800001d). Get free Bitcoin worth $10 when you sign up which you can then convert to Tezos to start earning passive cash.
 
 ### Dividends
 
