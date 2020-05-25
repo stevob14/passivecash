@@ -2,7 +2,7 @@
 
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
-In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. A common misconception is thinking that you must have large amounts of cash to get started. I understand the more cash you have available to invest, the more you can potentially make; But it's helpful to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
+In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. A common misconception is thinking that you must have large amounts of cash to get started. I understand the more cash you have available to invest, the more you can potentially make; But it's helpful to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of ways in getting you one step closer to financial freedom.
 
 ### High Yield Savings Accounts
 
@@ -93,7 +93,7 @@ Next, you'll want to register for autosurfers that payout.
 
 ### Conclusion
 
-In conclusion, I have listed methods as well as having demonstrated one last method that you, yourself can do. That is a static website such as this one utilizing affiliate links to help generate passive cash. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
+In conclusion, I have listed ways as well as having demonstrated one last way that you, yourself can do. That is a static website such as this one utilizing affiliate links to help generate passive cash. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
 
 ### Contact
 
