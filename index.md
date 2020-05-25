@@ -2,13 +2,13 @@
 
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
-In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value - a penny. From there, you can view every penny as an indivual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
+In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. I think it's important to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of working methods in getting you one step closer to financial freedom.
 
 ### High Yield Savings Accounts
 
-High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a tradional savings account may offer a .09% interest rate. This means that in 12 months, your $100 would be (100 * .0009) + 100 = $100.09. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a tradional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75. 
+High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .09% interest rate. This means that in 12 months, your $100 would be (100 * .0009) + 100 = $100.09. Now lets say you invest this same $100 in a high yield savings account. As of 5/24/2020, the best interest rate is 1.75%. This is ~19 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75. 
 
-Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or anually. While these values seem small, keep in mind what I said about breaking down your cash to the smallest value. The more cash you have, the more you can make passively. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
+Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. While these values seem small, keep in mind what I said about breaking down your cash to the smallest value. The more cash you have, the more you can make passively. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
 
 ### Earn Interest on Crypto
 
@@ -26,11 +26,11 @@ Tezos offers staking rewards. Staking is the process of holding funds in a crypt
 
 ### Dividends
 
-Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or anually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
+Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
-There are two types of dividends, qualified and nonqualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and nonqualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
+There are two types of dividends, qualified and nonqualified. Most regular dividends from corporations are qualified. One example of an unqualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
 
 #### 2020 Single Filer Tax Brackets
 
@@ -60,7 +60,7 @@ $414,701- $496,600 | 35% | 15%
 $496,601 – $622,050 | 35% | 20%
 $622,051+ | 37% | 20%
 
-From this, you can see that individuals making <=$40,000 and joint couples making <=$80,000 are tax exempt from qualifying dividends. If you want to avoid dividend taxes alltogether, investing in dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
+From this, you can see that individuals making <=$40,000 and joint couples making <=$80,000 are tax exempt from qualifying dividends. If you want to avoid dividend taxes altogether, investing in dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66 and pays monthly.
 
@@ -68,20 +68,20 @@ Finally, if you're ready to get started in earning dividends; Robinhood offers u
 
 ### Honeygain
 
-Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
+Honeygain is an easy way to make passive cash. You can simply install honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
 
-Is it safe? Honeygain is safe to use as the app facilitates proxy services to third parties, such as data scientist, Fortune 500, and other trustworthy companies. Payouts are done with paypal and the minimum payout threshold is $20. Sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. 
+Is it safe? Honeygain is safe to use as the app facilitates proxy services to third parties, such as data scientist, Fortune 500, and other trustworthy companies. Payouts are done with paypal and the minimum payout threshold is $20. Sign up at [honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. 
 
 ### Autosurfers
 
-An Autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to Honeygain, all you need is a computer and an internet connection.
+An autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to honeygain, all you need is a computer and an internet connection.
 
 Taking into account electricity cost, you may want to run a device such as a raspberry pi. By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
 1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/) - mini computer that uses very little energy
 1. Install Raspbian - free lightweight operating system for raspberry pi
 1. Install Puffin Browser - lightweight browser
-1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your pc. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
+1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your PC. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
 
 Next, you'll want to register for autosurfers that payout.
 
