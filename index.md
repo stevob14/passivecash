@@ -99,7 +99,7 @@ Next, you'll want to register for autosurfers that payout.
 
 I have listed ways as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. You simply help connect people to products and/or services, and in return, receive compensation for each conversion. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. 
 
-To wrap things up, remember that earning passive cash can be a slow process if starting with low capital and any service or product that sounds too good to be true probably is. However, don't let this deter you. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
+To wrap things up, remember that earning passive cash can be a slow process if starting with low capital and any service or product that sounds too good to be true probably is. However, don't let this deter you as you have to start somewhere. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
 
 ### Contact
 
