@@ -97,7 +97,7 @@ Next, you'll want to register for autosurfers that payout.
 
 ### Affiliate Marketing
 
-In conclusion, I have listed ways as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to help generate passive cash. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
+In conclusion, I have listed ways as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. You simply help connect people to products and/or services, and in return, receive compensation for each conversion. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. I hope this serves useful and is a viable resource towards your next step to financial freedom. 
 
 ### Contact
 
