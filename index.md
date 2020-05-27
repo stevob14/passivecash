@@ -66,6 +66,14 @@ There are some exceptions. For example, Municipal bonds are typically exempt fro
 
 Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10. 
 
+### Rental Properties
+
+Rental propteries are another way to earn passive cash but typically require a large initial investment. If you have the capital, all you need is minimal time commitment. First, you'll want to look for a home that will require little to no repair cost that is ideally in the same city as you're located in. Next, you'll need to market your home to find a tenant. The best way to market your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce the amount of work required by you. After all, we are looking for a way to earn passive cash. 
+
+Also, remember that this home is your responsibility. If the air condition breaks, or the roof needs to be repaired, these are expenses that you'll have to pay. This is why it's important to have cash reserves in case of these unexepected costs. 
+
+Lastly, I reccomend learning your rights and the rights of your tenants by reading the Fair Housing Amendments(FHA) Act.
+
 ### Honeygain
 
 Honeygain is an easy way to make passive cash. You can simply install honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
