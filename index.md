@@ -88,7 +88,7 @@ If you understand the risks involved and are still interested in using honeygain
 
 An autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to honeygain, all you need is a computer and an internet connection.
 
-Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses very little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
+Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
 1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/)
 1. Install Raspbian - free lightweight operating system for raspberry pi
