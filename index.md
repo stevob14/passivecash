@@ -8,7 +8,7 @@ In general, making cash with little to no effort to earn and maintain is primari
 
 High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .09% interest rate. This means that in 12 months, your $100 would be (100 * .0009) + 100 = $100.09. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~19 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75. 
 
-Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. While these values seem small, keep in mind what I said about breaking down your cash to the smallest value. Here is an updated [list](https://www.doctorofcredit.com/high-interest-savings-to-get/) of current high yield savings accounts. 
+Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. While these values seem small, keep in mind what I said about breaking down your cash to the smallest value. Here is an updated list of [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
 
 ### Earn Interest on Crypto
 
@@ -88,9 +88,9 @@ If you understand the risks involved and are still interested in using honeygain
 
 An autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to honeygain, all you need is a computer and an internet connection.
 
-Taking into account electricity cost, you may want to run a device such as a raspberry pi. By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
+Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses very little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
-1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/) - mini computer that uses very little energy
+1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/)
 1. Install Raspbian - free lightweight operating system for raspberry pi
 1. Install Puffin Browser - lightweight browser
 1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your PC. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
