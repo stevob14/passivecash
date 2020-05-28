@@ -68,11 +68,11 @@ Finally, if you're ready to get started in earning dividends; Robinhood offers u
 
 ### Rental Properties
 
-Rental propteries are another way to earn passive cash but require a large initial investment. If you have the capital, all you need is minimal time commitment. First, you'll want to look for a home that will require little to no repair cost that is ideally in the same city as you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to market your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce the amount of work required by you. After all, we are looking for a way to earn passive cash. 
+Rental properties are another way to earn passive cash but require a large initial investment. If you have the capital, all you need is minimal time commitment. First, you'll want to look for a home that will require little to no repair cost that is ideally in the same city as you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to market your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce the amount of work required by you. After all, we are looking for a way to earn passive cash. 
 
-Also, remember that this home is your responsibility. If the air condition breaks, or the roof needs to be repaired, these are expenses that you'll have to pay. This is why it's important to have cash reserves in case of these unexepected costs. 
+Also, remember that this home is your responsibility. If the air condition breaks, or the roof needs to be repaired, these are expenses that you'll have to pay. This is why it's important to have cash reserves in case of these unexpected costs. 
 
-Lastly, I reccomend learning your rights and the rights of your tenants by reading the Fair Housing Amendments(FHA) Act.
+Lastly, I recommend learning your rights and the rights of your tenants by reading the Fair Housing Amendments(FHA) Act.
 
 ### Honeygain
 
