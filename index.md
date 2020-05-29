@@ -8,6 +8,22 @@ In general, making cash with little to no effort to earn and maintain is primari
 
 High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .09% interest rate. This means that in 12 months, your $100 would be (100 * .0009) + 100 = $100.09. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~19 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
 
+Lets scale things up and say you wanted to make $500/month passively.
+
+#### Traditional Savings Account
+
+Expected Return | Investment Required
+------------ | -------------
+$500/month | (500 x 12)/.0009 = **$6,666,666.66**
+
+#### High Yield Savings Account
+
+Expected Return | Investment Required
+------------ | -------------
+$500/month | (500 x 12)/.0175 = **$342,857.14**
+
+The difference in investment required for expected return is astounding.
+
 Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
 
 ### Earn Interest on Crypto
