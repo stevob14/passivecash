@@ -14,13 +14,13 @@ Lets scale things up and say you wanted to make $1000/month passively.
 
 Expected Return | Investment Required
 ------------ | -------------
-$1000/month | 1000/.0009 = **$1,111,111.11**
+$1,000/month | 1000/.0009 = **$1,111,111.11**
 
 #### High Yield Savings Account
 
 Expected Return | Investment Required
 ------------ | -------------
-$1000/month | 1000/.0175 = **$57,142.86**
+$1,000/month | 1000/.0175 = **$57,142.86**
 
 The difference in investment required for expected return is astounding.
 
