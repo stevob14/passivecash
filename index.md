@@ -11,11 +11,13 @@ High yield savings accounts are online accounts that pay multitudes more than a 
 Lets scale things up and say you wanted to make $1000/month passively.
 
 #### Traditional Savings Account
+
 Expected Return | Investment Required
 ------------ | -------------
 $1000/month | 1000/.0009 = **$1,111,111.11**
 
 #### High Yield Savings Account
+
 Expected Return | Investment Required
 ------------ | -------------
 $1000/month | 1000/.0175 = **$57,142.86**
