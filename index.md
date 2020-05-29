@@ -24,7 +24,7 @@ $500/month | (500 * 12)/.0175 = **$342,857.14**
 
 The difference in investment required for expected return is astounding.
 
-Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
+Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of the [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
 
 ### Earn Interest on Crypto
 
