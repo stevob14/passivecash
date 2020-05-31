@@ -4,42 +4,6 @@ Passive cash is cash that requires little to no effort to earn and maintain. If 
 
 In general, making cash with little to no effort to earn and maintain is primarily dependent on having cash to start with. A common misconception is thinking that you must have large amounts of cash to get started. I understand the more cash you have available to invest, the more you can potentially make; But it's helpful to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of ways to getting you one step closer to financial freedom.
 
-### High Yield Savings Accounts
-
-High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~29 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
-
-Lets scale things up and say you wanted to make $500/month passively.
-
-#### Traditional Savings Account
-
-Expected Return | Investment Required
------------- | -------------
-$500/month | (500 * 12)/.0006 = **$10,000,000**
-
-#### High Yield Savings Account
-
-Expected Return | Investment Required
------------- | -------------
-$500/month | (500 * 12)/.0175 = **$342,857.14**
-
-The difference in investment required for expected return is astounding.
-
-Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of the [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
-
-### Earn Interest on Crypto
-
-Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. 
-
-[Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates).
-
-### Earn Interest on Crypto (Alternative)
-
-Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
-
-Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as rewards for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/).
-
-Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Coinbase](https://www.coinbase.com/?r=5192f46085e1c325b800001d). Get free Bitcoin worth $10 when you sign up which you can then convert to Tezos to start earning passive cash. After registering, you can earn an additional $6 worth of Tezos by learning about Tezos at [Coinbase Earn Tezos](https://www.coinbase.com/earn/tezos). In total, that's $16 worth of Tezos to get you started. You can read more about staking on Coinbase [here](https://www.coinbase.com/staking).
-
 ### Dividends
 
 Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
@@ -80,7 +44,43 @@ From this, you can see that individuals making <=$40,000 and joint couples makin
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66 and pays monthly.
 
-Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10. 
+Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1) as well as cash management(earn interest on your uninvested cash). Sign up at [Robinhood](https://share.robinhood.com/stephec1028) and we each receive a free stock valued between $3 and $150 - average is $10.
+
+### High Yield Savings Accounts
+
+High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~29 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
+
+Lets scale things up and say you wanted to make $500/month passively.
+
+#### Traditional Savings Account
+
+Expected Return | Investment Required
+------------ | -------------
+$500/month | (500 * 12)/.0006 = **$10,000,000**
+
+#### High Yield Savings Account
+
+Expected Return | Investment Required
+------------ | -------------
+$500/month | (500 * 12)/.0175 = **$342,857.14**
+
+The difference in investment required for expected return is astounding.
+
+Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of the [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
+
+### Earn Interest on Crypto
+
+Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. 
+
+[Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates).
+
+### Earn Interest on Crypto (Alternative)
+
+Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
+
+Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as rewards for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/).
+
+Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network and, in return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Coinbase](https://www.coinbase.com/?r=5192f46085e1c325b800001d). Get free Bitcoin worth $10 when you sign up which you can then convert to Tezos to start earning passive cash. After registering, you can earn an additional $6 worth of Tezos by learning about Tezos at [Coinbase Earn Tezos](https://www.coinbase.com/earn/tezos). In total, that's $16 worth of Tezos to get you started. You can read more about staking on Coinbase [here](https://www.coinbase.com/staking). 
 
 ### Rental Properties
 
