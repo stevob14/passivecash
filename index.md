@@ -106,9 +106,8 @@ An autosurfer is a program that automatically visits websites for short periods 
 
 Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
-1. Purchase a [Raspberry pi](https://www.raspberrypi.org/products/)
-1. Install Raspbian - free lightweight operating system for raspberry pi
-1. Install Puffin Browser - lightweight browser
+1. Purchase a [Raspberry pi](https://amzn.to/3gDV0xD)
+1. Download [raspberry pi imager](https://www.raspberrypi.org/downloads/) and select raspbian operating system - free lightweight operating system for raspberry pi
 1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your PC. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
 
 Next, you'll want to register for autosurfers that payout.
