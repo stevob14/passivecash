@@ -118,7 +118,7 @@ Taking into account electricity cost, you may want to run a device such as a ras
 
 Next, you'll want to register for autosurfers that payout.
 
-* [Ebesucher]( http://www.ebesucher.com/?ref=notevenbuttery ): Available in all countries and payouts are conducted in Paypal. Minimum payout is 2 euro.
+* [Ebesucher]( http://www.ebesucher.com/?ref=notevenbuttery ): Available in all countries and payouts are conducted in Paypal. Minimum payout is $1.
 * [AlexaMaster](https://axm.am/am_144296): Available in all countries. In addition to running the autosurfer, you can earn points by rating websites and watching videos. Payout minimum is $1 and paypal is supported. AlexaMaster also has the most requirements to request payout out of the list.
 * [RadioEarn](https://RadioEarn.com/?ref=116166): Earn passive cash by listening to the radio. Simply keep it playing and earn cash while you sleep. Payout minimum is $5 and Bitcoin is supported.
 * [CashMiningBot](https://cashminingbot.com/?ref=7970): Offers a high payout compared to other autosurfers. $1 minimum payout and Bitcoin is supported.
