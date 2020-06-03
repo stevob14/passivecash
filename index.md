@@ -138,4 +138,4 @@ Need help getting started or have any questions? Contact me at **stephen@passive
 
 ### About Me
 
-I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership. You can find one of my current projects at [Marketinfo.io](https://www.marketinfo.io) - Crypto and stock news aggregator.
+I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership. You can find one of my current projects at [MarketInfo.io](https://www.marketinfo.io) - Crypto and stock news aggregator.
