@@ -72,7 +72,7 @@ Please note, for simplicity, these calculations do not take into account compoun
 
 Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. 
 
-[Blockfi](https://blockfi.mxuy67.net/GWA46) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can view the current rates [here](https://blockfi.com/rates).
+[Blockfi](https://blockfi.mxuy67.net/Q7rqA) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded.
 
 ### Earn Interest on Crypto (Alternative)
 
