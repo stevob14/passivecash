@@ -3,7 +3,3 @@ google_analytics: UA-154429886-2
 title: PassiveCash.xyz
 description: Ways to earn passive cash
 show_downloads: "false"
-plugins:
-  - jekyll-last-modified-at
-last-modified-at:
-    date-format: '%b-%d-%y'
