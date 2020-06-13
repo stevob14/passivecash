@@ -6,7 +6,7 @@ In general, making passive cash is primarily dependent on having cash to start w
 
 ### Dividends
 
-Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration compounding. Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends.
+Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using a [DRIP returns calcualator](https://www.dividendchannel.com/drip-returns-calculator/).
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100).
 
@@ -128,7 +128,7 @@ Next, you'll want to register for autosurfers that payout.
 
 I have listed ways to earn passive cash as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing consist of connecting people to products and/or services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. 
 
-If you're interested in creating a static website like this one, GitHub offers a way to host your website directly from your GitHub repository. You can read more about that [here](https://pages.github.com/).
+If you're interested in creating a static website like the one you are currently [reading](https://github.com/stevob14/passivecash), GitHub offers a way to host your website directly from your GitHub repository. You can read more about that [here](https://pages.github.com/).
 
 To wrap things up, remember that earning passive cash can be a slow process if starting with low capital. Also, any service or product that sounds too good to be true probably is. However, don't let this discourage you as you have to start somewhere. I hope this list serves useful and is a viable resource towards your next step to financial freedom. 
 
