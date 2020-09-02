@@ -88,7 +88,7 @@ Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to
 
 Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Coinbase](https://www.coinbase.com/?r=5192f46085e1c325b800001d). Get free Bitcoin worth $10 when you sign up which you can then convert to Tezos to start earning passive cash. After registering, you can earn an additional $6 worth of Tezos by learning about Tezos at [Coinbase Earn Tezos](https://www.coinbase.com/earn/tezos). In total, that's $16 worth of Tezos to get you started. You can read more about staking on Coinbase [here](https://www.coinbase.com/staking).
 
-As another option, you can stake Tezos on a [Ledger Nano X - The Best Crypto Hardware Wallet](https://amzn.to/3cmwPQP). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking Tezos with Ledger [here](https://www.ledger.com/staking-tezos/).
+As another option, you can stake Tezos on a [Ledger Nano X - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-x?r=9a00). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking Tezos with Ledger [here](https://www.ledger.com/staking-tezos/).
 
 ### Rental Properties
 
@@ -114,7 +114,7 @@ An autosurfer is a program that automatically visits websites for short periods 
 
 Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
 
-1. *Optional* - Purchase a [raspberry pi](https://amzn.to/3gDV0xD)
+1. *Optional* - Purchase a [raspberry pi](https://www.raspberrypi.org/products/)
 1. *Optional* - Download [raspberry pi imager](https://www.raspberrypi.org/downloads/) and select raspbian operating system - free lightweight operating system for raspberry pi
 1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your PC. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
 
