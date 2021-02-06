@@ -12,33 +12,29 @@ Please be **cautious** when looking at the dividend yield. Generally, the higher
 
 There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of a non-qualified dividend is dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2020 to get a better understanding.
 
-#### 2020 Single Filer Tax Brackets
+#### 2021 Single Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate | Capital Gains Rate
 ------------ | ------------- | -------------
-**$0 - $9,875** | 10% | **0%**
-**$9,876 – $40,000** | 12% | **0%**
-$40,001 – $40,125 | 12% | 15%
-$40,126 – $85,525 | 22% | 15%
-$85,526 – $163,300 | 24% | 15%
-$163,301 – $207,350 | 32% | 15%
-$207,351 – $441,450 | 35% | 15%
-$441,451 – $518,400 | 35% | 20%
-$518,401+ | 37% | 20%
+**$0 - $9,950** | 10% | **0%**
+**$9,951 – $40,525** | 12% | **0% up to $40,400**
+$40,526 – $86,375 | 22% | 15%
+$86,376 – $164,925 | 24% | 15%
+$164,926 – $209,425 | 32% | 15%
+$209,426 – $523,600 | 35% | 15% up to $445,850
+$523,600+ | 37% | 20%
 
-#### 2020 Joint Filer Tax Brackets
+#### 2021 Joint Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate | Capital Gains Rate
 ------------ | ------------- | -------------
-**$0 – $19,750** | 10% | **0%**
-**$19,751 – $80,000** | 12% | **0%**
-$80,001 – $80,250 | 12% | 15%
-$80,251 – $171,050 | 22% | 15%
-$171,051 – $326,600 | 24% | 15%
-$326,601 – $414,700 | 32% | 15%
-$414,701- $496,600 | 35% | 15%
-$496,601 – $622,050 | 35% | 20%
-$622,051+ | 37% | 20%
+**$0 – $19,900** | 10% | **0%**
+**$19,901 – $81,050** | 12% | **0% up to $80,800**
+$81,051 – $172,750 | 12% | 15%
+$172,751 – $329,850 | 24% | 15%
+$329,851 – $418,850 | 32% | 15%
+$418,851  – $628,300 | 35% | 15% up to $501,600
+$628,300+ | 37% | 20%
 
 From this, you can see that individuals making <=$40,000 and joint couples making <=$80,000 are tax exempt from qualifying dividends. If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
