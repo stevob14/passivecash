@@ -3,4 +3,4 @@ google_analytics: UA-154429886-2
 title: PassiveCash.xyz
 description: Ways to earn passive cash
 show_downloads: "false"
-include: .well-known/brave-rewards-verification.txt
+include: [.well-known/brave-rewards-verification.txt]
