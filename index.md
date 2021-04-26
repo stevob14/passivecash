@@ -68,7 +68,7 @@ Please note, for simplicity, these calculations do not take into account compoun
 
 Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. 
 
-[Blockfi](https://blockfi.mxuy67.net/Q7rqA) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can earn 8.6% APY on stable coins USDC and GUSD. Click [here](https://blockfi.com/rates/) see all crypto interest rates.
+[Blockfi](https://blockfi.mxuy67.net/Q7rqA) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can earn 8.6% APY on stable coins USDC and GUSD. Click [here](https://blockfi.com/rates/) to see all crypto interest rates.
 
 [Compound Finance](https://compound.finance/) is another platform. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with a small amount of ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets).
 
