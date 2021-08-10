@@ -104,22 +104,6 @@ Honeygain is an easy way to make passive cash. You can simply install honeygain 
 
 If you understand the risks involved and are still interested in using honeygain, you can sign up at [honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with paypal and the minimum payout threshold is $20.
 
-### Autosurfers
-
-An autosurfer is a program that automatically visits websites for short periods of time. With minimal effort, you can set up autosurfers that will pay you passive cash. Similar to honeygain, all you need is a computer and an internet connection.
-
-Taking into account electricity cost, you may want to run a device such as a raspberry pi(mini computer that uses little energy). By running the autosurfers on a raspberry pi, you can earn money 24/7/365 with minimal electricity cost due to the nature of the device. 
-
-1. *Optional* - Purchase a [raspberry pi](https://www.raspberrypi.org/products/)
-1. *Optional* - Download [raspberry pi imager](https://www.raspberrypi.org/downloads/) and select raspbian operating system - free lightweight operating system for raspberry pi
-1. *Optional* - Install TightVNC viewer on your pc. This will allow you to control your raspberry pi from your PC. Raspbian comes preinstalled with TightVNC server. You can enable this by selecting **Menu > Preferences > Raspberry Pi Configuration > Interfaces**. Ensure **VNC** is **Enabled**
-
-Next, you'll want to register for autosurfers that payout.
-
-* [Ebesucher]( http://www.ebesucher.com/?ref=notevenbuttery ): Available in all countries and payouts are conducted in Paypal. Minimum payout is $1.
-* [AlexaMaster](https://axm.am/am_144296): Available in all countries. In addition to running the autosurfer, you can earn points by rating websites and watching videos. Payout minimum is $1 and paypal is supported. AlexaMaster also has the most requirements to request payout out of the list.
-* [Swagbucks](https://www.swagbucks.com/profile/stevo350z): Features Swagbucks Watch which autosurfs websites and pays you.
-
 ### Affiliate Marketing
 
 I have listed ways to earn passive cash as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing consist of connecting people to products and/or services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. 
