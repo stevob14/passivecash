@@ -6,7 +6,7 @@ In general, making passive cash is primarily dependent on having cash to start w
 
 ### Dividends
 
-Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using a [DRIP returns calcualator](https://www.dividendchannel.com/drip-returns-calculator/).
+Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using an [interest calcualator](https://www.marketinfo.io/calculator/).
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100) and [high dividend exchange traded funds by yield](http://etfdb.com/type/investment-style/dividend-etfs/#etfs__dividends&sort_name=dividend_yield&sort_order=desc&page=1).
 
@@ -60,21 +60,29 @@ Expected Return | Investment Required
 ------------ | -------------
 $500/month | (500 * 12)/.0175 = **$342,857.14**
 
-The difference in investment required for expected return is astounding.
+The difference in investment required for expected return is significant.
 
 Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Compounding interest can be compounded daily, monthly, quarterly, or annually. Here is an updated list of the [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
 
 ### Earn Interest on Crypto
 
-Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. 
+Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called DEFI and CEFI. DEFI or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using such services. CEFI or centralized finance is a type of financial service that is comparable to a traditional bank. Users are putting their trust in the business offering the financial service.
 
-[Blockfi](https://blockfi.mxuy67.net/Q7rqA) is one such service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can earn 8.6% APY on stable coins USDC and GUSD. Click [here](https://blockfi.com/rates/) to see all crypto interest rates.
+[Blockfi](https://blockfi.mxuy67.net/Q7rqA) is a CEFI service. BlockFi lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with Blockfi. Most importantly, this interest is compounded. You can earn 7.5% APY on stable coins USDC and GUSD. Click [here](https://blockfi.com/rates/) to see all crypto interest rates.
 
-[Compound Finance](https://compound.finance/) is another platform. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with a small amount of ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets).
+[Compound Finance](https://compound.finance/) is a DEFI service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with a small amount of ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets).
 
 ### Earn Interest on Crypto (Alternative)
 
-Some cryptocurrencies such as NEO and Tezos offer rewards for holding crypto in your wallet.
+Some cryptocurrencies offer rewards for holding crypto in your wallet.
+
+#### ETH
+
+[Coinbase](coinbase.com/join/crooks_r) now offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 5% APR**.
+
+#### ALGO
+
+[Coinbase](coinbase.com/join/crooks_r) offers rewards up to 4% APY when you hold ALGO.
 
 #### NEO
 
