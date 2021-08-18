@@ -6,7 +6,7 @@ In general, making passive cash is primarily dependent on having cash to start w
 
 ### Dividends
 
-Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using an [interest calcualator](https://www.marketinfo.io/calculator/).
+Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using an [interest calculator](https://www.marketinfo.io/calculator/).
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100) and [high dividend exchange traded funds by yield](http://etfdb.com/type/investment-style/dividend-etfs/#etfs__dividends&sort_name=dividend_yield&sort_order=desc&page=1).
 
