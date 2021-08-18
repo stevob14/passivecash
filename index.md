@@ -78,11 +78,11 @@ Some cryptocurrencies offer rewards for holding crypto in your wallet.
 
 #### ETH
 
-[Coinbase](coinbase.com/join/crooks_r) now offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 5% APR**.
+[Coinbase](https://coinbase.com/join/crooks_r) now offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 5% APR**.
 
 #### ALGO
 
-[Coinbase](coinbase.com/join/crooks_r) offers rewards up to 4% APY when you hold ALGO.
+[Coinbase](https://coinbase.com/join/crooks_r) offers rewards up to 4% APY when you hold ALGO.
 
 #### NEO
 
