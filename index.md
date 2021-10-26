@@ -10,6 +10,8 @@ Dividends are a great way to earn passive cash. A dividend is the distribution o
 
 Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100) and [high dividend exchange traded funds by yield](http://etfdb.com/type/investment-style/dividend-etfs/#etfs__dividends&sort_name=dividend_yield&sort_order=desc&page=1).
 
+A user on reddit put together a portfolio he calls "Quad-fecta." It consists of 4 ETFs that incorporates a covered call strategy combined with capital appreciation which generates ~8% APY. This is one great example to creating a passive cash stream. More information can be read [here](https://www.reddit.com/r/qyldgang/comments/ncp0bl/quadfecta_covered_call_income_portfolio_analysis/). 
+
 There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2021 to get a better understanding.
 
 #### 2021 Single Filer Tax Brackets
@@ -129,3 +131,11 @@ Need help getting started or have any questions? Contact me at **stephen@passive
 ### About Me
 
 I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership. You can find one of my current projects at [MarketInfo.io](https://www.marketinfo.io) - Crypto and stock news aggregator.
+
+### Disclaimer
+
+The information contained on this Website and the resources available through this website is not intended as, and shall not be understood or construed as, financial advice. I am not an attorney, accountant or financial advisor, nor am I holding myself out to be, and the information contained on this Website is not a substitute for financial advice from a professional who is aware of the facts and circumstances of your individual situation.
+
+I have done my best to ensure that the information provided on this Website and the resources available are accurate and provide valuable information. Regardless of anything to the contrary, nothing available on or through this Website should be understood as a recommendation that you should not consult with a financial professional to address your particular information. I recommend that you seek advice from a professional.
+
+I shall be held liable or responsible for any errors or omissions on this website or for any damage you may suffer as a result of failing to seek competent financial advice from a professional who is familiar with your situation. 
