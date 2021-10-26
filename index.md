@@ -138,4 +138,4 @@ The information contained on this Website and the resources available through th
 
 I have done my best to ensure that the information provided on this Website and the resources available are accurate and provide valuable information. Regardless of anything to the contrary, nothing available on or through this Website should be understood as a recommendation that you should not consult with a financial professional to address your particular information. I recommend that you seek advice from a professional.
 
-I shall be held liable or responsible for any errors or omissions on this website or for any damage you may suffer as a result of failing to seek competent financial advice from a professional who is familiar with your situation. 
+I shall not be held liable or responsible for any errors or omissions on this website or for any damage you may suffer as a result of failing to seek competent financial advice from a professional who is familiar with your situation. 
