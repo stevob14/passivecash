@@ -36,7 +36,9 @@ $329,851 – $418,850 | 32% | 15%
 $418,851  – $628,300 | 35% | 15% up to $501,600
 $628,300+ | 37% | 20%
 
-From this, you can see that individuals making <=$40,400 and joint couples making <=$80,800 are tax exempt from qualifying dividends. If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
+From this, you can see that individuals making <=$40,400 and joint couples making <=$80,800 are tax exempt from qualified dividends. It's important to note as of 2021, invdividuals making <= $12,550 and joint married couples making <= $25,100 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
+
+If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66% and pays monthly.
 
