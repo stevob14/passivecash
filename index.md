@@ -126,6 +126,8 @@ If you're interested in creating a static website like the one you are currently
 
 To wrap things up, remember that earning passive cash can be a slow process if starting with low capital. Also, any service or product that sounds too good to be true probably is. However, don't let this discourage you as you have to start somewhere. I hope this list serves useful and is a viable resource towards your next step to financial freedom. 
 
+"If you don't find a way to make money while you sleep, you will work until you die." - Warren Buffett
+
 ### Contact
 
 Need help getting started or have any questions? Contact me at **stephen@passivecash.xyz**
