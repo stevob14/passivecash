@@ -80,13 +80,11 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
-### Earn Interest on Crypto (Alternative)
-
-Some cryptocurrencies offer rewards for holding crypto in your wallet.
-
 #### ETH
 
-[Coinbase](https://coinbase.com/join/crooks_r) now offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 5% APR**.
+[Coinbase](https://coinbase.com/join/crooks_r) offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**.
+
+[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning 6.50% P.A.
 
 #### ALGO
 
