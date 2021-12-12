@@ -130,11 +130,11 @@ To wrap things up, remember that earning passive cash can be a slow process if s
 
 ### Contact
 
-Need help getting started or have any questions? Contact me at **stephen@passivecash.xyz**
+Need help getting started or have any questions? Contact me at **stephen@passivecash.xyz** or [@passivecashxyz](https://twitter.com/passivecashxyz)
 
 ### About Me
 
-I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership. You can find one of my current projects at [MarketInfo.io](https://www.marketinfo.io) - Crypto and stock news aggregator.
+I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership.
 
 ### Disclaimer
 
