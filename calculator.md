@@ -30,7 +30,7 @@
 
 
 
-      <span id="calcbutton" onclick="calculate()">Calculate</span>
+        <button onclick="calculate()">Calculate</button>
       <br/>
       <br/>
 <div class="result">
