@@ -6,6 +6,13 @@
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(255, 82, 82)',
+  textColor: '#fff'
+})</script>
+
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
 In general, making passive cash is primarily dependent on having cash to start with. A common misconception is thinking that you must have large amounts of cash to get started. I understand the more cash you have available to invest, the more you can potentially make; But it's helpful to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little "workers" can earn you passive cash even while you sleep. I have compiled a list of ways to getting you one step closer to financial freedom.
