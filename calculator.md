@@ -1,4 +1,4 @@
-{% include scripts.html %}
+<script type=text/javascript src="/_include/js/calculator.js"></script>
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
     <h4><a href="https://blockfi.mxuy67.net/Q7rqA" target="_'blank'" style="color: #ffa500 !important;">Blockfi - Earn up to 7.5% APY on Crypto</a></h4>
