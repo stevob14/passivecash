@@ -1,5 +1,5 @@
 ---
-description: Compound Interest Calculator with monthly contribrutions and withdrawals
+description: Compound Interest Calculator with monthly contributions and withdrawals
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/calculator.js"></script>
 <div class="calculator">
