@@ -1,6 +1,10 @@
 # PassiveCash.xyz
 
+<h3>Directory</h3>
 <a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+
+<h3>Tools</h3>
+<a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
 
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
