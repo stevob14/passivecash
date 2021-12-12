@@ -1,3 +1,6 @@
+---
+description: Compound Interest Calculator with monthly contribrutions and withdrawals
+---
 <script src="{{ base.url | prepend: site.url }}/assets/js/calculator.js"></script>
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
