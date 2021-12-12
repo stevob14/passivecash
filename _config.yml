@@ -4,8 +4,8 @@ title: PassiveCash.xyz
 description: Ways to earn passive cash
 show_downloads: "false"
 include: [".well-known"]
-
 social-network-links:
   email: "stephen@passivecash.xyz"
   rss: true 
   twitter: passivecashxyz
+rss-description: Ways to earn passive cash
