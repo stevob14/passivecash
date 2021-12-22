@@ -6,7 +6,7 @@ function get_price() {
           $(".Price").html("$"+price)     
           changePageTitle(price)
         }).catch(err => {
-          $(".Price").html("$0.00 - Error")
+          $(".Price").html("Error")
           changePageTitle(price)
         });
     }
