@@ -1,1 +1,23 @@
-function numberWithCommas(t){return t.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}setInterval(function(){$.getJSON("https://api.pro.coinbase.com/products/eth-usd/book").done(function(t){price=numberWithCommas(t.bids[0][0]),$(".Price").html("$"+price)})},2e3);
+function get_price() {
+      fetch("https://api.pro.coinbase.com/products/eth-usd/book")
+        .then(res => res.json())
+        .then(res => {
+          var price = numberWithCommas(res.bids[0][0]);
+          $(".Price").html("$"+price)     
+        }).catch(err => {
+          $(".Price").html("$0.00 - Error")
+          changePageTitle(price)
+        });
+    }
+
+    get_price()
+
+    setInterval(get_price, 1000)
+ 
+ function numberWithCommas(res){
+ return res.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")
+ }
+    
+ function changePageTitle(price) {
+  document.querySelector('title').textContent= price;
+        }
