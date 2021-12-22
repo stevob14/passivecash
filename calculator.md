@@ -3,6 +3,7 @@ description: Compound Interest Calculator with monthly contributions and withdra
 title: Compound Interest Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/calculator.js"></script>
+<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
     <h4><a href="https://blockfi.mxuy67.net/Q7rqA" target="_'blank'" style="color: #ffa500 !important;">Blockfi - Earn up to 9% APY on Crypto</a></h4>
