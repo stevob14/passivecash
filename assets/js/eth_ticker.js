@@ -4,6 +4,7 @@ function get_price() {
         .then(res => {
           var price = numberWithCommas(res.bids[0][0]);
           $(".Price").html("$"+price)     
+          changePageTitle(price)
         }).catch(err => {
           $(".Price").html("$0.00 - Error")
           changePageTitle(price)
