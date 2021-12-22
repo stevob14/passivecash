@@ -1,0 +1,1 @@
+function numberWithCommas(t){return t.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}setInterval(function(){$.getJSON("https://api.pro.coinbase.com/products/eth-usd/book").done(function(t){price=numberWithCommas(t.bids[0][0]),$(".Price").html("$"+price)})},2e3);
