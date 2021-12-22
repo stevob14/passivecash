@@ -1,6 +1,6 @@
 ---
 description: ETH Price Ticker
-title: ETH Price Ticker
+title: <span class="Price"></span>
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/eth_ticker.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery-3.6.0.min.js"></script>
