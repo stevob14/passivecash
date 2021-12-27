@@ -4,5 +4,3 @@ title: PassiveCash.xyz
 description: Ways to earn passive cash
 show_downloads: "false"
 include: [".well-known"]
-gems:
-  - jekyll-sitemap
