@@ -6,7 +6,7 @@ title: Compound Interest Calculator
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
-    <h4><a href="https://blockfi.mxuy67.net/Q7rqA" target="_'blank'" style="color: #ffa500 !important;">Blockfi - Earn up to 9% APY on Crypto</a></h4>
+    <h4><a href="https://blockfi.mxuy67.net/GWA46" target="_'blank'" style="color: #ffa500 !important;">Blockfi - Earn up to 9% APY on Crypto</a></h4>
     <label>Initial Investment:</label>
     <input id="capital" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)">
     <br/>
