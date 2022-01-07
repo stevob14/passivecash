@@ -42,7 +42,7 @@ $170,050 – $215,950 | 32% | 15%
 $215,950 – $539,900 | 35% | 15% up to $459,750
 $539,900+ | 37% | 20%
 
-#### 2021 Joint Filer Tax Brackets
+#### 2022 Joint Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate | Capital Gains Rate
 ------------ | ------------- | -------------
