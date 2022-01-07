@@ -28,33 +28,33 @@ Please be **cautious** when looking at the dividend yield. Generally, the higher
 
 A user on reddit put together a portfolio he calls "Quad-fecta." It consists of 4 ETFs that incorporates a covered call strategy combined with capital appreciation which generates ~8% APY. This is one great example to creating a passive cash stream. More information can be read [here](https://www.reddit.com/r/qyldgang/comments/ncp0bl/quadfecta_covered_call_income_portfolio_analysis/). 
 
-There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2021 to get a better understanding.
+There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2022 to get a better understanding.
 
-#### 2021 Single Filer Tax Brackets
+#### 2022 Single Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate | Capital Gains Rate
 ------------ | ------------- | -------------
-**$0 - $9,950** | 10% | **0%**
-**$9,951 – $40,525** | 12% | **0% up to $40,400**
-$40,526 – $86,375 | 22% | 15%
-$86,376 – $164,925 | 24% | 15%
-$164,926 – $209,425 | 32% | 15%
-$209,426 – $523,600 | 35% | 15% up to $445,850
-$523,600+ | 37% | 20%
+**$0 - $10,275** | 10% | **0%**
+**$10,275 – $41,775** | 12% | **0% up to $41,675**
+$41,775 – $89,075 | 22% | 15%
+$89,075 – $170,050 | 24% | 15%
+$170,050 – $215,950 | 32% | 15%
+$215,950 – $539,900 | 35% | 15% up to $459,750
+$539,900+ | 37% | 20%
 
 #### 2021 Joint Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate | Capital Gains Rate
 ------------ | ------------- | -------------
-**$0 – $19,900** | 10% | **0%**
-**$19,901 – $81,050** | 12% | **0% up to $80,800**
-$81,051 – $172,750 | 12% | 15%
-$172,751 – $329,850 | 24% | 15%
-$329,851 – $418,850 | 32% | 15%
-$418,851  – $628,300 | 35% | 15% up to $501,600
-$628,300+ | 37% | 20%
+**$0 – $20,550** | 10% | **0%**
+**$20,550 – $83,550** | 12% | **0% up to $83,350**
+$83,550 – $178,150 | 12% | 15%
+$178,150 – $340,100 | 24% | 15%
+$340,100 – $431,900 | 32% | 15%
+$431,900  – $647,850 | 35% | 15% up to $517,200
+$647,850+ | 37% | 20%
 
-From this, you can see that individuals making <=$40,400 and joint couples making <=$80,800 are tax exempt from qualified dividends. It's important to note as of 2021, invdividuals making <= $12,550 and joint married couples making <= $25,100 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
+From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax exempt from qualified dividends. It's important to note as of 2022, invdividuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
 
 If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
