@@ -32,27 +32,35 @@ There are two types of dividends, qualified and non-qualified. Most regular divi
 
 #### 2022 Single Filer Tax Brackets
 
-Income Tax Bracket | Tax Rate | Capital Gains Rate
------------- | ------------- | -------------
-**$0 - $10,275** | 10% | **0%**
-**$10,275 – $41,775** | 12% | **0% up to $41,675**
-$41,775 – $89,075 | 22% | 15%
-$89,075 – $170,050 | 24% | 15%
-$170,050 – $215,950 | 32% | 15%
-$215,950 – $539,900 | 35% | 15% up to $459,750
-$539,900+ | 37% | 20%
+Income Tax Bracket | Tax Rate
+------------ | -------------
+**$0 - $10,275** | 10%
+**$10,275 – $41,775** | 12%
+$41,775 – $89,075 | 22%
+$89,075 – $170,050 | 24%
+$170,050 – $215,950 | 32%
+$215,950 – $539,900 | 35%
+$539,900+ | 37%
 
 #### 2022 Joint Filer Tax Brackets
 
-Income Tax Bracket | Tax Rate | Capital Gains Rate
+Income Tax Bracket | Tax Rate 
+------------ | -------------
+**$0 – $20,550** | 10% 
+**$20,550 – $83,550** | 12% 
+$83,550 – $178,150 | 12%
+$178,150 – $340,100 | 24%
+$340,100 – $431,900 | 32%
+$431,900  – $647,850 | 35%
+$647,850+ | 37%
+
+#### 2022 Capital Gains Tax Brackets
+
+Single Filer, Taxable Income Over | Joint Filer, Taxable Income Over | Capital Gains Rate
 ------------ | ------------- | -------------
-**$0 – $20,550** | 10% | **0%**
-**$20,550 – $83,550** | 12% | **0% up to $83,350**
-$83,550 – $178,150 | 12% | 15%
-$178,150 – $340,100 | 24% | 15%
-$340,100 – $431,900 | 32% | 15%
-$431,900  – $647,850 | 35% | 15% up to $517,200
-$647,850+ | 37% | 20%
+$0 | $0 | 0%
+$41,675 | $83,350 | 15%
+$459,750 | $517,200 | 20%
 
 From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax exempt from qualified dividends. It's important to note as of 2022, invdividuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
 
