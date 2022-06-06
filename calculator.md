@@ -25,6 +25,7 @@ title: Compound Interest Calculator
      <br/>
     <label for="compound">Compound Frequency:</label>
 <select name="compound" id="compound" form="compoundform" style="padding: 5px;">
+  <option value="daily">Daily</option>
   <option value="weekly">Weekly</option>
   <option selected value="monthly">Monthly</option>
   <option value="quarterly">Quarterly</option>
