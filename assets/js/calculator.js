@@ -26,6 +26,11 @@ var x;
       }
       else
 			{
+      if (t == "daily")
+      {
+      tf = 365
+      }
+				
       if (t == "weekly")
       {
       tf = 52
