@@ -82,7 +82,7 @@ Annuities can be structured as either fixed or variable. Fixed being more stable
 
 **Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
 
-You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator)
+You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator).
 
 ### High Yield Savings Accounts
 
