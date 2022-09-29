@@ -1,7 +1,7 @@
 # PassiveCash.xyz
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#annuities">Annuities</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -69,6 +69,20 @@ If you want to avoid dividend taxes altogether, investing dividend paying stocks
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66% and pays monthly.
 
 Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), and DRIP(dividend reinvestment). Sign up at [Robinhood](https://join.robinhood.com/cynthic756) and we each receive a free stock valued between $3 and $150 - average is $10.
+
+### Annuities
+
+An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in lump sum or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent upon the structure of the annuity. 
+
+There are two types of annuities, immediate and deferred.
+
+Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
+
+Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent upon the performance of the annuitie's investments. 
+
+**Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
+
+You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator)
 
 ### High Yield Savings Accounts
 
