@@ -1,7 +1,7 @@
 # PassiveCash.xyz
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -70,20 +70,6 @@ There are some exceptions. For example, Municipal bonds are typically exempt fro
 
 Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), and DRIP(dividend reinvestment). Sign up at [Robinhood](https://join.robinhood.com/cynthic756) and we each receive a free stock valued between $3 and $150 - average is $10.
 
-### Annuities
-
-An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in lump sum or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent upon the structure of the annuity. 
-
-There are two types of annuities, immediate and deferred.
-
-Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
-
-Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent upon the performance of the annuitie's investments. 
-
-**Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
-
-You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator).
-
 ### High Yield Savings Accounts
 
 High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~29 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
@@ -117,6 +103,24 @@ There are two types of CDs, callable and non-callable. A callable CD can be rede
 CDs can be purchased through banks, credit unions, and brokerage firms. Bank CDs interest rates are compounded while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdrawl fee. However, the value of the CD is subject to change dependent on interest rates if you were to sell before the cerficate matures. 
 
 People generally purchase CDs as a safer investment than stocks. They provide a guaranteed return on investment at the expense of growth that stocks may provide. It's important to note that CDs are FDIC insured up to $250,000.
+
+### Annuities
+
+An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in lump sum or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent upon the structure of the annuity. 
+
+There are two types of annuities, immediate and deferred.
+
+Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
+
+Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent upon the performance of the annuitie's investments. 
+
+**Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
+
+You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator).
+
+### Savings Bonds
+
+If you are looking for a safe place to protect your cash from inflation, I savings bonds are a great option. I bonds pay a fixed rate of interest that changes with inflation. You can find more information on I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/)
 
 ### Earn Interest on Crypto
 
