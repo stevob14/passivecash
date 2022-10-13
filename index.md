@@ -100,7 +100,7 @@ For example, a 3 month CD with a fixed rate of 3% APY will have a term length of
 
 There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer prior to the mature date whereas a non-callable CD can not. So lets say you expect falling interest rates in the near future causing banks to drop their rates. It may be wise to purchase a non-callable CD that will guarantee you with a fixed rate APY that will be higher than newly issued CDs.
 
-CDs can be purchased through banks, credit unions, and brokerage firms. Bank CDs interest rates are compounded while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdrawl fee. However, the value of the CD is subject to change dependent on interest rates if you were to sell before the cerficate matures. 
+CDs can be purchased through banks, credit unions, and brokerage firms. Bank CDs interest rates are compounded while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdrawl fee. However, the value of the CD is subject to change dependent on interest rates if you were to sell before the certficate matures. 
 
 People generally purchase CDs as a safer investment than stocks. They provide a guaranteed return on investment at the expense of growth that stocks may provide. It's important to note that CDs are FDIC insured up to $250,000.
 
