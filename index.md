@@ -112,7 +112,7 @@ CDs or certificate of deposits offer another great way to earn interest on cash 
 
 For example, a 3 month CD with a fixed rate of 3% APY will have a term for 3 months and once the term matures, you can withdrawl your cash penalty free.
 
-There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer prior to the mature date whereas a non-callable CD can not. So lets say you suspect interest rates are going to fall in the near future causing banks to drop their rates. It may be wise to purchase a non-callable CD that will guarantee you with a fixed rate APY that will be higher than newly issued CDs in the event of falling interest rates.
+There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer prior to the mature date whereas a non-callable CD can not. So lets say you expect falling interest rates in the near future causing banks to drop their rates. It may be wise to purchase a non-callable CD that will guarantee you with a fixed rate APY that will be higher than newly issued CDs in the event of falling interest rates.
 
 CDs can be purchased through banks, credit unions, and brokerage firms. Bank CDs interest rates are compounded while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdrawl fee. However, the value of the CD is subject to change dependent on interest rates if you were to sell before the cerficate matures. 
 
