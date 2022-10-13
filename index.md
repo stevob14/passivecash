@@ -110,7 +110,7 @@ Please note, for simplicity, these calculations do not take into account compoun
 
 CDs or certificate of deposits offer another great way to earn interest on cash for a fixed period of time. Contrary to high yield savings accounts as discussed previously, cash is locked until the certificate matures.
 
-For example, a 3 month non-callable CD with a fixed rate of 3% APY will have a term for 3 months and once the term matures, you can withdrawl your cash penalty free.
+For example, a 3 month CD with a fixed rate of 3% APY will have a term for 3 months and once the term matures, you can withdrawl your cash penalty free.
 
 There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer prior to the mature date whereas a non-callable CD can not. So lets say you suspect interest rates are going to fall in the near future causing banks to drop their rates. It may be wise to purchase a non-callable CD that will guarantee you with a fixed rate APY that will be higher than newly issued CDs in the event of falling interest rates.
 
