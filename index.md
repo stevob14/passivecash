@@ -120,7 +120,7 @@ You can estimate cash flow using Schwab's [Income Annuity Calculator](https://ww
 
 ### Savings Bonds
 
-If you are looking for a safe place to protect your cash from inflation, I savings bonds are a great option. I bonds pay a fixed rate of interest that changes with inflation. You can find more information on I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/)
+If you are looking for a safe place to protect your cash from inflation, I savings bonds are a great option. I bonds pay a fixed rate of interest that changes with inflation. You can find more information on I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/).
 
 ### Earn Interest on Crypto
 
