@@ -134,6 +134,8 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
+Another [resource](https://nanoly.com/) to help you find the best vaults and APY on DeFi.
+
 #### ETH
 
 [Coinbase](https://coinbase.com/join/crooks_r) offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**.
