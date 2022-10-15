@@ -106,13 +106,13 @@ People generally purchase CDs as a safer investment than stocks. They provide a 
 
 ### Annuities
 
-An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in lump sum or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent upon the structure of the annuity. 
+An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in lump sum or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent on the structure of the annuity. 
 
 There are two types of annuities, immediate and deferred.
 
 Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
 
-Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent upon the performance of the annuitie's investments. 
+Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent on the performance of the annuitie's investments. 
 
 **Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
 
