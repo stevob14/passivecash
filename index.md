@@ -176,7 +176,7 @@ If you understand the risks involved and are still interested in using honeygain
 
 ### Affiliate Marketing
 
-I have listed ways to earn passive cash as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing consist of connecting people to products and/or services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. In my opinion, affiliate marketing is the best way to make passive cash and the earning potential is limitless. 
+I have listed ways to earn passive cash as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing consist of connecting people to products and/or services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. Affiliate marketing is a great way to make passive cash and the earning potential is limitless.
 
 If you're interested in creating a static website like the one you are currently [reading](https://github.com/stevob14/passivecash), GitHub offers a way to host your website directly from your GitHub repository. You can read more about that [here](https://pages.github.com/).
 
