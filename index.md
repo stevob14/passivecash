@@ -114,7 +114,7 @@ Lets say for example that you were to win the lottery and wanted to create an im
 
 Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent on the performance of the annuitie's investments. 
 
-**Important to note that annuities are illiquid and subject to withdrawal penalties.** Therefore, annuities are not recommended for younger investors.
+**Important to note that annuities are illiquid and subject to withdrawal penalties.**
 
 You can estimate cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator).
 
