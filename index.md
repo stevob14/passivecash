@@ -140,7 +140,7 @@ Another [resource](https://nanoly.com/) to help you find the best vaults and APY
 
 [Coinbase](https://coinbase.com/join/crooks_r) offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**.
 
-[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning 6.50% P.A.
+[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning up to 6% P.A.
 
 #### ALGO
 
