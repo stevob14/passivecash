@@ -142,6 +142,8 @@ Another [resource](https://nanoly.com/) to help you find the best vaults and APY
 
 [Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning up to 6% P.A.
 
+[Rocket Pool](https://stake.rocketpool.net/) is a decentralized ethereum staking protocol offering ~8.4% APR.
+
 #### ALGO
 
 [Coinbase](https://coinbase.com/join/crooks_r) offers rewards up to 4% APY when you hold ALGO.
