@@ -126,37 +126,29 @@ If you are looking for a safe place to protect your cash from inflation, I savin
 
 Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called DeFi and CeFi. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service. CeFi or centralized finance is a type of financial service that is comparable to a traditional bank. Users are putting their trust in the business offering the financial service.
 
+#### CeFi
+
 [MyConstant](https://www.myconstant.com/sign-up?r=stevob144) is a CeFi service. MyConstant lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with MyConstant. Most importantly, this interest is compounded. You can earn 12.5% APY on stable coins USDC and USDT. Click [here](https://www.myconstant.com/lend-crypto-to-earn-interest) to see all crypto interest rates.
+
+[Coinbase](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
+
+[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
+
+#### DeFi
 
 [Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
+[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
+
 **Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in Compound Finance with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
+
+As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
-Another [resource](https://nanoly.com/) to help you find the best vaults and APY on DeFi.
+[Resource](https://nanoly.com/) to help you find the best vaults and APY on DeFi.
 
-#### ETH
-
-[Coinbase](https://coinbase.com/join/crooks_r) offers ETH staking. **While staking, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**.
-
-[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning up to 6% P.A.
-
-[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
-
-#### ALGO
-
-[Coinbase](https://coinbase.com/join/crooks_r) offers rewards up to 4% APY when you hold ALGO.
-
-#### NEO
-
-Holding NEO in a [wallet](https://neo.org/wallets) generates GAS. GAS is used to pay for smart contracts on the network. These fees are distributed to NEO holders as rewards for their activity on the network. You can view the current Neo-to-Gas rates [here](https://neotogas.com/).
-
-#### Tezos
-
-Tezos offers staking rewards. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. An easy way to start earning rewards with Tezos is by visiting [Coinbase](https://www.coinbase.com/join/crooks_r). Get free Bitcoin worth $10 when you sign up which you can then convert to Tezos to start earning passive cash. After registering, you can earn an additional $6 worth of Tezos by learning about Tezos at [Coinbase Earn Tezos](https://www.coinbase.com/earn/tezos). In total, that's $16 worth of Tezos to get you started. You can read more about staking on Coinbase [here](https://www.coinbase.com/staking).
-
-As another option, you can stake Tezos on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking Tezos with Ledger [here](https://www.ledger.com/staking-tezos/).
+[Resource](https://defillama.com/chains) to view the total value locked on all chains.
 
 ### Rental Properties
 
