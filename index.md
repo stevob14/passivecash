@@ -110,7 +110,7 @@ An annuity is an insurance contract that can be purchased from a financial insti
 
 There are two types of annuities, immediate and deferred.
 
-Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
+Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as in retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
 
 Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent on the performance of the annuitie's investments. 
 
