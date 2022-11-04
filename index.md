@@ -140,8 +140,6 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
 
-**Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in Compound Finance with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
-
 As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
@@ -149,6 +147,8 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 [Resource](https://nanoly.com/) to help you find the best vaults and APY on DeFi.
 
 [Resource](https://defillama.com/chains) to view the total value locked on all chains.
+
+**Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in DeFi with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
 
 ### Rental Properties
 
