@@ -130,7 +130,7 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
-**Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in Compound Finance with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
+**Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in Compound Finance with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
@@ -142,7 +142,7 @@ Another [resource](https://nanoly.com/) to help you find the best vaults and APY
 
 [Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH staking earning up to 6% P.A.
 
-[Rocket Pool](https://stake.rocketpool.net/) is a decentralized ethereum staking protocol offering ~8.4% APR.
+[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
 
 #### ALGO
 
