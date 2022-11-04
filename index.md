@@ -140,7 +140,7 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
 
-As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your Tezos from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
+As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
