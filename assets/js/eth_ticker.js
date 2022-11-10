@@ -19,5 +19,5 @@ function get_price() {
  }
     
  function changePageTitle(price) {
-  document.querySelector('title').textContent= price;
+  document.querySelector('title').textContent= price + " | ETHUSD";
         }
