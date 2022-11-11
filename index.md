@@ -137,7 +137,7 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
 
-**Note: Excersise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
+**Note: Exercise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
 
 #### DeFi
 
