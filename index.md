@@ -137,6 +137,8 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
 
+**Note: Excersise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
+
 #### DeFi
 
 [Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
