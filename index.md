@@ -8,8 +8,9 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
 
-### Ticker
+### Tickers
 <a href="https://www.passivecash.xyz/eth">ETH Price Ticker</a>
+<a href="https://www.passivecash.xyz/btc">BTC Price Ticker</a>
 
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop({
