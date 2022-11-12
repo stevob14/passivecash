@@ -3,4 +3,4 @@ google_analytics: G-Q203YEXP0D
 title: PassiveCash.xyz
 description: Ways to earn passive cash
 show_downloads: "false"
-include: [".well-known","_includes"]
+include: [".well-known", "_includes"]
