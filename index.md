@@ -143,7 +143,7 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 [Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
-[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR.
+[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR. RocketPool has been the first pool to be granted all green checks by [ethereum.org](https://ethereum.org/en/staking/pools/)
 
 As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
 
@@ -154,6 +154,8 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 [Resource](https://defillama.com/chains) to view the total value locked on all chains.
 
 **Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in DeFi with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
+
+**DeFi comes with it's own risk. It's important to understand that smart contracts are only as secure as the code. Protocols can suffer from vulnerabilities and result in loss of funds. Aave and Curve DeFi protocols are relatively safe as they have been around a long time and have been battle-tested.**
 
 ### Rental Properties
 
