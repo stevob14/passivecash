@@ -128,7 +128,7 @@ If you are looking for a safe place to protect your cash from inflation, I savin
 
 ### Earn Interest on Crypto
 
-Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or Ethereum, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called CeFi and DeFi. CeFi or centralized finance is a type of financial service that is comparable to a traditional bank. Users are putting their trust in the business offering the financial service. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service.
+Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or ETH, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called CeFi and DeFi. CeFi or centralized finance is a type of financial service that is comparable to a traditional bank. Users are putting their trust in the business offering the financial service. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service.
 
 #### CeFi
 
