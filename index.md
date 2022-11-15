@@ -7,6 +7,7 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
+<a href="https://www.passivecash.xyz/inflation">Inflation Calculator</a>
 
 ### Tickers
 <a href="https://www.passivecash.xyz/eth">ETH Price Ticker</a>
