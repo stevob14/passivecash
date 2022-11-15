@@ -22,7 +22,7 @@ title: Inflation Calculator
  <input id="endYearField" type="number" value="2021" min="1913" max="2021" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
 <br/>
 <br/>
- <button onClick="calculate()"><font size="4"><B>Calculate</B></font></button>
+ <button onClick="calculate()">Calculate</button>
 <br/>
 <br/>
 
