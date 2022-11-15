@@ -115,7 +115,7 @@ cpi.rates[108] = 270.970;	//2021
 
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
-function calculate() {	// Calculate button 
+function calculate() {
 	//1970 Price x (2011 CPI / 1970 CPI) = 2011 Price
   dollar = Number(document.getElementById("dollarField").value);
   start = Number(document.getElementById("startYearField").value);
