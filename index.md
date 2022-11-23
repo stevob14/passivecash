@@ -146,7 +146,7 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 #### DeFi
 
-[Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
+[Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
 [Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR. RocketPool has been the first pool to be granted all green checks by [ethereum.org](https://ethereum.org/en/staking/pools/).
 
