@@ -3,7 +3,7 @@
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash)
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -125,6 +125,10 @@ You can estimate cash flow using Schwab's [Income Annuity Calculator](https://ww
 ### Savings Bonds
 
 If you are looking for a safe place to protect your cash from inflation, I savings bonds are a great option. I bonds pay a fixed rate of interest that changes with inflation. You can find more information on I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/).
+
+### Treasury Bills
+
+Treasury Bills(T-Bills) are U.S. goverment securities that can be purchased through either a broker/bank or directly from [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/). From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is payed upon maturity and unlike CDs, interest is tax exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
 
 ### Earn Interest on Crypto
 
