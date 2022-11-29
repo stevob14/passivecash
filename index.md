@@ -136,8 +136,6 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 #### CeFi
 
-[MyConstant](https://www.myconstant.com/sign-up?r=stevob144) is a CeFi service. MyConstant lets you put your crypto to work and earn monthly interest payments in the cryptocurrency that you deposit with MyConstant. Most importantly, this interest is compounded. You can earn 12.5% APY on stable coins USDC and USDT. Click [here](https://www.myconstant.com/lend-crypto-to-earn-interest) to see all crypto interest rates.
-
 [Coinbase](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. **While staking ETH, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
 
 [Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
