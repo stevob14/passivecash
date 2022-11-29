@@ -7,7 +7,7 @@ title: Inflation Calculator
 
 <div class="inflation">
 <h2>Inflation Calculator</h2>
-<h4><a href="https://www.myconstant.com/sign-up?r=stevob144" target="_'blank'" style="color: #ffa500 !important;">MyConstant - Earn up to 12.5% APY</a></h4>
+<h4><a href="https://join.robinhood.com/stephec1028" target="_'blank'" style="color: #ffa500 !important;">Robinhood -  Get up to $200 in free stock</a></h4>
 <label>Dollar Amount (US):</label>
 
  <input id="dollarField" type="number" value="25" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
