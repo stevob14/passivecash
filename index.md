@@ -66,7 +66,7 @@ $0 | $0 | 0%
 $41,675 | $83,350 | 15%
 $459,750 | $517,200 | 20%
 
-From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax exempt from qualified dividends. It's important to note as of 2022, invdividuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
+From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax exempt from qualified dividends. It's important to note as of 2022, individuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
 
 If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
