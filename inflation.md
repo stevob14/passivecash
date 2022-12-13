@@ -3,7 +3,7 @@ description: Inflation calculator using consumer price index changes from 1913 t
 title: Inflation Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/inflation_calculator.js"></script>
-<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 
 <div class="inflation">
