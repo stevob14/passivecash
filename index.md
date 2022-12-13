@@ -164,7 +164,7 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 
 #### Real Estate Debt
 
-The hardest step to getting into real estate investing is the prerequisite of having large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor offers investors the opportunity to purchase real estate debt securities which generally provide a safer return than equity securities. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor](https://app.groundfloor.us/r/od0e9f).
+The hardest step to getting into real estate investing is the prerequisite of having large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor offers investors the opportunity to purchase real estate debt notes which generally provide a safer return than equity. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor](https://app.groundfloor.us/r/od0e9f).
 
 #### Rental Properties
 
