@@ -184,13 +184,13 @@ Lastly, I recommend learning your rights and your tenants' rights by reading the
 
 ### Honeygain
 
-Honeygain is an easy way to make passive cash. You can simply install honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
+Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
 
 **Is it safe?** Honeygain claims their app to be safe as they screen their partners to ensure your connection isn't being used for illegal activities. Also, the only data they keep is what will be necessary for the service. This includes your email address, your IP address, how much traffic you make per month, and your chosen payment method. 
 
 **I would still exercise caution as, according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
 
-If you understand the risks involved and are still interested in using honeygain, you can sign up at [honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
+If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
 
 ### Affiliate Marketing
 
