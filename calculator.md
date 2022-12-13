@@ -6,7 +6,7 @@ title: Compound Interest Calculator
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
-    <h4><a href="https://app.groundfloor.us/r/od0e9f" target="_'blank'" style="color: #ffa500 !important;">Groundfloor Real Estate up to 10% Returns  -  Get $50 when you invest $100</a></h4>
+    <h4><a href="https://join.robinhood.com/stephec1028" target="_'blank'" style="color: #ffa500 !important;">Robinhood - Get up to $200 in free stock</a></h4>
     <label>Initial Investment:</label>
     <input id="capital" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)">
     <br/>
