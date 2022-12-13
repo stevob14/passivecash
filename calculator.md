@@ -3,7 +3,7 @@ description: Compound Interest Calculator with monthly contributions and withdra
 title: Compound Interest Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/calculator.js"></script>
-<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <div class="calculator">
     <h2>Compound Interest Calculator</h2>
