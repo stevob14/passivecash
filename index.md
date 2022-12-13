@@ -172,7 +172,7 @@ The hardest step to getting into real estate investing is the prerequisite of ha
 
 Fundrise is another option for real estate investing with a $10 minimum investment. Notable differences include the inability to select individual investments, a 0.15% annual investment advisory fee, and a 0.85% annual asset management fee. More experienced investors may not find this platform ideal due to the simplicity of the investment process, and lack of transparency in what it is you are investing in. However, if you are looking for a quick "Click to Invest," Fundrise is a great choice. Due to underlying equity investments, investments are considered long term(5+ years). Groundfloor may be the better choice if you're more interested in short term real estate investments. Invest $10 and receive $25 in shares at [Fundrise](https://fundrise.com/r/4k7r3v).
 
-**Fundrise offers full bankruptcy protection**
+**Fundrise offers full bankruptcy protection.**
 
 #### Rental Properties
 
