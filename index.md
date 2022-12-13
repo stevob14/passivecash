@@ -28,7 +28,7 @@ In general, making passive cash is primarily dependent on having cash to start w
 
 Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company's earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP(dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using a [compound interest calculator](https://www.passivecash.xyz/calculator).
 
-Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks that have a dividend yield greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100) and [high dividend exchange traded funds by yield](http://etfdb.com/type/investment-style/dividend-etfs/#etfs__dividends&sort_name=dividend_yield&sort_order=desc&page=1).
+Please be **cautious** when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks with dividend yields greater than 10% can be seen as risky investments. Here is a list of [high dividend stocks by yield](https://www.dividend.com/dividend-stocks/high-dividend-yield-stocks/#tm=3-high-yield-stocks&r=Webpage%231281&f_35=true&f_9_min=2&f_9_max=100) and [high dividend exchange traded funds by yield](http://etfdb.com/type/investment-style/dividend-etfs/#etfs__dividends&sort_name=dividend_yield&sort_order=desc&page=1).
 
 A user on reddit put together a portfolio he calls "Quad-fecta." It consists of 4 ETFs that incorporates a covered call strategy combined with capital appreciation which generates ~8% APY. This is one example to creating a passive cash stream. More information can be read [here](https://www.reddit.com/r/qyldgang/comments/ncp0bl/quadfecta_covered_call_income_portfolio_analysis/). 
 
@@ -66,19 +66,19 @@ $0 | $0 | 0%
 $41,675 | $83,350 | 15%
 $459,750 | $517,200 | 20%
 
-From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax exempt from qualified dividends. It's important to note as of 2022, individuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified or not, the tax rate would be 0%.
+From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax-exempt from qualified dividends. It's important to note as of 2022, individuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified, the tax rate would be 0%.
 
-If you want to avoid dividend taxes altogether, investing dividend paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax free. If you were interested in investing in REIT funds, it may be ideal to hold these in a retirement account. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
+If you want to avoid dividend taxes altogether, investing dividend-paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax-free. If you were interested in investing in REIT funds, holding these in a retirement account may be ideal. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66% and pays monthly.
 
-Finally, if you're ready to get started in earning dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), and DRIP(dividend reinvestment). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
+Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), and DRIP(dividend reinvestment). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
 
 ### High Yield Savings Accounts
 
-High yield savings accounts are online accounts that pay multitudes more than a standard savings account. Lets say you have $100 dollars that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high yield savings account. At the time of writing this article, the best interest rate offered is ~1.75%. This is ~29 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
+High-yield savings accounts are online accounts that pay multitudes more than a standard savings account. Let's say you have $100 that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high-yield savings account. When writing this article, the best interest rate offered is ~1.75%. This is ~29 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0175) + 100 = $101.75.
 
-Lets scale things up and say you wanted to make $500/month passively.
+Let's scale things up and say you wanted to make $500/month passively.
 
 #### Traditional Savings Account
 
@@ -94,29 +94,29 @@ $500/month | (500 * 12)/.0175 = **$342,857.14**
 
 The difference in investment required for expected return is significant.
 
-Please note, for simplicity, these calculations do not take into account compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Interest can be compounded daily, weekly, monthly, quarterly, or annually. Here is an updated list of the [best high yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
+Please note, for simplicity, these calculations do not consider compounding interest. Compounding interest is essentially interest on interest, or rather, the result of reinvesting the interest earned. Interest can be compounded daily, weekly, monthly, quarterly, or annually. Here is an updated list of the [best high-yield savings accounts](https://www.doctorofcredit.com/high-interest-savings-to-get/). 
 
 ### CDs
 
-CDs or certificate of deposits offer another great way to earn interest on cash for a fixed period of time. Contrary to high yield savings accounts as discussed previously, cash is locked until the certificate matures.
+CDs or certificates of deposits offers another great way to earn interest on cash for a fixed period. Contrary to high-yield savings accounts, as discussed previously, cash is locked until the certificate matures.
 
-For example, a 3 month CD with a fixed rate of 3% APY will have a term length of 3 months and upon maturity, you can withdrawl your cash penalty free.
+For example, a 3-month CD with a fixed rate of 3% APY will have a term length of 3 months, and upon maturity, you can withdraw your cash penalty-free.
 
-There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer prior to the mature date whereas a non-callable CD can not. So lets say you expect falling interest rates in the near future causing banks to drop their rates. It may be wise to purchase a non-callable CD that will guarantee you with a fixed rate APY that will be higher than newly issued CDs.
+There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer before the mature date, whereas a non-callable CD can not. So let's say you expect falling interest rates in the near future, causing banks to drop their rates. It may be wise to purchase a non-callable CD that guarantees you a fixed rate APY that will be higher than newly issued CDs.
 
-CDs can be purchased through banks, credit unions, and brokerage firms. Bank CDs interest rates are compounded while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdrawl fee. However, the value of the CD is subject to change dependent on interest rates if you were to sell before the certificate matures. 
+CDs can be purchased through banks, credit unions, and brokerage firms. Bank CD's interest rates are compounded, while brokerage CDs are not. In my opinion, it's best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdraw fee. However, the value of the CD is subject to change dependending on interest rates if you sell before the certificate matures. 
 
 People generally purchase CDs as a safer investment than stocks. They provide a guaranteed return on investment at the expense of growth that stocks may provide. It's important to note that CDs are FDIC insured up to $250,000.
 
 ### Annuities
 
-An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in one large payment or period payments. You can expect to receive a guaranteed cash flow for a fixed period or for the rest of your life dependent on the structure of the annuity. 
+An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in one large payment or period payments. You can expect to receive a guaranteed cash flow for a fixed period or the rest of your life, dependent on the structure of the annuity. 
 
 There are two types of annuities, immediate and deferred.
 
-Lets say for example that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need cash flow in the future such as in retirement. Perhaps social security won't be enough and you suspect you may need additional cash flow.
+Let's say that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need future cash flow such as retirement. Perhaps social security won't be enough, and you suspect you may need additional cash flow.
 
-Annuities can be structured as either fixed or variable. Fixed being more stable providing regular periodic payments while variable being less stable providing payments that are dependent on the performance of the annuitie's investments. 
+Annuities can be structured as either fixed or variable. Fixed, being more stable, provides regular periodic payments, while variable is less stable, depending on the performance of the annuity's investments. 
 
 **Important to note that annuities are illiquid and subject to withdrawal penalties.**
 
@@ -124,15 +124,15 @@ You can estimate potential cash flow using Schwab's [Income Annuity Calculator](
 
 ### Savings Bonds
 
-If you are looking for a safe place to protect your cash from inflation, I savings bonds are a great option. I bonds pay a fixed rate of interest that changes with inflation. You can find more information and purchase I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/).
+I savings bonds are a great option if you are looking for a safe place to protect your cash from inflation. You can find more information and purchase I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/).
 
 ### Treasury Bills
 
-Treasury Bills(T-Bills) are U.S. goverment securities that can be purchased through either a broker/bank or directly from [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/). From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is payed upon maturity and unlike CDs, interest is tax exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
+Treasury Bills(T-Bills) are U.S. government securities that can be purchased through either a broker/bank or directly from [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/). From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is paid upon maturity; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
 
 ### Earn Interest on Crypto
 
-Earning interest on cryptocurrency is a fairly new opportunity that can be compared to earning interest in a traditional bank. If you currently hold cryptocurrency like Bitcoin or ETH, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called CeFi and DeFi. CeFi or centralized finance is a type of financial service that is comparable to a traditional bank. Users are putting their trust in the business offering the financial service. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service.
+Earning interest on cryptocurrency is a relatively new opportunity compared to making interest in a traditional bank. If you currently hold cryptocurrencies like Bitcoin or ETH, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called CeFi and DeFi. CeFi or centralized finance, is a type of financial service comparable to a traditional bank. Users are putting their trust in the business offering the financial service. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service.
 
 #### CeFi
 
@@ -144,11 +144,11 @@ Earning interest on cryptocurrency is a fairly new opportunity that can be compa
 
 #### DeFi
 
-[Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees, and the coin you wish to earn interest on. Next, select the the coin and amount you wish to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
+[Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees and the coin you wish to earn interest on. Next, select the coin and amount you want to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
 [Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR. RocketPool has been the first pool to be granted all green checks by [ethereum.org](https://ethereum.org/en/staking/pools/).
 
-As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security as opposed to holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read more about staking through Ledger [here](https://www.ledger.com/staking).
+As another option, you can stake ETH, SOL, ATOM, and DOT on a [Ledger Nano S Plus - The Best Crypto Hardware Wallet](https://shop.ledger.com/pages/ledger-nano-s-plus/?r=91b52306c89b). This offers greater security than holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read about staking through Ledger [here](https://www.ledger.com/staking).
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
@@ -166,11 +166,11 @@ The hardest step to getting into real estate investing is the prerequisite of ha
 
 ### Rental Properties
 
-Rental properties are another way to earn passive cash but require a large initial investment. If you have the capital, all you need is minimal time commitment. First, you'll want to look for a home that will require little to no repair cost that is ideally in the same city as you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to market your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce the amount of work required by you. After all, we are looking for a way to earn passive cash. 
+Rental properties are another way to earn passive cash but they require a significant initial investment. If you have the capital, all you need is the minimal time commitment. First, you'll want to look for a home that will require little to no repair cost and is ideally in the same city you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to sell your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce your work. After all, we are looking for a way to earn passive cash. 
 
-Also, remember that this home is your responsibility. If the air condition breaks, or the roof needs to be repaired, these are expenses that you'll have to pay out of pocket. This is why it's important to have cash reserves in the event of potential property expenses.
+Also, remember that this home is your responsibility. If the air conditioner breaks or the roof needs to be repaired, these are expenses that you'll have to pay out of pocket. This is why it's essential to have cash reserves for potential property expenses.
 
-Lastly, I recommend learning your rights and the rights of your tenants by reading the Fair Housing Amendments(FHA) Act.
+Lastly, I recommend learning your rights and your tenants' rights by reading the Fair Housing Amendments(FHA) Act.
 
 ### Honeygain
 
@@ -178,17 +178,17 @@ Honeygain is an easy way to make passive cash. You can simply install honeygain 
 
 **Is it safe?** Honeygain claims their app to be safe as they screen their partners to ensure your connection isn't being used for illegal activities. Also, the only data they keep is what will be necessary for the service. This includes your email address, your IP address, how much traffic you make per month, and your chosen payment method. 
 
-**I would still exercise caution as according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
+**I would still exercise caution as, according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
 
-If you understand the risks involved and are still interested in using honeygain, you can sign up at [honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with paypal and the minimum payout threshold is $20.
+If you understand the risks involved and are still interested in using honeygain, you can sign up at [honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
 
 ### Affiliate Marketing
 
-I have listed ways to earn passive cash as well as having demonstrated one last way that you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing consist of connecting people to products and/or services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. Affiliate marketing is a great way to make passive cash and the earning potential is limitless.
+I have listed ways to earn passive cash and demonstrated one last way you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing involves connecting people to products and services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. Affiliate marketing is a great way to make passive cash and the earning potential is limitless.
 
 If you're interested in creating a static website like the one you are currently [reading](https://github.com/stevob14/passivecash), GitHub offers a way to host your website directly from your GitHub repository. You can read more about that [here](https://pages.github.com/).
 
-To wrap things up, remember that earning passive cash can be a slow process if starting with low capital. Also, any service or product that sounds too good to be true probably is. However, don't let this discourage you as you have to start somewhere. I hope this list serves useful and is a viable resource towards your next step to financial freedom. 
+To wrap up, remember that earning passive cash can be a slow process if starting with low capital. Also, any service or product that sounds too good to be true probably is. However, don't let this discourage you as you have to start somewhere. I hope this list serves useful and is a viable resource for your next step toward financial freedom. 
 
 "If you don't find a way to make money while you sleep, you will work until you die." - Warren Buffett
 
@@ -202,8 +202,8 @@ I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Com
 
 ### Disclaimer
 
-The information contained on this Website and the resources available through this website is not intended as, and shall not be understood or construed as, financial advice. I am not an attorney, accountant or financial advisor, nor am I holding myself out to be, and the information contained on this Website is not a substitute for financial advice from a professional who is aware of the facts and circumstances of your individual situation.
+The information contained on this Website and the resources available through this website are not intended as, and shall not be understood or construed as, financial advice. I am not an attorney, accountant or financial advisor, nor am I holding myself out to be, and the information contained on this Website is not a substitute for financial advice from a professional who is aware of the facts and circumstances of your individual situation.
 
 I have done my best to ensure that the information provided on this Website and the resources available are accurate and provide valuable information. Regardless of anything to the contrary, nothing available on or through this Website should be understood as a recommendation that you should not consult with a financial professional to address your particular information. I recommend that you seek advice from a professional.
 
-I shall not be held liable or responsible for any errors or omissions on this website or for any damage you may suffer as a result of failing to seek competent financial advice from a professional who is familiar with your situation. 
+I shall not be held liable or responsible for any errors or omissions on this website or for any damage you may suffer due to failing to seek competent financial advice from a professional who is familiar with your situation. 
