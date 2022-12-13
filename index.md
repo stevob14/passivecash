@@ -168,6 +168,12 @@ The hardest step to getting into real estate investing is the prerequisite of ha
 
 **When writing this, Groundfloor offers no bankruptcy protection. As per SEC filing, "If we were to become insolvent or bankrupt, it is likely that we would default on our payment obligations under the LROs, and you may lose your investment."**
 
+#### Real Estate Equity and Debt
+
+Fundrise is another option for real estate investing with a $10 minimum investment. Notable differences include the inability to select individual investments, a 0.15% annual investment advisory fee, and a 0.85% annual asset management fee. More experienced investors may not find this platform ideal due to the simplicity of the investment process, and lack of transparency in what it is you are investing in. However, if you are looking for a quick "Click to Invest," Fundrise is a great choice. Due to underlying equity investments, investments are considered long term(5+ years). Groundfloor may be the better choice if you're more interested in short term real estate investments. Invest $10 and receive $25 in shares at [Fundrise](https://fundrise.com/r/4k7r3v).
+
+**Fundrise offers full bankruptcy protection**
+
 #### Rental Properties
 
 Rental properties are another way to earn passive cash but they require a significant initial investment. If you have the capital, all you need is the minimal time commitment. First, you'll want to look for a home that will require little to no repair cost and is ideally in the same city you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to sell your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce your work. After all, we are looking for a way to earn passive cash. 
