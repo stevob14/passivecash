@@ -3,7 +3,7 @@
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash)
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -162,9 +162,11 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 
 ### Real Estate
 
+#### Real Estate Crowdfunding
+
 The hardest step to getting into real estate investing is the prerequisite of having large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor](https://app.groundfloor.us/r/od0e9f).
 
-### Rental Properties
+#### Rental Properties
 
 Rental properties are another way to earn passive cash but they require a significant initial investment. If you have the capital, all you need is the minimal time commitment. First, you'll want to look for a home that will require little to no repair cost and is ideally in the same city you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to sell your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce your work. After all, we are looking for a way to earn passive cash. 
 
