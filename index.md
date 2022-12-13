@@ -3,7 +3,7 @@
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash)
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#rental-properties">Rental Properties</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Tools
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -159,6 +159,10 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 **Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in DeFi with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security(not fully decentralized) while layer 2 solutions increase scalability and maintain security(decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions [here](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/).**
 
 **DeFi comes with it's own risk. It's important to understand that smart contracts are only as secure as the code. Protocols can suffer from vulnerabilities and result in loss of funds. Aave and Curve DeFi protocols are relatively safe as they have been around a long time and have been battle-tested.**
+
+### Real Estate
+
+The hardest step to getting into real estate investing is the prerequisite of having large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor](https://app.groundfloor.us/r/od0e9f).
 
 ### Rental Properties
 
