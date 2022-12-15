@@ -6,7 +6,7 @@ title: Compound Interest Calculator
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <h2>Compound Interest Calculator</h2>
-<h4 id= "advertisement">advertisement</h4>
+<h4 id= "advertisement"></h4>
 <div class="calculator">   
     <p>
     <label>Initial Investment:</label>
