@@ -31,7 +31,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
       enabled: false
     },
     navigator: {
-      maskFill: 'rgba(0, 32, 68, 0.3)',
+      maskFill: 'rgba(181, 232, 83, .3)',
     },
     credits: {
         position: {
