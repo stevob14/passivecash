@@ -9,7 +9,7 @@ button {
 
 .inflation { 
     display: table;
-    border:1px dashed grey;
+    border:1px dashed #eaeaea;
     border-spacing:10px
 }
 
@@ -26,7 +26,7 @@ label {
 input { 
     display: table-cell;
     background:#151515;
-    color:white;
+    color:#eaeaea;
     padding:5px;
 } 
 
