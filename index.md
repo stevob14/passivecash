@@ -72,7 +72,7 @@ If you want to avoid dividend taxes altogether, investing dividend-paying stocks
 
 There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66% and pays monthly.
 
-Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), and DRIP(dividend reinvestment). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
+Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA(retirement account with 1% match). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
 
 ### High Yield Savings Accounts
 
