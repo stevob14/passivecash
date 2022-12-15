@@ -57,7 +57,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
           select: {
             fill: '#b5e853',
             style: {
-              color: 'white'
+              color: 'black'
             }
           }
         }
