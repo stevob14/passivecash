@@ -9,3 +9,5 @@ title:
 <h2>ETH Price(USD)</h2>
 
 <span class="Price"></span>
+
+<p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, [DeFi](https://www.passivecash.xyz/#earn-interest-on-crypto) applications built using the Ethereum network.</p>
