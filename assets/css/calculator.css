@@ -13,6 +13,14 @@ button {
     border-spacing:10px
 }
 
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .calculator {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
 p { 
     display: table-row;
 }
