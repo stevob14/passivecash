@@ -29,3 +29,16 @@ input {
     color:white;
     padding:5px;
 } 
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .inflation {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
