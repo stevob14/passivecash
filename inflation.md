@@ -4,7 +4,7 @@ title: Inflation Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/inflation_calculator.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
-<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
+<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/inflation.css">
 
 <h2>Inflation Calculator</h2>
 <h4 id= "advertisement"></h4>
