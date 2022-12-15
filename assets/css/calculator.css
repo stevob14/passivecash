@@ -47,4 +47,5 @@ textarea {
 select {
     background:#151515;
     color:white;
+    font:inherit;
 }
