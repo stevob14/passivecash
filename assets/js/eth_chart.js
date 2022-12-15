@@ -86,7 +86,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
         }],
  tooltip: {
         style: {
-        color: 'white'
+        color: '#eaeaea'
         },
         shared: true,
         backgroundColor: 'rgba(22, 27, 34, 0.5)',
