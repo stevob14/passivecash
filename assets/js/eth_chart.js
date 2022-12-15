@@ -47,7 +47,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
         'stroke-width': 0,
         r: 7,
         style: {
-          color: '#58A6FF',
+          color: '#b5e853',
           fontWeight: 'bold'
         },
         states: {
@@ -55,7 +55,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
             fill: null
           },
           select: {
-            fill: '#58A6FF',
+            fill: '#b5e853',
             style: {
               color: 'white'
             }
@@ -101,7 +101,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
     xAxis: {
       crosshair: {
         width: 0.5,
-        color: '#58A6FF'
+        color: '#b5e853'
       },
       events: {
         afterSetExtremes: function(e) {
@@ -158,7 +158,7 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_curre
                 },
     series: [{
       fillOpacity: .2,
-            color: "#58A6FF",
+            color: "#b5e853",
             name: 'Price',
             shadow: {
             color: '#002044',
