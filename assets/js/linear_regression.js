@@ -1,0 +1,1 @@
+function linear(r,a){var h,n,t,o=[],p=0,u=0,e=0,v=0,f=0,i=0;h=r.length;for(var l=0;l<h;l++)p+=r[l]*a[l],u+=r[l],e+=a[l],v+=Math.pow(r[l],2),f+=r[l],i+=a[l];t=(i-(n=((p*=h)-u*e)/((v*=h)-Math.pow(f,2)))*f)/h,o.push([r[0],a[0]]);var s=n*r[h-1]+t;return o.push([r[h-1],s]),o}
