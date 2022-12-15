@@ -9,3 +9,5 @@ title:
 <h2>BTC Price(USD)</h2>
 
 <span class="Price"></span>
+
+<p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $10 by signing up at <a href="https://www.passivecash.xyz/#earn-interest-on-crypto">Coinbase</a>.</p>
