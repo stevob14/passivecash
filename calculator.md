@@ -5,25 +5,26 @@ title: Compound Interest Calculator
 <script src="{{ base.url | prepend: site.url }}/assets/js/calculator.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
-<div class="calculator">
-    <h2>Compound Interest Calculator</h2>
-    <h4 id= "advertisement"></h4>
+<h2>Compound Interest Calculator</h2>
+<h4 id= "advertisement">advertisement</h4>
+<div class="calculator">   
+    <p>
     <label>Initial Investment:</label>
     <input id="capital" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)">
-    <br/>
-    <br/>
+    </p>
+    <p>
     <label>Monthly Contribution/Withdrawal:</label>
     <input id="contribution" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return allowNegativeNumber(event)">
-    <br/>
-    <br/>
+    </p>
+    <p>
     <label>APY(Annual Percentage Yield):</label>
     <input type="number" min="0" max="100" step="0.01" id="myPercent" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/>
-    <br/>
-    <br/>
+     </p>
+     <p>
     <label>Length of Time in Years:</label>
     <input type="number" min="0" max="100" step="1" id="lengthoftime" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/><span></span>
-     <br/>
-     <br/>
+     </p>
+     <p> 
     <label for="compound">Compound Frequency:</label>
 <select name="compound" id="compound" form="compoundform" style="padding: 5px;">
   <option value="daily">Daily</option>
@@ -32,19 +33,18 @@ title: Compound Interest Calculator
   <option value="quarterly">Quarterly</option>
   <option value="yearly">Yearly</option>
 </select>
-<br/>
-<br/>
-
-
-
-        <button onclick="calculate()">Calculate</button>
-      <br/>
-      <br/>
-<div class="result">
+</p>
+<p>
+<button onclick="calculate()">Calculate</button> 
+</p>
+       
+  </div>
+  <br>
+  <div class="result">
+  
     <span id="output" style="font-weight: bold"></span>
 
     <span id="output2" style="font-weight: bold"></span>
 
     <span id="output3" style="font-weight: bold"></span>
 </div>
-  </div>
