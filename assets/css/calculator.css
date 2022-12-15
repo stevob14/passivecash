@@ -38,6 +38,11 @@ input {
     padding:5px;
 } 
 
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+
 select {
     background:#151515;
     color:white;
