@@ -208,7 +208,7 @@ Need help getting started or have any questions? Contact me at **stephen@passive
 
 ### About Me
 
-I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science with minors in Math and Organizational Leadership.
+I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science and a B.G.S. with minors in Math, Organizational Leadership, and Kinesiology.
 
 ### Disclaimer
 
