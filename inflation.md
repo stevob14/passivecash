@@ -29,3 +29,5 @@ title: Inflation Calculator
 <div class="result">
  <span id="output"></span>
 </div>
+
+<p><a href="https://www.passivecash.xyz/">Home</a></p>
