@@ -17,7 +17,7 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 <script>addBackToTop({
   diameter: 56,
   backgroundColor: '#b5e853',
-  textColor: '#fff'
+  textColor: '#151515'
 })</script>
 
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
