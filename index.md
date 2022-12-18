@@ -70,7 +70,7 @@ From this, you can see that individuals making <=$41,675 and joint couples makin
 
 If you want to avoid dividend taxes altogether, investing dividend-paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax-free. If you were interested in investing in REIT funds, holding these in a retirement account may be ideal. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
-There are some exceptions. For example, Municipal bonds are typically exempt from federal taxation regardless of income. iShares National Muni Bond ETF(MUB) is one such ETF that has a yield of ~2.44% and pays monthly. VanEck Vectors High-Yield Municipal Index ETF(HYD) is another ETF that has a yield of ~4.66% and pays monthly.
+There are some exceptions. Municipal bonds are typically exempt from federal taxation regardless of income. Some examples include iShares National Muni Bond ETF(MUB), VanEck Vectors High-Yield Municipal Index ETF(HYD), and Vanguard Tax-Exempt Bond ETF(VTEB).
 
 Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA(retirement account with 1% match). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
 
