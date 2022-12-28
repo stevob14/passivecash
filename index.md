@@ -38,35 +38,35 @@ There are two types of dividends, qualified and non-qualified. Most regular divi
 
 Income Tax Bracket | Tax Rate
 ------------ | -------------
-$0 - $10,275 | 10%
-$10,275 – $41,775 | 12%
-$41,775 – $89,075 | 22%
-$89,075 – $170,050 | 24%
-$170,050 – $215,950 | 32%
-$215,950 – $539,900 | 35%
-$539,900+ | 37%
+$0 - $11,000 | 10%
+$11,000 – $44,725 | 12%
+$44,725 – $95,375 | 22%
+$95,375 – $182,100 | 24%
+$182,100 – $231,250 | 32%
+$231,250 – $578,125 | 35%
+$578,125+ | 37%
 
 #### 2022 Joint Filer Tax Brackets
 
 Income Tax Bracket | Tax Rate 
 ------------ | -------------
-$0 – $20,550 | 10% 
-$20,550 – $83,550 | 12% 
-$83,550 – $178,150 | 12%
-$178,150 – $340,100 | 24%
-$340,100 – $431,900 | 32%
-$431,900  – $647,850 | 35%
-$647,850+ | 37%
+$0 – $22,000 | 10% 
+$22,000 – $89,450 | 12% 
+$89,450 – $190,750 | 12%
+$190,750 – $364,200 | 24%
+$364,200 – $462,500 | 32%
+$462,500  – $693,750 | 35%
+$693,750+ | 37%
 
 #### 2022 Capital Gains Tax Brackets
 
 Single Filer, Taxable Income Over | Joint Filer, Taxable Income Over | Capital Gains Rate
 ------------ | ------------- | -------------
 $0 | $0 | 0%
-$41,675 | $83,350 | 15%
-$459,750 | $517,200 | 20%
+$44,625 | $89,250 | 15%
+$492,300 | $553,850 | 20%
 
-From this, you can see that individuals making <=$41,675 and joint couples making <=$83,350 are tax-exempt from qualified dividends. It's important to note as of 2022, individuals making <= $12,950 and joint married couples making <= $25,900 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified, the tax rate would be 0%.
+From this, you can see that individuals making <=$44,625 and joint couples making <=$89,250 are tax-exempt from qualified dividends. It's important to note as of 2022, individuals making <= $13,850 and joint married couples making <= $27,700 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified, the tax rate would be 0%.
 
 If you want to avoid dividend taxes altogether, investing dividend-paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax-free. If you were interested in investing in REIT funds, holding these in a retirement account may be ideal. However, there are some [advantages to holding REIT in a taxable account](https://seekingalpha.com/article/4158333-advantages-of-reits-in-taxable-account).
 
