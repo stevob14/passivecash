@@ -32,7 +32,7 @@ Please be **cautious** when looking at the dividend yield. Generally, the higher
 
 A user on reddit put together a portfolio he calls "Quad-fecta." It consists of 4 ETFs that incorporates a covered call strategy combined with capital appreciation which generates ~8% APY. This is one example to creating a passive cash stream. More information can be read [here](https://www.reddit.com/r/qyldgang/comments/ncp0bl/quadfecta_covered_call_income_portfolio_analysis/). 
 
-There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2022 to get a better understanding.
+There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT(real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person's regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2023 to get a better understanding.
 
 #### 2023 Single Filer Tax Brackets
 
