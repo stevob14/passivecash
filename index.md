@@ -1,6 +1,7 @@
 # PassiveCash.xyz
 
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash)
+This website contains referral links that can be identified by "-Referral"
 
 ### Directory
 <a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
@@ -72,7 +73,7 @@ If you want to avoid dividend taxes altogether, investing dividend-paying stocks
 
 There are some exceptions. Municipal bonds are typically exempt from federal taxation regardless of income. Some examples include iShares National Muni Bond ETF(MUB), VanEck Vectors High-Yield Municipal Index ETF(HYD), and Vanguard Tax-Exempt Bond ETF(VTEB).
 
-Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA(retirement account with 1% match). Sign up at [Robinhood](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
+Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA(retirement account with 1% match). Sign up at [Robinhood-Referral](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
 
 ### High Yield Savings Accounts
 
@@ -136,9 +137,9 @@ Earning interest on cryptocurrency is a relatively new opportunity compared to m
 
 #### CeFi
 
-[Coinbase](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. **While staking ETH, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
+[Coinbase-Referral](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. **While staking ETH, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
 
-[Crypto.com](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
+[Crypto.com-Referral](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
 
 **Note: Exercise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
 
@@ -164,13 +165,13 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 
 #### Real Estate Debt
 
-The hardest step to getting into real estate investing is the prerequisite of needing large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor offers investors the opportunity to purchase real estate debt notes which generally provide a safer return than equity. They are the only platform with individual note investments for non-accredited investors. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor](https://app.groundfloor.us/r/od0e9f).
+The hardest step to getting into real estate investing is the prerequisite of needing large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor offers investors the opportunity to purchase real estate debt notes which generally provide a safer return than equity. They are the only platform with individual note investments for non-accredited investors. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor-Referral](https://app.groundfloor.us/r/od0e9f).
 
 **When writing this, Groundfloor offers no bankruptcy protection. As per SEC filing, "If we were to become insolvent or bankrupt, it is likely that we would default on our payment obligations under the LROs, and you may lose your investment."**
 
 #### Real Estate Equity and Debt
 
-Fundrise is another option for real estate investing with a $10 minimum investment. Notable differences include the inability to select individual investments, a 0.15% annual investment advisory fee, and a 0.85% annual asset management fee. More experienced investors may not find this platform ideal due to the simplicity of the investment process, and lack of transparency in what it is you are investing in. However, if you are looking for a quick "Click to Invest," Fundrise is a great choice. Due to underlying equity investments, investments are considered long term(5+ years). Groundfloor may be the better choice if you're more interested in short term real estate investments. Invest $10 and receive $50 in shares at [Fundrise](https://fundrise.com/r/4k7r3v).
+Fundrise is another option for real estate investing with a $10 minimum investment. Notable differences include the inability to select individual investments, a 0.15% annual investment advisory fee, and a 0.85% annual asset management fee. More experienced investors may not find this platform ideal due to the simplicity of the investment process, and lack of transparency in what it is you are investing in. However, if you are looking for a quick "Click to Invest," Fundrise is a great choice. Due to underlying equity investments, investments are considered long term(5+ years). Groundfloor may be the better choice if you're more interested in short term real estate investments. Invest $10 and receive $50 in shares at [Fundrise-Referral](https://fundrise.com/r/4k7r3v).
 
 **Fundrise offers full bankruptcy protection.**
 
@@ -190,7 +191,7 @@ Honeygain is an easy way to make passive cash. You can simply install Honeygain 
 
 **I would still exercise caution as, according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
 
-If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
+If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain-Referral](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
 
 ### Affiliate Marketing
 
