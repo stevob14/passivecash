@@ -1,6 +1,6 @@
 # PassiveCash.xyz
 
-This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash)
+This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash).
 This website contains referral links that can be identified by "-Referral"
 
 ### Directory
