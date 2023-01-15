@@ -1,6 +1,6 @@
 cpi = new Object(); 
 cpi.OLDEST_YEAR = 1913; 
-cpi.LATEST_YEAR = 2021; 
+cpi.LATEST_YEAR = 2022; 
 
 cpi.rates = new Array(3); 
 cpi.rates[0] = 9.9;   //1913 
@@ -112,6 +112,7 @@ cpi.rates[105] = 251.107;	//2018
 cpi.rates[106] = 255.657;	//2019
 cpi.rates[107] = 258.811;	//2020
 cpi.rates[108] = 270.970;	//2021
+cpi.rates[109] = 292.655;	//2022
 
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
