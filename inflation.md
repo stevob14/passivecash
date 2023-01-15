@@ -15,11 +15,11 @@ title: Inflation Calculator
 </p>
 <p>
  <label for="start">Starting Year:</label>
- <input id="startYearField" type="number" value="1913" min="1913" max="2021" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
+ <input id="startYearField" type="number" value="1913" min="1913" max="2022" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
 </p>
 <p>
 <label>End Year:  </label>
- <input id="endYearField" type="number" value="2021" min="1913" max="2021" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
+ <input id="endYearField" type="number" value="2021" min="1913" max="2022" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
  </p>
 <p>
  <button onClick="calculate()">Calculate</button>
