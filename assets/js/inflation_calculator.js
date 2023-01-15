@@ -122,7 +122,7 @@ function calculate() {
   start = Number(document.getElementById("startYearField").value);
   end = Number(document.getElementById("endYearField").value); 
   
-  if (start >= 1913 && start <= 2021 && end >=1913 && end <=2021)
+  if (start >= 1913 && start <= 2022 && end >=1913 && end <=2022)
   {
   start_array = start - cpi.OLDEST_YEAR
   end_array = end - cpi.OLDEST_YEAR
@@ -132,7 +132,7 @@ function calculate() {
   document.getElementById("output").innerHTML = "$" + dollar + " in " + start + " is equivalent in purchasing power to ~" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + end;
   }
   else{
-  error = "Data only available for years in range 1913-2021";
+  error = "Data only available for years in range 1913-2022";
   document.getElementById("output").innerHTML = error;
   }
 } 
