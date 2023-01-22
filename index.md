@@ -177,11 +177,7 @@ Fundrise is another option for real estate investing with a $10 minimum investme
 
 #### Rental Properties
 
-Rental properties are another way to earn passive cash but they require a significant initial investment. If you have the capital, all you need is the minimal time commitment. First, you'll want to look for a home that will require little to no repair cost and is ideally in the same city you're located in. After purchasing, you'll need to market your home to find a tenant. The best way to list your home is to hire a property management company. This will typically cost you between 8% - 10% of the monthly rent in addition to other fees that may be involved. However, in my opinion, hiring a property management company is necessary as it will greatly reduce your work. After all, we are looking for a way to earn passive cash. 
-
-Also, remember that this home is your responsibility. If the air conditioner breaks or the roof needs to be repaired, these are expenses that you'll have to pay out of pocket. This is why it's essential to have cash reserves for potential property expenses.
-
-Lastly, I recommend learning your rights and your tenants' rights by reading the Fair Housing Amendments(FHA) Act.
+Investing in rental properties can be a great way to build a passive cash stream, but it's important to approach it with a solid plan and a thorough understanding of the market. Research the local real estate market and understand the potential return on your investment, create a budget, and get pre-approved for a mortgage. Look for properties in good condition and located in desirable areas and consider hiring a property manager to manage the day-to-day tasks. In my opinion, hiring a property management company is necessary as it will greatly reduce your work. After all, we are looking for a way to earn passive cash. Consider properties that have been well-maintained and are in a good state of repair, as these will require less work and have a higher potential for rental income. Be prepared for unexpected expenses and have enough cash reserves to cover them. If the air conditioner breaks or the roof needs to be repaired, these are expenses that you'll have to pay out of pocket. With a solid plan, research and preparation, you increase your chances of success in building a passive cash stream through rental properties.
 
 ### Honeygain
 
