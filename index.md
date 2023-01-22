@@ -175,10 +175,6 @@ Fundrise is another option for real estate investing with a $10 minimum investme
 
 **Fundrise offers full bankruptcy protection.**
 
-#### Rental Properties
-
-Rental properties are another way to earn passive cash that requires a significant initial investment. If you have the capital, you only need minimal time commitment and an understanding of the market. Research your local real estate market and calculate the potential return on your investment, create a budget, and get pre-approved for a mortgage. Look for properties in good condition and located in desirable areas, and consider hiring a property manager to manage the day-to-day tasks. I think hiring a property management company is necessary as it will significantly reduce your work. After all, we are looking for a way to earn passive cash. Look for well-maintained properties, as these will require less work and have a greater potential for rental income. Be prepared for unexpected expenses and have enough cash reserves to cover them. If the air conditioner breaks or the roof needs to be repaired, these are expenses that you'll have to pay out of pocket. With a solid plan, research and preparation, you increase your chances of success in building a passive cash stream through rental properties.
-
 ### Honeygain
 
 Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
