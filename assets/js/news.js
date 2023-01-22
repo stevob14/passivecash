@@ -27,6 +27,7 @@ const fetchFeed = async (url) => {
 
 const displayTitles = async () => {
   const titles = new Set();
+  const container = document.getElementById('rss-feed-container');
   for (const url of RSS_URLS) {
     const feed = await fetchFeed(url);
     const item = feed.querySelector('item');
@@ -37,8 +38,8 @@ const displayTitles = async () => {
       const titleElement = document.createElement('a');
       titleElement.href = link;
       titleElement.innerHTML = title;
-      document.body.appendChild(titleElement);
-      document.body.appendChild(document.createElement('br'));
+      container.appendChild(titleElement);
+      container.appendChild(document.createElement('br'));
     }
   }
 };
