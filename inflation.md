@@ -1,5 +1,5 @@
 ---
-description: Inflation calculator using consumer price index changes from 1913 to 2021
+description: Inflation calculator using consumer price index changes from 1913 to 2022
 title: Inflation Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/inflation_calculator.js"></script>
