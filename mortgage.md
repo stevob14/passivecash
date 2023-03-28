@@ -23,6 +23,8 @@ title: Mortgage Calculator
     <label>Home Insurance:</label>
     <input type="number" id="homeInsurance" /></p><p>
     <button onclick="calculateMortgage()">Calculate</button></p>
+    </div>
+    <div class="result">
     <table id="resultTable" style="display: none">
       <tr>
         <th>Monthly Payment</th>
@@ -39,6 +41,6 @@ title: Mortgage Calculator
         <td id="homeInsuranceMonthly"></td>
       </tr>
     </table>
-</div>
+    </div>
 
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
