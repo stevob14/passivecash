@@ -1,0 +1,56 @@
+button {
+    border: 1px solid #ffa500;
+    cursor: pointer;    
+    padding: 7.5px 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    background:transparent;
+    color: #ffa500;
+}
+
+button:hover {
+    background: rgba(255, 165, 0, 0.1);
+}
+
+.mortgage { 
+    display: table;
+    border:1px dashed #eaeaea;
+    border-spacing:10px
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .mortgage {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+p { 
+    display: table-row;
+}
+
+label { 
+    display: table-cell;
+    padding-right:10px;
+    padding-bottom:10px; 
+}
+
+input { 
+    display: table-cell;
+    background:#151515;
+    color:#eaeaea;
+    padding:5px;
+} 
+
+/*prevents input auto zoom on mobile devices*/
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+
+select {
+    background:#151515;
+    color:#eaeaea;
+    font:inherit;
+}
