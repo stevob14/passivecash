@@ -2,7 +2,7 @@
 description: Compound Interest Calculator with monthly contributions and withdrawals
 title: Compound Interest Calculator
 ---
-<script src="{{ base.url | prepend: site.url }}/assets/js/mortgage.js"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/mortgage.js" defer></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 
 <h2>Mortgage Calculator</h2>
