@@ -2,6 +2,7 @@
 description: Mortgage calculator
 title: Mortgage Calculator
 ---
+<html>
 <script src="{{ base.url | prepend: site.url }}/assets/js/mortgage.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="https://www.passivecash.xyz/assets/css/mortgage.css" />
@@ -44,3 +45,4 @@ title: Mortgage Calculator
     </div>
 
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
+    </html>
