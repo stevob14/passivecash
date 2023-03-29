@@ -6,7 +6,7 @@ The following article contains affiliate links that can be identified by "-Refer
 ### Directory
 <a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
-### Tools
+### Calculators
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
 <a href="https://www.passivecash.xyz/inflation">Inflation Calculator</a>
 <a href="https://www.passivecash.xyz/mortgage">Mortgage Calculator</a>
