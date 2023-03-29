@@ -12,19 +12,20 @@ title: Mortgage Calculator
 <div class="mortgage">
 <p>
 <label>Loan Amount:</label>
-    <input type="number" id="loanAmount" /></p><p>
+    <input value ="400000" type="number" id="loanAmount" /></p><p>
     <label>Down Payment:</label>
-    <input type="number" id="downPayment" /></p><p>
+    <input value ="80000" type="number" id="downPayment" /></p><p>
     <label>Interest Rate:</label>
-    <input type="number" id="interestRate" /></p><p>
+    <input value="6.88" type="number" id="interestRate" /></p><p>
     <label>Loan Term (in years):</label>
-    <input type="number" id="loanTerm" /></p><p>
+    <input value="30" type="number" id="loanTerm" /></p><p>
     <label>Property Taxes:</label>
     <input type="number" id="propertyTaxes" /></p><p>
     <label>Home Insurance:</label>
     <input type="number" id="homeInsurance" /></p><p>
     <button onclick="calculateMortgage()">Calculate</button></p>
     </div>
+    <div id="errorMessages"></div>
     <div class="result">
     <table id="resultTable" style="display: none">
       <tr>
