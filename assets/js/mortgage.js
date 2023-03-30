@@ -77,4 +77,5 @@ function calculateMortgage() {
         document.getElementById("hoaf").innerHTML = "$" + totalHOAFee;
         document.getElementById("oc").innerHTML = "$" + totalOther;  
         document.getElementById("resultTable").style.display = "block";
+        
   }
