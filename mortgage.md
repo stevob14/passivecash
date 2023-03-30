@@ -23,8 +23,8 @@ title: Mortgage Calculator
     <input type="number" id="propertyTaxes" /></p><p>
     <label>Home Insurance:</label>
     <input type="number" id="homeInsurance" /></p><p>
-    <label>PMI Insurance:</label>
-    <input type="number" id="pmiInsurance" /></p><p>
+    
+    
     <label>HOA Fee:</label>
     <input type="number" id="hoaFee" /></p>
     <p>
@@ -57,12 +57,7 @@ title: Mortgage Calculator
       <td align="right" id="homeInsuranceMonthly"></td>
       <td id="hit" align="right"></td>
     </tr>
-    <tr>
     
-      <td>PMI Insurance</td>
-      <td align="right" id="PMIInsuranceMonthly"></td>
-      <td id="pmii" align="right"></td>
-    </tr>
     <tr>
       <td>HOA Fee</td>
       <td align="right" id="HOAFeeMonthly"></td>
