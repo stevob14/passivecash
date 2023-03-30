@@ -42,7 +42,7 @@ let errorMsg = "";
         const totalPayment = (monthlyPayment * numberOfPayments).toFixed(2);
         const totalPropertyTaxes = (propertyTaxes * loanTerm).toFixed(2);
         const totalHomeInsurance = (homeInsurance * loanTerm).toFixed(2);
-        const total360Payments = mortgagePayment * 360;
+        const total360Payments = mortgagePayment * numberOfPayments;
         const totalInterest = (total360Payments - loanAmount).toFixed(2);
         
         document.getElementById("monthlyPayment").innerHTML = "$" + monthlyPayment;
