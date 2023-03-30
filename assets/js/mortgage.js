@@ -32,7 +32,7 @@ let errorMsg = "";
         const numberOfPayments = loanTerm * 12;
         
         const loanAmountAfterDownPayment = loanAmount - downPayment;
-        
+        const mortgagePayment = (loanAmount * monthlyInterestRate) /(1 - Math.pow(1 + monthlyInterestRate, -numberofPayments));
         const numerator = monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments);
         const denominator = Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1;
         const monthlyPaymentBeforeTaxInsurance = (loanAmountAfterDownPayment * (numerator / denominator)).toFixed(2);
@@ -40,9 +40,10 @@ let errorMsg = "";
         const monthlyHomeInsurance = (homeInsurance / 12).toFixed(2);
         const monthlyPayment = (parseFloat(monthlyPaymentBeforeTaxInsurance) + parseFloat(monthlyPropertyTaxes) + parseFloat(monthlyHomeInsurance)).toFixed(2);
         const totalPayment = (monthlyPayment * numberOfPayments).toFixed(2);
-        const totalInterest = (totalPayment - loanAmount).toFixed(2);
         const totalPropertyTaxes = (propertyTaxes * loanTerm).toFixed(2);
         const totalHomeInsurance = (homeInsurance * loanTerm).toFixed(2);
+        const total360Payments = mortgagePayment * 360;
+        const totalInterest = (total360Payments - loanAmount).toFixed(2);
         
         document.getElementById("monthlyPayment").innerHTML = "$" + monthlyPayment;
         document.getElementById("totalPayment").innerHTML = "$" + totalPayment;
