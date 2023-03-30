@@ -50,7 +50,6 @@ let errorMsg = "";
     document.getElementById("propertyTaxesMonthly").innerHTML = "$" + monthlyPropertyTaxes;
     document.getElementById("homeInsuranceMonthly").innerHTML = "$" + monthlyHomeInsurance;
    
-    console.log(loanAmount)
     document.getElementById("resultTable").style.display = "block";
     
     
