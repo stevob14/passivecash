@@ -40,7 +40,7 @@ let errorMsg = "";
         const monthlyHomeInsurance = (homeInsurance / 12).toFixed(2);
         const monthlyPayment = (parseFloat(monthlyPaymentBeforeTaxInsurance) + parseFloat(monthlyPropertyTaxes) + parseFloat(monthlyHomeInsurance)).toFixed(2);
         const totalPayment = (monthlyPayment * numberOfPayments).toFixed(2);
-        const totalInterest = (totalPayment - loanAmountAfterDownPayment).toFixed(2);
+        const totalInterest = (totalPayment - loanAmount).toFixed(2);
         const totalPropertyTaxes = (propertyTaxes * loanTerm).toFixed(2);
         const totalHomeInsurance = (homeInsurance * loanTerm).toFixed(2);
         
