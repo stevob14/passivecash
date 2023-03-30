@@ -32,7 +32,7 @@ let errorMsg = "";
         const numberOfPayments = loanTerm * 12;
         
         const loanAmountAfterDownPayment = loanAmount - downPayment;
-        const mortgagePayment = (loanAmount * monthlyInterestRate) /(1 - Math.pow(1 + monthlyInterestRate, -numberofPayments));
+        const mortgagePayment = (loanAmount * monthlyInterestRate) /(1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
         const numerator = monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments);
         const denominator = Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1;
         const monthlyPaymentBeforeTaxInsurance = (loanAmountAfterDownPayment * (numerator / denominator)).toFixed(2);
