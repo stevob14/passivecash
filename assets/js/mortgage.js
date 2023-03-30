@@ -32,7 +32,7 @@ let errorMsg = "";
         const numberOfPayments = loanTerm * 12;
         
         const loanAmountAfterDownPayment = loanAmount - downPayment;
-        const mortgagePayment = (loanAmount * monthlyInterestRate) /(1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+      
         const numerator = monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments);
         const denominator = Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1;
         const monthlyPaymentBeforeTaxInsurance = (loanAmountAfterDownPayment * (numerator / denominator)).toFixed(2);
@@ -42,15 +42,23 @@ let errorMsg = "";
         const totalPayment = (monthlyPayment * numberOfPayments).toFixed(2);
         const totalPropertyTaxes = (propertyTaxes * loanTerm).toFixed(2);
         const totalHomeInsurance = (homeInsurance * loanTerm).toFixed(2);
-        const total360Payments = (mortgagePayment * numberOfPayments).toFixed(2);
-        const totalInterest = (total360Payments - loanAmount).toFixed(2);
-
-        
+        const total360Payments = (monthlyPaymentBeforeTaxInsurance* numberOfPayments).toFixed(2);
+        const totalInterest = (total360Payments - loanAmountAfterDownPayment).toFixed(2);
+        console.log(monthlyPaymentBeforeTaxInsurance)
+        console.log(total360Payments)
+        document.getElementById("total360Payments").innerHTML = "$" + total360Payments;
+      document.getElementById("monthlyPaymentBeforeTaxInsurance").innerHTML = "$" + monthlyPaymentBeforeTaxInsurance;
         document.getElementById("monthlyPayment").innerHTML = "$" + monthlyPayment;
         document.getElementById("totalPayment").innerHTML = "$" + totalPayment;
            document.getElementById("totalInterest").innerHTML = "$" + totalInterest;
     document.getElementById("propertyTaxesMonthly").innerHTML = "$" + monthlyPropertyTaxes;
     document.getElementById("homeInsuranceMonthly").innerHTML = "$" + monthlyHomeInsurance;
+    document.getElementById("housePrice").innerHTML = "$" + loanAmount;
+    document.getElementById("la").innerHTML = "$" + loanAmountAfterDownPayment;
+    document.getElementById("dp").innerHTML = "$" + downPayment;  
+   document.getElementById("ptt").innerHTML = "$" + totalPropertyTaxes;
+    document.getElementById("hit").innerHTML = "$" + totalHomeInsurance;
+    
    
     document.getElementById("resultTable").style.display = "block";
     
