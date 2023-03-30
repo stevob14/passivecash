@@ -7,7 +7,7 @@ function calculateMortgage() {
         
         const propertyTaxes = parseFloat(document.getElementById("propertyTaxes").value) || 0;
         const homeInsurance = parseFloat(document.getElementById("homeInsurance").value) || 0;
-        const PMIInsurance = parseFloat(document.getElementById("pmiInsurance").value) || 0;
+        
         const HOAFee = parseFloat(document.getElementById("hoaFee").value) || 0;
         const OtherCosts = parseFloat(document.getElementById("otherCosts").value) || 0;
         
@@ -44,15 +44,15 @@ function calculateMortgage() {
         
         const monthlyPropertyTaxes = (propertyTaxes / 12).toFixed(2);
         const monthlyHomeInsurance = (homeInsurance / 12).toFixed(2);
-        const monthlyPMIInsurance = (PMIInsurance / 12).toFixed(2);
+       
         const monthlyHOAFee = (HOAFee / 12).toFixed(2);
         const monthlyOtherCosts = (OtherCosts / 12).toFixed(2);
-        const monthlyPayment = (parseFloat(monthlyPaymentBeforeTaxInsurance) + parseFloat(monthlyPropertyTaxes) + parseFloat(monthlyHomeInsurance) + parseFloat(monthlyPMIInsurance) + parseFloat(monthlyHOAFee) + parseFloat(monthlyOtherCosts)).toFixed(2);      
+        const monthlyPayment = (parseFloat(monthlyPaymentBeforeTaxInsurance) + parseFloat(monthlyPropertyTaxes) + parseFloat(monthlyHomeInsurance) + parseFloat(monthlyHOAFee) + parseFloat(monthlyOtherCosts)).toFixed(2);      
         
         const totalPayment = (monthlyPayment * numberOfPayments).toFixed(2);
         const totalPropertyTaxes = (propertyTaxes * loanTerm).toFixed(2);
         const totalHomeInsurance = (homeInsurance * loanTerm).toFixed(2);
-        const totalPMIInsurance = (PMIInsurance * loanTerm).toFixed(2);
+        
         const totalHOAFee = (HOAFee * loanTerm).toFixed(2);
         const totalOther = (OtherCosts * loanTerm).toFixed(2);
         const total360Payments = (monthlyPaymentBeforeTaxInsurance* numberOfPayments).toFixed(2);
@@ -65,7 +65,7 @@ function calculateMortgage() {
         document.getElementById("totalInterest").innerHTML = "$" + totalInterest;
         document.getElementById("propertyTaxesMonthly").innerHTML = "$" + monthlyPropertyTaxes;
         document.getElementById("homeInsuranceMonthly").innerHTML = "$" + monthlyHomeInsurance;
-        document.getElementById("PMIInsuranceMonthly").innerHTML = "$" + monthlyPMIInsurance;
+        
         document.getElementById("HOAFeeMonthly").innerHTML = "$" + monthlyHOAFee;
         document.getElementById("OtherCostsMonthly").innerHTML = "$" + monthlyOtherCosts;
         document.getElementById("housePrice").innerHTML = "$" + loanAmount;
@@ -73,7 +73,7 @@ function calculateMortgage() {
         document.getElementById("dp").innerHTML = "$" + downPayment;  
         document.getElementById("ptt").innerHTML = "$" + totalPropertyTaxes;
         document.getElementById("hit").innerHTML = "$" + totalHomeInsurance;
-        document.getElementById("pmii").innerHTML = "$" + totalPMIInsurance;
+        
         document.getElementById("hoaf").innerHTML = "$" + totalHOAFee;
         document.getElementById("oc").innerHTML = "$" + totalOther;  
         document.getElementById("resultTable").style.display = "block";
