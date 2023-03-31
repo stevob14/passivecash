@@ -5,10 +5,9 @@ title: Mortgage Calculator
 <script src="{{ base.url | prepend: site.url }}/assets/js/mortgage.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/mortgage.css">
-<h2>Compound Interest Calculator</h2>
+<h2>Mortgage Calculator</h2>
 <h4 id= "advertisement"></h4>
 <div class="mortage">
-    <h1>Mortgage Calculator</h1>
     <form>
       <p>
         <label for="homeValue">Home Value:</label>
