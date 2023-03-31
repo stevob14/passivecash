@@ -72,5 +72,5 @@ function calculate() {
 
   // display result
   var resultDiv = document.getElementById("result");
-  resultDiv.innerHTML = "Your monthly payment is: $" + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
+  resultDiv.innerHTML = "Your monthly payment is: " + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
 }
