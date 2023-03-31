@@ -8,7 +8,6 @@ title: Mortgage Calculator
 <h2>Mortgage Calculator</h2>
 <h4 id= "advertisement"></h4>
 <div class="mortgage">
-    <form>
       <p>
         <label for="homeValue">Home Value:</label>
         <input type="number" id="homeValue" value="400000" required></p>
@@ -44,8 +43,7 @@ title: Mortgage Calculator
     <p>
      <button type="button" onclick="calculate()">Calculate</button>
     </p>
-     
-    </form>
+    
   </div>
   <br>
 <div id="result"></div>
