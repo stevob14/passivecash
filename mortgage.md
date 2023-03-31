@@ -22,7 +22,7 @@ title: Mortgage Calculator
       </p>
         
      <p>
-     <label for="interestRate">Interest Rate:</label>
+     <label for="interestRate">Interest Rate (%):</label>
         <input type="number" step="0.01" id="interestRate" value="6.88" required>
      </p>
         
@@ -37,7 +37,7 @@ title: Mortgage Calculator
    </p>
         
       <p>
-      <label for="pmi">PMI:</label>
+      <label for="pmi">PMI (%):</label>
         <input type="number" id="pmi" required>
       </p>
         
