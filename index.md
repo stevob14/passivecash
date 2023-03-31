@@ -9,7 +9,7 @@ The following article contains affiliate links that can be identified by "-Refer
 ### Calculators
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
 <a href="https://www.passivecash.xyz/inflation">Inflation Calculator</a>
-<a href="https://www.passivecash.xyz/inflation">Mortgage Calculator</a>
+<a href="https://www.passivecash.xyz/mortgage">Mortgage Calculator</a>
 
 ### Tickers
 <a href="https://www.passivecash.xyz/eth">ETH Price Ticker</a>
