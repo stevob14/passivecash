@@ -7,7 +7,7 @@ title: Mortgage Calculator
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/mortgage.css">
 <h2>Mortgage Calculator</h2>
 <h4 id= "advertisement"></h4>
-<div class="mortage">
+<div class="mortgage">
     <form>
       <p>
         <label for="homeValue">Home Value:</label>
@@ -46,8 +46,9 @@ title: Mortgage Calculator
     </p>
      
     </form>
-    <div id="result"></div>
     <br>
+    <div id="result"></div>
+    
   </div>
 
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
