@@ -46,9 +46,7 @@ title: Mortgage Calculator
     </p>
      
     </form>
-    <br>
-    <div id="result"></div>
-    
   </div>
-
+  <br>
+<div id="result"></div>
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
