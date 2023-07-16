@@ -74,7 +74,7 @@ If you want to avoid dividend taxes altogether, investing dividend-paying stocks
 
 There are some exceptions. Municipal bonds are typically exempt from federal taxation regardless of income. Some examples include iShares National Muni Bond ETF(MUB), VanEck Vectors High-Yield Municipal Index ETF(HYD), and Vanguard Tax-Exempt Bond ETF(VTEB).
 
-Finally, if you're ready to earn dividends; Robinhood offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Robinhood also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA(retirement account with 1% match). Sign up at [Robinhood-Referral](https://join.robinhood.com/stephec1028) and get up to $200 in free stock.
+Finally, if you're ready to earn dividends; Webull offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Webull also offers fractional shares(ability to purchase a share like Amazon for as low as $1), cash management(earn interest on your uninvested cash), DRIP(dividend reinvestment), and an IRA. Sign up at [Webull-Referral](https://a.webull.com/iHwte0AKHLHI3C70Xf) and get 12 FREE stocks.
 
 ### High Yield Savings Accounts
 
