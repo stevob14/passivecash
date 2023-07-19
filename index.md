@@ -140,7 +140,7 @@ Treasury Bonds are long-term U.S. government securities that pay a fixed rate of
 
 #### Treasury Notes
 
-Treasury Notes are short-intermediate U.S. goverment securities that pay a fixed rate of interest.
+Treasury Notes are short-intermediate U.S. government securities that pay a fixed rate of interest.
 
 #### Treasury Inflation-Protected Securities
 
