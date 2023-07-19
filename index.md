@@ -132,15 +132,15 @@ I savings bonds are a great option if you are looking for a safe place to protec
 
 #### Treasury Bills
 
-Treasury Bills(T-Bills) are the shortest-term U.S. government securities. From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is not a fixed interest rate. T-bills are purhcased at a discount rate and upon maturity, interest paid is the difference between the face value of the T-Bill and the discount rate; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
+Treasury Bills(T-Bills) are short-term U.S. government securities. From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is not a fixed interest rate. T-bills are purhcased at a discount rate and upon maturity, interest paid is the difference between the face value of the T-Bill and the discount rate; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
+
+#### Treasury Notes
+
+Treasury Notes are short-intermediate-term U.S. government securities that pay a fixed rate of interest.
 
 #### Treasury Bonds
 
 Treasury Bonds are long-term U.S. government securities that pay a fixed rate of interest.
-
-#### Treasury Notes
-
-Treasury Notes are short-intermediate U.S. government securities that pay a fixed rate of interest.
 
 #### Treasury Inflation-Protected Securities
 
