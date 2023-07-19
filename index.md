@@ -4,7 +4,7 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 The following article contains affiliate links that can be identified by "-Referral."
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#savings-bonds">Savings Bonds</a> <a href="#treasury-bills">Treasury Bills</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
 
 ### Calculators
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -124,13 +124,33 @@ Annuities can be structured as either fixed or variable. Fixed, being more stabl
 
 You can estimate potential cash flow using Schwab's [Income Annuity Calculator](https://www.schwab.com/annuities/fixed-income-annuity-calculator).
 
-### Savings Bonds
+### Bonds
 
-I savings bonds are a great option if you are looking for a safe place to protect your cash from inflation. You can find more information and purchase I bonds at [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/).
+#### Savings Bonds
 
-### Treasury Bills
+I savings bonds are a great option if you are looking for a safe place to protect your cash from inflation.
 
-Treasury Bills(T-Bills) are U.S. government securities that can be purchased through either a broker/bank or directly from [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/). From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is paid upon maturity; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
+#### Treasury Bills
+
+Treasury Bills(T-Bills) are the shortest-term U.S. government securities. From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is not a fixed interest rate. T-bills are purhcased at a discount rate and upon maturity, interest paid is the difference between the face value of the T-Bill and the discount rate; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.
+
+#### Treasury Bonds
+
+Treasury Bonds are long-term U.S. government securities that pay a fixed rate of interest.
+
+#### Treasury Notes
+
+Treasury Notes are short-intermediate U.S. goverment securities that pay a fixed rate of interest.
+
+#### Treasury Inflation-Protected Securities
+
+Treasury Inflation-Protected Securities(TIPS) are designed to protect against inflation. Their principal value adjusts based on changes in the Consumer Price Index(CPI), ensuring that the investment keeps pace with inflation.
+
+All these treasury marketable securities can be purchased at [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/).
+
+If you are unsure which security is right for you, a Total Bond Market ETF(Exchange Traded Fund) such as BND might be a good choice. TIPS are not included in a total market bond fund, however, there are TIPS ETFs such as SCHP. 
+
+**Note: David Swensen, the renowned investment manager of Yale University's endowment, popularized a diversified portfolio strategy called The David Swensen Portfolio. Swensen recommended a 50/50 split between Treasury bonds and Treasury Inflation-Protected Securities (TIPS). By combining Treasury bonds and TIPS, investors can benefit from the stability of Treasury bonds while safeguarding their investments against inflation with TIPS.**
 
 ### Earn Interest on Crypto
 
