@@ -10,7 +10,7 @@ title: Compound Interest Calculator
 <div class="calculator">   
     <p>
     <label>Initial Investment:</label>
-    <input id="capital" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)">
+    <input id="capital" type="number" value="1000" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)">
     </p>
     <p>
     <label>Monthly Contribution/Withdrawal:</label>
@@ -18,11 +18,11 @@ title: Compound Interest Calculator
     </p>
     <p>
     <label>APY(Annual Percentage Yield):</label>
-    <input type="number" min="0" max="100" step="0.01" id="myPercent" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/>
+    <input type="number" value="10" min="0" max="100" step="0.01" id="myPercent" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/>
      </p>
      <p>
     <label>Length of Time in Years:</label>
-    <input type="number" min="0" max="100" step="1" id="lengthoftime" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/><span></span>
+    <input type="number" value="1" min="0" max="100" step="1" id="lengthoftime" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "128" onkeypress= "return isNumberKey(event)"/><span></span>
      </p>
      <p> 
     <label for="compound">Compound Frequency:</label>
