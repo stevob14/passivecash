@@ -1,6 +1,6 @@
 cpi = new Object(); 
 cpi.OLDEST_YEAR = 1913; 
-cpi.LATEST_YEAR = 2022; 
+cpi.LATEST_YEAR = 2023; 
 
 cpi.rates = new Array(3); 
 cpi.rates[0] = 9.9;   //1913 
@@ -113,6 +113,7 @@ cpi.rates[106] = 255.657;	//2019
 cpi.rates[107] = 258.811;	//2020
 cpi.rates[108] = 270.970;	//2021
 cpi.rates[109] = 292.655;	//2022
+cpi.rates[110] = 304.702;	//2023
 
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
@@ -122,7 +123,7 @@ function calculate() {
   start = Number(document.getElementById("startYearField").value);
   end = Number(document.getElementById("endYearField").value); 
   
-  if (start >= 1913 && start <= 2022 && end >=1913 && end <=2022)
+  if (start >= 1913 && start <= 2023 && end >=1913 && end <=2023)
   {
   start_array = start - cpi.OLDEST_YEAR
   end_array = end - cpi.OLDEST_YEAR
@@ -132,7 +133,7 @@ function calculate() {
   document.getElementById("output").innerHTML = "$" + dollar + " in " + start + " is equivalent in purchasing power to ~" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + end;
   }
   else{
-  error = "Data only available for years in range 1913-2022";
+  error = "Data only available for years in range 1913-2023";
   document.getElementById("output").innerHTML = error;
   }
 } 
