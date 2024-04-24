@@ -1,4 +1,4 @@
-$.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=max', function(data) {
+$.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=365', function(data) {
   Highcharts.setOptions({
     lang: {
       thousandsSep: ","
