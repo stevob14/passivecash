@@ -1,8 +1,8 @@
 function get_price() {
-      fetch("https://api.pro.coinbase.com/products/eth-usd/book")
+      fetch("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD")
         .then(res => res.json())
         .then(res => {
-          var price = numberWithCommas(res.bids[0][0]);
+          var price = numberWithCommas(res.USD);
           $(".Price").html("$"+price)     
           changePageTitle(price)
         }).catch(err => {
