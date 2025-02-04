@@ -22,8 +22,6 @@ table, th, td {
 <div class="calculator">   
 <form id="portfolioForm">
   Deposit/Withdrawal: <input type="number" id="deposit" value="500" oninput="calculateRebalance()"><br><br>
-
-  <h2>Investments</h2>
   <table>
     <thead>
       <tr>
