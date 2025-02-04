@@ -34,7 +34,7 @@ table, th, td {
     </thead>
     <tbody id="investmentTable">
       <tr>
-        <td><input type="text" name="symbol" value="VT"></td>
+        <td><input type="text" name="symbol" value="VTI"></td>
         <td><input type="number" name="value" value="5000" oninput="calculateRebalance()"></td>
         <td><input type="number" name="allocation" value="60" oninput="calculateRebalance()">%</td>
         <td class="rebalanceAmount"></td>  
@@ -48,6 +48,14 @@ table, th, td {
         <td><button type="button" onclick="removeInvestment(this)">Remove</button></td>
       </tr>
     </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="5">Current Balance: <span id="currentBalance"></span></th>
+      </tr>
+      <tr>
+        <th colspan="5">Target Balance: <span id="targetBalance"></span></th>
+      </tr>
+    </tfoot>
   </table>
   <button type="button" onclick="addInvestment()">Add Investment</button>
 </form>
