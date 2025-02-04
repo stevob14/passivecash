@@ -19,6 +19,7 @@ table, th, td {
 </head>
 <body>
 
+<div class="calculator">   
 <form id="portfolioForm">
   Deposit/Withdrawal: <input type="number" id="deposit" value="500" oninput="calculateRebalance()"><br><br>
 
@@ -52,8 +53,8 @@ table, th, td {
   </table>
   <button type="button" onclick="addInvestment()">Add Investment</button>
 </form>
-
 <p id="error-message" style="color: red;"></p>
+</div>
 
 </body>
 </html>
