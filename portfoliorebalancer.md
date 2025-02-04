@@ -9,7 +9,6 @@ title: Portfolio Rebalancer
 <h4 id= "advertisement"></h4>
 <html>
 <head>
-<title>Portfolio Rebalancer</title>
 <style>
 table, th, td {
   border: 1px solid black;
