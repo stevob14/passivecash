@@ -19,8 +19,6 @@ table, th, td {
 </head>
 <body>
 
-<h1>Portfolio Rebalancer</h1>
-
 <form id="portfolioForm">
   Deposit/Withdrawal: <input type="number" id="deposit" value="500" oninput="calculateRebalance()"><br><br>
 
