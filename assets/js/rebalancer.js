@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+  calculateRebalance();
+});
+
 function calculateRebalance() {
   const deposit = parseFloat(document.getElementById("deposit").value);
   const table = document.getElementById("investmentTable");
@@ -57,5 +61,3 @@ function removeInvestment(button) {
   table.deleteRow(row.rowIndex - 1);
   calculateRebalance();
 }
-
-calculateRebalance();
