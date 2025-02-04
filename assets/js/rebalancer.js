@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function calculateRebalance() {
-  const deposit = parseFloat(document.getElementById("deposit").value);
+  let deposit = parseFloat(document.getElementById("deposit").value);
+  if (isNaN(deposit)) {
+    deposit = 0; // Treat NaN as 0
+  }
+
   const table = document.getElementById("investmentTable");
   let investments = [];
   let totalAllocation = 0;
@@ -24,18 +28,21 @@ function calculateRebalance() {
     document.getElementById("error-message").textContent = "";
   }
 
-  let totalValue = deposit;
-  for (const investment of investments) {
-    totalValue += investment.value;
-  }
+  let currentBalance = investments.reduce((acc, investment) => acc + investment.value, 0);
+
+  document.getElementById("currentBalance").textContent = currentBalance.toFixed(2);
+
+  let targetBalance = currentBalance + deposit; // Corrected target balance calculation
 
   for (let i = 0; i < investments.length; i++) {
     const investment = investments[i];
-    const targetValue = totalValue * investment.allocation;
+    const targetValue = targetBalance * investment.allocation;
     const rebalanceAmount = targetValue - investment.value;
     const rebalanceCells = table.querySelectorAll('.rebalanceAmount');
     rebalanceCells[i].textContent = rebalanceAmount.toFixed(2);
   }
+
+  document.getElementById("targetBalance").textContent = targetBalance.toFixed(2);
 }
 
 function addInvestment() {
