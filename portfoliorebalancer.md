@@ -3,6 +3,7 @@ description: Rebalance your investment portfolio by depositing or withdrawing fu
 title: Portfolio Rebalancer
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/rebalancer.js" defer></script>
 
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <h2>Portfolio Rebalancer</h2>
