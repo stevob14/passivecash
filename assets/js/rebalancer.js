@@ -38,8 +38,9 @@ function calculateRebalance() {
     const investment = investments[i];
     const targetValue = targetBalance * investment.allocation;
     const rebalanceAmount = targetValue - investment.value;
-    const rebalanceCells = table.querySelectorAll('.rebalanceAmount');
-    rebalanceCells[i].textContent = rebalanceAmount.toFixed(2);
+    const rebalanceCell = table.rows[i].cells[3];
+    rebalanceCell.textContent = rebalanceAmount.toFixed(2);
+    rebalanceCell.className = "rebalanceAmount " + (rebalanceAmount >= 0 ? "positive" : "negative");
   }
 
   document.getElementById("targetBalance").textContent = targetBalance.toFixed(2);
