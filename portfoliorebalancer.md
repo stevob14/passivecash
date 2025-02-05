@@ -2,8 +2,8 @@
 description: Rebalance your investment portfolio by depositing or withdrawing funds, or rebalance existing funds to achieve your desired asset allocation.
 title: Portfolio Rebalancer
 ---
-<script src="{{ base.url | prepend: site.url }}/assets/js/rebalancer.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
+
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <h2>Portfolio Rebalancer</h2>
 <h4 id= "advertisement"></h4>
@@ -14,6 +14,12 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 5px;
+}
+.rebalanceAmount.positive {
+  color: green;
+}
+.rebalanceAmount.negative {
+  color: red;
 }
 </style>
 </head>
