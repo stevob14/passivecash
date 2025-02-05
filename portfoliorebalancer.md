@@ -40,7 +40,7 @@ table, th, td {
     </thead>
     <tbody id="investmentTable">
       <tr>
-        <td><input type="text" name="symbol" value="VTI"></td>
+        <td><input type="text" name="symbol" value="VT"></td>
         <td><input type="number" name="value" value="5000" oninput="calculateRebalance()"></td>
         <td><input type="number" name="allocation" value="60" oninput="calculateRebalance()">%</td>
         <td class="rebalanceAmount"></td>  
