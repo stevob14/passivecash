@@ -36,7 +36,7 @@ table, th, td {
       <tr>
         <th>Symbol</th>
         <th>Current Value</th>
-        <th>Target Allocation</th>
+        <th>Target Allocation(%)</th>
         <th>Rebalance Amount</th>
         <th>Action</th>
       </tr>
@@ -52,7 +52,7 @@ table, th, td {
       <tr>
         <td><input type="text" name="symbol" value="BNDW"></td>
         <td><input type="number" name="value" value="3500" oninput="calculateRebalance()"></td>
-        <td><input type="number" name="allocation" value="40" oninput="calculateRebalance()">%</td>
+        <td><input type="number" name="allocation" value="40" oninput="calculateRebalance()"></td>
         <td class="rebalanceAmount"></td>  
         <td><button type="button" onclick="removeInvestment(this)">Remove</button></td>
       </tr>
@@ -74,5 +74,3 @@ table, th, td {
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
 </body>
 </html>
-
-<p><a href="https://www.passivecash.xyz/">Home</a></p>
