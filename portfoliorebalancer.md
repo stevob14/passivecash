@@ -9,6 +9,16 @@ title: Portfolio Rebalancer
 <h2>Portfolio Rebalancer</h2>
 <h4 id= "advertisement"></h4>
 <html>
+
+<head>
+<style>
+.rebalanceAmount.positive {
+  color: green;
+}
+.rebalanceAmount.negative {
+  color: red;
+}</style></head>
+
 <body>
   
 <div class="calculator">   
