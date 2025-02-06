@@ -21,18 +21,20 @@ function calculateRebalance() {
   }
 
   // Check if total allocation equals 100%
-  if (totalAllocation !== 1) {
+  if (totalAllocation.toFixed(2) != 1) {
     document.getElementById("error-message").textContent = "The sum of each investment's target allocation must equal 100% before the portfolio can be rebalanced.";
+    document.getElementById("currentBalance").textContent = "";
+    document.getElementById("targetBalance").textContent = "";
     return;
   } else {
     document.getElementById("error-message").textContent = "";
   }
 
   let currentBalance = investments.reduce((acc, investment) => acc + investment.value, 0);
-
   document.getElementById("currentBalance").textContent = currentBalance.toFixed(2);
 
-  let targetBalance = currentBalance + deposit; // Corrected target balance calculation
+  let targetBalance = currentBalance + deposit;
+  document.getElementById("targetBalance").textContent = targetBalance.toFixed(2);
 
   for (let i = 0; i < investments.length; i++) {
     const investment = investments[i];
@@ -42,8 +44,6 @@ function calculateRebalance() {
     rebalanceCell.textContent = rebalanceAmount.toFixed(2);
     rebalanceCell.className = "rebalanceAmount " + (rebalanceAmount >= 0 ? "positive" : "negative");
   }
-
-  document.getElementById("targetBalance").textContent = targetBalance.toFixed(2);
 }
 
 function addInvestment() {
