@@ -43,7 +43,7 @@ table, th, td {
       <tr>
         <td><input type="text" name="symbol" value="VT"></td>
         <td><input type="number" name="value" value="5000" oninput="calculateRebalance()"></td>
-        <td><input type="number" name="allocation" value="60" oninput="calculateRebalance()">%</td>
+        <td><input type="number" name="allocation" value="60" oninput="calculateRebalance()"></td>
         <td class="rebalanceAmount"></td>  
         <td><button type="button" onclick="removeInvestment(this)">Remove</button></td>
       </tr>
