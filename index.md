@@ -1,7 +1,9 @@
 # PassiveCash.xyz
+<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
+<h4 id= "advertisement"></h4>
 
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash).
-The following article contains affiliate links that can be identified by "-Referral."
+The following contains affiliate links that can be identified by "-Referral."
 
 ### Directory
 <a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a>
