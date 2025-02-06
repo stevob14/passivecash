@@ -11,9 +11,8 @@ title:
 <link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/eth_ticker.css">
 
 <h2>BTC Price(USD)</h2>
-<h4 id= "advertisement"></h4>
 <span class="Price"></span>
-
+<h4 id= "advertisement"></h4>
 <p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $10 by signing up at <a href="https://coinbase.com/join/crooks_r">Coinbase-Referral</a>.</p>
 
 <div id="chart" name="chart"></div>
