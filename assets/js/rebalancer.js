@@ -42,7 +42,7 @@ function calculateRebalance() {
     const rebalanceAmount = targetValue - investment.value;
     const rebalanceCell = table.rows[i].cells[3];
     rebalanceCell.textContent = rebalanceAmount.toFixed(2);
-    rebalanceCell.className = "rebalanceAmount " + (rebalanceAmount >= 0 ? "positive" : "negative");
+    rebalanceCell.className = "rebalanceAmount " + (rebalanceAmount > 0 ? "positive" : (rebalanceAmount < 0 ? "negative" : "neutral"));
   }
 }
 
@@ -57,7 +57,7 @@ function addInvestment() {
 
   symbolCell.innerHTML = '<input type="text" name="symbol">';
   valueCell.innerHTML = '<input type="number" name="value" value="0" oninput="calculateRebalance()">';
-  allocationCell.innerHTML = '<input type="number" name="allocation" value="0" oninput="calculateRebalance()">%';
+  allocationCell.innerHTML = '<input type="number" name="allocation" value="0" oninput="calculateRebalance()">';
   rebalanceCell.className = "rebalanceAmount";
   actionCell.innerHTML = '<button type="button" onclick="removeInvestment(this)">Remove</button>';
 }
