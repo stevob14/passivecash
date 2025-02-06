@@ -17,7 +17,12 @@ title: Portfolio Rebalancer
 }
 .rebalanceAmount.negative {
   color: red;
-}</style></head>
+}
+.rebalanceAmount.neutral {
+  color: #eaeaea;
+  }
+</style>
+</head>
 
 <body>
   
