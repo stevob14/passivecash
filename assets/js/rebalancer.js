@@ -66,4 +66,5 @@ function removeInvestment(button) {
   const row = button.parentNode.parentNode;
   const table = document.getElementById("investmentTable");
   table.deleteRow(row.rowIndex - 1);
+  calculateRebalance()
 }
