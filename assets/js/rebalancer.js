@@ -60,7 +60,6 @@ function addInvestment() {
   allocationCell.innerHTML = '<input type="number" name="allocation" value="0" oninput="calculateRebalance()">%';
   rebalanceCell.className = "rebalanceAmount";
   actionCell.innerHTML = '<button type="button" onclick="removeInvestment(this)">Remove</button>';
-  calculateRebalance();
 }
 
 function removeInvestment(button) {
