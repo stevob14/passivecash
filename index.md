@@ -221,4 +221,4 @@ To wrap up, remember that earning passive cash can be a slow process if starting
 
 "If you don't find a way to make money while you sleep, you will work until you die." - Warren Buffett
 
-[contact](./contact) [about](./about) [disclaimer](./disclaimer)
+[Contact](./contact) [About](./about) [Disclaimer](./disclaimer)
