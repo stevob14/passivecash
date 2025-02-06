@@ -4,7 +4,7 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 The following article contains affiliate links that can be identified by "-Referral."
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a> <a href="#contact">Contact</a> <a href="#about-me">About Me</a> <a href="#disclaimer">Disclaimer</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a>
 
 ### Calculators
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -219,18 +219,4 @@ To wrap up, remember that earning passive cash can be a slow process if starting
 
 "If you don't find a way to make money while you sleep, you will work until you die." - Warren Buffett
 
-### Contact
-
-Need help getting started or have any questions? Contact me at **stephen@passivecash.xyz** or [@passivecashxyz](https://twitter.com/passivecashxyz)
-
-### About Me
-
-I am a programmer, investor, and cryptocurrency enthusiast. I hold a B.S. in Computer Science and a B.G.S. with concentrations in Math, Organizational Leadership, and Kinesiology.
-
-### Disclaimer
-
-The information contained on this Website and the resources available through this website are not intended as, and shall not be understood or construed as, financial advice. I am not an attorney, accountant or financial advisor, nor am I holding myself out to be, and the information contained on this Website is not a substitute for financial advice from a professional who is aware of the facts and circumstances of your individual situation.
-
-I have done my best to ensure that the information provided on this Website and the resources available are accurate and provide valuable information. Regardless of anything to the contrary, nothing available on or through this Website should be understood as a recommendation that you should not consult with a financial professional to address your particular information. I recommend that you seek advice from a professional.
-
-I shall not be held liable or responsible for any errors or omissions on this website or for any damage you may suffer due to failing to seek competent financial advice from a professional who is familiar with your situation. 
+[contact](./contact) [about](./about) [disclaimer](./disclaimer)
