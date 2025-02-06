@@ -68,7 +68,6 @@ title: Portfolio Rebalancer
 </form>
 <p id="error-message" style="color: red;"></p>
 </div>
-
-<p><a href="https://www.passivecash.xyz/">Home</a></p>
 </body>
+<p><a href="https://www.passivecash.xyz/">Home</a></p>
 </html>
