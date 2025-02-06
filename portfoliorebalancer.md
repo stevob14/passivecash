@@ -26,6 +26,8 @@ table, th, td {
 </head>
 <body>
 
+<h2>Portfolio Rebalancer</h2>
+
 <div class="calculator">   
 <form id="portfolioForm">
   Deposit/Withdrawal: <input type="number" id="deposit" value="500" oninput="calculateRebalance()"><br><br>
@@ -69,6 +71,7 @@ table, th, td {
 <p id="error-message" style="color: red;"></p>
 </div>
 
+<p><a href="https://www.passivecash.xyz/">Home</a></p>
 </body>
 </html>
 
