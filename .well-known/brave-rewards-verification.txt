@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: passivecash.xyz
-Token: 299b387003757fa6a55bae084e911d3330789f7a52291530df497cbff7e43a67
