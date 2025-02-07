@@ -4,11 +4,11 @@ title: Inflation Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/inflation_calculator.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
-<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/inflation.css">
+<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 
 <h2>Inflation Calculator</h2>
 <h4 id= "advertisement"></h4>
-<div class="inflation">
+<div class="calculator">
 <p>
 <label>Dollar Amount (US):</label>
  <input id="dollarField" type="number" value="25" oninput="javascript: if (this.value.length &gt; this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="128" onkeypress="return isNumberKey(event)"/>
