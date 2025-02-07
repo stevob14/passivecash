@@ -4,10 +4,10 @@ title: Mortgage Calculator
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/mortgage.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
-<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/mortgage.css">
+<link id="stylesheet" rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/calculator.css">
 <h2>Mortgage Calculator</h2>
 <h4 id= "advertisement"></h4>
-<div class="mortgage">
+<div class="calculator">
       <p>
         <label for="homeValue">Home Value:</label>
         <input type="number" id="homeValue" value="400000" required></p>
