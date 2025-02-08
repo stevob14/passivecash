@@ -1,6 +1,6 @@
 ---
-description: BTC Price Ticker
-title: 
+description: BTC Price Ticker and chart and dynamic linear regression line.
+title: BTC Price Ticker
 ---
 <script src="{{ base.url | prepend: site.url }}/assets/js/btc_ticker.js"></script>
 <script src="{{ base.url | prepend: site.url }}/assets/js/jquery-3.6.0.min.js"></script>
