@@ -1,3 +1,8 @@
+---
+description: Discover ways to earn passive cash that require little to no effort through dividends, high yield savings accounts, CDs, annuities, bonds, crypto, real estate, Honeygain, and affiliate marketing. If you're looking for the best strategies and tools to increase your wealth and achieve financial independence, this page should provide useful."
+title: PassiveCash.xyz
+---
+
 # PassiveCash.xyz
 <script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 <h4 id= "advertisement"></h4>
