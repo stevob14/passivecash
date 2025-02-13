@@ -156,6 +156,8 @@ Treasury Inflation-Protected Securities(TIPS) are designed to protect against in
 
 All these treasury marketable securities can be purchased at [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/).
 
+#### Bond ETFs
+
 If you are unsure which security is right for you, a Total Bond Market ETF(Exchange Traded Fund) such as BND might be a good choice. TIPS are not included in a total market bond fund, however, there are TIPS ETFs such as SCHP. Bond ETFs are not the same as bonds. These funds track the performance of the underlying bond indexes they represent and typically hold bonds with a mix of maturities. Unlike individual bonds, bond ETFs offer greater diversification and broader market exposure but can be less predictable in price due to their trading on exchanges.
 
 [Resource](https://www.investopedia.com/articles/personal-finance/121815/buffetts-9010-asset-allocation-sound.asp#toc-putting-9010-to-the-test) on stock/bond allocation.
