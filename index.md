@@ -218,7 +218,7 @@ Honeygain is an easy way to make passive cash. You can simply install Honeygain 
 
 **I would still exercise caution as, according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
 
-If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain-Referral](https://r.honeygain.me/STEVO38F85) and receive $5 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
+If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain-Referral](https://r.honeygain.me/STEVO38F85) and receive $3 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
 
 ### Affiliate Marketing
 
