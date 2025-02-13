@@ -168,9 +168,9 @@ Earning interest on cryptocurrency is a relatively new opportunity compared to m
 
 #### CeFi
 
-[Coinbase-Referral](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. **While staking ETH, your ETH will be locked and unavailable to sell or send until ETH2 network is fully launched or trading is otherwise offered. During this time, your ETH2 will earn up to 4.5% APR**. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
+[Coinbase-Referral](https://coinbase.com/join/crooks_r) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. Get free Bitcoin worth $10 when you sign up. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
 
-[Crypto.com-Referral](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more earning up to 8.5% P.A. You can find more information [here](https://crypto.com/us/earn).
+[Crypto.com-Referral](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more. You can find more informatiom about current rates [here](https://crypto.com/us/earn).
 
 **Note: Exercise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
 
@@ -178,13 +178,13 @@ Earning interest on cryptocurrency is a relatively new opportunity compared to m
 
 [Compound Finance](https://compound.finance/) is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows developers to build financial applications. To start earning, you can use [Coinbase wallet](https://wallet.coinbase.com/). You will need to fund your Coinbase wallet with ETH to cover mining fees and the coin you wish to earn interest on. Next, select the coin and amount you want to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY [here](https://compound.finance/markets). 
 
-[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~8.4% APR. RocketPool has been the first pool to be granted all green checks by [ethereum.org](https://ethereum.org/en/staking/pools/).
+[Rocket Pool](https://stake.rocketpool.net/) is a decentralized Ethereum staking protocol offering ~2.62% APR. RocketPool has been the first pool to be granted all green checks by [ethereum.org](https://ethereum.org/en/staking/pools/).
 
 As another option, you can stake ETH, SOL, ATOM, and DOT on a Ledger. This offers greater security than holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read about staking through Ledger [here](https://www.ledger.com/staking).
 
 Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw07BHs5gO45KrBJ4/edit) to help get you started in the world of DeFi.
 
-[Resource](https://nanoly.com/) to help you find the best vaults and APY on DeFi.
+[Resource](https://de.fi/explore) to help you find the best vaults and APY on DeFi.
 
 [Resource](https://defillama.com/chains) to view the total value locked on all chains.
 
