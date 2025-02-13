@@ -2,9 +2,16 @@
 description: Discover ways to earn passive cash that require little to no effort through dividends, high yield savings accounts, CDs, annuities, bonds, crypto, real estate, Honeygain, and affiliate marketing. If you're looking for the best strategies and tools to increase your wealth and achieve financial independence, this page should provide useful."
 title: PassiveCash.xyz
 ---
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: '#b5e853',
+  textColor: '#151515'
+})</script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
 
 # PassiveCash.xyz
-<script src="{{ base.url | prepend: site.url }}/assets/js/advertisement.js" defer></script>
+
 <h4 id= "advertisement"></h4>
 
 This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](https://github.com/stevob14/passivecash).
@@ -22,13 +29,6 @@ The following contains affiliate links that can be identified by "-Referral."
 ### Tickers
 <a href="https://www.passivecash.xyz/eth">ETH Price Ticker</a>
 <a href="https://www.passivecash.xyz/btc">BTC Price Ticker</a>
-
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
-  diameter: 56,
-  backgroundColor: '#b5e853',
-  textColor: '#151515'
-})</script>
 
 Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE(financial independence and early retirement), passive cash is what you want to focus on. 
 
