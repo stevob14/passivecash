@@ -13,7 +13,7 @@ title: BTC Price Ticker
 <h2>BTC Price(USD)</h2>
 <span class="Price"></span>
 <h4 id= "advertisement"></h4>
-<p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $10 by signing up at <a href="https://coinbase.com/join/crooks_r">Coinbase-Referral</a>.</p>
+<p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $20 by signing up at <a href="https://coinbase.com/join/MG2TWZF">Coinbase-Referral</a>.</p>
 
 <div id="chart" name="chart"></div>
 
