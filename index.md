@@ -174,8 +174,6 @@ Earning interest on cryptocurrency is a relatively new opportunity compared to m
 
 [Coinbase-Referral](https://coinbase.com/join/MG2TWZF) offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. You can click [here](https://www.coinbase.com/earn) to view current yield rates.
 
-[Crypto.com-Referral](https://crypto.com/app/2eeq9b46b7) offers ETH, BTC, USDC and more. You can find more informatiom about current rates [here](https://crypto.com/us/earn).
-
 **Note: Exercise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, "Not your keys, not your crypto."**
 
 #### DeFi
