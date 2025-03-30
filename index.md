@@ -196,17 +196,13 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 
 ### Real Estate
 
-#### Real Estate Debt
+To stay true to the word passive, real estate investing is truly only passive when investing in REITs. REITs are companies that will manage all of the work that comes with owning real estate properties. One such company is Reality Income(O), a popular REIT dividend aristocrat. Another option is to invest in an ETF REIT index fund like VNQ which includes 162 different companies. 
 
-The hardest step to getting into real estate investing is the prerequisite of needing large capital. Groundfloor offers a way into real estate investing with as little as $10 minimum investment. The cost of entry is small, but the potential returns are significant. Expected returns up to 10% backed and secured by tangible assets. Groundfloor offers investors the opportunity to purchase real estate debt notes which generally provide a safer return than equity. They are the only platform with individual note investments for non-accredited investors. Groundfloor is a great investment opportunity if you're looking for diversification in your portfolio that isn't directly correlated with the stock market. Invest $100 and receive a $50 credit at [Groundfloor-Referral](https://app.groundfloor.us/r/od0e9f).
+To even further your income potential, you could sell covered call options on the underlying fund. Say you own 100 shares of VNQ, you could sell a covered call with a strike price out of the money insuring a high probably of the option expiring worthless. Expiring worthless insures that you get to keep your 100 shares and collect the premium. 
 
-**When writing this, Groundfloor offers no bankruptcy protection. As per SEC filing, "If we were to become insolvent or bankrupt, it is likely that we would default on our payment obligations under the LROs, and you may lose your investment."**
+Now, you may be wondering what happens if the option does not expire worthless. Well, in that case, the strike price is lower than the current trading price. The buyer can exercise the option and buy your 100 shares at the discounted price. 
 
-#### Real Estate Equity and Debt
-
-Fundrise is another option for real estate investing with a $10 minimum investment. Notable differences include the inability to select individual investments, a 0.15% annual investment advisory fee, and a 0.85% annual asset management fee. More experienced investors may not find this platform ideal due to the simplicity of the investment process, and lack of transparency in what it is you are investing in. However, if you are looking for a quick "Click to Invest," Fundrise is a great choice. Due to underlying equity investments, investments are considered long term(5+ years). Groundfloor may be the better choice if you're more interested in short term real estate investments. Invest $10 and receive $50 in shares at [Fundrise-Referral](https://fundrise.com/r/4k7r3v).
-
-**Fundrise offers full bankruptcy protection.**
+With a covered call strategy, you miss out on large price increases, while gaining some downside protection. Dependent on your financial goals, this may be ideal in generating passive cash flow at the expense of capital appreciation.
 
 ### Honeygain
 
