@@ -196,7 +196,7 @@ Helpful [guide](https://docs.google.com/document/d/1Ywul9ngMsQjEi8fLOWRl8_IQ4Kdw
 
 ### Real Estate
 
-To stay true to the word passive, real estate investing is truly only passive when investing in REITs. REITs are companies that will manage all of the work that comes with owning real estate properties. One such company is Reality Income(O), a popular REIT dividend aristocrat. Another option is to invest in an ETF REIT index fund like VNQ which includes 162 different companies. 
+To stay true to the word passive, real estate investing is truly only passive when investing in REITs. REITs are companies that will manage all of the work that comes with owning real estate properties. One such company is Reality Income(O), a popular REIT dividend aristocrat. Another option is to invest in an REIT index fund like VNQ which holds 162 different companies. 
 
 To even further your income potential, you could sell covered call options on the underlying fund. Say you own 100 shares of VNQ, you could sell a covered call with a strike price out of the money insuring a high probably of the option expiring worthless. Expiring worthless insures that you get to keep your 100 shares and collect the premium. 
 
