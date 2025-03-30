@@ -1,5 +1,5 @@
 ---
-description: Discover ways to earn passive cash that require little to no effort through dividends, high yield savings accounts, CDs, annuities, bonds, crypto, real estate, Honeygain, and affiliate marketing. If you're looking for the best strategies and tools to increase your wealth and achieve financial independence, this page should provide useful."
+description: Discover ways to earn passive cash that require little to no effort through dividends, high yield savings accounts, CDs, annuities, bonds, crypto, real estate, and affiliate marketing. If you're looking for the best strategies and tools to increase your wealth and achieve financial independence, this page should provide useful."
 title: PassiveCash.xyz
 ---
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
@@ -18,7 +18,7 @@ This website is hosted by [GitHub Pages](https://pages.github.com/) at [GitHub](
 The following contains affiliate links that can be identified by "-Referral."
 
 ### Directory
-<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#honeygain">Honeygain</a> <a href="#affiliate-marketing">Affiliate Marketing</a>
+<a href="#dividends">Dividends</a> <a href="#high-yield-savings-accounts">High Yield Savings Accounts</a> <a href="#cds">CDs</a> <a href="#annuities">Annuities</a> <a href="#bonds">Bonds</a> <a href="#earn-interest-on-crypto">Earn Interest on Crypto</a> <a href="#real-estate">Real Estate</a> <a href="#affiliate-marketing">Affiliate Marketing</a>
 
 ### Calculators
 <a href="https://www.passivecash.xyz/calculator">Compound Interest Calculator</a>
@@ -204,15 +204,7 @@ Now, you may be wondering what happens if the option does not expire worthless. 
 
 With a covered call strategy, you miss out on large price increases, while gaining some downside protection. Dependent on your financial goals, this may be ideal in generating passive cash flow at the expense of capital appreciation.
 
-### Honeygain
-
-Honeygain is an easy way to make passive cash. You can simply install Honeygain on your preferred device(currently android, windows, macos are supported), and connect the device to the internet. Honeygain's network is used by businesses clients for web intelligence and content delivery. Honeygain manages the connections and payments while sharing your unused internet traffic with data scientist. In return, you get paid. 
-
-**Is it safe?** Honeygain claims their app to be safe as they screen their partners to ensure your connection isn't being used for illegal activities. Also, the only data they keep is what will be necessary for the service. This includes your email address, your IP address, how much traffic you make per month, and your chosen payment method. 
-
-**I would still exercise caution as, according to their terms, "While we do put reasonable effort to prevent any detrimental consequences to our users, it is the user who is responsible for its ability to share internet traffic and his compliance with local laws, regulations, and agreements with third parties."** 
-
-If you understand the risks involved and are still interested in using Honeygain, you can sign up at [Honeygain-Referral](https://r.honeygain.me/STEVO38F85) and receive $3 to help get you started. Payouts are done with PayPal, and the minimum payout threshold is $20.
+REITs can be purchased at [Webull-Referral](https://a.webull.com/iHwte0AKHLHI3C70Xf).
 
 ### Affiliate Marketing
 
