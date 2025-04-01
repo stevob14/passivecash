@@ -3,7 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 15px; /* Add padding around the edges */
-    background-color: #f4f4f4; /* Light background for context */
+    background-color: #f4f4f4; /* Light background for context - CHANGE IF YOUR DEFAULT IS DIFFERENT */
     color: #333;
     box-sizing: border-box; /* Better box model */
 }
@@ -14,12 +14,13 @@ body {
 
 /* Calculator & Result Container Styles */
 .calculator, .result {
-    background-color: #ffffff; /* White background for the containers */
+    /* background-color: #ffffff; /* REMOVED - Will use body background */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 20px auto; /* Center containers and add space between */
-    max-width: 500px; /* Limit width on larger screens */
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* REMOVED - May look odd without distinct background */
+    /* margin: 20px auto; /* MODIFIED - Removed 'auto' to stop centering */
+    margin: 20px 0; /* Keep top/bottom margin, remove left/right auto margin */
+    max-width: 500px; /* Still useful to prevent extreme width on large screens */
 }
 
 /* Style paragraphs for spacing */
@@ -46,15 +47,15 @@ body {
 .calculator select {
     width: 100%; /* Make inputs take full width */
     padding: 12px 10px; /* Comfortable padding */
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Default subtle border */
     border-radius: 5px;
     font-size: 16px; /* Prevents auto-zoom on focus in iOS Safari */
     line-height: 1.4;
     min-height: 44px; /* Minimum touch target size */
-    /* The inline style="padding: 5px;" on the select is overridden by this */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for focus */
 }
 
-/* Remove number input spinners (optional, can improve mobile look) */
+/* Remove number input spinners (optional) */
 .calculator input[type=number]::-webkit-inner-spin-button,
 .calculator input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -64,14 +65,22 @@ body {
   -moz-appearance: textfield; /* Firefox */
 }
 
+/* Input & Select FOCUS Styles - Using the requested orange color */
+.calculator input[type="number"]:focus,
+.calculator select:focus {
+    border-color: rgb(255, 165, 0); /* Orange border on focus */
+    box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.3); /* Optional: subtle orange glow */
+    outline: none; /* Remove default browser outline */
+}
 
-/* Button Styles */
+
+/* Button Styles - Using the requested orange color */
 .calculator button {
     display: block; /* Make button take full width */
     width: 100%;
     padding: 12px 20px;
-    background-color: #007bff; /* Example primary color */
-    color: white;
+    background-color: rgb(255, 165, 0); /* Orange background color */
+    color: white; /* White text is usually readable on orange */
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -84,7 +93,7 @@ body {
 
 .calculator button:hover,
 .calculator button:focus {
-    background-color: #0056b3; /* Darker shade on hover/focus */
+    background-color: rgb(230, 145, 0); /* Darker orange on hover/focus */
     outline: none; /* Remove default focus outline if desired */
 }
 
@@ -93,8 +102,8 @@ body {
 .result {
     margin-top: 25px;
     padding: 15px;
-    border-left: 4px solid #007bff; /* Add a visual indicator */
-    background-color: #eef6ff; /* Slightly different background */
+    border-left: 4px solid rgb(255, 165, 0); /* Orange indicator border */
+    /* background-color: #eef6ff; /* REMOVED - Use default background */
 }
 
 .result span {
@@ -109,53 +118,53 @@ body {
 }
 
 /* --- Media Query for Larger Screens (e.g., tablets and desktops) --- */
-/* Adjust the min-width as needed, 600px or 768px are common breakpoints */
 @media (min-width: 600px) {
+    /* Keep max-width on containers, but they won't be centered */
+    .calculator, .result {
+        /* margin: 20px 0; /* Already set outside media query */
+    }
+
     .calculator p {
-        display: flex; /* Arrange label and input side-by-side */
-        align-items: center; /* Vertically align label and input */
+        display: flex;
+        align-items: center;
         margin-bottom: 15px;
     }
 
     .calculator label {
-        display: inline-block; /* Change back from block */
-        width: 200px; /* Give labels a fixed width */
-        margin-bottom: 0; /* Remove bottom margin */
-        margin-right: 15px; /* Add space between label and input */
-        text-align: right; /* Align label text to the right */
-        flex-shrink: 0; /* Prevent label from shrinking */
+        display: inline-block;
+        width: 200px;
+        margin-bottom: 0;
+        margin-right: 15px;
+        text-align: right;
+        flex-shrink: 0;
     }
 
     .calculator input[type="number"],
     .calculator select {
-        width: auto; /* Allow input width to be determined by flexbox */
-        flex-grow: 1; /* Allow input to take up remaining space */
+        width: auto;
+        flex-grow: 1;
     }
 
-    /* Specific handling for the button paragraph */
     .calculator p:has(button) {
-        justify-content: flex-end; /* Align button to the right */
-        /* Or use justify-content: center; if you prefer */
+        justify-content: flex-end;
     }
 
      .calculator p:has(button) label {
-        /* Hide the label if there was one, or adjust as needed */
-         /* display: none; */ /* Uncomment if you add a label you want hidden */
-         /* Or adjust width/alignment if you keep a label */
-          width: 200px; /* Keep consistent alignment if label exists*/
-          margin-right: 15px; /* Keep consistent spacing */
+         /* Adjust label within the button paragraph if needed */
+         /* display: none; */
+          width: 200px;
+          margin-right: 15px;
      }
 
-
     .calculator button {
-        display: inline-block; /* Button doesn't need full width */
-        width: auto; /* Auto width based on content and padding */
-        padding: 10px 30px; /* Adjust padding if needed */
+        display: inline-block;
+        width: auto;
+        padding: 10px 30px;
     }
 
     .result span {
-         display: inline-block; /* Display results side-by-side */
-         margin-right: 20px; /* Space between results */
+         display: inline-block;
+         margin-right: 20px;
          margin-bottom: 0;
     }
     .result span:last-child {
