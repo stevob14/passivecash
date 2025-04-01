@@ -1,110 +1,164 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
+/* Basic Reset & Body Styles */
 body {
-  font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 15px; /* Add padding around the edges */
+    background-color: #f4f4f4; /* Light background for context */
+    color: #333;
+    box-sizing: border-box; /* Better box model */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Calculator & Result Container Styles */
+.calculator, .result {
+    background-color: #ffffff; /* White background for the containers */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Center containers and add space between */
+    max-width: 500px; /* Limit width on larger screens */
+}
+
+/* Style paragraphs for spacing */
+.calculator p {
+    margin: 0 0 18px 0; /* Consistent spacing below each input group */
+    padding: 0;
+}
+.calculator p:last-of-type {
+     margin-bottom: 0; /* No margin after the button paragraph */
+}
+
+
+/* Label Styles */
+.calculator label {
+    display: block; /* Stack label above the input */
+    margin-bottom: 6px; /* Space between label and input */
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Input & Select Styles (Mobile First) */
+.calculator input[type="number"],
+.calculator select {
+    width: 100%; /* Make inputs take full width */
+    padding: 12px 10px; /* Comfortable padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Prevents auto-zoom on focus in iOS Safari */
+    line-height: 1.4;
+    min-height: 44px; /* Minimum touch target size */
+    /* The inline style="padding: 5px;" on the select is overridden by this */
+}
+
+/* Remove number input spinners (optional, can improve mobile look) */
+.calculator input[type=number]::-webkit-inner-spin-button,
+.calculator input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }
-
-*:focus {
-  outline: none;
-}
-*:focus-visible {
-  outline: 2px solid #ffa500; 
-  outline-offset: 2px;
+.calculator input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
-button {
-  display: inline-block; 
-  border: 1px solid #ffa500;
-  cursor: pointer;
-  padding: 10px 20px; 
-  font-weight: bold;
-  font-size: 1rem; 
-  border-radius: 25px;
-  background: transparent;
-  color: #ffa500;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
+
+/* Button Styles */
+.calculator button {
+    display: block; /* Make button take full width */
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff; /* Example primary color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    min-height: 44px; /* Minimum touch target size */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
 }
 
-button:hover {
-  background: rgba(255, 165, 0, 0.1);
+.calculator button:hover,
+.calculator button:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    outline: none; /* Remove default focus outline if desired */
 }
 
-button:active {
-  background: rgba(255, 165, 0, 0.2); 
-  transform: scale(0.98); 
+
+/* Result Area Styles */
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    border-left: 4px solid #007bff; /* Add a visual indicator */
+    background-color: #eef6ff; /* Slightly different background */
 }
 
-.calculator {
-  display: flex; 
-  flex-direction: column; 
-  gap: 15px; 
-  border: 1px dashed #eaeaea;
-  padding: 15px; 
-  max-width: 100%; 
+.result span {
+    display: block; /* Each result on its own line */
+    margin-bottom: 10px; /* Space between result lines */
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
-.calculator p {
-  display: flex; 
-  flex-wrap: wrap; 
-  align-items: center; 
-  gap: 10px; 
-  margin: 0; 
+.result span:last-child {
+    margin-bottom: 0; /* No margin below the last result */
 }
 
-label {
-  padding-right: 10px;
-  flex-shrink: 0; 
-}
+/* --- Media Query for Larger Screens (e.g., tablets and desktops) --- */
+/* Adjust the min-width as needed, 600px or 768px are common breakpoints */
+@media (min-width: 600px) {
+    .calculator p {
+        display: flex; /* Arrange label and input side-by-side */
+        align-items: center; /* Vertically align label and input */
+        margin-bottom: 15px;
+    }
 
-input[type='text'],
-input[type='number'],
-textarea,
-select {
-  flex-grow: 1; 
-  min-width: 100px; 
-  background: #151515;
-  color: #eaeaea;
-  padding: 8px 10px; 
-  border: 1px solid #333; 
-  border-radius: 4px; 
-  font-family: inherit; 
-  font-size: 1rem; 
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
+    .calculator label {
+        display: inline-block; /* Change back from block */
+        width: 200px; /* Give labels a fixed width */
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 15px; /* Add space between label and input */
+        text-align: right; /* Align label text to the right */
+        flex-shrink: 0; /* Prevent label from shrinking */
+    }
 
-select {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23eaeaea%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 0.65em auto;
-  padding-right: 30px; 
-}
+    .calculator input[type="number"],
+    .calculator select {
+        width: auto; /* Allow input width to be determined by flexbox */
+        flex-grow: 1; /* Allow input to take up remaining space */
+    }
 
-select::-ms-expand {
-  display: none;
-}
+    /* Specific handling for the button paragraph */
+    .calculator p:has(button) {
+        justify-content: flex-end; /* Align button to the right */
+        /* Or use justify-content: center; if you prefer */
+    }
 
-@media only screen and (min-width: 600px) {
-  .calculator p {
-     flex-wrap: nowrap;
-  }
+     .calculator p:has(button) label {
+        /* Hide the label if there was one, or adjust as needed */
+         /* display: none; */ /* Uncomment if you add a label you want hidden */
+         /* Or adjust width/alignment if you keep a label */
+          width: 200px; /* Keep consistent alignment if label exists*/
+          margin-right: 15px; /* Keep consistent spacing */
+     }
+
+
+    .calculator button {
+        display: inline-block; /* Button doesn't need full width */
+        width: auto; /* Auto width based on content and padding */
+        padding: 10px 30px; /* Adjust padding if needed */
+    }
+
+    .result span {
+         display: inline-block; /* Display results side-by-side */
+         margin-right: 20px; /* Space between results */
+         margin-bottom: 0;
+    }
+    .result span:last-child {
+         margin-right: 0;
+    }
 }
