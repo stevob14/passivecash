@@ -73,37 +73,25 @@ body {
     outline: none; /* Remove default browser outline */
 }
 
-
-/* Button Styles - Using the requested orange color */
-.calculator button {
-    display: block; /* Make button take full width */
-    width: 100%;
-    padding: 12px 20px;
-    background-color: rgb(255, 165, 0); /* Orange background color */
-    color: white; /* White text is usually readable on orange */
-    font-size: 16px;
+button {
+    border: 1px solid #ffa500;
+    cursor: pointer;    
+    padding: 7.5px 16px;
     font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    min-height: 44px; /* Minimum touch target size */
-    transition: background-color 0.2s ease; /* Smooth hover effect */
+    border-radius: 25px;
+    background:transparent;
+    color: #ffa500;
 }
 
-.calculator button:hover,
-.calculator button:focus {
-    background-color: rgb(230, 145, 0); /* Darker orange on hover/focus */
-    outline: none; /* Remove default focus outline if desired */
-}
-
+button:hover {
+    background: rgba(255, 165, 0, 0.1);
+} 
 
 /* Result Area Styles */
 .result {
     margin-top: 25px;
     padding: 15px;
     border-left: 4px solid rgb(255, 165, 0); /* Orange indicator border */
-    /* background-color: #eef6ff; /* REMOVED - Use default background */
 }
 
 .result span {
