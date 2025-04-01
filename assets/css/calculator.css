@@ -15,7 +15,6 @@ body {
 /* Calculator & Result Container Styles */
 .calculator, .result {
     /* background-color: #ffffff; /* REMOVED - Will use body background */
-    padding: 20px;
     border-radius: 8px;
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* REMOVED - May look odd without distinct background */
     /* margin: 20px auto; /* MODIFIED - Removed 'auto' to stop centering */
@@ -123,7 +122,6 @@ button:hover {
         width: 200px;
         margin-bottom: 0;
         margin-right: 15px;
-        text-align: right;
         flex-shrink: 0;
     }
 
