@@ -16,6 +16,15 @@ body {
   margin: 0 auto; /* Center the container */
 }
 
+/* Style for input fields when they are focused (selected) */
+input[type="number"]:focus,
+input[type="text"]:focus {
+  background-color: rgba(255, 165, 0, 0.1); /* Light orange background */
+  border-color: #ffa500; /* Optional: Make border match the orange color */
+  outline-color: #ffa500; /* Optional: Change the focus outline color */
+  /* outline: none; */ /* Avoid outline:none unless you provide clear alternative focus styles for accessibility */
+}
+
 /* Style form elements for better spacing and size */
 #portfolioForm label,
 #portfolioForm input[type="number"],
@@ -59,8 +68,6 @@ th {
   background-color: #f2f2f2;
   font-weight: bold;
 }
-
-/* Your existing button styles */
 button {
   border: 1px solid #ffa500;
   cursor: pointer;
