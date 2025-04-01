@@ -1,0 +1,229 @@
+/* --- Base Styles (Apply Everywhere) --- */
+
+body {
+  font-family: sans-serif; /* Choose a good default font */
+  line-height: 1.5;
+  padding: 10px;
+  font-size: 16px; /* Good base for readability */
+}
+
+/* Ensure box-sizing is consistent for easier layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.rebalancer {
+  max-width: 900px; /* Max width for desktop */
+  margin: 0 auto; /* Center the container */
+  padding: 15px;
+}
+
+/* Style form elements for better spacing and size */
+#portfolioForm label,
+#portfolioForm input[type="number"],
+#portfolioForm input[type="text"] {
+  display: block; /* Make labels and inputs take full width */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Specific styling for the deposit input label/input pair */
+#portfolioForm > input[type="number"]#deposit {
+   /* Might need a wrapper div around label and input for better control */
+   /* For now, just ensure it has margin */
+   margin-bottom: 20px;
+}
+
+
+/* Make inputs easier to tap */
+input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem; /* Prevent iOS zoom on focus */
+}
+
+/* Basic table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Your existing button styles */
+button {
+  border: 1px solid #ffa500;
+  cursor: pointer;
+  padding: 7.5px 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  background: transparent;
+  color: #ffa500;
+  margin-top: 5px; /* Add some space around buttons */
+  margin-bottom: 5px;
+  font-size: 0.9rem; /* Adjust font size if needed */
+}
+
+button:hover {
+  background: rgba(255, 165, 0, 0.1);
+}
+
+/* Make the main "Add Investment" button stand out */
+#portfolioForm > button[type="button"] {
+  display: block;
+  width: 100%; /* Make it full width on all screens for consistency */
+  margin-top: 15px;
+  padding: 12px 16px; /* Slightly larger padding */
+}
+
+/* Style for rebalance amounts */
+.rebalanceAmount.positive {
+  color: green;
+  font-weight: bold;
+}
+
+.rebalanceAmount.negative {
+  color: red;
+  font-weight: bold;
+}
+
+.rebalanceAmount.neutral {
+  color: grey;
+}
+
+/* Footer styling */
+tfoot th {
+  text-align: right;
+  background-color: #e9e9e9;
+  font-weight: bold;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+/* --- Mobile-Specific Styles (using 768px breakpoint) --- */
+
+@media (max-width: 768px) {
+
+  body {
+      font-size: 14px; /* Slightly smaller base font for mobile */
+  }
+
+  /* Force table elements to behave like blocks */
+  table, thead, tbody, tfoot, th, td, tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    margin-bottom: 15px; /* Space out the "cards" */
+  }
+
+  td {
+    /* Behave like a row item */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%; /* Make space for the label */
+    text-align: right; /* Align cell content to the right */
+    min-height: 30px; /* Ensure cells have some height */
+    display: flex; /* Use flex for better alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: flex-end; /* Align content to the right */
+  }
+
+  td:before {
+    /* Now like a table header label */
+    position: absolute;
+    /* Top/left values */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center label */
+    left: 10px;
+    width: 45%; /* Reserve space for the label */
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left; /* Align label text to the left */
+    font-weight: bold;
+    content: attr(data-label); /* Use data-label attribute */
+  }
+
+  /* Add data-label attributes via CSS content (or you could add them in JS/HTML) */
+  /* Adjust these labels based on your table header text */
+  #investmentTable td:nth-of-type(1):before { content: "Symbol"; }
+  #investmentTable td:nth-of-type(2):before { content: "Current Value"; }
+  #investmentTable td:nth-of-type(3):before { content: "Target (%)"; } /* Shorter label */
+  #investmentTable td:nth-of-type(4):before { content: "Rebalance Amt"; } /* Shorter label */
+  #investmentTable td:nth-of-type(5):before { content: "Action"; }
+
+
+  /* Style inputs within the mobile table cells */
+  td input[type="number"],
+  td input[type="text"] {
+      width: 100%; /* Make inputs fill the cell space */
+      text-align: right; /* Keep number alignment */
+  }
+
+  /* Center the remove button in its cell */
+   td:nth-of-type(5) {
+      padding-left: 10px; /* Reset padding */
+      text-align: center;
+      justify-content: center; /* Center button horizontally */
+   }
+   td:nth-of-type(5):before {
+       /* Hide the label for the action button column if desired */
+       /* content: ""; */
+       /* Or adjust alignment if keeping label */
+       top: auto; /* Reset position */
+       transform: none;
+       position: relative;
+       display: block; /* Make label take space */
+       text-align: center;
+       width: 100%;
+       left: 0;
+       padding-bottom: 5px;
+   }
+   td:nth-of-type(5) button {
+      width: auto; /* Let button size naturally */
+      padding: 5px 10px; /* Adjust button padding */
+   }
+
+
+  /* Footer styling for mobile */
+  tfoot tr {
+      border: none; /* No border for footer rows */
+      margin-bottom: 0;
+  }
+  tfoot th {
+      text-align: left; /* Align footer text left */
+      border-bottom: 1px solid #eee;
+      padding: 8px 10px;
+  }
+  tfoot th span {
+      float: right; /* Keep balance values to the right */
+      font-weight: normal; /* Optional: make value less bold */
+  }
+
+}
