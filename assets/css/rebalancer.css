@@ -17,10 +17,11 @@ body {
 }
 
 input[type="number"]:focus,
+input[type="text"]:focus,
 select:focus {
     border-color: rgb(255, 165, 0); 
     box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.3); 
-    outline: none; /
+    outline: none; 
 }
 
 /* Style form elements for better spacing and size */
