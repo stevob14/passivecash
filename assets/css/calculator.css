@@ -1,56 +1,110 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+*:focus-visible {
+  outline: 2px solid #ffa500; 
+  outline-offset: 2px;
+}
+
 button {
-    border: 1px solid #ffa500;
-    cursor: pointer;    
-    padding: 7.5px 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    background:transparent;
-    color: #ffa500;
+  display: inline-block; 
+  border: 1px solid #ffa500;
+  cursor: pointer;
+  padding: 10px 20px; 
+  font-weight: bold;
+  font-size: 1rem; 
+  border-radius: 25px;
+  background: transparent;
+  color: #ffa500;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 button:hover {
-    background: rgba(255, 165, 0, 0.1);
+  background: rgba(255, 165, 0, 0.1);
 }
 
-.calculator { 
-    display: table;
-    border:1px dashed #eaeaea;
-    border-spacing:10px
+button:active {
+  background: rgba(255, 165, 0, 0.2); 
+  transform: scale(0.98); 
 }
 
-@media only screen and (max-width: 480px) {
-    /* horizontal scrollbar for tables if mobile screen */
-    .calculator {
-        overflow-x: auto;
-        display: block;
-    }
+.calculator {
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+  border: 1px dashed #eaeaea;
+  padding: 15px; 
+  max-width: 100%; 
 }
 
-p { 
-    display: table-row;
+.calculator p {
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  gap: 10px; 
+  margin: 0; 
 }
 
-label { 
-    display: table-cell;
-    padding-right:10px;
-    padding-bottom:10px; 
+label {
+  padding-right: 10px;
+  flex-shrink: 0; 
 }
 
-input { 
-    display: table-cell;
-    background:#151515;
-    color:#eaeaea;
-    padding:5px;
-} 
-
-/*prevents input auto zoom on mobile devices*/
+input[type='text'],
 input[type='number'],
-textarea {
-  font-size: 16px;
+textarea,
+select {
+  flex-grow: 1; 
+  min-width: 100px; 
+  background: #151515;
+  color: #eaeaea;
+  padding: 8px 10px; 
+  border: 1px solid #333; 
+  border-radius: 4px; 
+  font-family: inherit; 
+  font-size: 1rem; 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 select {
-    background:#151515;
-    color:#eaeaea;
-    font:inherit;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23eaeaea%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 0.65em auto;
+  padding-right: 30px; 
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .calculator p {
+     flex-wrap: nowrap;
+  }
 }
