@@ -45,7 +45,6 @@ title: Mortgage Calculator
     </p>
     
   </div>
-  <br>
   <div class="result">
  <span id="output"></span>
 </div>
