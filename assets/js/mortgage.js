@@ -71,6 +71,6 @@ function calculate() {
   var totalMonthlyPayment = mortgagePayment + monthlyTaxes + monthlyInsurance + monthlyPMI;
 
   // display result
-  var resultDiv = document.getElementById("result");
-  resultDiv.innerHTML = "Your monthly payment is: " + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
+  var result = document.getElementById("result");
+  result.innerHTML = "Your monthly payment is: " + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
 }
