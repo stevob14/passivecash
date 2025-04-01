@@ -39,7 +39,6 @@ title: Compound Interest Calculator
 </p>
        
   </div>
-  <br>
   <div class="result">
   
     <span id="output" style="font-weight: bold"></span>
