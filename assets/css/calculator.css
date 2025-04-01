@@ -14,10 +14,7 @@ body {
 
 /* Calculator & Result Container Styles */
 .calculator, .result {
-    /* background-color: #ffffff; /* REMOVED - Will use body background */
     border-radius: 8px;
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* REMOVED - May look odd without distinct background */
-    /* margin: 20px auto; /* MODIFIED - Removed 'auto' to stop centering */
     margin: 20px 0; /* Keep top/bottom margin, remove left/right auto margin */
     max-width: 500px; /* Still useful to prevent extreme width on large screens */
 }
