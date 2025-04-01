@@ -26,7 +26,7 @@ title: Portfolio Rebalancer
 
 <body>
   
-<div class="calculator">   
+<div class="rebalancer">   
 <form id="portfolioForm">
   Deposit/Withdrawal: <input type="number" id="deposit" value="500" oninput="calculateRebalance()"><br><br>
   <table>
