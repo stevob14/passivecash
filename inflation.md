@@ -25,7 +25,6 @@ title: Inflation Calculator
  <button onClick="calculate()">Calculate</button>
 </p>
 </div>
-<br>
 <div class="result">
  <span id="output"></span>
 </div>
