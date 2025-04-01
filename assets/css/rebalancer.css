@@ -13,9 +13,7 @@ body {
 }
 
 .rebalancer {
-  max-width: 900px; /* Max width for desktop */
   margin: 0 auto; /* Center the container */
-  padding: 15px;
 }
 
 /* Style form elements for better spacing and size */
