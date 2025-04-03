@@ -33,7 +33,6 @@ body {
     margin-bottom: 6px; /* Space between label and input */
     font-weight: bold;
     font-size: 0.95em;
-    color: #555;
 }
 
 /* Input & Select Styles (Mobile First) */
@@ -47,6 +46,8 @@ body {
     line-height: 1.4;
     min-height: 44px; /* Minimum touch target size */
     transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for focus */
+    background-color: inherit;
+    color: #eaeaea;
 }
 
 /* Remove number input spinners (optional) */
