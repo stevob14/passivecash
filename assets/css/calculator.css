@@ -65,6 +65,7 @@ body {
     border-color: rgb(255, 165, 0); /* Orange border on focus */
     box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.3); /* Optional: subtle orange glow */
     outline: none; /* Remove default browser outline */
+    background-color: inherit;
 }
 
 button {
