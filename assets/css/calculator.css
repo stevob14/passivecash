@@ -40,7 +40,7 @@ body {
 .calculator select {
     width: 100%; /* Make inputs take full width */
     padding: 12px 10px; /* Comfortable padding */
-    border: 1px solid #eaeaea; /* Default subtle border */
+    border: 1px solid #363a3d; /* Default subtle border */
     border-radius: 5px;
     font-size: 16px; /* Prevents auto-zoom on focus in iOS Safari */
     line-height: 1.4;
