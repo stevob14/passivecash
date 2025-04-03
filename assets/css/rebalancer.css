@@ -45,7 +45,7 @@ select:focus {
 input[type="number"],
 input[type="text"] {
   padding: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid #363a3d;
   border-radius: 4px;
   font-size: 1rem; /* Prevent iOS zoom on focus */
   background-color: inherit;
@@ -62,7 +62,7 @@ table {
 th, td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #eaeaea;
+  border: 1px solid #363a3d
 }
 
 th {
@@ -142,14 +142,14 @@ tfoot th {
   }
 
   tr {
-    border: 1px solid #ccc;
+    border: 1px solid #363a3d;
     margin-bottom: 15px; /* Space out the "cards" */
   }
 
   td {
     /* Behave like a row item */
     border: none;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #363a3d;
     position: relative;
     padding-left: 50%; /* Make space for the label */
     text-align: right; /* Align cell content to the right */
@@ -222,7 +222,7 @@ tfoot th {
   }
   tfoot th {
       text-align: left; /* Align footer text left */
-      border-bottom: 1px solid #eaeaea;
+      border-bottom: 1px solid #363a3d;
       padding: 8px 10px;
   }
   tfoot th span {
