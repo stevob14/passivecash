@@ -48,6 +48,8 @@ input[type="text"] {
   border: 1px solid #eaeaea;
   border-radius: 4px;
   font-size: 1rem; /* Prevent iOS zoom on focus */
+  background-color: inherit;
+  color: #eaeaea;
 }
 
 /* Basic table styling */
