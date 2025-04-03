@@ -3,8 +3,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 15px; /* Add padding around the edges */
-    background-color: #f4f4f4; /* Light background for context - CHANGE IF YOUR DEFAULT IS DIFFERENT */
-    color: #333;
     box-sizing: border-box; /* Better box model */
 }
 
