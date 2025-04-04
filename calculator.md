@@ -40,12 +40,7 @@ title: Compound Interest Calculator
        
   </div>
   <div class="result">
-  
     <span id="output" style="font-weight: bold"></span>
-
-    <span id="output2" style="font-weight: bold"></span>
-
-    <span id="output3" style="font-weight: bold"></span>
 </div>
 
 <p><a href="https://www.passivecash.xyz/">Home</a></p>
