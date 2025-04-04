@@ -2,8 +2,6 @@ var x;
     var y;
     function calculate() {
       document.getElementById("output").innerHTML = "";
-      document.getElementById("output2").innerHTML = "";
-      document.getElementById("output3").innerHTML = "";
       x = Number(document.getElementById("capital").value);
       y = Number(document.getElementById("myPercent").value/100);
       z = Number(document.getElementById("lengthoftime").value);
@@ -12,16 +10,13 @@ var x;
 
       if(z == "0")
       	{
-      	document.getElementById("output2").innerHTML = "";
-      	document.getElementById("output3").innerHTML = "";
         document.getElementById("output").innerHTML = "Length of Time must be 1 or above"
       	return false
         }
       if(y == "0")
       {
       document.getElementById("output").innerHTML = "Annual Percentage Yield must be greater than 0";
-      document.getElementById("output2").innerHTML = "";
-      document.getElementById("output3").innerHTML = "";
+    
       return false
       }
       else
@@ -53,7 +48,7 @@ var x;
 
       var u = calculateTotalCompoundInterest(x,y,tf,z,r)
       var result = u + x;
-    	document.getElementById("output3").innerHTML = "Compounded Interest: " + u.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " *<br /><span style='color: #ffa500 !important;'>In " + lengthoftime.value + " year(s), you will have " + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2})+"</span><br/> * "+ t + " reinvestments";
+    	document.getElementById("output").innerHTML = "Compounded Interest: " + u.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " *<br /><span style='color: #ffa500 !important;'>In " + lengthoftime.value + " year(s), you will have " + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2})+"</span><br/> * "+ t + " reinvestments";
     }}
 
  function calculateTotalCompoundInterest(principal, annual_rate, n_times, t_years, contribution) {
