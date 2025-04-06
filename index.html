@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various strategies for generating passive income, including dividends, high-yield savings, crypto, real estate, and more. Your guide to achieving financial freedom.">
+    <title>PassiveCash.xyz - Your Guide to Financial Freedom</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q203YEXP0D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q203YEXP0D');
+    </script>
+    <link rel="stylesheet" href="style.css"> <!-- Link common styles -->
+    <style>
+        /* --- Page-Specific Styles for index.html --- */
+
+        /* Directory Styles */
+        #directory {
+            margin-bottom: 40px; /* More space after directory */
+            padding: 15px;
+            border: 1px dashed #00ff00;
+            background-color: #2a2a2a;
+        }
+        #directory h3 {
+            margin-top: 0;
+            color: #00ff00;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+        #directory ul {
+            list-style: none; /* Use custom marker or none */
+            margin-left: 0;
+            padding-left: 0; /* Remove default padding */
+        }
+         #directory ul li {
+             margin-bottom: 8px; /* Space between items */
+         }
+         #directory ul li a {
+             cursor: pointer; /* Indicate clickable */
+             display: block; /* Make link take full width for easier clicking */
+             padding: 3px 0;
+         }
+         #directory ul li a::before {
+             content: "> "; /* Hacker-style marker */
+             color: #00ff00;
+             margin-right: 5px;
+         }
+         #directory ul li a.active-link {
+             font-weight: bold;
+             background-color: rgba(0, 255, 0, 0.1); /* Subtle green background for active link */
+         }
+
+
+        /* Content Section Styles */
+        .content-section {
+            display: none; /* Hide sections by default */
+            margin-top: 30px; /* Space above active section */
+            padding-top: 20px; /* Space below heading */
+            border-top: 1px dashed #444; /* Separator */
+        }
+        .content-section.active {
+            display: block; /* Show active section */
+        }
+         /* Specific H2 adjustments for sections */
+         .content-section h2 {
+             margin-top: 0;
+             scroll-margin-top: 80px; /* Adjusted space above heading when jumping (navbar + ad bar) */
+         }
+
+        /* Section Navigation Styles */
+        .section-nav {
+            display: flex;
+            justify-content: space-between; /* Pushes Prev/Next apart */
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px dashed #444; /* Separator */
+        }
+        .section-nav button {
+            /* Reuse calculateBtn style or define new */
+            background-color: #1a1a1a; /* Dark background */
+            color: #00ff00; /* Green text */
+            padding: 8px 15px;
+            border: 1px solid #00ff00; /* Green border */
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .section-nav button:hover,
+        .section-nav button.active { /* Added .active for potential future use */
+            background-color: #00ff00; /* Green background */
+            color: #0a0a0a; /* Dark text */
+        }
+        .section-nav .prev-btn {
+            /* Specific styles if needed */
+        }
+        .section-nav .next-btn {
+            /* Specific styles if needed */
+            margin-left: auto; /* Ensure Next is pushed right if only Next exists */
+        }
+
+        /* Table Styles (Keep specific table styles if needed, otherwise common ones apply) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #444; /* Dark grey table borders */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333; /* Dark header background */
+            color: #00ff00; /* Green header text */
+        }
+        blockquote {
+            border-left: 4px solid #00ff00; /* Green blockquote border */
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ccc; /* Lighter grey for quote */
+            background-color: #2a2a2a; /* Slightly different dark bg */
+        }
+
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            /* Responsive Tables */
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr { border: 1px solid #444; margin-bottom: 5px; } /* Dark grey border */
+            td {
+                border: none;
+                border-bottom: 1px solid #444; /* Darker border */
+                /* position: relative; Removed */
+                padding-left: 8px; /* Reset padding, add small left padding */
+                padding-top: 5px; /* Add some top padding */
+                padding-bottom: 5px; /* Add some bottom padding */
+                white-space: normal;
+                text-align: right; /* Align content to the right */
+                /* min-height: 40px; Removed, block flow handles height */
+                display: block;
+            }
+            td:before {
+                /* position: absolute; Removed */
+                /* top: 8px; Removed */
+                /* left: 8px; Removed */
+                /* width: 40%; Removed */
+                padding-right: 10px;
+                white-space: normal;
+                text-align: left;
+                font-weight: bold;
+                color: #00ff00; /* Green label */
+                content: attr(data-label);
+                /* height: auto; Removed */
+                display: block; /* Make label a block element */
+                margin-bottom: 3px; /* Add space below label */
+            }
+            /* Label the data */
+            /* Tax Brackets Single */
+            table:nth-of-type(1) td:nth-of-type(1):before { content: "Income Tax Bracket"; }
+            table:nth-of-type(1) td:nth-of-type(2):before { content: "Tax Rate"; }
+            /* Tax Brackets Joint */
+            table:nth-of-type(2) td:nth-of-type(1):before { content: "Income Tax Bracket"; }
+            table:nth-of-type(2) td:nth-of-type(2):before { content: "Tax Rate"; }
+            /* Capital Gains */
+            table:nth-of-type(3) td:nth-of-type(1):before { content: "Single Filer, Taxable Income Over"; }
+            table:nth-of-type(3) td:nth-of-type(2):before { content: "Joint Filer, Taxable Income Over"; }
+            table:nth-of-type(3) td:nth-of-type(3):before { content: "Capital Gains Rate"; }
+            /* Removed redundant white-space override for capital gains table */
+            /* Labels now wrap by default due to change on line 148 */
+
+             /* HYSA Comparison */
+            table:nth-of-type(4) th:nth-of-type(1):before { content: ""; } /* Hide header label */
+            table:nth-of-type(4) td:nth-of-type(1):before { content: "Expected Return"; }
+            table:nth-of-type(4) td:nth-of-type(2):before { content: "Investment Required"; }
+            table:nth-of-type(5) th:nth-of-type(1):before { content: ""; } /* Hide header label */
+            table:nth-of-type(5) td:nth-of-type(1):before { content: "Expected Return"; }
+            table:nth-of-type(5) td:nth-of-type(2):before { content: "Investment Required"; }
+
+             /* Responsive Directory */
+             #directory ul li a {
+                 padding: 5px; /* Slightly more padding for touch */
+             }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+             <a href="index.html" class="logo">PassiveCash.xyz</a>
+             <!-- Hamburger Button -->
+             <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </button>
+             <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calculators.html">Calculators</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Advertisement Bar -->
+    <div id="advertisement"></div>
+
+    <div class="content-container">
+        <p>Passive cash is cash that requires little to no effort to earn and maintain. If you are someone who wants to achieve FIRE (financial independence and early retirement), passive cash is what you want to focus on.</p>
+        <p>In general, making passive cash is primarily dependent on having cash to start with. A common misconception is thinking that you must have large amounts of cash to get started. I understand the more cash you have available to invest, the more you can potentially make; But it’s helpful to break down your cash to the smallest value - a penny. From there, you can view every penny as an individual worker that you employ. Overtime, these little “workers” can earn you passive cash even while you sleep. I have compiled a list of ways to getting you one step closer to financial freedom.</p>
+
+        <!-- Directory Section -->
+        <div id="directory">
+            <h3>Directory</h3>
+            <ul>
+                <li><a data-target="dividends">Dividends</a></li>
+                <li><a data-target="hysa">High Yield Savings Accounts</a></li>
+                <li><a data-target="cds">CDs</a></li>
+                <li><a data-target="annuities">Annuities</a></li>
+                <li><a data-target="bonds">Bonds</a></li>
+                <li><a data-target="crypto-interest">Earn Interest on Crypto</a></li>
+                <li><a data-target="real-estate">Real Estate</a></li>
+                <li><a data-target="affiliate-marketing">Affiliate Marketing</a></li>
+            </ul>
+        </div>
+        <!-- End Directory Section -->
+
+        <!-- Content Sections -->
+        <div id="dividends" class="content-section">
+            <h2>Dividends</h2>
+            <p>Dividends are a great way to earn passive cash. A dividend is the distribution of a part of a company’s earnings that is paid to its shareholders. Dividends are typically paid monthly, quarterly, or annually. Remember to take into consideration DRIP (dividend reinvestment). Monthly dividends compound quicker, and therefore, your shares accumulate at a faster rate if you were to reinvest the dividends. You can see for yourself using a compound interest calculator.</p>
+            <p>Please be cautious when looking at the dividend yield. Generally, the higher the yield, the more risky it may be for you as a shareholder. Stocks with dividend yields greater than 10% can be seen as risky investments. Here is a list of high dividend stocks by yield and high dividend exchange traded funds by yield.</p>
+            <p>ETFs that incorporate covered call strategies have recently become popular. These include JEPI, JEPQ, and DIVO to name a few of my favorites. Covered call strategies tend to have high yields usually at the expense of capital appreciation, however, offer a great opportunity for passive cash flow.</p>
+            <p>There are two types of dividends, qualified and non-qualified. Most regular dividends from corporations are qualified. One example of non-qualified dividends are dividends paid out by REIT (real estate investment trusts). The main takeaway between the two are that qualified dividends are taxed at capital gains rate, and non-qualified dividends are taxed at a person’s regular income tax rate. One core fundamental of investing in dividend paying funds is minimizing taxes. Lets take a look at Tax Brackets for 2024 to get a better understanding.</p>
+            <h3>2024 Single Filer Tax Brackets</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Income Tax Bracket</th>
+                        <th>Tax Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>$0 - $11,600</td><td>10%</td></tr>
+                    <tr><td>$11,600 – $47,150</td><td>12%</td></tr>
+                    <tr><td>$47,150 – $100,525</td><td>22%</td></tr>
+                    <tr><td>$100,525 – $191,950</td><td>24%</td></tr>
+                    <tr><td>$191,950 – $243,725</td><td>32%</td></tr>
+                    <tr><td>$243,725 – $609,350</td><td>35%</td></tr>
+                    <tr><td>$609,350+</td><td>37%</td></tr>
+                </tbody>
+            </table>
+            <h3>2024 Joint Filer Tax Brackets</h3>
+            <table>
+                <thead>
+                    <tr><th>Income Tax Bracket</th><th>Tax Rate</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>$0 – $23,200</td><td>10%</td></tr>
+                    <tr><td>$23,200 – $94,300</td><td>12%</td></tr>
+                    <tr><td>$94,300 – $201,050</td><td>22%</td></tr>
+                    <tr><td>$201,050 – $383,900</td><td>24%</td></tr>
+                    <tr><td>$383,900 – $487,450</td><td>32%</td></tr>
+                    <tr><td>$487,450 – $731,200</td><td>35%</td></tr>
+                    <tr><td>$731,200+</td><td>37%</td></tr>
+                </tbody>
+            </table>
+            <h3>2024 Capital Gains Tax Brackets</h3>
+            <table>
+                <thead>
+                    <tr><th>Single Filer, Taxable Income Over</th><th>Joint Filer, Taxable Income Over</th><th>Capital Gains Rate</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>$0</td><td>$0</td><td>0%</td></tr>
+                    <tr><td>$47,025</td><td>$94,050</td><td>15%</td></tr>
+                    <tr><td>$518,900</td><td>$583,750</td><td>20%</td></tr>
+                </tbody>
+            </table>
+            <p>From this, you can see that individuals making <=$47,025 and joint couples making <=$94,050 are tax-exempt from qualified dividends. It’s important to note as of 2024, individuals making <= $14,600 and joint married couples making <= $29,200 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified, the tax rate would be 0%.</p>
+            <p>If you want to avoid dividend taxes altogether, investing dividend-paying stocks in a retirement account is the way to go. Retirement accounts such as a 401(k) and a Roth IRA are two such examples. Within these accounts, your dividends will grow tax-free. If you were interested in investing in REIT funds, holding these in a retirement account may be ideal. However, there are some advantages to holding REIT in a taxable account.</p>
+            <p>There are some exceptions. Municipal bonds are typically exempt from federal taxation regardless of income. Some examples include iShares National Muni Bond ETF (MUB), VanEck Vectors High-Yield Municipal Index ETF (HYD), and Vanguard Tax-Exempt Bond ETF (VTEB).</p>
+            <p>Finally, if you’re ready to earn dividends; Webull offers users a platform to invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop. In addition, Webull also offers fractional shares, cash management (earn interest on your uninvested cash), DRIP (dividend reinvestment), and an IRA. Sign up at <a href="https://www.webull.com/activity?inviteCode=YourReferralCodeHere&source=invite_gw&inviteSource=wb_kol_us" target="_blank">Webull-Referral</a> and get 12 FREE stocks.</p>
+            <div class="section-nav">
+                <button class="next-btn" data-target="hysa">Next: HYSA ></button>
+            </div>
+        </div>
+
+        <div id="hysa" class="content-section">
+            <h2>High Yield Savings Accounts</h2>
+            <p>High-yield savings accounts are online accounts that pay multitudes more than a standard savings account. Let’s say you have $100 that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high-yield savings account. When writing this article, the best interest rate offered is ~4.75%. This is ~79 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0475) + 100 = $104.75.</p>
+            <p>Let’s scale things up and say you wanted to make $500/month passively.</p>
+            <table>
+                <thead><tr><th colspan="2">Traditional Savings Account</th></tr><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
+                <tbody><tr><td>$500/month</td><td>(500 * 12)/.0006 = $10,000,000</td></tr></tbody>
+            </table>
+            <table>
+                 <thead><tr><th colspan="2">High Yield Savings Account</th></tr><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
+                <tbody><tr><td>$500/month</td><td>(500 * 12)/.0475 = $126,315.79</td></tr></tbody>
+            </table>
+            <p>The difference in investment required for expected return is significant.</p>
+            <p>Please note, for simplicity, these calculations do not consider compounding interest. Compounding interest is the result of reinvesting the interest earned. Interest can be compounded daily, weekly, monthly, quarterly, or annually. Here is an updated list of the best high-yield savings accounts.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="dividends">< Prev: Dividends</button>
+                <button class="next-btn" data-target="cds">Next: CDs ></button>
+            </div>
+        </div>
+
+        <div id="cds" class="content-section">
+            <h2>CDs</h2>
+            <p>CDs or certificates of deposits offers another great way to earn interest on cash for a fixed period. Contrary to high-yield savings accounts, as discussed previously, cash is locked until the certificate matures.</p>
+            <p>For example, a 3-month CD with a fixed rate of 3% APY will have a term length of 3 months, and upon maturity, you can withdraw your cash penalty-free.</p>
+            <p>There are two types of CDs, callable and non-callable. A callable CD can be redeemed by the issuer before the mature date, whereas a non-callable CD can not. So let’s say you expect falling interest rates in the near future, causing banks to drop their rates. It may be wise to purchase a non-callable CD that guarantees you a fixed rate APY that will be higher than newly issued CDs.</p>
+            <p>CDs can be purchased through banks, credit unions, and brokerage firms. Bank CD’s interest rates are compounded, while brokerage CDs are not. In my opinion, it’s best to purchase CDs through brokerage firms due to the greater flexibily they provide. If you should encounter an emergency, you can access your cash by selling the CD on the market without paying an early withdraw fee. However, the value of the CD is subject to change dependending on interest rates if you sell before the certificate matures.</p>
+            <p>People generally purchase CDs as a safer investment than stocks. They provide a guaranteed return on investment at the expense of growth that stocks may provide. It’s important to note that CDs are FDIC insured up to $250,000.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="hysa">< Prev: HYSA</button>
+                <button class="next-btn" data-target="annuities">Next: Annuities ></button>
+            </div>
+        </div>
+
+        <div id="annuities" class="content-section">
+            <h2>Annuities</h2>
+            <p>An annuity is an insurance contract that can be purchased from a financial institution. Investments can be made in one large payment or period payments. You can expect to receive a guaranteed cash flow for a fixed period or the rest of your life, dependent on the structure of the annuity.</p>
+            <p>There are two types of annuities, immediate and deferred.</p>
+            <p>Let’s say that you were to win the lottery and wanted to create an immediate cash flow. Purchasing an immediate annuity would be appropriate in this case. Deferred annuities are best purchased when you predict you may need future cash flow such as retirement. Perhaps social security won’t be enough, and you suspect you may need additional cash flow.</p>
+            <p>Annuities can be structured as either fixed or variable. Fixed, being more stable, provides regular periodic payments, while variable is less stable, depending on the performance of the annuity’s investments.</p>
+            <p>Important to note that annuities are illiquid and subject to withdrawal penalties.</p>
+            <p>You can estimate potential cash flow using <a href="https://www.schwab.com/annuities/income-annuity-calculator" target="_blank">Schwab’s Income Annuity Calculator</a>.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="cds">< Prev: CDs</button>
+                <button class="next-btn" data-target="bonds">Next: Bonds ></button>
+            </div>
+        </div>
+
+        <div id="bonds" class="content-section">
+            <h2>Bonds</h2>
+            <h3>Savings Bonds</h3>
+            <p>I savings bonds are a great option if you are looking for a safe place to protect your cash from inflation.</p>
+            <h3>Treasury Bills</h3>
+            <p>Treasury Bills (T-Bills) are short-term U.S. government securities. From my understanding, you are essentially loaning money to the government that they then use to fund public projects. The government promises to pay you back your loan plus interest earned. T-Bills are backed by the U.S. government. Interest is not a fixed interest rate. T-bills are purhcased at a discount rate and upon maturity, interest paid is the difference between the face value of the T-Bill and the discount rate; unlike CDs, interest is tax-exempt from state and local income taxes. During a recession, T-Bills are a safe option for parking your cash.</p>
+            <h3>Treasury Notes</h3>
+            <p>Treasury Notes are short-intermediate-term U.S. government securities that pay a fixed rate of interest.</p>
+            <h3>Treasury Bonds</h3>
+            <p>Treasury Bonds are long-term U.S. government securities that pay a fixed rate of interest.</p>
+            <h3>Treasury Inflation-Protected Securities</h3>
+            <p>Treasury Inflation-Protected Securities (TIPS) are designed to protect against inflation. Their principal value adjusts based on changes in the Consumer Price Index (CPI), ensuring that the investment keeps pace with inflation.</p>
+            <p>All these treasury marketable securities can be purchased at <a href="https://www.treasurydirect.gov/" target="_blank">TreasuryDirect</a>.</p>
+            <h3>Bond ETFs</h3>
+            <p>If you are unsure which security is right for you, a Total Bond Market ETF (Exchange Traded Fund) such as BND might be a good choice. TIPS are not included in a total market bond fund, however, there are TIPS ETFs such as SCHP. Bond ETFs are not the same as bonds. These funds track the performance of the underlying bond indexes they represent and typically hold bonds with a mix of maturities. Unlike individual bonds, bond ETFs offer greater diversification and broader market exposure but can be less predictable in price due to their trading on exchanges.</p>
+            <p>Bond ETFs can be purchased at <a href="https://www.webull.com/activity?inviteCode=YourReferralCodeHere&source=invite_gw&inviteSource=wb_kol_us" target="_blank">Webull-Referral</a>.</p>
+            <p>Resource on <a href="https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation" target="_blank">stock/bond allocation</a>.</p>
+            <p>Note: David Swensen, the renowned investment manager of Yale University’s endowment, popularized a diversified portfolio strategy called The David Swensen Portfolio. Swensen recommended a 50/50 split between Treasury bonds and Treasury Inflation-Protected Securities (TIPS). By combining Treasury bonds and TIPS, investors can benefit from the stability of Treasury bonds while safeguarding their investments against inflation with TIPS.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="annuities">< Prev: Annuities</button>
+                <button class="next-btn" data-target="crypto-interest">Next: Crypto Interest ></button>
+            </div>
+        </div>
+
+        <div id="crypto-interest" class="content-section">
+            <h2>Earn Interest on Crypto</h2>
+            <p>Earning interest on cryptocurrency is a relatively new opportunity compared to making interest in a traditional bank. If you currently hold cryptocurrencies like Bitcoin or ETH, you could be taking advantage of services that offer to pay you interest on your holdings. There are two types of services called CeFi and DeFi. CeFi or centralized finance, is a type of financial service comparable to a traditional bank. Users are putting their trust in the business offering the financial service. DeFi or decentralized finance is a new type of financial service that works autonomously. Users are putting their trust in technology when using a DeFi service.</p>
+            <h3>CeFi</h3>
+            <p><a href="https://www.coinbase.com/join/YourReferralCodeHere" target="_blank">Coinbase-Referral</a> offers ETH, ADA, ATOM, SOL, and XTZ staking. Staking is the process of holding funds in a crypto wallet to support the network. In return, holders are rewarded for their activity on the network. You can click <a href="https://www.coinbase.com/staking" target="_blank">here</a> to view current yield rates.</p>
+            <p>Note: Exercise caution with CeFi services. You are putting your trust into these companies and they may or may not have your best interest when lending out your money. Remember, “Not your keys, not your crypto.”</p>
+            <h3>DeFi</h3>
+            <p><a href="https://compound.finance/" target="_blank">Compound Finance</a> is a DeFi service. Compound finance is an algorithmic, autonomous interest rate protocol that allows developers to build financial applications. To start earning, you can use <a href="https://www.coinbase.com/wallet" target="_blank">Coinbase wallet</a>. You will need to fund your Coinbase wallet with ETH to cover mining fees and the coin you wish to earn interest on. Next, select the coin and amount you want to lend. Your crypto will then be sent directly to the smart contract to start earning interest. You can find the current interest rates under Supply APY <a href="https://compound.finance/markets" target="_blank">here</a>.</p>
+            <p><a href="https://rocketpool.net/" target="_blank">Rocket Pool</a> is a decentralized Ethereum staking protocol offering ~2.62% APR. RocketPool has been the first pool to be granted all green checks by <a href="https://ethereum.org/en/staking/pools/" target="_blank">ethereum.org</a>.</p>
+            <p>As another option, you can stake ETH, SOL, ATOM, and DOT on a <a href="https://www.ledger.com/" target="_blank">Ledger</a>. This offers greater security than holding your coins on an exchange like Coinbase. With a hardware wallet like the Ledger, you own your private keys. Of course, if you decide to, you can always move your cryptocurrency from Coinbase to your hardware wallet and vice versa. You can read about staking through Ledger <a href="https://www.ledger.com/staking" target="_blank">here</a>.</p>
+            <p>Helpful <a href="https://ethereum.org/en/defi/" target="_blank">guide</a> to help get you started in the world of DeFi.</p>
+            <p>Resource to help you find the best <a href="https://defillama.com/yields" target="_blank">vaults and APY on DeFi</a>.</p>
+            <p>Resource to view the <a href="https://defillama.com/" target="_blank">total value locked on all chains</a>.</p>
+            <p>Note: At the moment, due to network conjestion, fees on the ETH mainnet are too high to invest in DeFi with low capital. However, there are alternative networks that offers a lower cost to entry. These networks include side chains and layer 2 solutions. Side chains increase scalability at the expense of security (not fully decentralized) while layer 2 solutions increase scalability and maintain security (decentralized). In my opinion, layer 2 will be the ultimate scaling solution to Ethereum. You can read more about layer 2 solutions <a href="https://ethereum.org/en/layer-2/" target="_blank">here</a>.</p>
+            <p>DeFi comes with it’s own risk. It’s important to understand that smart contracts are only as secure as the code. Protocols can suffer from vulnerabilities and result in loss of funds. Aave and Curve DeFi protocols are relatively safe as they have been around a long time and have been battle-tested.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="bonds">< Prev: Bonds</button>
+                <button class="next-btn" data-target="real-estate">Next: Real Estate ></button>
+            </div>
+        </div>
+
+        <div id="real-estate" class="content-section">
+            <h2>Real Estate</h2>
+            <p>To stay true to the word passive, real estate investing is truly only passive when investing in REITs. REITs are companies that will manage all of the work that comes with owning real estate properties. One such company is Reality Income (O), a popular REIT dividend aristocrat. Another option is to invest in an REIT index fund like VNQ which holds 162 different companies.</p>
+            <p>To even further your income potential, you could sell covered call options on the underlying fund. Say you own 100 shares of VNQ, you could sell a covered call with a strike price out of the money insuring a high probably of the option expiring worthless. Expiring worthless insures that you get to keep your 100 shares and collect the premium.</p>
+            <p>Now, you may be wondering what happens if the option does not expire worthless. Well, in that case, the strike price is lower than the current trading price. The buyer can exercise the option and buy your 100 shares at the discounted price.</p>
+            <p>With a covered call strategy, you miss out on large price increases, while gaining some downside protection. Dependent on your financial goals, this may be ideal in generating passive cash flow at the expense of capital appreciation.</p>
+            <p>REITs can be purchased at <a href="https://www.webull.com/activity?inviteCode=YourReferralCodeHere&source=invite_gw&inviteSource=wb_kol_us" target="_blank">Webull-Referral</a>.</p>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="crypto-interest">< Prev: Crypto Interest</button>
+                <button class="next-btn" data-target="affiliate-marketing">Next: Affiliate Marketing ></button>
+            </div>
+        </div>
+
+        <div id="affiliate-marketing" class="content-section">
+            <h2>Affiliate Marketing</h2>
+            <p>I have listed ways to earn passive cash and demonstrated one last way you may have noticed while reading this article. That is a static website such as this one utilizing affiliate links to generate passive cash. Affiliate marketing involves connecting people to products and services, and in return, receiving compensation for each conversion. Once you find a product or service you like, search to see if that product or service offers an affiliate program. Affiliate marketing is a great way to make passive cash and the earning potential is limitless.</p>
+            <p>If you’re interested in creating a static website like the one you are currently reading, GitHub offers a way to host your website directly from your GitHub repository. You can read more about that <a href="https://pages.github.com/" target="_blank">here</a>.</p>
+            <p>To wrap up, remember that earning passive cash can be a slow process if starting with low capital. Also, any service or product that sounds too good to be true probably is. However, don’t let this discourage you as you have to start somewhere. I hope this list serves useful and is a viable resource for your next step toward financial freedom.</p>
+            <blockquote>“If you don’t find a way to make money while you sleep, you will work until you die.” - Warren Buffett</blockquote>
+            <div class="section-nav">
+                <button class="prev-btn" data-target="real-estate">< Prev: Real Estate</button>
+            </div>
+        </div>
+        <!-- End Content Sections -->
+
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Directory/Content Section Script -->
+    <script>
+        $(document).ready(function() {
+            const directoryLinks = $('#directory a');
+            const contentSections = $('.content-section');
+            const sectionNavButtons = $('.section-nav button'); // Get section nav buttons
+
+            function showSection(targetId) {
+                // Remove # if present
+                const cleanTargetId = targetId.startsWith('#') ? targetId.substring(1) : targetId;
+
+                // Find the target section and link
+                const targetSection = $('#' + cleanTargetId);
+                const targetLink = directoryLinks.filter(`[data-target="${cleanTargetId}"]`);
+
+                // If valid target found, show it
+                if (targetSection.length && targetLink.length) {
+                    contentSections.removeClass('active'); // Hide all
+                    directoryLinks.removeClass('active-link'); // Deactivate all links
+                    targetSection.addClass('active'); // Show target
+                    targetLink.addClass('active-link'); // Highlight link
+                } else {
+                    // If no valid hash, hide all sections and deactivate links
+                    contentSections.removeClass('active');
+                    directoryLinks.removeClass('active-link');
+                }
+            }
+
+            // --- Handle Hash on Page Load ---
+            const initialHash = window.location.hash;
+            if (initialHash) {
+                showSection(initialHash);
+            } else {
+                 // By default, show nothing
+                 contentSections.removeClass('active');
+                 directoryLinks.removeClass('active-link');
+            }
+
+            // --- Handle Directory Link Clicks ---
+            directoryLinks.on('click', function(e) {
+                e.preventDefault(); // Prevent default anchor jump
+                const targetId = $(this).data('target');
+                showSection(targetId);
+                // Update URL hash
+                if (history.pushState) {
+                    history.pushState(null, null, '#' + targetId);
+                } else {
+                    window.location.hash = '#' + targetId;
+                }
+                // Scroll to the top of the activated section
+                const targetSection = $('#' + targetId);
+                if (targetSection.length) {
+                    const navbarHeight = $('.navbar').outerHeight() || 60; // Get navbar height or use default
+                    const adBarHeight = $('#advertisement').outerHeight() || 0; // Get ad bar height
+                    $('html, body').animate({
+                        scrollTop: targetSection.offset().top - navbarHeight - adBarHeight - 20 // Adjust offset
+                    }, 300); // Animation duration
+                }
+            });
+
+            // --- Handle Section Nav Button Clicks ---
+            sectionNavButtons.on('click', function() {
+                const targetId = $(this).data('target');
+                // Find the corresponding directory link and trigger its click
+                const targetLink = directoryLinks.filter(`[data-target="${targetId}"]`);
+                if (targetLink.length) {
+                    targetLink.trigger('click');
+                }
+            });
+        });
+    </script>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Optional: Toggle ARIA attribute for accessibility
+            const isExpanded = navLinks.classList.contains('active');
+            hamburgerBtn.setAttribute('aria-expanded', isExpanded);
+        });
+    </script>
+
+    <!-- Advertisement Script -->
+    <script src="js/advertisement.js"></script>
+
+</body>
+</html>
