@@ -1,8 +1,8 @@
 // PassiveCash.xyz - eth_ticker.js
 
-// Function to fetch and display ETH price
-function eth_get_price() {
-    const url = 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD'; 
+// Function to fetch and display ETH price, now accepts cryptoType
+function eth_get_price(cryptoType) {
+    const url = 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD';
 
     $.ajax({
         url: url,
@@ -13,16 +13,16 @@ function eth_get_price() {
                 const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
                 $('.EthPrice').text(formattedPrice); // Update the price span
 
-                // Update page title using the function from crypto.html
+                // Update page title using the function from crypto.html, passing cryptoType
                 if (typeof updatePageTitle === 'function') {
-                    updatePageTitle(price);
+                    updatePageTitle(cryptoType, price); // Pass cryptoType and price
                 }
             } else {
                 $('.EthPrice').text('Error loading price');
                 console.error("Error: Invalid data format received from CoinGecko API for ETH.");
                  // Update page title if the function exists
                  if (typeof updatePageTitle === 'function') {
-                    updatePageTitle(null); // Pass null to indicate error or reset
+                    updatePageTitle(cryptoType, null); // Pass cryptoType and null for error
                 }
             }
         },
@@ -31,7 +31,7 @@ function eth_get_price() {
             $('.EthPrice').text('Error loading price');
              // Update page title if the function exists
              if (typeof updatePageTitle === 'function') {
-                updatePageTitle(null); // Pass null to indicate error or reset
+                updatePageTitle(cryptoType, null); // Pass cryptoType and null for error
             }
         }
     });
