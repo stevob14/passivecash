@@ -29,7 +29,7 @@ function calculateMortgage() { // Renamed to match HTML onclick
     errorMsg += "Home insurance must be a positive number. ";
   }
   if (pmi < 0) {
-    errorMsg += "PMI rate must be a positive number. ";
+    errorMsg += "Monthly PMI must be a positive number. ";
   }
   if (errorMsg !== "") {
     var errorDiv = document.getElementById("mortgage-error"); // Updated ID
@@ -65,7 +65,7 @@ function calculateMortgage() { // Renamed to match HTML onclick
   if (downPayment >= 0.2 * homeValue) {
     includePMI = false;
   }
-  var monthlyPMI = includePMI ? (pmi / 100) * principal / 12 : 0;
+  var monthlyPMI = includePMI ? pmi : 0; // Use the direct monthly PMI dollar amount if applicable
 
   // calculate total monthly payment
   var totalMonthlyPayment = mortgagePayment + monthlyTaxes + monthlyInsurance + monthlyPMI;
