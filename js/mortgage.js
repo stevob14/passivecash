@@ -1,4 +1,4 @@
-function calculate() {
+function calculateMortgage() { // Renamed to match HTML onclick
   // get input values
   var homeValue = document.getElementById("homeValue").value;
   var downPayment = document.getElementById("downPayment").value;
@@ -32,8 +32,8 @@ function calculate() {
     errorMsg += "PMI rate must be a positive number. ";
   }
   if (errorMsg !== "") {
-    var resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = errorMsg;
+    var errorDiv = document.getElementById("mortgage-error"); // Updated ID
+    errorDiv.innerHTML = errorMsg;
     return;
   }
 
@@ -71,6 +71,9 @@ function calculate() {
   var totalMonthlyPayment = mortgagePayment + monthlyTaxes + monthlyInsurance + monthlyPMI;
 
   // display result
-  var result = document.getElementById("output");
-  result.innerHTML = "Your monthly payment is: " + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
+  var outputResult = document.getElementById("mortgage-output"); // Updated ID
+  outputResult.innerHTML = "Your monthly payment is: " + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2});
+  // Clear error message on successful calculation
+  var errorDiv = document.getElementById("mortgage-error"); // Ensure correct error div is cleared
+  if (errorDiv) errorDiv.innerHTML = "";
 }

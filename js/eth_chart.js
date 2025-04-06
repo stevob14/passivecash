@@ -1,4 +1,4 @@
-$.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365', function(data) {
+$.getJSON('https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=365', function(data) { // Reverted to 365 days
   Highcharts.setOptions({
     lang: {
       thousandsSep: ","
@@ -16,8 +16,9 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
           );
         }
       },
-      backgroundColor: null,
-      fontFamily: 'sans-serif',
+      backgroundColor: '#111', // Match container background
+      plotBorderColor: '#00ff00', // Add green border inside
+      fontFamily: "'Courier New', Courier, monospace", // Match body font
       zoomType: 'x',
       type: "area",
       margin: [0, 0, 0, 0],
@@ -25,54 +26,94 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
       marginTop: 0,
       borderWidth: 0,
       spacing: 0,
-      renderTo: 'chart'
+      renderTo: 'chart-eth'
     },
     scrollbar: {
       enabled: false
     },
     navigator: {
-      maskFill: 'rgba(181, 232, 83, .3)',
+      maskFill: 'rgba(0, 255, 0, 0.2)', // Green mask
+      outlineColor: '#00ff00',
+      handles: {
+          backgroundColor: '#111',
+          borderColor: '#00ff00'
+      },
+      series: { // Style navigator series
+          color: '#00ff00',
+          lineColor: '#00ff00'
+      },
+      xAxis: { // Style navigator axis
+          gridLineColor: 'rgba(0, 255, 0, 0.1)',
+          labels: {
+              style: {
+                  color: '#e0e0e0'
+              }
+          }
+      }
     },
     credits: {
-        position: {
-            verticalAlign: 'top',
-            x: 0,
-            y: 10,
-        }
+        enabled: false // Disable credits
     },
     rangeSelector: {
+      buttons: [{ // Define only the buttons we want
+          type: 'month',
+          count: 1,
+          text: '1m'
+      }, {
+          type: 'month',
+          count: 3,
+          text: '3m'
+      }, {
+          type: 'month',
+          count: 6,
+          text: '6m'
+      }, {
+          type: 'ytd',
+          text: 'YTD'
+      }],
       buttonTheme: { // styles for the buttons
         fill: 'none',
         stroke: 'none',
         'stroke-width': 0,
         r: 7,
         style: {
-          color: '#b5e853',
+          color: '#00ff00', // Green buttons
           fontWeight: 'bold'
         },
         states: {
           hover: {
-            fill: null
+            fill: null // Keep default hover
           },
           select: {
-            fill: '#b5e853',
+            fill: '#00ff00', // Green selected fill
             style: {
-              color: 'black'
+              color: '#0a0a0a' // Dark text on select
             }
           }
         }
       },
-      selected: 4,
+      selected: 3, // Select YTD by default (index 3)
       inputEnabled: false,
     },
-    yAxis: [{
-            gridLineWidth: .3,
-            gridLineColor: 'rgba(211, 212, 222, 0.35)',
+    yAxis: [{ // Primary Y Axis (Price)
+            gridLineWidth: 0.3,
+            gridLineColor: 'rgba(0, 255, 0, 0.1)', // Subtle green grid lines
+            lineColor: 'rgba(0, 255, 0, 0.3)', // Axis line color
+            tickColor: 'rgba(0, 255, 0, 0.3)', // Tick mark color
             floor: 0,
             maxPadding: 0,
             labels: {
                 align: 'right',
-                x: -5
+                x: -5,
+                style: {
+                    color: '#e0e0e0' // Light label text
+                }
+            },
+            title: { // Add title styling if needed
+                text: 'Price (USD)',
+                 style: {
+                     color: '#e0e0e0'
+                 }
             }
         }, {
             gridLineWidth: 0,
@@ -81,15 +122,18 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
             top: '80%',
             height: '20%',
 						labels: {
-            enabled: false
-            }
+						          enabled: false
+						      },
+						      title: { // Add title styling if needed
+						           enabled: false // Keep volume title disabled
+						      }
         }],
  tooltip: {
         style: {
-        color: '#eaeaea'
+            color: '#e0e0e0' // Light text
         },
         shared: true,
-        backgroundColor: 'rgba(22, 27, 34, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Darker tooltip background
         split: false,
         crossharis: true,
         shadow: false,
@@ -99,9 +143,17 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
         snap: "1/2"
         },
     xAxis: {
+      gridLineColor: 'rgba(0, 255, 0, 0.1)', // Match Y axis grid
+      lineColor: 'rgba(0, 255, 0, 0.3)', // Axis line color
+      tickColor: 'rgba(0, 255, 0, 0.3)', // Tick mark color
+      labels: {
+          style: {
+              color: '#e0e0e0' // Light label text
+          }
+      },
       crosshair: {
-        width: 0.5,
-        color: '#b5e853'
+        width: 1, // Slightly thicker crosshair
+        color: '#00ff00' // Green crosshair
       },
       events: {
         afterSetExtremes: function(e) {
@@ -118,9 +170,9 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
           }
           var lr = linear(kx, ky);
           if (lr[0][1] < lr[1][1]) {
-            series_color = 'rgba(0,200,83,0.5)'
+            series_color = 'rgba(0, 255, 0, 0.7)' // Brighter green trend
           } else {
-            series_color = 'rgba(255,0,0,0.5)'
+            series_color = 'rgba(255, 68, 68, 0.7)' // Use site's red if available, else brighter red
           }
           chart.addSeries({
             name: 'Regression Line',
@@ -158,18 +210,15 @@ $.getJSON('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_curren
                 },
     series: [{
       fillOpacity: .2,
-            color: "#b5e853",
+            color: "#00ff00", // Main green for price line
             name: 'Price',
-            shadow: {
-            color: '#002044',
-            yAxis: 0,
-        },
+            // Removed shadow as it might clash with dark theme
       data: data.prices
     }, {
       fillOpacity: .5,
             name: 'Volume',
             step: true,
-            color: '#d0d0d1',
+            color: 'rgba(0, 255, 0, 0.4)', // Dim green for volume bars
             lineWidth: 0,
             showEmpty: false,
             offset: 2,

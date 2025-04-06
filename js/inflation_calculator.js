@@ -118,7 +118,7 @@ cpi.rates[111] = 313.689;       //2024
 
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
-function calculate() {
+function calculateInflation() { // Renamed to match HTML onclick
 	//1970 Price x (2011 CPI / 1970 CPI) = 2011 Price
   dollar = Number(document.getElementById("dollarField").value);
   start = Number(document.getElementById("startYearField").value);
@@ -131,15 +131,15 @@ function calculate() {
   start_cpi = cpi.rates[start_array]
   end_cpi = cpi.rates[end_array]
   result = dollar * (end_cpi/start_cpi)
-  document.getElementById("output").innerHTML = "$" + dollar + " in " + start + " is equivalent in purchasing power to ~" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + end;
+  document.getElementById("inflation-output").innerHTML = "$" + dollar + " in " + start + " is equivalent in purchasing power to ~" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + end; // Updated ID
   }
   else{
   error = "Data only available for years in range 1913-2024";
-  document.getElementById("output").innerHTML = error;
+  document.getElementById("inflation-output").innerHTML = error; // Updated ID
   }
 } 
 
-function isNumberKey(evt){
+function isNumberKeyInflation(evt){ // Renamed to match HTML onkeypress
     var charCode = (evt.which) ? evt.which : event.keyCode
     if (charCode === 8 || charCode === 46)
 				return true;
