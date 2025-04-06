@@ -2,14 +2,14 @@
 
 // Function to fetch and display BTC price
 function btc_get_price() {
-    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd'; // Using CoinGecko for consistency
+    const url = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD';
 
     $.ajax({
         url: url,
         method: 'GET',
         success: function(data) {
-            if (data && data.bitcoin && data.bitcoin.usd) {
-                const price = data.bitcoin.usd;
+            if (data && data.USD) {
+                const price = data.USD;
                 const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
                 $('.BtcPrice').text(formattedPrice); // Update the price span
 
