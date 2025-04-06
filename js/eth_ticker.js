@@ -2,14 +2,14 @@
 
 // Function to fetch and display ETH price
 function eth_get_price() {
-    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd'; // Using CoinGecko for consistency
+    const url = 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD'; 
 
     $.ajax({
         url: url,
         method: 'GET',
         success: function(data) {
-            if (data && data.ethereum && data.ethereum.usd) {
-                const price = data.ethereum.usd;
+            if (data && data.USD) {
+                const price = data.USD;
                 const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
                 $('.EthPrice').text(formattedPrice); // Update the price span
 
