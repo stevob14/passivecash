@@ -360,7 +360,7 @@
 <div id="eth-section" class="crypto-section crypto-content">
     <!-- Removed H2 Title -->
     <span class="EthPrice"></span> <!-- Use unique class -->
-    <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, <a href="https://www.passivecash.xyz/#defi">DeFi</a> applications built using the Ethereum network.</p>
+    <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, <a href="passivecash.xyz/#crypto-interest">DeFi</a> applications built using the Ethereum network.</p>
     <div id="chart-eth" class="chart-container"></div> <!-- Use unique ID -->
 </div>
 
@@ -377,26 +377,32 @@
     <script src="js/eth_chart.js"></script>
 
     <script>
+        // Define baseTitle and updatePageTitle globally BEFORE document.ready
+        const baseTitle = document.title; // Store base title globally
+
+        // --- Function to update page title --- (Now Global)
+        // Accepts cryptoType directly
+        function updatePageTitle(cryptoType, price) {
+            // console.log(`updatePageTitle called: cryptoType=${cryptoType}, price=${price}, baseTitle=${baseTitle}`); // DEBUG LOG removed
+            if (price && cryptoType) {
+                const formattedPrice = parseFloat(price).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                const newTitle = `${cryptoType.toUpperCase()} ${formattedPrice} - PassiveCash.xyz`;
+                // console.log(`Setting title to: ${newTitle}`); // DEBUG LOG removed
+                document.title = newTitle;
+            } else {
+                // console.log(`Resetting title to baseTitle: ${baseTitle}`); // DEBUG LOG removed
+                document.title = baseTitle; // Reset on error or missing info
+            }
+        }
+
         // Placeholder for potential page-specific initialization if needed
         $(document).ready(function() {
             console.log("Crypto page loaded.");
             let activePriceIntervalId = null; // Variable to hold the active interval ID
-            let currentCrypto = 'btc'; // Track current crypto for title updates
-            const baseTitle = document.title; // Store base title
-
-            // --- Function to update page title ---
-            function updatePageTitle(price) {
-                if (price && currentCrypto) {
-                    const formattedPrice = parseFloat(price).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-                    document.title = `${currentCrypto.toUpperCase()} ${formattedPrice} - PassiveCash.xyz`;
-                } else {
-                    document.title = baseTitle;
-                }
-            }
-
+            // baseTitle is now global
             // --- Function to start/switch the active price ticker ---
             function startTicker(cryptoType) {
-                currentCrypto = cryptoType; // Update current crypto tracker
+                // currentCrypto = cryptoType; // No longer needed here for title updates
                 console.log("Starting ticker for:", cryptoType); // Debug log
                 // Clear any existing interval
                 if (activePriceIntervalId) {
@@ -405,14 +411,14 @@
                     console.log("Cleared previous interval"); // Debug log
                 }
 
-                // Start the new interval based on type
+                // Start the new interval based on type, passing cryptoType
                 if (cryptoType === 'btc') {
-                    btc_get_price(); // Call once immediately
-                    activePriceIntervalId = setInterval(btc_get_price, 1000);
+                    btc_get_price(cryptoType); // Call once immediately, passing type
+                    activePriceIntervalId = setInterval(() => btc_get_price(cryptoType), 1000); // Pass type in interval
                     console.log("Started BTC interval:", activePriceIntervalId); // Debug log
                 } else if (cryptoType === 'eth') {
-                    eth_get_price(); // Call once immediately
-                    activePriceIntervalId = setInterval(eth_get_price, 1000);
+                    eth_get_price(cryptoType); // Call once immediately, passing type
+                    activePriceIntervalId = setInterval(() => eth_get_price(cryptoType), 1000); // Pass type in interval
                     console.log("Started ETH interval:", activePriceIntervalId); // Debug log
                 }
             }
@@ -431,37 +437,45 @@
 
             // --- Function to show a specific section ---
             function showSection(targetId, updateHistory = true) {
-                const currentActive = $('.crypto-content.active').attr('id');
+                // const currentActive = $('.crypto-content.active').attr('id'); // No longer needed for the check
                 const targetSection = $('#' + targetId);
                 const targetOption = cryptoOptions.filter(`[data-target="${targetId}"]`);
 
-                if (!targetSection.length || targetId === currentActive) {
-                    return; // Do nothing if target doesn't exist or is already active
+                if (!targetSection.length) { // Only check if target exists
+                    return;
                 }
 
-                // Update trigger button text
-                if (targetOption.length) {
-                    cryptoMenuTrigger.text(targetOption.data('display'));
-                }
-
-                // Hide all sections and show the target
-                cryptoSections.removeClass('active');
-                targetSection.addClass('active');
-
-                // Determine crypto type and start ticker
+                // Determine crypto type BEFORE changing classes, needed for startTicker
                 let cryptoType = 'btc'; // Default
                 if (targetId === 'eth-section') {
                     cryptoType = 'eth';
                 }
+
+                // Update trigger button text (only if different from current)
+                if (targetOption.length && cryptoMenuTrigger.text() !== targetOption.data('display')) {
+                    cryptoMenuTrigger.text(targetOption.data('display'));
+                }
+
+                // Hide all sections and show the target (only if different from current)
+                const currentActiveSection = $('.crypto-content.active');
+                if (currentActiveSection.attr('id') !== targetId) {
+                   currentActiveSection.removeClass('active');
+                   targetSection.addClass('active');
+                }
+
+
+                // Always start/restart the ticker for the selected section
                 startTicker(cryptoType);
 
-                // Update URL hash if requested
-                if (updateHistory && history.pushState) {
-                    const hash = '#' + cryptoType; // Use #btc or #eth
-                    history.pushState(null, null, hash);
-                } else if (updateHistory) {
-                    // Fallback for older browsers
-                    window.location.hash = '#' + cryptoType;
+                // Update URL hash if requested and different
+                const currentHash = window.location.hash;
+                const newHash = '#' + cryptoType;
+                if (updateHistory && currentHash !== newHash) {
+                    if (history.pushState) {
+                        history.pushState(null, null, newHash);
+                    } else {
+                        window.location.hash = newHash; // Fallback
+                    }
                 }
 
                 // Optional: Reflow chart if needed
