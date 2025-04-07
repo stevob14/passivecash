@@ -120,6 +120,12 @@
             background-color: #333; /* Dark header background */
             color: #00ff00; /* Green header text */
         }
+        caption { /* Style for table captions */
+            color: #00ff00; /* Green caption text */
+            font-weight: bold;
+            padding: 8px; /* Add padding for spacing */
+            text-align: center; /* Center caption text */
+        }
         blockquote {
             border-left: 4px solid #00ff00; /* Green blockquote border */
             padding-left: 15px;
@@ -141,55 +147,65 @@
                 top: -9999px;
                 left: -9999px;
             }
-            tr { border: 1px solid #444; margin-bottom: 5px; } /* Dark grey border */
+            tr { border: 1px solid #444; margin-bottom: 10px; } /* Increased margin */
+            /* Style for table caption on mobile */
+            caption {
+                padding: 8px;
+                text-align: center; /* Center caption */
+                font-weight: bold;
+                color: #00ff00; /* Match label color */
+                border-bottom: 1px dashed #444; /* Separator below caption */
+                margin-bottom: 5px; /* Space below caption */
+                display: block; /* Ensure it takes block layout */
+            }
             td {
                 border: none;
-                border-bottom: 1px solid #444; /* Darker border */
+                border-bottom: 1px dashed #444; /* Dashed separator */
                 /* position: relative; Removed */
-                padding-left: 8px; /* Reset padding, add small left padding */
-                padding-top: 5px; /* Add some top padding */
-                padding-bottom: 5px; /* Add some bottom padding */
+                padding-left: 8px;  /* Reset padding */
+                padding-top: 8px;
+                padding-bottom: 8px;
                 white-space: normal;
-                text-align: right; /* Align content to the right */
-                /* min-height: 40px; Removed, block flow handles height */
+                text-align: left; /* Keep data aligned left */
                 display: block;
             }
+             /* Remove bottom border from last td in a tr */
+             tr td:last-child {
+                 border-bottom: none;
+             }
+            /* General rule for all table cell labels on mobile */
             td:before {
                 /* position: absolute; Removed */
                 /* top: 8px; Removed */
                 /* left: 8px; Removed */
                 /* width: 40%; Removed */
-                padding-right: 10px;
+                padding-right: 10px; /* Keep some space */
                 white-space: normal;
                 text-align: left;
                 font-weight: bold;
                 color: #00ff00; /* Green label */
-                content: attr(data-label);
-                /* height: auto; Removed */
-                display: block; /* Make label a block element */
+                content: attr(data-label); /* Use data-label attribute */
+                display: block; /* Make label appear above data */
                 margin-bottom: 3px; /* Add space below label */
             }
-            /* Label the data */
-            /* Tax Brackets Single */
-            table:nth-of-type(1) td:nth-of-type(1):before { content: "Income Tax Bracket"; }
-            table:nth-of-type(1) td:nth-of-type(2):before { content: "Tax Rate"; }
-            /* Tax Brackets Joint */
-            table:nth-of-type(2) td:nth-of-type(1):before { content: "Income Tax Bracket"; }
-            table:nth-of-type(2) td:nth-of-type(2):before { content: "Tax Rate"; }
-            /* Capital Gains */
-            table:nth-of-type(3) td:nth-of-type(1):before { content: "Single Filer, Taxable Income Over"; }
-            table:nth-of-type(3) td:nth-of-type(2):before { content: "Joint Filer, Taxable Income Over"; }
-            table:nth-of-type(3) td:nth-of-type(3):before { content: "Capital Gains Rate"; }
-            /* Removed redundant white-space override for capital gains table */
-            /* Labels now wrap by default due to change on line 148 */
+            /* Remove specific label rules, rely on data-label attribute now */
+            /* Tax Brackets Single - Removed */
+            /* Tax Brackets Joint - Removed */
+            /* Capital Gains - Removed */
+            /* HYSA Comparison - Removed */
+
+            /* Responsive Directory */
+            #directory ul li a {
+                padding: 5px; /* Slightly more padding for touch */
+            }
 
              /* HYSA Comparison */
-            table:nth-of-type(4) th:nth-of-type(1):before { content: ""; } /* Hide header label */
-            table:nth-of-type(4) td:nth-of-type(1):before { content: "Expected Return"; }
-            table:nth-of-type(4) td:nth-of-type(2):before { content: "Investment Required"; }
-            table:nth-of-type(5) th:nth-of-type(1):before { content: ""; } /* Hide header label */
-            table:nth-of-type(5) td:nth-of-type(1):before { content: "Expected Return"; }
-            table:nth-of-type(5) td:nth-of-type(2):before { content: "Investment Required"; }
+            #hysa table:nth-of-type(1) th:nth-of-type(1):before { content: ""; } /* Hide header label for 1st HYSA table */
+            #hysa table:nth-of-type(1) td:nth-of-type(1):before { content: "Expected Return"; }
+            #hysa table:nth-of-type(1) td:nth-of-type(2):before { content: "Investment Required"; }
+            #hysa table:nth-of-type(2) th:nth-of-type(1):before { content: ""; } /* Hide header label for 2nd HYSA table */
+            #hysa table:nth-of-type(2) td:nth-of-type(1):before { content: "Expected Return"; }
+            #hysa table:nth-of-type(2) td:nth-of-type(2):before { content: "Investment Required"; }
 
              /* Responsive Directory */
              #directory ul li a {
@@ -258,13 +274,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>$0 - $11,600</td><td>10%</td></tr>
-                    <tr><td>$11,600 – $47,150</td><td>12%</td></tr>
-                    <tr><td>$47,150 – $100,525</td><td>22%</td></tr>
-                    <tr><td>$100,525 – $191,950</td><td>24%</td></tr>
-                    <tr><td>$191,950 – $243,725</td><td>32%</td></tr>
-                    <tr><td>$243,725 – $609,350</td><td>35%</td></tr>
-                    <tr><td>$609,350+</td><td>37%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$0 - $11,600</td><td data-label="Tax Rate">10%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$11,600 – $47,150</td><td data-label="Tax Rate">12%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$47,150 – $100,525</td><td data-label="Tax Rate">22%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$100,525 – $191,950</td><td data-label="Tax Rate">24%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$191,950 – $243,725</td><td data-label="Tax Rate">32%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$243,725 – $609,350</td><td data-label="Tax Rate">35%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$609,350+</td><td data-label="Tax Rate">37%</td></tr>
                 </tbody>
             </table>
             <h3>2024 Joint Filer Tax Brackets</h3>
@@ -273,13 +289,13 @@
                     <tr><th>Income Tax Bracket</th><th>Tax Rate</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>$0 – $23,200</td><td>10%</td></tr>
-                    <tr><td>$23,200 – $94,300</td><td>12%</td></tr>
-                    <tr><td>$94,300 – $201,050</td><td>22%</td></tr>
-                    <tr><td>$201,050 – $383,900</td><td>24%</td></tr>
-                    <tr><td>$383,900 – $487,450</td><td>32%</td></tr>
-                    <tr><td>$487,450 – $731,200</td><td>35%</td></tr>
-                    <tr><td>$731,200+</td><td>37%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$0 – $23,200</td><td data-label="Tax Rate">10%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$23,200 – $94,300</td><td data-label="Tax Rate">12%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$94,300 – $201,050</td><td data-label="Tax Rate">22%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$201,050 – $383,900</td><td data-label="Tax Rate">24%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$383,900 – $487,450</td><td data-label="Tax Rate">32%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$487,450 – $731,200</td><td data-label="Tax Rate">35%</td></tr>
+                    <tr><td data-label="Income Tax Bracket">$731,200+</td><td data-label="Tax Rate">37%</td></tr>
                 </tbody>
             </table>
             <h3>2024 Capital Gains Tax Brackets</h3>
@@ -288,9 +304,9 @@
                     <tr><th>Single Filer, Taxable Income Over</th><th>Joint Filer, Taxable Income Over</th><th>Capital Gains Rate</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>$0</td><td>$0</td><td>0%</td></tr>
-                    <tr><td>$47,025</td><td>$94,050</td><td>15%</td></tr>
-                    <tr><td>$518,900</td><td>$583,750</td><td>20%</td></tr>
+                    <tr><td data-label="Single Filer, Taxable Income Over">$0</td><td data-label="Joint Filer, Taxable Income Over">$0</td><td data-label="Capital Gains Rate">0%</td></tr>
+                    <tr><td data-label="Single Filer, Taxable Income Over">$47,025</td><td data-label="Joint Filer, Taxable Income Over">$94,050</td><td data-label="Capital Gains Rate">15%</td></tr>
+                    <tr><td data-label="Single Filer, Taxable Income Over">$518,900</td><td data-label="Joint Filer, Taxable Income Over">$583,750</td><td data-label="Capital Gains Rate">20%</td></tr>
                 </tbody>
             </table>
             <p>From this, you can see that individuals making <=$47,025 and joint couples making <=$94,050 are tax-exempt from qualified dividends. It’s important to note as of 2024, individuals making <= $14,600 and joint married couples making <= $29,200 will pay 0 federal taxes. This is the standard deduction that reduces your taxable income. Therefore if you were to make less than or equal to the standard deduction in total income, regardless of whether the dividends were qualified, the tax rate would be 0%.</p>
@@ -307,12 +323,14 @@
             <p>High-yield savings accounts are online accounts that pay multitudes more than a standard savings account. Let’s say you have $100 that you would like to deposit to a traditional savings account. On average, a traditional savings account may offer a .06% interest rate. This means that in 12 months, your $100 would be (100 * .0006) + 100 = $100.06. Now lets say you invest this same $100 in a high-yield savings account. When writing this article, the best interest rate offered is ~4.75%. This is ~79 times the average interest rate offered at a traditional savings account. In 12 months, your $100 would be (100 * .0475) + 100 = $104.75.</p>
             <p>Let’s scale things up and say you wanted to make $500/month passively.</p>
             <table>
-                <thead><tr><th colspan="2">Traditional Savings Account</th></tr><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
-                <tbody><tr><td>$500/month</td><td>(500 * 12)/.0006 = $10,000,000</td></tr></tbody>
+                <caption>Traditional Savings Account</caption>
+                <thead><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
+                <tbody><tr><td data-label="Expected Return">$500/month</td><td data-label="Investment Required">(500 * 12)/.0006 = $10,000,000</td></tr></tbody>
             </table>
             <table>
-                 <thead><tr><th colspan="2">High Yield Savings Account</th></tr><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
-                <tbody><tr><td>$500/month</td><td>(500 * 12)/.0475 = $126,315.79</td></tr></tbody>
+                 <caption>High Yield Savings Account</caption>
+                 <thead><tr><th>Expected Return</th><th>Investment Required</th></tr></thead>
+                <tbody><tr><td data-label="Expected Return">$500/month</td><td data-label="Investment Required">(500 * 12)/.0475 = $126,315.79</td></tr></tbody>
             </table>
             <p>The difference in investment required for expected return is significant.</p>
             <p>Please note, for simplicity, these calculations do not consider compounding interest. Compounding interest is the result of reinvesting the interest earned. Interest can be compounded daily, weekly, monthly, quarterly, or annually. Here is an updated list of the <a href="https://www.doctorofcredit.com/high-interest-savings-to-get/" target="_blank">best high-yield savings accounts</a>.</p>
