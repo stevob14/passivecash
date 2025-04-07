@@ -247,7 +247,7 @@
             /* text-shadow applied below */
         }
         /* Style for the actual price spans */
-        .BtcPrice, .EthPrice {
+        .BtcPrice, .EthPrice, .SolPrice {
             color: #00ff00; /* Green price */
             font-weight: bold;
             font-size: 1.2em; /* Match ticker style */
@@ -347,6 +347,7 @@
             <div id="crypto-menu"> <!-- Dropdown Menu -->
                 <button class="crypto-option" data-target="btc-section" data-display="Bitcoin (BTC)">Bitcoin (BTC)</button>
                 <button class="crypto-option" data-target="eth-section" data-display="Ethereum (ETH)">Ethereum (ETH)</button>
+                <button class="crypto-option" data-target="sol-section" data-display="Solana (SOL)">Solana (SOL)</button>
             </div>
         </div>
 
@@ -364,6 +365,13 @@
     <div id="chart-eth" class="chart-container"></div> <!-- Use unique ID -->
 </div>
 
+<div id="sol-section" class="crypto-section crypto-content">
+    <!-- Placeholder Title/Content -->
+    <span class="SolPrice"></span> <!-- Use unique class -->
+    <p>Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale today. It is known for its speed and low transaction costs. [Add more specific info/links if desired].</p>
+    <div id="chart-sol" class="chart-container"></div> <!-- Use unique ID -->
+</div>
+
     </div>
 
     <!-- Include jQuery and Highstock (for charts) -->
@@ -371,10 +379,9 @@
     <script src="js/highstock.js"></script>
     <!-- Include Crypto JS files -->
     <script src="js/linear_regression.js"></script> <!-- Uncommented and moved up -->
-    <script src="js/btc_ticker.js"></script>
-    <script src="js/eth_ticker.js"></script>
-    <script src="js/btc_chart.js"></script>
-    <script src="js/eth_chart.js"></script>
+    <script src="js/ticker.js"></script> <!-- Unified ticker script -->
+    <script src="js/chart.js"></script>  <!-- Unified chart script -->
+    <!-- Removed old btc/eth specific ticker and chart scripts -->
 
     <script>
         // Define baseTitle and updatePageTitle globally BEFORE document.ready
@@ -402,7 +409,6 @@
             // baseTitle is now global
             // --- Function to start/switch the active price ticker ---
             function startTicker(cryptoType) {
-                // currentCrypto = cryptoType; // No longer needed here for title updates
                 console.log("Starting ticker for:", cryptoType); // Debug log
                 // Clear any existing interval
                 if (activePriceIntervalId) {
@@ -411,16 +417,23 @@
                     console.log("Cleared previous interval"); // Debug log
                 }
 
-                // Start the new interval based on type, passing cryptoType
+                // Determine the correct price element selector based on cryptoType
+                let priceSelector;
                 if (cryptoType === 'btc') {
-                    btc_get_price(cryptoType); // Call once immediately, passing type
-                    activePriceIntervalId = setInterval(() => btc_get_price(cryptoType), 1000); // Pass type in interval
-                    console.log("Started BTC interval:", activePriceIntervalId); // Debug log
+                    priceSelector = '.BtcPrice';
                 } else if (cryptoType === 'eth') {
-                    eth_get_price(cryptoType); // Call once immediately, passing type
-                    activePriceIntervalId = setInterval(() => eth_get_price(cryptoType), 1000); // Pass type in interval
-                    console.log("Started ETH interval:", activePriceIntervalId); // Debug log
+                    priceSelector = '.EthPrice';
+                } else if (cryptoType === 'sol') {
+                    priceSelector = '.SolPrice';
+                } else {
+                     console.error("Cannot determine priceSelector in startTicker for:", cryptoType);
+                     return; // Don't proceed if type is unknown
                 }
+
+                // Use the unified ticker function, passing the selector
+                get_crypto_price(cryptoType, priceSelector); // Call once immediately
+                activePriceIntervalId = setInterval(() => get_crypto_price(cryptoType, priceSelector), 1000); // Set interval
+                console.log(`Started ${cryptoType.toUpperCase()} interval:`, activePriceIntervalId); // Debug log
             }
 
             // --- Custom Dropdown Logic ---
@@ -437,32 +450,59 @@
 
             // --- Function to show a specific section ---
             function showSection(targetId, updateHistory = true) {
-                // const currentActive = $('.crypto-content.active').attr('id'); // No longer needed for the check
                 const targetSection = $('#' + targetId);
                 const targetOption = cryptoOptions.filter(`[data-target="${targetId}"]`);
 
-                if (!targetSection.length) { // Only check if target exists
-                    return;
+                if (!targetSection.length) { return; } // Exit if target doesn't exist
+
+                // Derive cryptoType from targetId (e.g., "sol-section" -> "sol")
+                const cryptoType = targetId.replace('-section', '');
+                // Define valid types for safety check
+                const validTypes = ['btc', 'eth', 'sol'];
+                if (!validTypes.includes(cryptoType)) {
+                     console.error("Could not derive valid cryptoType from targetId:", targetId);
+                     return;
                 }
 
-                // Determine crypto type BEFORE changing classes, needed for startTicker
-                let cryptoType = 'btc'; // Default
-                if (targetId === 'eth-section') {
-                    cryptoType = 'eth';
-                }
+                // Derive chartContainerId (special case for btc)
+                const chartContainerId = (cryptoType === 'btc') ? 'chart' : `chart-${cryptoType}`;
 
-                // Update trigger button text (only if different from current)
+                // Update trigger button text
                 if (targetOption.length && cryptoMenuTrigger.text() !== targetOption.data('display')) {
                     cryptoMenuTrigger.text(targetOption.data('display'));
                 }
 
-                // Hide all sections and show the target (only if different from current)
+                // Hide other sections and show the target
                 const currentActiveSection = $('.crypto-content.active');
                 if (currentActiveSection.attr('id') !== targetId) {
                    currentActiveSection.removeClass('active');
                    targetSection.addClass('active');
                 }
 
+                // Initialize chart only if it hasn't been initialized yet
+                // We use a data attribute on the section to track initialization
+                if (targetSection.data('chart-initialized') !== true) {
+                    console.log(`Initializing chart for ${cryptoType} in #${chartContainerId}`);
+                    // Ensure the container exists before creating chart
+                    if ($(`#${chartContainerId}`).length) {
+                         create_crypto_chart(cryptoType, chartContainerId);
+                         targetSection.data('chart-initialized', true); // Mark as initialized
+                    } else {
+                         console.error(`Chart container #${chartContainerId} not found!`);
+                    }
+                } else {
+                     console.log(`Chart for ${cryptoType} already initialized.`);
+                     // Optional: Reflow existing chart if needed after being hidden/shown
+                     // This requires finding the specific chart instance. Highcharts stores them
+                     // in Highcharts.charts array, but finding the right one can be tricky.
+                     // A simpler way might be to store the chart instance on the element itself.
+                     // Or, if reflow isn't strictly necessary, just skip it.
+                     // Example using Highcharts.charts (less reliable if charts are destroyed/recreated):
+                     // const chartInstance = Highcharts.charts.find(c => c && c.renderTo.id === chartContainerId);
+                     // if (chartInstance) {
+                     //     chartInstance.reflow();
+                     // }
+                }
 
                 // Always start/restart the ticker for the selected section
                 startTicker(cryptoType);
@@ -477,11 +517,6 @@
                         window.location.hash = newHash; // Fallback
                     }
                 }
-
-                // Optional: Reflow chart if needed
-                // Highcharts.charts.forEach(chart => {
-                //     if (chart) chart.reflow();
-                // });
             }
 
             // Handle option selection from dropdown
@@ -500,13 +535,21 @@
 
             // --- Handle Hash on Page Load and Back/Forward ---
             function handleHashChange() {
-                const hash = window.location.hash;
-                let targetId = 'btc-section'; // Default to BTC
+                const hash = window.location.hash; // e.g., "#sol"
+                const validTypes = ['btc', 'eth', 'sol']; // Keep this list updated
+                let cryptoType = 'btc'; // Default
 
-                if (hash === '#eth') {
-                    targetId = 'eth-section';
+                if (hash && hash.length > 1) {
+                    const potentialType = hash.substring(1); // Remove '#' -> "sol"
+                    if (validTypes.includes(potentialType)) {
+                        cryptoType = potentialType;
+                    } else {
+                         console.warn(`Invalid hash detected: ${hash}. Defaulting to BTC.`);
+                    }
                 }
-                // No need for explicit #btc check, it's the default
+
+                // Construct targetId directly
+                const targetId = `${cryptoType}-section`;
 
                 showSection(targetId, false); // Show section without updating history again
             }
