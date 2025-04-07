@@ -1,0 +1,796 @@
+/* PassiveCash.xyz Common Styles */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+body {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
+}
+.navbar {
+    background-color: #1a1a1a; /* Darker navbar */
+    padding: 10px 0;
+    color: #00ff00; /* Green text */
+    border-bottom: 1px solid #00ff00; /* Green border */
+    position: relative; /* Needed for absolute positioning of mobile menu */
+}
+.navbar .container { /* Container for navbar content */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 960px; /* Limit navbar content width */
+     margin: auto; /* Center navbar content */
+     padding: 0 15px; /* Padding for navbar content */
+}
+ .navbar .logo {
+     color: #00ff00; /* Green logo */
+     text-decoration: none;
+     font-size: 1.5em;
+     font-weight: bold;
+     z-index: 10; /* Ensure logo is above mobile menu */
+ }
+/* Hamburger Button Styles */
+#hamburger-btn {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 5px;
+    z-index: 10; /* Ensure button is above mobile menu */
+}
+#hamburger-btn .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #00ff00;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Desktop Navigation Styles */
+.navbar ul#nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display links horizontally by default */
+}
+.navbar ul#nav-links li {
+    margin-left: 20px;
+}
+.navbar ul#nav-links li a {
+    color: #00ff00; /* Green links */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+.navbar ul#nav-links li a:hover,
+.navbar ul#nav-links li a.active {
+    background-color: #00ff00; /* Green background on hover/active */
+    color: #0a0a0a; /* Dark text on hover/active */
+}
+
+ /* Advertisement Bar Styles */
+ #advertisement {
+     background-color: #333; /* Dark grey background */
+     color: #ffa500; /* Orange text color (default, overridden by link style) */
+     padding: 8px 0;
+     text-align: center;
+     font-size: 0.9em;
+     border-bottom: 1px solid #555;
+ }
+ #advertisement a {
+     color: #ffa500 !important; /* Ensure link color overrides default */
+     text-decoration: underline;
+ }
+ #advertisement a:hover {
+     color: #ffc966 !important; /* Lighter orange on hover */
+ }
+
+
+ .content-container { /* Container for page content */
+     max-width: 960px;
+     margin: 20px auto;
+     background: #1f1f1f; /* Slightly lighter dark background */
+     padding: 30px 30px 50px 30px; /* Added 50px bottom padding */
+     border-radius: 0px; /* Sharp corners */
+     border: 1px solid #00ff00; /* Green border */
+     box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Green glow effect */
+     color: #e0e0e0; /* Ensure text color is light */
+ }
+
+h1 {
+    color: #00ff00; /* Green headings */
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #00ff00; /* Green text glow */
+}
+
+h2 { /* General H2 styling */
+    color: #00ff00; /* Green headings */
+    border-bottom: 1px solid #00ff00; /* Green border */
+    padding-bottom: 5px;
+    margin-bottom: 20px; /* Space below heading */
+    text-shadow: 0 0 3px #00ff00; /* Green text glow */
+    /* margin-top and scroll-margin-top are page/section specific */
+}
+
+h3 {
+    color: #33cc33; /* Lighter green for h3 */
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul { /* General UL styling */
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #66ccff; /* Light blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #99ddff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+/* --- Base Table Styles --- */
+table { /* Applies to all tables unless overridden */
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #444; /* Dark grey table borders */
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #333; /* Dark header background */
+    color: #00ff00; /* Green header text */
+}
+caption { /* Style for table captions */
+    color: #00ff00; /* Green caption text */
+    font-weight: bold;
+    padding: 8px; /* Add padding for spacing */
+    text-align: center; /* Center caption text */
+}
+
+
+
+/* --- Responsive --- */
+
+/* Basic Responsive Styling */
+/* Rules moved into the next @media block */
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+     /* Basic Responsive Styling */
+     .content-container {
+         padding: 20px;
+     }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+     /* Responsive Navbar */
+     .navbar .container {
+         position: relative; /* Needed for absolute positioning of menu */
+     }
+     #hamburger-btn {
+         display: block; /* Show hamburger */
+     }
+     .navbar ul#nav-links {
+         display: none; /* Hide links by default */
+         flex-direction: column;
+         width: 100%;
+         position: absolute;
+         top: 100%; /* Position below navbar */
+         left: 0;
+         background-color: #1a1a1a; /* Match navbar background */
+         padding: 10px 0; /* Add some padding */
+         border-top: 1px solid #00ff00; /* Separator */
+         z-index: 100; /* Ensure menu is above content */
+     }
+     .navbar ul#nav-links.active {
+         display: flex; /* Show links when active */
+     }
+     .navbar ul#nav-links li {
+         margin-left: 0;
+         margin-bottom: 0; /* Remove bottom margin */
+         text-align: center;
+         width: 100%; /* Make list items full width */
+     }
+     .navbar ul#nav-links li a {
+         display: block; /* Make links take full width */
+         padding: 10px 0; /* Adjust padding */
+         border-bottom: 1px solid #333; /* Separator between links */
+     }
+     .navbar ul#nav-links li:last-child a {
+         border-bottom: none; /* Remove border from last link */
+     }
+}
+
+
+/* --- End Common Styles --- */
+
+/* --- Page-Specific Styles for index.html --- */
+
+/* Directory Styles */
+#directory {
+    margin-bottom: 40px; /* More space after directory */
+    padding: 15px;
+    border: 1px dashed #00ff00;
+    background-color: #2a2a2a;
+}
+#directory h3 {
+    margin-top: 0;
+    color: #00ff00;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+#directory ul {
+    list-style: none; /* Use custom marker or none */
+    margin-left: 0;
+    padding-left: 0; /* Remove default padding */
+}
+ #directory ul li {
+     margin-bottom: 8px; /* Space between items */
+ }
+ #directory ul li a {
+     cursor: pointer; /* Indicate clickable */
+     display: block; /* Make link take full width for easier clicking */
+     padding: 3px 0;
+ }
+ #directory ul li a::before {
+     content: "> "; /* Hacker-style marker */
+     color: #00ff00;
+     margin-right: 5px;
+ }
+ #directory ul li a.active-link {
+     font-weight: bold;
+     background-color: rgba(0, 255, 0, 0.1); /* Subtle green background for active link */
+ }
+
+
+/* --- Page Section Base Styles --- */
+.content-section,
+.crypto-section,
+.calculator-section {
+    display: none; /* Hide sections by default */
+}
+
+/* Content Section Styles (index.html) */
+.content-section {
+    margin-top: 30px; /* Space above active section */
+    padding-top: 20px; /* Space below heading */
+    border-top: 1px dashed #444; /* Separator */
+}
+/* --- Page Section Active State --- */
+.content-section.active,
+.crypto-section.active,
+.calculator-section.active {
+    display: block; /* Show active section */
+}
+ /* Specific H2 adjustments for index.html sections */
+ .content-section h2 {
+     margin-top: 0;
+     scroll-margin-top: 80px; /* Adjusted space above heading when jumping (navbar + ad bar) */
+ }
+
+/* Section Navigation Styles (index.html) */
+.section-nav {
+    display: flex;
+    justify-content: space-between; /* Pushes Prev/Next apart */
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #444; /* Separator */
+}
+/* --- Shared Button Styles --- */
+.section-nav button,
+.calculateBtn {
+    background-color: #1a1a1a; /* Dark background */
+    color: #00ff00; /* Green text */
+    padding: 8px 15px; /* Default padding, adjust as needed */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 0.9em; /* Default font size */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Specific padding/size for calculateBtn */
+.calculateBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Shared Button Hover/Active Styles */
+.section-nav button:hover,
+.section-nav button.active,
+.calculateBtn:hover,
+.calculateBtn.active-selector {
+    background-color: #00ff00; /* Green background */
+    color: #0a0a0a; /* Dark text */
+}
+.section-nav .prev-btn {
+    /* Specific styles if needed */
+}
+.section-nav .next-btn {
+    /* Specific styles if needed */
+    margin-left: auto; /* Ensure Next is pushed right if only Next exists */
+}
+/* Table Styles specific to index.html (if any) can go here */
+blockquote {
+    border-left: 4px solid #00ff00; /* Green blockquote border */
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #ccc; /* Lighter grey for quote */
+    background-color: #2a2a2a; /* Slightly different dark bg */
+}
+
+
+/* --- Responsive Table Styles (index.html) --- */
+@media (max-width: 600px) {
+    /* Responsive Tables */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr { border: 1px solid #444; margin-bottom: 10px; } /* Increased margin */
+    /* Style for table caption on mobile */
+    caption {
+        padding: 8px;
+        text-align: center; /* Center caption */
+        font-weight: bold;
+        color: #00ff00; /* Match label color */
+        border-bottom: 1px dashed #444; /* Separator below caption */
+        margin-bottom: 5px; /* Space below caption */
+        display: block; /* Ensure it takes block layout */
+    }
+    td {
+        border: none;
+        border-bottom: 1px dashed #444; /* Dashed separator */
+        padding-left: 8px;  /* Reset padding */
+        padding-top: 8px;
+        padding-bottom: 8px;
+        white-space: normal;
+        text-align: left; /* Keep data aligned left */
+        display: block;
+    }
+     /* Remove bottom border from last td in a tr */
+     tr td:last-child {
+         border-bottom: none;
+     }
+    /* General rule for all table cell labels on mobile */
+    td:before {
+        padding-right: 10px; /* Keep some space */
+        white-space: normal;
+        text-align: left;
+        font-weight: bold;
+        color: #00ff00; /* Green label */
+        content: attr(data-label); /* Use data-label attribute */
+        display: block; /* Make label appear above data */
+        margin-bottom: 3px; /* Add space below label */
+    }
+
+    /* Responsive Directory (index.html) */
+    #directory ul li a {
+        padding: 5px; /* Slightly more padding for touch */
+    }
+
+     /* HYSA Comparison (index.html) */
+    #hysa table:nth-of-type(1) th:nth-of-type(1):before { content: ""; } /* Hide header label for 1st HYSA table */
+    #hysa table:nth-of-type(1) td:nth-of-type(1):before { content: "Expected Return"; }
+    #hysa table:nth-of-type(1) td:nth-of-type(2):before { content: "Investment Required"; }
+    #hysa table:nth-of-type(2) th:nth-of-type(1):before { content: ""; } /* Hide header label for 2nd HYSA table */
+    #hysa table:nth-of-type(2) td:nth-of-type(1):before { content: "Expected Return"; }
+    #hysa table:nth-of-type(2) td:nth-of-type(2):before { content: "Investment Required"; }
+    /* Responsive Calculator General (max-width: 600px) */
+     .calc-row label {
+        flex-basis: 100%; /* Stack label above input */
+        margin-bottom: 5px;
+        margin-right: 0; /* Remove right margin */
+    }
+     .calc-row input[type="number"],
+     .calc-row input[type="text"],
+     .calc-row select {
+         width: 100%; /* Ensure input/select takes full width */
+         min-width: none; /* Remove min-width constraint */
+     }
+     .calc-row small {
+         margin-left: 0 !important; /* Reset margin, ensure override */
+         flex-basis: auto; /* Allow small to fit naturally */
+     }
+}
+
+/* --- End index.html Specific Styles --- */
+
+
+/* --- Page-Specific Styles for crypto.html --- */
+
+ /* Crypto Specific Styles */
+ .crypto-section {
+     margin-bottom: 40px;
+     /* display: none; rule moved to grouped selector */
+ }
+ /* .crypto-section.active rule moved to grouped selector */
+
+ /* --- Custom Crypto Selector Dropdown --- */
+ /* --- Custom Dropdown Selector Containers --- */
+ #crypto-selector-container,
+ #calculator-selector-container {
+     margin-bottom: 30px;
+     text-align: left; /* Align container content left */
+     position: relative; /* Needed for absolute positioning of menu */
+ }
+ /* --- Custom Dropdown Trigger Buttons --- */
+ #crypto-menu-trigger,
+ #calculator-menu-trigger {
+     display: block; /* Make trigger full width */
+     width: 100%; /* Explicitly set full width */
+     text-align: center; /* Center text within the button */
+     margin-bottom: 5px;
+     /* Base button styles */
+     background-color: #1a1a1a;
+     color: #00ff00;
+     padding: 10px 20px;
+     border: 1px solid #00ff00;
+     border-radius: 0px;
+     cursor: pointer;
+     font-size: 1em;
+     font-weight: bold;
+     transition: background-color 0.3s, color 0.3s;
+     font-family: 'Courier New', Courier, monospace;
+     position: relative; /* For pseudo-element arrow */
+     padding-right: 30px; /* Make space for arrow */
+ }
+ /* Specific trigger styles if needed can go here */
+ #calculator-menu-trigger {
+     display: inline-block; /* Override for calculator page */
+ }
+ /* Dropdown arrow for triggers */
+ #crypto-menu-trigger::after,
+ #calculator-menu-trigger::after {
+     content: '';
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 5px solid #00ff00; /* Green arrow */
+     pointer-events: none; /* Prevent arrow from interfering with clicks */
+ }
+ /* Trigger hover state */
+ #crypto-menu-trigger:hover,
+ #calculator-menu-trigger:hover {
+     background-color: #00ff00;
+     color: #0a0a0a;
+ }
+ /* --- Custom Dropdown Menus --- */
+ #crypto-menu,
+ #calculator-menu {
+     display: none; /* Hide menu by default */
+     position: absolute;
+     top: 100%; /* Position below trigger */
+     left: 0; /* Align menu to the left */
+     width: 100%; /* Make menu full width */
+     background-color: #1a1a1a; /* Dark background for dropdown */
+     border: 1px solid #00ff00; /* Green border */
+     z-index: 50; /* Ensure it's above other content */
+     padding: 5px 0;
+     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Subtle green shadow */
+ }
+ #crypto-menu.active,
+ #calculator-menu.active {
+     display: block; /* Show menu when active */
+ }
+ /* --- Custom Dropdown Options --- */
+ #crypto-menu .crypto-option,
+ #calculator-menu .calculator-option {
+     display: block;
+     width: 100%;
+     margin: 0;
+     padding: 10px 15px;
+     text-align: left;
+     border: none;
+     border-bottom: 1px solid #333; /* Separator */
+     border-radius: 0;
+     font-size: 1em;
+     /* Base button styles */
+     background-color: #1a1a1a;
+     color: #00ff00;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+ }
+ #crypto-menu .crypto-option:last-child,
+ #calculator-menu .calculator-option:last-child {
+     border-bottom: none;
+ }
+ #crypto-menu .crypto-option:hover,
+ #calculator-menu .calculator-option:hover {
+     background-color: #00ff00;
+     color: #0a0a0a;
+ }
+ /* Style for the selected option */
+ #crypto-menu .crypto-option.active-selector,
+ #calculator-menu .calculator-option.active-selector {
+     background-color: #00ff00;
+     color: #0a0a0a;
+     cursor: default;
+ }
+ .ticker {
+     font-size: 1.2em;
+     font-weight: bold;
+     margin-bottom: 15px;
+     padding: 10px;
+     background-color: #2a2a2a; /* Dark background */
+     border-radius: 0px; /* Sharp corners */
+     text-align: center;
+     border: 1px dashed #444; /* Dashed dark grey border */
+     color: #e0e0e0; /* Light text */
+ }
+ .ticker span { /* Style for the price */
+    color: #00ff00; /* Green price */
+    margin-left: 10px;
+    font-weight: bold;
+    /* text-shadow applied below */
+}
+/* Style for the actual price spans */
+.BtcPrice, .EthPrice, .SolPrice {
+    color: #00ff00; /* Green price */
+    font-weight: bold;
+    font-size: 1.2em; /* Match ticker style */
+    display: block; /* Allow margin/centering */
+    margin-bottom: 15px; /* Space below price */
+    text-shadow: 0 0 3px #00ff00; /* Add glow effect */
+}
+.chart-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-top: 10px;
+    border: 1px solid #444; /* Dark grey border for chart */
+     background-color: #111; /* Dark background for chart area */
+ }
+
+/* --- End crypto.html Specific Styles --- */
+
+
+/* --- Page-Specific Styles for calculators.html --- */
+
+ /* Calculator Styles (Shared) */
+ .calculator-section {
+     background-color: #2a2a2a; /* Dark background for calc section */
+     padding: 20px;
+     border-radius: 0px; /* Sharp corners */
+     margin-top: 20px;
+     margin-bottom: 30px;
+     border: 1px dashed #00ff00; /* Dashed green border */
+     color: #e0e0e0; /* Ensure text is light */
+     display: none; /* Hide calculators by default */
+ }
+ .calculator-section.active {
+     display: block; /* Show the active calculator */
+ }
+ /* --- Calculator Selector --- */
+ /* Redundant rule block removed */
+
+ /* Styles for Dropdown (Now applies to all sizes) */
+ #calculator-selector-container {
+     text-align: left; /* Align trigger button left */
+ }
+ #calculator-menu-trigger {
+     display: inline-block; /* Show trigger */
+     width: 100%; /* Make trigger full width */
+     text-align: center; /* Center text in trigger */
+     margin-bottom: 5px;
+     /* Inherits .calculateBtn styles, ensure overrides below if needed */
+ }
+ /* Redundant rule block removed */
+ /* Redundant rule block removed */
+ .calc-row {
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ .calc-row label {
+     flex-basis: 250px;
+     margin-right: 10px;
+     font-weight: bold;
+     color: #00ff00; /* Green labels */
+ }
+ .calc-row input[type="number"],
+ .calc-row input[type="text"],
+ .calc-row select {
+     flex-grow: 1;
+     padding: 8px;
+     border: 1px solid #444; /* Default dark grey border */
+     border-radius: 0px; /* Sharp corners */
+     min-width: 100px;
+     background-color: #111; /* Very dark input background */
+     color: #e0e0e0; /* Light text in input */
+ }
+ .calc-row input[type="number"]:focus,
+ .calc-row input[type="text"]:focus,
+ .calc-row select:focus {
+     border-color: #00ff00; /* Green border on focus */
+     outline: none; /* Remove default browser outline */
+     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
+ }
+  .calc-row small {
+     flex-basis: 100%;
+     margin-left: 260px; /* Align with input */
+     font-size: 0.8em;
+     color: #aaa; /* Lighter grey for small text */
+  }
+ /* .calculateBtn rule block removed as styles are now grouped above */
+ .calculator-results { /* Generic results class */
+     margin-top: 20px;
+     padding-top: 15px;
+     border-top: 1px dashed #00ff00; /* Dashed green border */
+ }
+ .calculator-results h3 {
+     margin-top: 0;
+     color: #00ff00; /* Green results heading */
+ }
+ .calculator-results p {
+     margin-bottom: 5px;
+ }
+ .calculator-results span {
+     font-weight: bold;
+ }
+ /* Rebalancer specific */
+ #investmentTable { width: 100%; border-collapse: collapse; margin-top: 15px; } /* Restored width: 100% */
+ #investmentTable th, #investmentTable td { border: 1px solid #444; padding: 8px; text-align: left; }
+ #investmentTable th { background-color: #333; color: #00ff00; }
+ #investmentTable input[type="text"], #investmentTable input[type="number"] { width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
+ #investmentTable input[type="text"]:focus,
+ #investmentTable input[type="number"]:focus {
+     border-color: #00ff00; /* Green border on focus */
+     outline: none; /* Remove default browser outline */
+     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
+ }
+ #investmentTable button { background-color: #1a1a1a; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 0; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
+ #investmentTable button:hover { background-color: #ff4444; color: #1a1a1a; /* Red background, dark text on hover */ }
+ .rebalanceAmount.positive { color: #00ff00; } /* Green for buy */
+ .rebalanceAmount.negative { color: #ff4444; } /* Red for sell */
+ .rebalanceAmount.neutral { color: #aaa; } /* Grey for hold */
+ #rebalancer-summary p { margin: 5px 0; }
+ #rebalancer-summary span { font-weight: bold; color: #00ff00; }
+ #error-message { color: #ff4444; font-weight: bold; margin-top: 10px; }
+
+ /* Responsive Calculator Styles */
+ @media (max-width: 768px) {
+    /* --- Mobile-Specific Rebalancer Table Styles --- */
+    #investmentTable,
+    #investmentTable thead,
+    #investmentTable tbody,
+    #investmentTable tfoot,
+    #investmentTable th,
+    #investmentTable td,
+    #investmentTable tr {
+        display: block;
+    }
+    #investmentTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #investmentTable tr {
+        border: 1px solid #444; /* Dark grey border */
+        margin-bottom: 15px; /* Space out the "cards" */
+    }
+    #investmentTable td {
+        border: none;
+        border-bottom: 1px dashed #444; /* Dark dashed separator */
+        position: relative;
+        padding-left: 50%; /* Make space for the label */
+        text-align: right; /* Align cell content to the right */
+        min-height: 30px; /* Ensure cells have some height */
+        display: flex; /* Use flex for better alignment */
+        align-items: center; /* Vertically center content */
+        justify-content: flex-end; /* Align content to the right */
+    }
+     #investmentTable tr td:last-child {
+         border-bottom: none; /* Remove border from last cell in row */
+     }
+    #investmentTable td:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Vertically center label */
+        left: 10px;
+        width: 45%; /* Reserve space for the label */
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left; /* Align label text to the left */
+        font-weight: bold;
+        content: attr(data-label); /* Use data-label attribute */
+        color: #00ff00; /* Green label */
+    }
+    /* Add data-label attributes via CSS content */
+    #investmentTable td:nth-of-type(1):before { content: "Symbol"; }
+    #investmentTable td:nth-of-type(2):before { content: "Value ($)"; }
+    #investmentTable td:nth-of-type(3):before { content: "Target (%)"; }
+    #investmentTable td:nth-of-type(4):before { content: "Rebalance"; }
+    #investmentTable td:nth-of-type(5):before { content: "Action"; }
+
+    /* Style inputs within the mobile table cells */
+    #investmentTable td input[type="number"],
+    #investmentTable td input[type="text"] {
+        width: 100%; /* Make inputs fill the cell space */
+        text-align: right; /* Keep number alignment */
+    }
+    /* Center the remove button in its cell */
+    #investmentTable td:nth-of-type(5) {
+        padding-left: 10px; /* Reset padding */
+        text-align: center;
+        justify-content: center; /* Center button horizontally */
+    }
+    #investmentTable td:nth-of-type(5):before {
+        content: ""; /* Hide label */
+    }
+    #investmentTable td:nth-of-type(5) button {
+        width: auto; /* Let button size naturally */
+        padding: 5px 10px; /* Adjust button padding */
+        float: none; /* Remove float */
+    }
+    /* Footer styling for mobile */
+    #investmentTable tfoot tr {
+        border: none; /* No border for footer rows */
+        margin-bottom: 0;
+    }
+    #investmentTable tfoot th {
+        display: block; /* Make it block like other rows */
+        width: 100%;   /* Take full width */
+        box-sizing: border-box; /* Include padding/border in width */
+    /* Responsive Calculator General (max-width: 600px) */
+     .calc-row label {
+        flex-basis: 100%; /* Stack label above input */
+        margin-bottom: 5px;
+        margin-right: 0; /* Remove right margin */
+    }
+     .calc-row input[type="number"],
+     .calc-row input[type="text"],
+     .calc-row select {
+         width: 100%; /* Ensure input/select takes full width */
+         min-width: none; /* Remove min-width constraint */
+     }
+     .calc-row small {
+         margin-left: 0 !important; /* Reset margin, ensure override */
+         flex-basis: auto; /* Allow small to fit naturally */
+     }
+        text-align: left;
+        border-bottom: 1px solid #444;
+        padding: 8px 10px;
+        margin-bottom: 5px; /* Add some space below each footer row */
+    }
+    #investmentTable tfoot th span {
+        font-weight: normal;
+        color: #e0e0e0;
+    }
+ }
+
+
+/* --- End calculators.html Specific Styles --- */
