@@ -44,14 +44,14 @@
 
         <div id="calculator-selector-container"> <!-- Renamed container -->
             <!-- Trigger button for mobile -->
-            <button id="calculator-menu-trigger" class="calculateBtn">Select Calculator ▼</button>
+            <button id="calculator-menu-trigger" class="calculateBtn">Compound Interest</button>
 
             <!-- Menu containing the actual buttons -->
             <div id="calculator-menu">
-                 <button class="calculateBtn calculator-option" data-target="compound">Compound Interest</button>
-                 <button class="calculateBtn calculator-option" data-target="rebalancer">Portfolio Rebalancer</button>
-                 <button class="calculateBtn calculator-option" data-target="inflation">Inflation</button>
-                 <button class="calculateBtn calculator-option" data-target="mortgage">Mortgage</button>
+                 <button class="calculateBtn calculator-option" data-target="compound" data-display="Compound Interest">Compound Interest</button>
+                 <button class="calculateBtn calculator-option" data-target="rebalancer" data-display="Portfolio Rebalancer">Portfolio Rebalancer</button>
+                 <button class="calculateBtn calculator-option" data-target="inflation" data-display="Inflation">Inflation</button>
+                 <button class="calculateBtn calculator-option" data-target="mortgage" data-display="Mortgage">Mortgage</button>
             </div>
         </div>
 
@@ -218,95 +218,118 @@
     <!-- Calculator Switching Logic -->
     <script>
         $(document).ready(function() {
+            // --- Custom Dropdown Logic (Adapted from crypto.html) ---
             const calculatorMenuTrigger = $('#calculator-menu-trigger');
             const calculatorMenu = $('#calculator-menu');
-            const calculatorOptions = $('#calculator-menu .calculator-option'); // Target options within menu
-            const calculatorSections = $('.calculator-content');
+            const calculatorOptions = $('#calculator-menu .calculator-option');
+            const calculatorSections = $('.calculator-section'); // Use .calculator-section
 
-            // --- Toggle Mobile Menu ---
+            // Toggle dropdown visibility
             calculatorMenuTrigger.on('click', function(e) {
-                e.stopPropagation(); // Prevent click from closing menu immediately
+                e.stopPropagation(); // Prevent click from immediately closing menu
                 calculatorMenu.toggleClass('active');
-                // Optional: Change arrow direction
-                $(this).html(calculatorMenu.hasClass('active') ? 'Select Calculator ▲' : 'Select Calculator ▼');
             });
 
-            // --- Close Mobile Menu if clicked outside ---
-            $(document).on('click', function(e) {
-                // Check if menu is active and the click was outside the container
-                if (calculatorMenu.hasClass('active') && !$(e.target).closest('#calculator-selector-container').length) {
-                    calculatorMenu.removeClass('active');
-                    // Reset trigger text to the currently selected calculator name
-                    const activeOptionText = calculatorOptions.filter('.active-selector').text() || 'Compound Interest'; // Default if none active somehow
-                    calculatorMenuTrigger.html(activeOptionText + ' ▼');
-                }
-            });
-
-
-            // --- Function to show a specific calculator ---
-            function showCalculator(targetId) {
+            // --- Function to show a specific calculator section ---
+            function showCalculatorSection(targetId, updateHistory = true) {
                 // Remove # if present
                 const cleanTargetId = targetId.startsWith('#') ? targetId.substring(1) : targetId;
 
-                // Find the target section and button option
                 const targetSection = $('#' + cleanTargetId);
                 const targetOption = calculatorOptions.filter(`[data-target="${cleanTargetId}"]`);
 
-                // If valid target found, show it
-                if (targetSection.length && targetOption.length) {
-                    calculatorSections.removeClass('active');
-                    calculatorOptions.removeClass('active-selector'); // Target options
-                    targetSection.addClass('active');
-                    targetOption.addClass('active-selector'); // Target options
+                if (!targetSection.length) {
+                     console.warn(`Target section #${cleanTargetId} not found. Defaulting.`);
+                     // Default to compound if target is invalid
+                     showCalculatorSection('compound', false); // Call recursively with default, don't update history
+                     return;
+                }
 
-                    // Update trigger button text on mobile (optional, but helpful)
-                    // Check if trigger is visible (i.e., we are on mobile)
-                    if (calculatorMenuTrigger.is(':visible')) {
-                         calculatorMenuTrigger.html(targetOption.text() + ' ▼'); // Update trigger text
-                         calculatorMenu.removeClass('active'); // Close menu after selection
-                    }
-
+                // Update trigger button text using data-display
+                let buttonText = "Select Calculator"; // Fallback text
+                if (targetOption.length && targetOption.data('display')) {
+                     buttonText = targetOption.data('display');
                 } else {
-                    // Default to compound if hash/target is invalid or not found
-                    calculatorSections.removeClass('active');
-                    calculatorOptions.removeClass('active-selector');
-                    $('#compound').addClass('active');
-                    const defaultOption = calculatorOptions.filter('[data-target="compound"]');
-                    defaultOption.addClass('active-selector');
-                     if (calculatorMenuTrigger.is(':visible')) {
-                         calculatorMenuTrigger.html(defaultOption.text() + ' ▼'); // Update trigger text
-                         calculatorMenu.removeClass('active');
+                     // If targetOption not found or missing data-display, use default
+                     const defaultOption = calculatorOptions.filter('[data-target="compound"]');
+                     if (defaultOption.length && defaultOption.data('display')) {
+                         buttonText = defaultOption.data('display');
                      }
                 }
-            }
+                calculatorMenuTrigger.text(buttonText); // Set the button text
 
-            // --- Handle Hash on Page Load ---
-            const initialHash = window.location.hash;
-            if (initialHash) {
-                showCalculator(initialHash);
-            } else {
-                // Default to compound if no hash
-                showCalculator('compound');
-            }
 
-            // --- Handle Option Clicks ---
-            calculatorOptions.on('click', function() { // Target options
-                const targetId = $(this).data('target');
-                showCalculator(targetId);
-                // Update URL hash without causing page jump
-                if (history.pushState) {
-                    history.pushState(null, null, '#' + targetId);
+                // Hide other sections and show the target
+                const currentActiveSection = $('.calculator-section.active'); // Target calculator sections
+                if (currentActiveSection.attr('id') !== cleanTargetId) {
+                   currentActiveSection.removeClass('active');
+                   targetSection.addClass('active');
+                }
+
+                // Update active state on options
+                calculatorOptions.removeClass('active-selector');
+                if(targetOption.length) {
+                    targetOption.addClass('active-selector');
                 } else {
-                    window.location.hash = '#' + targetId;
+                    // Highlight default option if target option wasn't found
+                    calculatorOptions.filter('[data-target="compound"]').addClass('active-selector');
+                }
+
+
+                // Update URL hash if requested and different
+                const currentHash = window.location.hash;
+                const newHash = '#' + cleanTargetId;
+                if (updateHistory && currentHash !== newHash) {
+                    if (history.pushState) {
+                        history.pushState(null, null, newHash);
+                    } else {
+                        window.location.hash = newHash; // Fallback
+                    }
+                }
+            }
+
+            // Handle option selection from dropdown
+            calculatorOptions.on('click', function() {
+                const targetId = $(this).data('target');
+                calculatorMenu.removeClass('active'); // Hide menu
+                showCalculatorSection(targetId, true); // Show section and update history
+            });
+
+            // Close dropdown if clicking outside
+            $(document).on('click', function(e) {
+                if (!calculatorMenu.is(e.target) && calculatorMenu.has(e.target).length === 0 && !calculatorMenuTrigger.is(e.target)) {
+                    calculatorMenu.removeClass('active');
                 }
             });
+
+            // --- Handle Hash on Page Load and Back/Forward ---
+            function handleCalcHashChange() {
+                const hash = window.location.hash;
+                const validCalcTargets = ['compound', 'rebalancer', 'inflation', 'mortgage']; // Keep this updated
+                let targetId = 'compound'; // Default
+
+                if (hash && hash.length > 1) {
+                    const potentialTarget = hash.substring(1);
+                    if (validCalcTargets.includes(potentialTarget)) {
+                        targetId = potentialTarget;
+                    } else {
+                         console.warn(`Invalid calculator hash detected: ${hash}. Defaulting to compound.`);
+                    }
+                }
+                showCalculatorSection(targetId, false); // Show section without updating history again
+            }
+
+            // Listen for hash changes (back/forward buttons)
+            $(window).on('hashchange', handleCalcHashChange);
+
+            // Initial page load check
+            handleCalcHashChange();
 
             // --- Initialize Calculators (assuming functions exist) ---
             // No init function needed for calculator.js as it uses onclick
             // No init function needed for rebalancer.js as it uses DOMContentLoaded and oninput
             // No init function needed for inflation_calculator.js as it uses onclick
             // No init function needed for mortgage.js as it uses onclick
-
         });
     </script>
 

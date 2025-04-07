@@ -462,6 +462,10 @@ blockquote {
      font-family: 'Courier New', Courier, monospace;
      position: relative; /* For pseudo-element arrow */
      padding-right: 30px; /* Make space for arrow */
+     /* Reset browser default appearance */
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
  }
  /* Specific trigger styles if needed can go here */
  #calculator-menu-trigger {
