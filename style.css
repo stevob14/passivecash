@@ -490,6 +490,11 @@ blockquote {
      background-color: #00ff00;
      color: #0a0a0a;
  }
+ /* Change arrow color on trigger hover */
+ #crypto-menu-trigger:hover::after,
+ #calculator-menu-trigger:hover::after {
+     border-top-color: #0a0a0a; /* Match dark text color */
+ }
  /* --- Custom Dropdown Menus --- */
  #crypto-menu,
  #calculator-menu {
