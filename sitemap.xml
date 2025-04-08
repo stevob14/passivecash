@@ -61,6 +61,12 @@
     <priority>0.8</priority> <!-- Slightly lower than main crypto page -->
   </url>
   <url>
+    <loc>https://www.passivecash.xyz/market.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.passivecash.xyz/contact.html</loc>
     <lastmod>2025-04-07</lastmod>
     <changefreq>yearly</changefreq>
