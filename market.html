@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="US Stock Market overview and news summary from PassiveCash.xyz.">
+    <title>Market Overview - PassiveCash.xyz</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q203YEXP0D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q203YEXP0D');
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+             <a href="index.html" class="logo">PassiveCash.xyz</a>
+             <!-- Hamburger Button -->
+             <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </button>
+             <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculators.html">Calculators</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+                <li><a href="market.html" class="active">Market</a></li> <!-- Add Market link -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Advertisement Bar -->
+    <div id="advertisement"></div>
+
+    <div class="content-container">
+        <h1>Market Overview</h1>
+        <p class="powered-by">Powered by Google AI</p>
+        <div id="market-overview-content">
+            <p class="loading-placeholder">Loading market overview...</p>
+        </div>
+        <div id="overview-status"></div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            hamburgerBtn.setAttribute('aria-expanded', isExpanded);
+        });
+    </script>
+
+    <!-- Fetch and Display Market Overview -->
+    <script>
+        $(document).ready(function() {
+            // Define the URL for your Flask app endpoint
+            // IMPORTANT: Replace with your actual PythonAnywhere URL if running there
+            // For local testing, it might be http://127.0.0.1:5000/get-market-overview
+            const overviewApiUrl = 'https://stevob144.pythonanywhere.com/get-market-overview'; // Use absolute URL for local testing
+
+            const $contentDiv = $('#market-overview-content');
+            const $statusDiv = $('#overview-status');
+
+            $.ajax({
+                url: overviewApiUrl,
+                method: 'GET',
+                dataType: 'json',
+                timeout: 30000, // 30 second timeout
+                success: function(data) {
+                    $contentDiv.empty(); // Clear loading message
+                    if (data && data.error) {
+                        console.error("Error fetching market overview:", data.error);
+                        $contentDiv.append($('<p>').addClass('error-message').text('Error fetching market overview: ' + data.error));
+                    } else if (data && data.overview) {
+                        // Parse and style the overview text
+                        let styledOverview = data.overview;
+
+                        // Style positive numbers/percentages (e.g., +1.23%, +50) - Green
+                        styledOverview = styledOverview.replace(/(\+[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="positive">$1</span>');
+
+                        // Style negative numbers/percentages (e.g., -0.5%, -100) - Red
+                        styledOverview = styledOverview.replace(/(-[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="negative">$1</span>');
+
+                        // Style **bold** text - Green and Bold
+                        styledOverview = styledOverview.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
+
+                        // Style *italic* text - Green and Bold (as requested)
+                        styledOverview = styledOverview.replace(/\*(.*?)\*/g, '<span class="highlight">$1</span>');
+
+                        // Display the styled HTML
+                        $contentDiv.html(styledOverview); // Use .html() to render the styled spans
+
+                        // Display timestamp
+                        if (data.timestamp) {
+                            try {
+                                const date = new Date(data.timestamp);
+                                $statusDiv.text('Last updated: ' + date.toLocaleString());
+                            } catch (e) {
+                                console.error("Error parsing timestamp:", e);
+                                $statusDiv.text('Last updated: (timestamp unavailable)');
+                            }
+                        } else {
+                             $statusDiv.text('Last updated: (timestamp unavailable)');
+                        }
+                    } else {
+                        console.error("Invalid data received:", data);
+                        $contentDiv.append($('<p>').addClass('error-message').text('Received invalid data for market overview.'));
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error("AJAX error fetching market overview:", textStatus, errorThrown);
+                    $contentDiv.empty(); // Clear loading message
+                    $contentDiv.append($('<p>').addClass('error-message').text('Could not load market overview. Status: ' + textStatus));
+                    $statusDiv.empty();
+                }
+            });
+        });
+    </script>
+
+    <!-- Advertisement Script -->
+    <script src="js/advertisement.js"></script>
+
+</body>
+</html>
