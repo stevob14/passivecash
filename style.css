@@ -173,7 +173,7 @@ caption { /* Style for table captions */
 /* Rules moved into the next @media block */
 
 /* Responsive Navbar */
-@media (max-width: 768px) {
+@media (max-width: 992px) { /* Increased breakpoint for earlier hamburger menu */
      /* Basic Responsive Styling */
      .content-container {
          padding: 20px;
@@ -803,3 +803,73 @@ blockquote {
 
 
 /* --- End calculators.html Specific Styles --- */
+
+/* --- Page-Specific Styles for market.html --- */
+#market-overview-content {
+    white-space: pre-wrap; /* Preserve line breaks from the AI response */
+    background-color: #2a2a2a;
+    padding: 15px;
+    border: 1px dashed #444;
+    margin-top: 20px;
+    min-height: 100px; /* Ensure it has some height while loading */
+}
+#overview-status {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: right;
+}
+.loading-placeholder {
+    color: #666;
+    font-style: italic;
+}
+.error-message {
+    color: #ff4444; /* Red for errors */
+    font-weight: bold;
+}
+.powered-by {
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: -15px; /* Adjust to pull it closer to H1 */
+    margin-bottom: 25px; /* Add space below */
+}
+/* Styles for dynamic content */
+.positive {
+    color: #33cc33; /* Lighter green for positive numbers */
+    font-weight: bold;
+}
+.negative {
+    color: #ff4444; /* Red for negative numbers */
+    font-weight: bold;
+}
+.highlight {
+    color: #33cc33; /* Lighter green for asterisk text */
+    font-weight: bold; /* Make it bold as well */
+}
+/* --- End market.html Specific Styles --- */
+
+/* --- Page-Specific Styles for market.html --- */
+#market-overview-content {
+    white-space: pre-wrap; /* Preserve line breaks from the AI response */
+    background-color: #2a2a2a;
+    padding: 15px;
+    border: 1px dashed #444;
+    margin-top: 20px;
+    min-height: 100px; /* Ensure it has some height while loading */
+}
+#overview-status {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: right;
+}
+.loading-placeholder {
+    color: #666;
+    font-style: italic;
+}
+.error-message {
+    color: #ff4444; /* Red for errors */
+    font-weight: bold;
+}
+/* --- End market.html Specific Styles --- */
