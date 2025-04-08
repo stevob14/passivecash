@@ -14,7 +14,8 @@
 
       gtag('config', 'G-Q203YEXP0D');
     </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
     <nav class="navbar">
@@ -49,14 +50,14 @@
         <div id="directory">
             <h3>Directory</h3>
             <ul>
-                <li><a data-target="dividends">Dividends</a></li>
-                <li><a data-target="hysa">High Yield Savings Accounts</a></li>
-                <li><a data-target="cds">CDs</a></li>
-                <li><a data-target="annuities">Annuities</a></li>
-                <li><a data-target="bonds">Bonds</a></li>
-                <li><a data-target="crypto-interest">Earn Interest on Crypto</a></li>
-                <li><a data-target="real-estate">Real Estate</a></li>
-                <li><a data-target="affiliate-marketing">Affiliate Marketing</a></li>
+                <li><a href="#dividends" data-target="dividends">Dividends</a></li>
+                <li><a href="#hysa" data-target="hysa">High Yield Savings Accounts</a></li>
+                <li><a href="#cds" data-target="cds">CDs</a></li>
+                <li><a href="#annuities" data-target="annuities">Annuities</a></li>
+                <li><a href="#bonds" data-target="bonds">Bonds</a></li>
+                <li><a href="#crypto-interest" data-target="crypto-interest">Earn Interest on Crypto</a></li>
+                <li><a href="#real-estate" data-target="real-estate">Real Estate</a></li>
+                <li><a href="#affiliate-marketing" data-target="affiliate-marketing">Affiliate Marketing</a></li>
             </ul>
         </div>
         <!-- End Directory Section -->
