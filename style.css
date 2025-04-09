@@ -873,3 +873,46 @@ blockquote {
     font-weight: bold;
 }
 /* --- End market.html Specific Styles --- */
+
+/* --- RSS Feed Styles (crypto.html) --- */
+.rss-feed-container {
+    margin-top: 30px; /* Space above the feed */
+    padding: 15px;
+    border: 1px dashed #444; /* Subtle border */
+    background-color: #1a1a1a; /* Slightly darker background */
+}
+
+.rss-feed-container h4 {
+    color: #00ff00; /* Green heading */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.rss-feed-container ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.rss-feed-container li {
+    margin-bottom: 8px; /* Space between feed items */
+    font-size: 0.9em;
+}
+
+.rss-feed-container li a {
+    color: #66ccff; /* Light blue links */
+}
+
+.rss-feed-container li a:hover {
+    color: #99ddff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+.rss-feed-container p { /* Style for loading/error messages */
+    font-style: italic;
+    color: #aaa;
+}
+/* --- End RSS Feed Styles --- */

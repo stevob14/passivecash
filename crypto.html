@@ -71,20 +71,33 @@
     <span class="BtcPrice"></span> <!-- Use unique class -->
     <p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $20 by signing up at <a href="https://coinbase.com/join/MG2TWZF">Coinbase-Referral</a>.</p>
     <div id="chart" class="chart-container"></div> <!-- Target for btc_chart.js -->
+    <div id="btc-rss-feed" class="rss-feed-container">
+        <h4>Bitcoin Latest News</h4>
+        <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
+    </div>
 </div>
 
 <div id="eth-section" class="crypto-section crypto-content">
     <!-- Removed H2 Title -->
     <span class="EthPrice"></span> <!-- Use unique class -->
-    <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, <a href="/index.html#crypto-interest">DeFi</a> applications built using the Ethereum network.</p>
+    <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, you can earn interest on your holdings using <a href="index.html#crypto-interest">DeFi</a> applications built using the Ethereum network.</p>
     <div id="chart-eth" class="chart-container"></div> <!-- Use unique ID -->
+    <div id="eth-rss-feed" class="rss-feed-container">
+        <h4>Ethereum Latest News</h4>
+        <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
+    </div>
 </div>
 
 <div id="sol-section" class="crypto-section crypto-content">
     <!-- Placeholder Title/Content -->
     <span class="SolPrice"></span> <!-- Use unique class -->
-    <p>Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale today. It is known for its speed and low transaction costs.</p>
+    <p>Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale today. It is known for its speed and low transaction costs, enabling a wide range of applications, including <a href="index.html#crypto-interest">DeFi</a> platforms where you can potentially earn interest on your SOL holdings.</p>
     <div id="chart-sol" class="chart-container"></div> <!-- Use unique ID -->
+    <div id="sol-rss-feed" class="rss-feed-container">
+        <h4>Solana Latest News</h4>
+        <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
+        <!-- RSS feed content will be loaded here -->
+    </div>
 </div>
 
     </div>
@@ -163,6 +176,88 @@
                 cryptoMenu.toggleClass('active');
             });
 
+            // --- Function to fetch and display RSS feed ---
+            async function fetchAndDisplayRSS(feedUrl, containerId) {
+                const feedItemsContainer = $(`#${containerId} .feed-items`); // Target the inner div
+                const cacheKey = `rss_feed_${feedUrl}`;
+                const cacheDuration = 15 * 60 * 1000; // 15 minutes in milliseconds
+
+                // Try loading from cache first
+                try {
+                    const cachedData = sessionStorage.getItem(cacheKey);
+                    if (cachedData) {
+                        const { timestamp, htmlContent } = JSON.parse(cachedData);
+                        const now = Date.now();
+                        if (now - timestamp < cacheDuration) {
+                            console.log(`Using cached RSS feed for ${feedUrl}`);
+                            feedItemsContainer.html(htmlContent);
+                            return; // Exit function, cache is valid
+                        } else {
+                             console.log(`Cache expired for ${feedUrl}`);
+                        }
+                    }
+                } catch (e) {
+                    console.error("Error reading RSS cache:", e);
+                    // Proceed to fetch if cache read fails
+                }
+
+                // If cache is invalid or doesn't exist, fetch new data
+                feedItemsContainer.html('<p>Loading news...</p>'); // Show loading state in the inner div
+
+                // Using api.rss2json.com to convert RSS to JSON
+                const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+
+                try {
+                    const response = await fetch(apiUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+
+                    if (data.status !== 'ok') {
+                        throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
+                    }
+
+                    const items = data.items;
+                    let htmlContent = '<ul>';
+                    let count = 0;
+
+                    if (items && items.length > 0) {
+                        items.forEach(item => {
+                            if (count >= 5) return; // Limit to 5 news items
+                            const title = item.title || 'No title';
+                            const link = item.link || '#';
+                            htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></li>`;
+                            count++;
+                        });
+                    }
+
+                    htmlContent += '</ul>';
+
+                    if (count === 0) {
+                        htmlContent = '<p>News feed is empty or could not be loaded.</p>'; // Store empty message too
+                    }
+
+                    // Display the fetched content
+                    feedItemsContainer.html(htmlContent);
+
+                    // Store the fetched content and timestamp in cache
+                    try {
+                        const cachePayload = JSON.stringify({ timestamp: Date.now(), htmlContent });
+                        sessionStorage.setItem(cacheKey, cachePayload);
+                        console.log(`Cached RSS feed for ${feedUrl}`);
+                    } catch (e) {
+                        console.error("Error writing RSS cache:", e);
+                    }
+
+                } catch (error) {
+                    console.error(`Error fetching/parsing RSS feed via rss2json for ${feedUrl}:`, error);
+                    feedItemsContainer.html(`<p>Error loading news feed: ${error.message || 'Unknown error'}</p>`);
+                    // Optionally clear cache on error? Or leave stale cache? Leaving it for now.
+                }
+            }
+
+
             // --- Function to show a specific section ---
             function showSection(targetId, updateHistory = true) {
                 const targetSection = $('#' + targetId);
@@ -221,6 +316,26 @@
 
                 // Always start/restart the ticker for the selected section
                 startTicker(cryptoType);
+
+                // --- Load RSS Feed ---
+                // Define feed URLs and container IDs
+                const feeds = {
+                    btc: { url: 'https://www.reddit.com/r/Bitcoin/.rss', container: 'btc-rss-feed' },
+                    eth: { url: 'https://www.reddit.com/r/ethereum/.rss', container: 'eth-rss-feed' },
+                    sol: { url: 'https://www.reddit.com/r/solana/.rss', container: 'sol-rss-feed' }
+                };
+
+                // Fetch feed only if the section is becoming active and hasn't been loaded
+                // Or simply always fetch when shown? Let's always fetch for simplicity now.
+                if (feeds[cryptoType]) {
+                    // Check if container exists before fetching
+                    if ($(`#${feeds[cryptoType].container}`).length) {
+                         console.log(`Fetching RSS feed for ${cryptoType}`);
+                         fetchAndDisplayRSS(feeds[cryptoType].url, feeds[cryptoType].container);
+                    } else {
+                         console.error(`RSS feed container #${feeds[cryptoType].container} not found!`);
+                    }
+                }
 
                 // Update URL hash if requested and different
                 const currentHash = window.location.hash;
