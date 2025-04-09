@@ -276,6 +276,7 @@ caption { /* Style for table captions */
     margin-top: 30px; /* Space above active section */
     padding-top: 20px; /* Space below heading */
     border-top: 1px dashed #444; /* Separator */
+    scroll-margin-top: 30px; /* Offset for fixed headers (navbar + ad bar) - Decreased further */
 }
 /* --- Page Section Active State --- */
 .content-section.active,
@@ -286,7 +287,7 @@ caption { /* Style for table captions */
  /* Specific H2 adjustments for index.html sections */
  .content-section h2 {
      margin-top: 0;
-     scroll-margin-top: 80px; /* Adjusted space above heading when jumping (navbar + ad bar) */
+     /* scroll-margin-top removed to rely solely on JS calculation for click scroll */
  }
 
 /* Section Navigation Styles (index.html) */
