@@ -13,52 +13,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.passivecash.xyz/calculators.html#compound</loc>
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/calculators.html#rebalancer</loc>
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/calculators.html#inflation</loc>
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/calculators.html#mortgage</loc>
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.passivecash.xyz/crypto.html</loc>
     <lastmod>2025-04-07</lastmod>
     <changefreq>weekly</changefreq> <!-- Higher frequency due to live data -->
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/crypto.html#btc</loc> <!-- Specific hash link -->
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority> <!-- Slightly lower than main crypto page -->
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/crypto.html#eth</loc> <!-- Specific hash link -->
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority> <!-- Slightly lower than main crypto page -->
-  </url>
-  <url>
-    <loc>https://www.passivecash.xyz/crypto.html#sol</loc> <!-- Specific hash link -->
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority> <!-- Slightly lower than main crypto page -->
   </url>
   <url>
     <loc>https://www.passivecash.xyz/market.html</loc>
