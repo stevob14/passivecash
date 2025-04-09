@@ -295,6 +295,15 @@
             const initialHash = window.location.hash;
             if (initialHash) {
                 showSection(initialHash);
+                // Explicitly scroll the target section into view after showing it
+                // This ensures correct positioning even on refresh
+                const targetSectionElement = document.querySelector(initialHash); // Use native JS selector
+                if (targetSectionElement) {
+                    // Use setTimeout to ensure the element is fully rendered after showSection
+                    setTimeout(() => {
+                         targetSectionElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 0); // Delay of 0ms often works to push execution after rendering
+                }
             } else {
                  // By default, show nothing
                  contentSections.removeClass('active');
@@ -303,34 +312,27 @@
 
             // --- Handle Directory Link Clicks ---
             directoryLinks.on('click', function(e) {
-                e.preventDefault(); // Prevent default anchor jump
+                // Allow default anchor jump (no preventDefault)
                 const targetId = $(this).data('target');
-                showSection(targetId);
-                // Update URL hash
-                if (history.pushState) {
-                    history.pushState(null, null, '#' + targetId);
-                } else {
-                    window.location.hash = '#' + targetId;
+                showSection(targetId); // Show the correct section
+
+                // Optional: Update history state cleanly without adding extra entries
+                // The default anchor behavior will change the hash anyway.
+                // Using replaceState ensures we don't pollute the history stack on clicks.
+                if (history.replaceState) {
+                    history.replaceState(null, null, '#' + targetId);
                 }
-                // Scroll to the top of the activated section
-                const targetSection = $('#' + targetId);
-                if (targetSection.length) {
-                    const navbarHeight = $('.navbar').outerHeight() || 60; // Get navbar height or use default
-                    const adBarHeight = $('#advertisement').outerHeight() || 0; // Get ad bar height
-                    $('html, body').animate({
-                        scrollTop: targetSection.offset().top - navbarHeight - adBarHeight - 20 // Adjust offset
-                    }, 300); // Animation duration
-                }
+                // No manual scrolling needed - browser handles it via CSS scroll-margin-top
             });
 
             // --- Handle Section Nav Button Clicks ---
             sectionNavButtons.on('click', function() {
                 const targetId = $(this).data('target');
-                // Find the corresponding directory link and trigger its click
-                const targetLink = directoryLinks.filter(`[data-target="${targetId}"]`);
-                if (targetLink.length) {
-                    targetLink.trigger('click');
-                }
+                showSection(targetId); // Show the correct section
+
+                // Trigger native scroll by setting hash
+                // Browser will handle smooth scroll and respect CSS scroll-margin-top
+                window.location.hash = targetId;
             });
         });
     </script>
