@@ -56,7 +56,35 @@ function renderChart(containerId, cryptoType, chartData) {
         rangeSelector: { buttons: [{ type: 'month', count: 1, text: '1m' }, { type: 'month', count: 3, text: '3m' }, { type: 'month', count: 6, text: '6m' }, { type: 'ytd', text: 'YTD' }], selected: 3, inputEnabled: false },
         scrollbar: { enabled: false },
         yAxis: [{ title: { text: 'Price (USD)' }, labels: { align: 'right', x: -5 }, floor: 0, maxPadding: 0 }, { labels: { enabled: false }, title: { enabled: false }, floor: 0, minPadding: 0, top: '80%', height: '20%' }],
-        xAxis: {},
+        xAxis: {
+            events: {
+                setExtremes: function(e) {
+                    // 'this' refers to the xAxis object
+                    // 'this.chart' refers to the chart instance
+                    const chart = this.chart;
+                    const originalPrices = chart.originalPriceData; // Retrieve stored data
+                    const currentCryptoType = chart.cryptoType; // Retrieve stored type
+
+                    if (!originalPrices || !currentCryptoType) {
+                        console.warn("Required data (originalPrices or cryptoType) not found on chart object for regression update.");
+                        return;
+                    }
+
+                    const currentTrendLineId = `${currentCryptoType}-trend`; // Reconstruct ID
+
+                    // Filter data based on the new extremes (e.min, e.max)
+                    // Ensure point[0] exists and is a number before comparing
+                    const visibleData = originalPrices.filter(point =>
+                        Array.isArray(point) && typeof point[0] === 'number' &&
+                        point[0] >= e.min && point[0] <= e.max
+                    );
+
+                    // Recalculate and add/update the regression line
+                    // addRegressionLine already handles removing the old line
+                    addRegressionLine(chart, visibleData, currentTrendLineId);
+                }
+            }
+        }, // End xAxis
         tooltip: { shared: true, split: false, padding: 5, borderRadius: 4 },
         plotOptions: { series: { states: { hover: { enabled: false } }, dataGrouping: { enabled: false } } },
         series: [
@@ -66,7 +94,19 @@ function renderChart(containerId, cryptoType, chartData) {
     });
 
     if (chartInstance) {
-        addRegressionLine(chartInstance, chartData.prices, trendLineId);
+        // Store original data and type on the chart object for access in events
+        chartInstance.originalPriceData = chartData.prices;
+        chartInstance.cryptoType = cryptoType;
+
+        // Initial regression line based on the full dataset (or default view if rangeSelector is set)
+        // Let's calculate based on the initial visible range instead of full data
+        const initialXAxis = chartInstance.xAxis[0];
+        const initialVisibleData = chartData.prices.filter(point =>
+             Array.isArray(point) && typeof point[0] === 'number' &&
+             point[0] >= initialXAxis.min && point[0] <= initialXAxis.max
+        );
+        addRegressionLine(chartInstance, initialVisibleData, trendLineId);
+
     } else {
         console.error(`Highcharts.StockChart failed for ${containerId}.`);
     }
