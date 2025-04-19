@@ -105,8 +105,27 @@
                 <button class="calculateBtn" onclick="calculateCompoundInterest()">Calculate</button>
                 <div class="calculator-results">
                      <p id="output"></p> <!-- Changed to single output element -->
+                     <!-- Canvas for the chart -->
+                     <div style="margin-top: 20px; margin-bottom: 10px; border: 1px solid #444; padding: 10px; background-color: #2a2a2a;">
+                        <canvas id="compoundInterestChart"></canvas>
+                     </div>
                 </div>
                 <p>This calculator demonstrates the power of compound interest. Enter your initial investment, interest rate, duration, and any regular contributions to see how your money can grow over time as interest earns interest.</p>
+                <p style="margin-top: 10px;">The formula used, including contributions, is:</p>
+                <p style="text-align: center; margin: 10px 0; font-size: 1.0em; line-height: 1.4;"> <!-- Slightly smaller font for better fit -->
+                    <code style="background-color: #2a2a2a; padding: 5px 8px; border: 1px solid #444; border-radius: 3px;">
+                        A = P(1 + r/n)<sup>nt</sup> + PMT * [((1 + r/n)<sup>nt</sup> - 1) / (r/n)]
+                    </code>
+                </p>
+                <p>Where:</p>
+                <ul style="margin-top: 5px; margin-left: 30px; font-size: 0.9em;">
+                    <li><b>A</b> = the future value of the investment</li>
+                    <li><b>P</b> = the principal investment amount</li>
+                    <li><b>PMT</b> = the periodic payment amount (contribution)</li>
+                    <li><b>r</b> = the annual interest rate (decimal)</li>
+                    <li><b>n</b> = the number of times interest is compounded per year</li>
+                    <li><b>t</b> = the time the money is invested for, in years</li>
+                </ul>
             </div>
         </div>
         <div id="rebalancer" class="calculator-section calculator-content"> <!-- Updated ID -->
@@ -186,6 +205,18 @@
                 </div>
             </div>
             <p>See how inflation affects the purchasing power of money over time. Enter an amount and select start/end years (based on US CPI data) to calculate its equivalent value in a different year.</p>
+            <p style="margin-top: 10px;">The formula used is based on the Consumer Price Index (CPI):</p>
+            <p style="text-align: center; margin: 10px 0; font-size: 1.0em;">
+                <code style="background-color: #2a2a2a; padding: 5px 8px; border: 1px solid #444; border-radius: 3px;">
+                    Adjusted Amount = Start Amount * (End Year CPI / Start Year CPI)
+                </code>
+            </p>
+            <p>Where:</p>
+            <ul style="margin-top: 5px; margin-left: 30px; font-size: 0.9em;">
+                <li><b>Adjusted Amount</b> = the value in the end year's dollars</li>
+                <li><b>Start Amount</b> = the value in the start year's dollars</li>
+                <li><b>CPI</b> = Consumer Price Index for the respective year</li>
+            </ul>
         </div>
         <div id="mortgage" class="calculator-section calculator-content"> <!-- Updated ID -->
             <!-- Removed H2 Title -->
@@ -228,6 +259,20 @@
                 </div>
             </div>
             <p>Estimate your monthly mortgage payment, including principal, interest, and optionally property taxes, home insurance, and PMI. Enter the home value, down payment, interest rate, and loan term.</p>
+            <p style="margin-top: 10px;">The core formula for the monthly principal and interest payment (M) is:</p>
+            <p style="text-align: center; margin: 10px 0; font-size: 1.0em; line-height: 1.4;">
+                <code style="background-color: #2a2a2a; padding: 5px 8px; border: 1px solid #444; border-radius: 3px;">
+                    M = P [ i(1 + i)<sup>n</sup> ] / [ (1 + i)<sup>n</sup> – 1]
+                </code>
+            </p>
+            <p>Where:</p>
+            <ul style="margin-top: 5px; margin-left: 30px; font-size: 0.9em;">
+                <li><b>M</b> = Total monthly mortgage payment (Principal & Interest)</li>
+                <li><b>P</b> = Principal loan amount (Home Value - Down Payment)</li>
+                <li><b>i</b> = Monthly interest rate (Annual Rate / 12)</li>
+                <li><b>n</b> = Total number of payments (Loan Term in years * 12)</li>
+            </ul>
+            <p style="font-size: 0.9em; margin-top: 5px;">The calculator adds estimated monthly taxes, insurance, and PMI (if provided) to this amount for the total estimated payment.</p>
         </div>
 
     </div>
@@ -365,6 +410,9 @@
             hamburgerBtn.setAttribute('aria-expanded', isExpanded);
         });
     </script>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Load Individual Calculator Scripts -->
     <script src="js/calculator.js"></script>
