@@ -180,3 +180,27 @@ function allowNegativeNumberCompound(e)
 	  }
 	  return true;
 	}
+
+// --- Add Resize Listener for Chart ---
+// Debounce function to limit how often resize logic runs
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+	 var context = this, args = arguments;
+	 var later = function() {
+	  timeout = null;
+	  if (!immediate) func.apply(context, args);
+	 };
+	 var callNow = immediate && !timeout;
+	 clearTimeout(timeout);
+	 timeout = setTimeout(later, wait);
+	 if (callNow) func.apply(context, args);
+	};
+};
+
+// Add the resize listener, debounced to avoid excessive calls
+window.addEventListener('resize', debounce(function() {
+	   if (compoundChartInstance) {
+	       compoundChartInstance.resize();
+	   }
+}, 250)); // 250ms debounce delay
