@@ -131,7 +131,7 @@ function calculateInflation() { // Renamed to match HTML onclick
   start_cpi = cpi.rates[start_array]
   end_cpi = cpi.rates[end_array]
   result = dollar * (end_cpi/start_cpi)
-  document.getElementById("inflation-output").innerHTML = "$" + dollar + " in " + start + " is equivalent in purchasing power to ~" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + end; // Updated ID
+  document.getElementById("inflation-output").innerHTML =  dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span style='color: #ffa500 !important;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end; // Updated ID and added span
   }
   else{
   error = "Data only available for years in range 1913-2024";
