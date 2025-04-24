@@ -12,7 +12,7 @@ const darkThemeOptions = {
     legend: { itemStyle: { color: '#e0e0e0' }, itemHoverStyle: { color: '#fff' }, itemHiddenStyle: { color: '#606060' } },
     tooltip: { backgroundColor: 'rgba(0, 0, 0, 0.8)', style: { color: '#e0e0e0' }, borderWidth: 0, shadow: false },
     navigator: { handles: { backgroundColor: '#111', borderColor: '#00ff00' }, outlineColor: '#00ff00', maskFill: 'rgba(0, 255, 0, 0.2)', series: { color: '#00ff00', lineColor: '#00ff00' }, xAxis: { gridLineColor: 'rgba(0, 255, 0, 0.1)', labels: { style: { color: '#e0e0e0' } } } },
-    rangeSelector: { buttonTheme: { fill: 'none', stroke: 'none', style: { color: '#00ff00', fontWeight: 'bold' }, states: { hover: {}, select: { fill: '#00ff00', style: { color: '#0a0a0a' } } } }, inputStyle: { backgroundColor: '#333', color: '#e0e0e0' }, labelStyle: { color: '#e0e0e0' } },
+    rangeSelector: { buttonTheme: { fill: 'none', stroke: 'none', style: { color: '#00ff00', fontWeight: 'bold' }, states: { hover: { fill: '#00ff00', style: { color: '#0a0a0a' } }, select: { fill: '#00ff00', style: { color: '#0a0a0a' } } } }, inputStyle: { backgroundColor: '#333', color: '#e0e0e0' }, labelStyle: { color: '#e0e0e0' } },
     scrollbar: { barBackgroundColor: '#333', barBorderColor: '#555', buttonArrowColor: '#e0e0e0', buttonBackgroundColor: '#333', buttonBorderColor: '#555', rifleColor: '#e0e0e0', trackBackgroundColor: '#1a1a1a', trackBorderColor: '#555' },
     lang: { thousandsSep: "," },
     credits: { enabled: false },
