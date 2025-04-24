@@ -117,6 +117,12 @@
                         // Style *italic* text - Green and Bold (as requested)
                         styledOverview = styledOverview.replace(/\*(.*?)\*/g, '<span class="highlight">$1</span>');
 
+                        // Style positive words - Green (case-insensitive, whole words)
+                        styledOverview = styledOverview.replace(/\b(gaining|gain|positive)\b/gi, '<span class="positive">$1</span>');
+
+                        // Style negative words - Red (case-insensitive, whole words)
+                        styledOverview = styledOverview.replace(/\b(losing|loss|negative)\b/gi, '<span class="negative">$1</span>');
+
                         // Display the styled HTML
                         $contentDiv.html(styledOverview); // Use .html() to render the styled spans
 
