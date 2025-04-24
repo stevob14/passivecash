@@ -353,21 +353,11 @@
         });
     </script>
 
-    <!-- Hamburger Menu Script -->
-    <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburgerBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            // Optional: Toggle ARIA attribute for accessibility
-            const isExpanded = navLinks.classList.contains('active');
-            hamburgerBtn.setAttribute('aria-expanded', isExpanded);
-        });
-    </script>
+    <!-- Hamburger Menu Script is now in js/main.js -->
 
     <!-- Advertisement Script -->
     <script src="js/advertisement.js"></script>
+    <script src="js/main.js"></script> <!-- Include consolidated main script -->
 
 </body>
 </html>

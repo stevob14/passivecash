@@ -68,17 +68,7 @@
     <!-- Include jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- Hamburger Menu Script -->
-    <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburgerBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const isExpanded = navLinks.classList.contains('active');
-            hamburgerBtn.setAttribute('aria-expanded', isExpanded);
-        });
-    </script>
+    <!-- Hamburger Menu Script is now in js/main.js -->
 
     <!-- Fetch and Display Market Overview -->
     <script>
@@ -155,6 +145,7 @@
 
     <!-- Advertisement Script -->
     <script src="js/advertisement.js"></script>
+    <script src="js/main.js"></script> <!-- Include consolidated main script -->
 
 </body>
 </html>
