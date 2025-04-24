@@ -68,7 +68,7 @@
 
 <div id="btc-section" class="crypto-section crypto-content active">
     <!-- Removed H2 Title -->
-    <span class="BtcPrice">Loading price...</span> <!-- Use unique class -->
+    <span class="BtcPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $20 by signing up at <a href="https://coinbase.com/join/MG2TWZF" target="_blank">Coinbase-Referral</a>.</p>
     <div id="chart" class="chart-container"></div> <!-- Target for btc_chart.js -->
     <div id="btc-rss-feed" class="rss-feed-container">
@@ -79,7 +79,7 @@
 
 <div id="eth-section" class="crypto-section crypto-content">
     <!-- Removed H2 Title -->
-    <span class="EthPrice">Loading price...</span> <!-- Use unique class -->
+    <span class="EthPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, you can earn interest on your holdings using <a href="index.html#crypto-interest">DeFi</a> applications built using the Ethereum network.</p>
     <div id="chart-eth" class="chart-container"></div> <!-- Use unique ID -->
     <div id="eth-rss-feed" class="rss-feed-container">
@@ -90,7 +90,7 @@
 
 <div id="sol-section" class="crypto-section crypto-content">
     <!-- Placeholder Title/Content -->
-    <span class="SolPrice">Loading price...</span> <!-- Use unique class -->
+    <span class="SolPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale today. It is known for its speed and low transaction costs, enabling a wide range of applications, including <a href="index.html#crypto-interest">DeFi</a> platforms where you can potentially earn interest on your SOL holdings.</p>
     <div id="chart-sol" class="chart-container"></div> <!-- Use unique ID -->
     <div id="sol-rss-feed" class="rss-feed-container">
@@ -202,7 +202,7 @@
                 }
 
                 // If cache is invalid or doesn't exist, fetch new data
-                feedItemsContainer.html('<p>Loading news...</p>'); // Show loading state in the inner div
+                feedItemsContainer.html('<p class="loading-text">Loading news...</p>'); // Show loading state in the inner div, Added loading-text class
 
                 // Using api.rss2json.com to convert RSS to JSON
                 const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
@@ -331,6 +331,8 @@
                     // Check if container exists before fetching
                     if ($(`#${feeds[cryptoType].container}`).length) {
                          console.log(`Fetching RSS feed for ${cryptoType}`);
+                         // Ensure loading message has class if fetchAndDisplayRSS adds it
+                         $(`#${feeds[cryptoType].container} .feed-items`).html('<p class="loading-text">Loading news...</p>');
                          fetchAndDisplayRSS(feeds[cryptoType].url, feeds[cryptoType].container);
                     } else {
                          console.error(`RSS feed container #${feeds[cryptoType].container} not found!`);

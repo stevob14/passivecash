@@ -569,12 +569,20 @@ blockquote {
 }
 /* Style for the actual price spans */
 .BtcPrice, .EthPrice, .SolPrice {
-    color: #00ff00; /* Green price */
-    font-weight: bold;
+    /* color: #00ff00; /* Green price - Moved to .price-value */
+    /* font-weight: bold; /* Moved to .price-value */
     font-size: 1.2em; /* Match ticker style */
     display: block; /* Allow margin/centering */
     margin-bottom: 15px; /* Space below price */
+    /* text-shadow: 0 0 3px #00ff00; /* Add glow effect - Moved to .price-value */
+}
+
+/* Class specifically for the loaded price value to apply color and glow */
+.price-value {
+    color: #00ff00; /* Green price */
+    font-weight: bold; /* Apply bold only to the price value */
     text-shadow: 0 0 3px #00ff00; /* Add glow effect */
+    /* Inherits font-size from parent span */
 }
 .chart-container {
     width: 100%;
@@ -916,4 +924,17 @@ blockquote {
     font-style: italic;
     color: #aaa;
 }
+
+/* Style for loading indicators */
+.loading-text {
+    color: #ffa500; /* Orange color */
+    font-style: italic; /* Optional: make it stand out more */
+}
+
+/* Style for error messages (e.g., in tickers) */
+.error-text {
+    color: #ff4444; /* Red color */
+    font-style: italic;
+}
+
 /* --- End RSS Feed Styles --- */
