@@ -86,10 +86,11 @@ body {
  }
  #advertisement a {
      color: #ffa500 !important; /* Ensure link color overrides default */
-     text-decoration: underline;
+     text-decoration: none; /* Remove underline */
  }
  #advertisement a:hover {
      color: #ffc966 !important; /* Lighter orange on hover */
+     text-shadow: 0 0 5px #ffc966; /* Add glow effect on hover */
  }
 
 
