@@ -16,6 +16,8 @@ function get_crypto_price(cryptoType, priceElementSelector) {
     const url = `https://min-api.cryptocompare.com/data/price?fsym=${symbol}&tsyms=USD`;
     // const priceElementSelector = `.${symbol}Price`; // Now passed as argument
 
+    // REMOVED: Setting loading text here caused flicker on interval updates
+
     $.ajax({
         url: url,
         method: 'GET',
@@ -38,16 +40,28 @@ function get_crypto_price(cryptoType, priceElementSelector) {
                         try {
                             const formattedPrice = price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
                             // Removed log
-                            priceElement.textContent = formattedPrice;
+                            // Check if currently showing "Loading..." or an actual price
+                            const existingPriceSpan = priceElement.querySelector('.price-value');
+                            if (existingPriceSpan) {
+                                // Already has a price, just update the text content
+                                existingPriceSpan.textContent = formattedPrice;
+                            } else {
+                                // Was showing "Loading..." or error, replace innerHTML
+                                priceElement.innerHTML = `<span class="price-value">${formattedPrice}</span>`;
+                                // Also remove the loading class from the parent if it exists
+                                priceElement.classList.remove('loading-text');
+                            }
                         } catch (formatError) {
                              console.error(`Error formatting price for ${symbol}:`, formatError); // Keep general error
-                             priceElement.textContent = 'Error formatting';
+                             // Use innerHTML for consistency, add error class
+                             priceElement.innerHTML = '<span class="error-text">Error formatting</span>';
                         }
                     }
                 } else {
                     console.error(`Error: Invalid data format received for ${symbol}.`); // Keep general error
                     if (priceElement) {
-                        priceElement.textContent = 'Error loading data';
+                        // Use innerHTML for consistency, maybe add error class later
+                        priceElement.innerHTML = '<span class="error-text">Error loading data</span>';
                     }
                 }
 
@@ -61,9 +75,10 @@ function get_crypto_price(cryptoType, priceElementSelector) {
         },
         error: function(error) {
             console.error(`Error fetching ${symbol} price:`, error);
-            const priceElement = $(priceElementSelector);
-            if (priceElement.length) {
-                priceElement.text('Error loading price');
+            const priceElement = document.querySelector(priceElementSelector); // Use querySelector for consistency
+            if (priceElement) {
+                 // Use innerHTML for consistency, maybe add error class later
+                priceElement.innerHTML = '<span class="error-text">Error loading price</span>';
             }
              // Update page title if the function exists
              if (typeof updatePageTitle === 'function') {

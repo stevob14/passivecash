@@ -156,7 +156,8 @@ function create_crypto_chart(cryptoType, containerId) {
 
     // --- Fetch fresh data ---
     console.log(`No valid cache for ${cryptoType}. Fetching fresh data...`);
-    $(`#${containerId}`).html(`<p style="color: #ffa500; text-align: center; padding-top: 50px;">Loading chart data for ${cryptoType.toUpperCase()}...</p>`);
+    // Added loading-text class and removed inline style
+    $(`#${containerId}`).html(`<p class="loading-text" style="text-align: center; padding-top: 50px;">Loading chart data for ${cryptoType.toUpperCase()}...</p>`);
 
     let coinId;
     if (cryptoType === 'btc') coinId = 'bitcoin';
