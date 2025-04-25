@@ -142,7 +142,8 @@ a {
 
 a:hover {
     color: #99ddff; /* Lighter blue on hover */
-    text-decoration: underline;
+    text-decoration: none; /* Ensure no underline on hover */
+    text-shadow: 0 0 5px #99ddff; /* Add glow effect on hover */
 }
 /* --- Base Table Styles --- */
 table { /* Applies to all tables unless overridden */
