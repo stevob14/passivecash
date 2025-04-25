@@ -95,23 +95,18 @@
                         // Parse and style the overview text
                         let styledOverview = data.overview;
 
-                        // Style positive numbers/percentages (e.g., +1.23%, +50) - Green
-                        styledOverview = styledOverview.replace(/(\+[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="positive">$1</span>');
-
-                        // Style negative numbers/percentages (e.g., -0.5%, -100) - Red
-                        styledOverview = styledOverview.replace(/(-[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="negative">$1</span>');
-
-                        // Style **bold** text - Green and Bold
-                        styledOverview = styledOverview.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
-
-                        // Style *italic* text - Green and Bold (as requested)
-                        styledOverview = styledOverview.replace(/\*(.*?)\*/g, '<span class="highlight">$1</span>');
-
-                        // Style positive words - Green (case-insensitive, whole words)
+                        // 1. Style positive/negative words first
                         styledOverview = styledOverview.replace(/\b(gaining|gain|positive)\b/gi, '<span class="positive">$1</span>');
-
-                        // Style negative words - Red (case-insensitive, whole words)
                         styledOverview = styledOverview.replace(/\b(losing|loss|negative)\b/gi, '<span class="negative">$1</span>');
+
+                        // 2. Style positive/negative numbers/percentages next
+                        // Added negative lookbehind (?<![>"]) to avoid matching inside tags/attributes
+                        styledOverview = styledOverview.replace(/(?<![>"])(\+[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="positive">$1</span>');
+                        styledOverview = styledOverview.replace(/(?<![>"])(\-[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="negative">$1</span>');
+
+                        // 3. Style markdown last
+                        styledOverview = styledOverview.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
+                        styledOverview = styledOverview.replace(/\*(.*?)\*/g, '<span class="highlight">$1</span>');
 
                         // Display the styled HTML
                         $contentDiv.html(styledOverview); // Use .html() to render the styled spans

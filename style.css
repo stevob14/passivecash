@@ -927,8 +927,9 @@ blockquote {
 }
 
 /* Style for loading indicators */
-.loading-text {
-    color: #ffa500; /* Orange color */
+.loading-text,
+.rss-feed-container p.loading-text { /* Increase specificity for RSS loading */
+    color: #ffa500 !important; /* Orange color, use !important to ensure override */
     font-style: italic; /* Optional: make it stand out more */
 }
 
