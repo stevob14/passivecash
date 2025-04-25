@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.passivecash.xyz/index.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2025-04-25</lastmod> <!-- Updated date -->
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.passivecash.xyz/calculators.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2025-04-25</lastmod> <!-- Updated date -->
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.passivecash.xyz/crypto.html</loc>
-    <lastmod>2025-04-07</lastmod>
+    <lastmod>2025-04-25</lastmod> <!-- Updated date -->
     <changefreq>weekly</changefreq> <!-- Higher frequency due to live data -->
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.passivecash.xyz/market.html</loc>
-    <lastmod>2025-04-08</lastmod>
+    <lastmod>2025-04-25</lastmod> <!-- Updated date -->
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
