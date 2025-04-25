@@ -919,7 +919,7 @@ blockquote {
 
 .rss-feed-container li a:hover {
     color: #99ddff; /* Lighter blue on hover */
-    text-decoration: underline;
+    text-decoration: none; /* Remove underline, inherit glow from general a:hover */
 }
 
 .rss-feed-container p { /* Style for loading/error messages */
