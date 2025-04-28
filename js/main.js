@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle menu on hamburger click
         hamburgerBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active'); // Toggle active class on button too
             // Optional: Toggle ARIA attribute for accessibility
             const isExpanded = navLinks.classList.contains('active');
             hamburgerBtn.setAttribute('aria-expanded', isExpanded);
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (!isClickInsideNav && !isClickOnHamburger && isNavActive) {
                 navLinks.classList.remove('active');
+                hamburgerBtn.classList.remove('active'); // Remove active class from button too
                 hamburgerBtn.setAttribute('aria-expanded', 'false');
             }
         });

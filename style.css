@@ -50,6 +50,21 @@ body {
     margin: 5px auto;
     background-color: #00ff00;
     transition: all 0.3s ease-in-out;
+    /* Added for positioning during animation */
+    position: relative;
+}
+
+/* Animate bars into 'X' when button is active */
+#hamburger-btn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Move down and rotate */
+}
+
+#hamburger-btn.active .bar:nth-child(2) {
+    opacity: 0; /* Fade out middle bar */
+}
+
+#hamburger-btn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Move up and rotate */
 }
 
 /* Desktop Navigation Styles */
