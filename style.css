@@ -956,3 +956,115 @@ blockquote {
 }
 
 /* --- End RSS Feed Styles --- */
+
+/* --- Crypto Market Table Styles --- */
+#cryptoMarketTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em; /* Slightly smaller font for table */
+}
+
+#cryptoMarketTable th,
+#cryptoMarketTable td {
+    border: 1px solid #444;
+    padding: 6px 8px; /* Adjust padding */
+    text-align: left;
+}
+
+#cryptoMarketTable th {
+    background-color: #333;
+    color: #00ff00;
+    text-align: center; /* Center header text */
+}
+
+#cryptoMarketTable tbody tr:nth-child(even) {
+    background-color: #2a2a2a; /* Slightly lighter for even rows */
+}
+
+#cryptoMarketTable tbody tr:hover {
+    background-color: #383838; /* Darker hover */
+}
+
+#cryptoMarketTable td {
+    vertical-align: middle; /* Align cell content vertically */
+}
+
+#cryptoMarketTable .coin-symbol {
+    color: #aaa; /* Grey for symbol */
+    font-size: 0.9em;
+}
+
+#cryptoMarketTable .positive {
+    color: #33cc33; /* Match market overview positive */
+    font-weight: bold;
+}
+
+#cryptoMarketTable .negative {
+    color: #ff4444; /* Match market overview negative */
+    font-weight: bold;
+}
+
+/* Responsive Styles for Crypto Market Table */
+@media (max-width: 768px) {
+    #cryptoMarketTable thead {
+        display: none; /* Hide table header on mobile */
+    }
+
+    #cryptoMarketTable,
+    #cryptoMarketTable tbody,
+    #cryptoMarketTable tr,
+    #cryptoMarketTable td {
+        display: block;
+        width: 100%;
+    }
+
+    #cryptoMarketTable tr {
+        margin-bottom: 15px;
+        border: 1px solid #444;
+    }
+
+    #cryptoMarketTable td {
+        text-align: right; /* Align data to the right */
+        padding-left: 35%; /* Reduced padding for label */
+        padding-right: 10px; /* Add some padding on the right */
+        position: relative;
+        box-sizing: border-box; /* Include padding in width calculation */
+        border: none;
+        border-bottom: 1px dashed #444;
+    }
+
+     #cryptoMarketTable tr td:last-child {
+         border-bottom: none; /* Remove border from last cell */
+     }
+
+    #cryptoMarketTable td:before {
+        content: attr(data-label); /* Use data-label for header */
+        position: absolute;
+        left: 10px;
+        width: calc(35% - 15px); /* Adjusted width based on reduced padding */
+        padding-right: 5px; /* Reduced padding */
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #00ff00; /* Green label */
+    }
+
+    /* Add data-label for the new volume column */
+    #cryptoMarketTable td[data-label="24h Volume"]:before { content: "24h Vol"; } /* Abbreviate for mobile */
+
+    /* Adjust specific columns for mobile if needed */
+     #cryptoMarketTable td[data-label="Coin"] {
+         /* Example: Maybe allow more space or different alignment */
+         padding-left: 10px; /* Reset padding if label is less important */
+         text-align: left;
+     }
+      #cryptoMarketTable td[data-label="Coin"]:before {
+          content: ""; /* Hide label for coin column */
+          /* Or adjust width/position if keeping label */
+      }
+       #cryptoMarketTable td[data-label="Coin"] img {
+           margin-right: 8px; /* Ensure space around image */
+       }
+}
+/* --- End Crypto Market Table Styles --- */
