@@ -63,6 +63,7 @@
                 <button class="crypto-option" data-target="btc-section" data-display="Bitcoin (BTC)">Bitcoin (BTC)</button>
                 <button class="crypto-option" data-target="eth-section" data-display="Ethereum (ETH)">Ethereum (ETH)</button>
                 <button class="crypto-option" data-target="sol-section" data-display="Solana (SOL)">Solana (SOL)</button>
+                <button class="crypto-option" data-target="market-table-section" data-display="Market Table">Market Table</button> <!-- Added Market Table option -->
             </div>
         </div>
 
@@ -71,6 +72,9 @@
     <span class="BtcPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Bitcoin is the first decentralized cryptocurrency that consists of peer-to-peer transactions that are verified and recorded in a public blockchain. What is unique about Bitcoin is the ability to act as a currency outside the control of any person, group, or entity. Get free Bitcoin worth $20 by signing up at <a href="https://coinbase.com/join/MG2TWZF" target="_blank">Coinbase-Referral</a>.</p>
     <div id="chart" class="chart-container"></div> <!-- Target for btc_chart.js -->
+    <p style="font-size: 0.8em; text-align: center; color: #aaa; margin-top: 5px; margin-bottom: 15px;">
+        Chart data provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a>.
+    </p>
     <div id="btc-rss-feed" class="rss-feed-container">
         <h4>Bitcoin Latest News</h4>
         <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
@@ -82,6 +86,9 @@
     <span class="EthPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Ethereum is the first decentralized blockchain network that can run smart contracts and is powered by the ETH cryptocurrency. Smart contracts are applications that run exactly as programmed without any chance of censorship, fraud or third-party interference. What makes this unique is the ability of developers to build custom smart contracts for various applications using the Ethereum network. For example, you can earn interest on your holdings using <a href="index.html#crypto-interest">DeFi</a> applications built using the Ethereum network.</p>
     <div id="chart-eth" class="chart-container"></div> <!-- Use unique ID -->
+    <p style="font-size: 0.8em; text-align: center; color: #aaa; margin-top: 5px; margin-bottom: 15px;">
+        Chart data provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a>.
+    </p>
     <div id="eth-rss-feed" class="rss-feed-container">
         <h4>Ethereum Latest News</h4>
         <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
@@ -93,11 +100,24 @@
     <span class="SolPrice loading-text">Loading price...</span> <!-- Use unique class, Added loading-text -->
     <p>Solana is a high-performance blockchain supporting builders around the world creating crypto apps that scale today. It is known for its speed and low transaction costs, enabling a wide range of applications, including <a href="index.html#crypto-interest">DeFi</a> platforms where you can potentially earn interest on your SOL holdings.</p>
     <div id="chart-sol" class="chart-container"></div> <!-- Use unique ID -->
+    <p style="font-size: 0.8em; text-align: center; color: #aaa; margin-top: 5px; margin-bottom: 15px;">
+        Chart data provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a>.
+    </p>
     <div id="sol-rss-feed" class="rss-feed-container">
         <h4>Solana Latest News</h4>
         <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
         <!-- RSS feed content will be loaded here -->
     </div>
+</div>
+
+<div id="market-table-section" class="crypto-section crypto-content"> <!-- Added container for market table -->
+    <!-- Removed H2 Title -->
+    <div id="crypto-market-table-container">
+        <!-- Market table will be loaded here by js/market_table.js -->
+    </div>
+    <p style="font-size: 0.8em; text-align: center; color: #aaa; margin-top: 15px;">
+        Market data provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a>. Updated every 5 minutes (cached).
+    </p>
 </div>
 
     </div>
@@ -261,21 +281,11 @@
             // --- Function to show a specific section ---
             function showSection(targetId, updateHistory = true) {
                 const targetSection = $('#' + targetId);
+                // Update cryptoOptions selector to include the new button
+                const cryptoOptions = $('#crypto-menu .crypto-option');
                 const targetOption = cryptoOptions.filter(`[data-target="${targetId}"]`);
 
                 if (!targetSection.length) { return; } // Exit if target doesn't exist
-
-                // Derive cryptoType from targetId (e.g., "sol-section" -> "sol")
-                const cryptoType = targetId.replace('-section', '');
-                // Define valid types for safety check
-                const validTypes = ['btc', 'eth', 'sol'];
-                if (!validTypes.includes(cryptoType)) {
-                     console.error("Could not derive valid cryptoType from targetId:", targetId);
-                     return;
-                }
-
-                // Derive chartContainerId (special case for btc)
-                const chartContainerId = (cryptoType === 'btc') ? 'chart' : `chart-${cryptoType}`;
 
                 // Update trigger button text
                 if (targetOption.length && cryptoMenuTrigger.text() !== targetOption.data('display')) {
@@ -289,59 +299,86 @@
                    targetSection.addClass('active');
                 }
 
-                // Initialize chart only if it hasn't been initialized yet
-                // We use a data attribute on the section to track initialization
-                if (targetSection.data('chart-initialized') !== true) {
-                    console.log(`Initializing chart for ${cryptoType} in #${chartContainerId}`);
-                    // Ensure the container exists before creating chart
-                    if ($(`#${chartContainerId}`).length) {
-                         create_crypto_chart(cryptoType, chartContainerId);
-                         targetSection.data('chart-initialized', true); // Mark as initialized
+                // --- Handle different section types ---
+                if (targetId === 'market-table-section') {
+                    // Load market table if the function exists
+                    if (typeof loadCryptoMarketTable === 'function') {
+                        loadCryptoMarketTable(); // Call function from market_table.js
                     } else {
-                         console.error(`Chart container #${chartContainerId} not found!`);
+                        console.error("loadCryptoMarketTable function not found!");
+                        $('#crypto-market-table-container').html('<p class="error-message">Error: Table loading script missing.</p>');
                     }
+                    // Clear any active price interval if switching away from a coin section
+                    if (activePriceIntervalId) {
+                        clearInterval(activePriceIntervalId);
+                        activePriceIntervalId = null;
+                        console.log("Cleared price interval when switching to market table.");
+                    }
+                     // Set page title for market table
+                     if (typeof updatePageTitle === 'function') {
+                         // We can reuse updatePageTitle, just pass a specific string for cryptoType
+                         // and null for price. The function needs a slight modification
+                         // OR we can just set document.title directly here. Let's set directly for simplicity.
+                         document.title = 'Crypto Market Table - PassiveCash.xyz';
+                     }
+
                 } else {
-                     console.log(`Chart for ${cryptoType} already initialized.`);
-                     // Optional: Reflow existing chart if needed after being hidden/shown
-                     // This requires finding the specific chart instance. Highcharts stores them
-                     // in Highcharts.charts array, but finding the right one can be tricky.
-                     // A simpler way might be to store the chart instance on the element itself.
-                     // Or, if reflow isn't strictly necessary, just skip it.
-                     // Example using Highcharts.charts (less reliable if charts are destroyed/recreated):
-                     // const chartInstance = Highcharts.charts.find(c => c && c.renderTo.id === chartContainerId);
-                     // if (chartInstance) {
-                     //     chartInstance.reflow();
-                     // }
-                }
+                    // Logic for individual crypto sections (BTC, ETH, SOL)
+                    const cryptoType = targetId.replace('-section', '');
+                    const validTypes = ['btc', 'eth', 'sol']; // Keep this list updated
 
-                // Always start/restart the ticker for the selected section
-                startTicker(cryptoType);
+                    if (validTypes.includes(cryptoType)) {
+                        const chartContainerId = (cryptoType === 'btc') ? 'chart' : `chart-${cryptoType}`;
 
-                // --- Load RSS Feed ---
-                // Define feed URLs and container IDs
-                const feeds = {
-                    btc: { url: 'https://www.reddit.com/r/Bitcoin/rising/.rss', container: 'btc-rss-feed' },
-                    eth: { url: 'https://www.reddit.com/r/ethereum/rising/.rss', container: 'eth-rss-feed' },
-                    sol: { url: 'https://www.reddit.com/r/solana/rising/.rss', container: 'sol-rss-feed' }
-                };
+                        // Initialize chart only if it hasn't been initialized yet
+                        if (targetSection.data('chart-initialized') !== true) {
+                            console.log(`Initializing chart for ${cryptoType} in #${chartContainerId}`);
+                            if ($(`#${chartContainerId}`).length) {
+                                 create_crypto_chart(cryptoType, chartContainerId);
+                                 targetSection.data('chart-initialized', true);
+                            } else {
+                                 console.error(`Chart container #${chartContainerId} not found!`);
+                            }
+                        } else {
+                             console.log(`Chart for ${cryptoType} already initialized.`);
+                        }
 
-                // Fetch feed only if the section is becoming active and hasn't been loaded
-                // Or simply always fetch when shown? Let's always fetch for simplicity now.
-                if (feeds[cryptoType]) {
-                    // Check if container exists before fetching
-                    if ($(`#${feeds[cryptoType].container}`).length) {
-                         console.log(`Fetching RSS feed for ${cryptoType}`);
-                         // Ensure loading message has class if fetchAndDisplayRSS adds it
-                         $(`#${feeds[cryptoType].container} .feed-items`).html('<p class="loading-text">Loading news...</p>');
-                         fetchAndDisplayRSS(feeds[cryptoType].url, feeds[cryptoType].container);
+                        // Always start/restart the ticker for the selected section
+                        startTicker(cryptoType);
+
+                        // --- Load RSS Feed ---
+                        const feeds = {
+                            btc: { url: 'https://www.reddit.com/r/Bitcoin/rising/.rss', container: 'btc-rss-feed' },
+                            eth: { url: 'https://www.reddit.com/r/ethereum/rising/.rss', container: 'eth-rss-feed' },
+                            sol: { url: 'https://www.reddit.com/r/solana/rising/.rss', container: 'sol-rss-feed' }
+                        };
+                        if (feeds[cryptoType]) {
+                            if ($(`#${feeds[cryptoType].container}`).length) {
+                                 console.log(`Fetching RSS feed for ${cryptoType}`);
+                                 $(`#${feeds[cryptoType].container} .feed-items`).html('<p class="loading-text">Loading news...</p>');
+                                 fetchAndDisplayRSS(feeds[cryptoType].url, feeds[cryptoType].container);
+                            } else {
+                                 console.error(`RSS feed container #${feeds[cryptoType].container} not found!`);
+                            }
+                        }
                     } else {
-                         console.error(`RSS feed container #${feeds[cryptoType].container} not found!`);
+                         console.error("Could not derive valid cryptoType from targetId:", targetId);
+                         // Optionally hide the section or show an error
                     }
                 }
 
-                // Update URL hash if requested and different
+                // --- Update URL Hash ---
+                // Determine hash based on targetId
+                let newHashValue = '';
+                if (targetId === 'market-table-section') {
+                    newHashValue = 'market-table';
+                } else {
+                    // Assume it's a crypto section
+                    newHashValue = targetId.replace('-section', '');
+                }
+                const newHash = '#' + newHashValue;
                 const currentHash = window.location.hash;
-                const newHash = '#' + cryptoType;
+
                 if (updateHistory && currentHash !== newHash) {
                     if (history.pushState) {
                         history.pushState(null, null, newHash);
@@ -367,21 +404,29 @@
 
             // --- Handle Hash on Page Load and Back/Forward ---
             function handleHashChange() {
-                const hash = window.location.hash; // e.g., "#sol"
-                const validTypes = ['btc', 'eth', 'sol']; // Keep this list updated
-                let cryptoType = 'btc'; // Default
+                const hash = window.location.hash; // e.g., "#sol" or "#market-table"
+                const validCryptoTypes = ['btc', 'eth', 'sol'];
+                const validOtherHashes = ['market-table']; // Add other valid non-crypto hashes here
+                let targetId = 'btc-section'; // Default target section
 
                 if (hash && hash.length > 1) {
-                    const potentialType = hash.substring(1); // Remove '#' -> "sol"
-                    if (validTypes.includes(potentialType)) {
-                        cryptoType = potentialType;
-                    } else {
-                         console.warn(`Invalid hash detected: ${hash}. Defaulting to BTC.`);
-                    }
-                }
+                    const potentialTarget = hash.substring(1); // Remove '#' -> "sol" or "market-table"
 
-                // Construct targetId directly
-                const targetId = `${cryptoType}-section`;
+                    if (validCryptoTypes.includes(potentialTarget)) {
+                        targetId = `${potentialTarget}-section`;
+                    } else if (validOtherHashes.includes(potentialTarget)) {
+                         // Map other valid hashes to their section IDs
+                         if (potentialTarget === 'market-table') {
+                             targetId = 'market-table-section';
+                         }
+                         // Add more else if blocks for other non-crypto sections if needed
+                    } else {
+                         console.warn(`Invalid hash detected: ${hash}. Defaulting to BTC section.`);
+                         targetId = 'btc-section'; // Explicitly set default on invalid hash
+                    }
+                } else {
+                     targetId = 'btc-section'; // Default if no hash
+                }
 
                 showSection(targetId, false); // Show section without updating history again
             }
@@ -401,6 +446,7 @@
 
     <!-- Advertisement Script -->
     <script src="js/advertisement.js"></script>
+    <script src="js/market_table.js"></script> <!-- Include market table script -->
     <script src="js/main.js"></script> <!-- Include consolidated main script -->
 
 </body>
