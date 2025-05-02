@@ -99,8 +99,8 @@
                         styledOverview = styledOverview.replace(/ {2,}/g, ' '); // Use literal space
 
                         // 1. Style positive/negative words first
-                        styledOverview = styledOverview.replace(/\b(gaining|gain|positive|gains|winning|increase|increases|surge|upward|strong)\b/gi, '<span class="positive">$1</span>');
-                        styledOverview = styledOverview.replace(/\b(losing|loss|negative|loses|decrease|downward|decreases|weak|downward)\b/gi, '<span class="negative">$1</span>');
+                        styledOverview = styledOverview.replace(/\b(gaining|optimism|gain|positive|gains|winning|increase|increases|surge|upward|strong|strongly|stronger)\b/gi, '<span class="positive">$1</span>');
+                        styledOverview = styledOverview.replace(/\b(losing|loss|negative|loses|decrease|downward|decreases|weak|downward|weaker)\b/gi, '<span class="negative">$1</span>');
 
                         // 2. Style positive/negative numbers/percentages next
                         // Added negative lookbehind (?<![>"]) to avoid matching inside tags/attributes
