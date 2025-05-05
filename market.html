@@ -58,11 +58,165 @@
 
     <div class="content-container">
         <h1>Market Overview</h1>
-        <p class="powered-by">Powered by Google AI</p>
-        <div id="market-overview-content">
-            <p class="loading-placeholder loading-text">Loading market overview...</p> <!-- Added loading-text class -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px); width:100%;"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+          {
+          "colorTheme": "dark",
+          "dateRange": "12M",
+          "showChart": true,
+          "locale": "en",
+          "largeChartUrl": "",
+          "isTransparent": false,
+          "showSymbolLogo": true,
+          "showFloatingTooltip": false,
+          "width": "100%",
+          "height": "660",
+          "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+          "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+          "gridLineColor": "rgba(42, 46, 57, 0)",
+          "scaleFontColor": "rgba(134, 137, 147, 1)",
+          "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+          "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+          "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+          "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+          "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+          "tabs": [
+            {
+              "title": "Indices",
+              "symbols": [
+                {
+                  "s": "FOREXCOM:SPXUSD",
+                  "d": "S&P 500"
+                },
+                {
+                  "s": "FOREXCOM:NSXUSD",
+                  "d": "US 100"
+                },
+                {
+                  "s": "FOREXCOM:DJI",
+                  "d": "Dow 30"
+                },
+                {
+                  "s": "INDEX:NKY",
+                  "d": "Nikkei 225"
+                },
+                {
+                  "s": "INDEX:DEU40",
+                  "d": "DAX Index"
+                },
+                {
+                  "s": "FOREXCOM:UKXGBP",
+                  "d": "UK 100"
+                }
+              ],
+              "originalTitle": "Indices"
+            },
+            {
+              "title": "Futures",
+              "symbols": [
+                {
+                  "s": "CME_MINI:ES1!",
+                  "d": "S&P 500"
+                },
+                {
+                  "s": "CME:6E1!",
+                  "d": "Euro"
+                },
+                {
+                  "s": "COMEX:GC1!",
+                  "d": "Gold"
+                },
+                {
+                  "s": "NYMEX:CL1!",
+                  "d": "Crude Oil"
+                },
+                {
+                  "s": "NYMEX:NG1!",
+                  "d": "Natural Gas"
+                },
+                {
+                  "s": "CBOT:ZC1!",
+                  "d": "Corn"
+                }
+              ],
+              "originalTitle": "Futures"
+            },
+            {
+              "title": "Bonds",
+              "symbols": [
+                {
+                  "s": "CME:GE1!",
+                  "d": "Eurodollar"
+                },
+                {
+                  "s": "CBOT:ZB1!",
+                  "d": "T-Bond"
+                },
+                {
+                  "s": "CBOT:UB1!",
+                  "d": "Ultra T-Bond"
+                },
+                {
+                  "s": "EUREX:FGBL1!",
+                  "d": "Euro Bund"
+                },
+                {
+                  "s": "EUREX:FBTP1!",
+                  "d": "Euro BTP"
+                },
+                {
+                  "s": "EUREX:FGBM1!",
+                  "d": "Euro BOBL"
+                }
+              ],
+              "originalTitle": "Bonds"
+            },
+            {
+              "title": "Forex",
+              "symbols": [
+                {
+                  "s": "FX:EURUSD",
+                  "d": "EUR/USD"
+                },
+                {
+                  "s": "FX:GBPUSD",
+                  "d": "GBP/USD"
+                },
+                {
+                  "s": "FX:USDJPY",
+                  "d": "USD/JPY"
+                },
+                {
+                  "s": "FX:USDCHF",
+                  "d": "USD/CHF"
+                },
+                {
+                  "s": "FX:AUDUSD",
+                  "d": "AUD/USD"
+                },
+                {
+                  "s": "FX:USDCAD",
+                  "d": "USD/CAD"
+                }
+              ],
+              "originalTitle": "Forex"
+            }
+          ]
+        }
+          </script>
         </div>
-        <div id="overview-status"></div>
+        <!-- TradingView Widget END -->
+
+        <!-- WSB RSS Feed Section -->
+        <div id="wsb-rss-feed" class="rss-feed-container">
+            <h4>WallStreetBets Latest News</h4>
+            <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
+        </div>
+        <!-- End WSB RSS Feed Section -->
+
     </div>
 
     <!-- Include jQuery -->
@@ -71,73 +225,97 @@
     <!-- Hamburger Menu Script is now in js/main.js -->
 
     <!-- Fetch and Display Market Overview -->
+    <!-- Removed the old script that fetched from the Flask app -->
+
+    <!-- RSS Feed Script -->
     <script>
-        $(document).ready(function() {
-            // Define the URL for your Flask app endpoint
-            // IMPORTANT: Replace with your actual PythonAnywhere URL if running there
-            // For local testing, it might be http://127.0.0.1:5000/get-market-overview
-            const overviewApiUrl = 'https://stevob144.pythonanywhere.com/get-market-overview'; // Use absolute URL for local testing
+        // --- Function to fetch and display RSS feed ---
+        // Copied and adapted from crypto.html
+        async function fetchAndDisplayRSS(feedUrl, containerId) {
+            const feedItemsContainer = $(`#${containerId} .feed-items`); // Target the inner div
+            const cacheKey = `rss_feed_${feedUrl}`;
+            const cacheDuration = 15 * 60 * 1000; // 15 minutes in milliseconds
 
-            const $contentDiv = $('#market-overview-content');
-            const $statusDiv = $('#overview-status');
-
-            $.ajax({
-                url: overviewApiUrl,
-                method: 'GET',
-                dataType: 'json',
-                timeout: 30000, // 30 second timeout
-                success: function(data) {
-                    $contentDiv.empty(); // Clear loading message
-                    if (data && data.error) {
-                        console.error("Error fetching market overview:", data.error);
-                        $contentDiv.append($('<p>').addClass('error-message').text('Error fetching market overview: ' + data.error));
-                    } else if (data && data.overview) {
-                        // Parse and style the overview text
-                        let styledOverview = data.overview;
-
-                        // 0. Collapse multiple standard space characters into one
-                        styledOverview = styledOverview.replace(/ {2,}/g, ' '); // Use literal space
-
-                        // 1. Style positive/negative words first
-                        styledOverview = styledOverview.replace(/\b(gaining|optimism|gain|positive|gains|winning|increase|increases|surge|upward|strong|strongly|stronger)\b/gi, '<span class="positive">$1</span>');
-                        styledOverview = styledOverview.replace(/\b(losing|loss|negative|loses|decrease|downward|decreases|weak|downward|weaker)\b/gi, '<span class="negative">$1</span>');
-
-                        // 2. Style positive/negative numbers/percentages next
-                        // Added negative lookbehind (?<![>"]) to avoid matching inside tags/attributes
-                        styledOverview = styledOverview.replace(/(?<![>"])(\+[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="positive">$1</span>');
-                        styledOverview = styledOverview.replace(/(?<![>"])(\-[0-9]+(?:\.[0-9]+)?%?)/g, '<span class="negative">$1</span>');
-
-                        // 3. Style markdown last
-                        styledOverview = styledOverview.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
-                        styledOverview = styledOverview.replace(/\*(.*?)\*/g, '<span class="highlight">$1</span>');
-
-                        // Display the styled HTML
-                        $contentDiv.html(styledOverview); // Use .html() to render the styled spans
-
-                        // Display timestamp
-                        if (data.timestamp) {
-                            try {
-                                const date = new Date(data.timestamp);
-                                $statusDiv.text('Last updated: ' + date.toLocaleString());
-                            } catch (e) {
-                                console.error("Error parsing timestamp:", e);
-                                $statusDiv.text('Last updated: (timestamp unavailable)');
-                            }
-                        } else {
-                             $statusDiv.text('Last updated: (timestamp unavailable)');
-                        }
+            // Try loading from cache first
+            try {
+                const cachedData = sessionStorage.getItem(cacheKey);
+                if (cachedData) {
+                    const { timestamp, htmlContent } = JSON.parse(cachedData);
+                    const now = Date.now();
+                    if (now - timestamp < cacheDuration) {
+                        console.log(`Using cached RSS feed for ${feedUrl}`);
+                        feedItemsContainer.html(htmlContent);
+                        return; // Exit function, cache is valid
                     } else {
-                        console.error("Invalid data received:", data);
-                        $contentDiv.append($('<p>').addClass('error-message').text('Received invalid data for market overview.'));
+                         console.log(`Cache expired for ${feedUrl}`);
                     }
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                    console.error("AJAX error fetching market overview:", textStatus, errorThrown);
-                    $contentDiv.empty(); // Clear loading message
-                    $contentDiv.append($('<p>').addClass('error-message').text('Could not load market overview. Status: ' + textStatus));
-                    $statusDiv.empty();
                 }
-            });
+            } catch (e) {
+                console.error("Error reading RSS cache:", e);
+                // Proceed to fetch if cache read fails
+            }
+
+            // If cache is invalid or doesn't exist, fetch new data
+            feedItemsContainer.html('<p class="loading-text">Loading news...</p>'); // Show loading state
+
+            // Using api.rss2json.com to convert RSS to JSON
+            const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if (data.status !== 'ok') {
+                    throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
+                }
+
+                const items = data.items;
+                let htmlContent = '<ul>';
+                let count = 0;
+
+                if (items && items.length > 0) {
+                    items.forEach(item => {
+                        if (count >= 10) return; // Limit to 10 news items for WSB
+                        const title = item.title || 'No title';
+                        const link = item.link || '#';
+                        // Add rel="nofollow" for external links
+                        htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer nofollow">${title}</a></li>`;
+                        count++;
+                    });
+                }
+
+                htmlContent += '</ul>';
+
+                if (count === 0) {
+                    htmlContent = '<p>News feed is empty or could not be loaded.</p>'; // Store empty message too
+                }
+
+                // Display the fetched content
+                feedItemsContainer.html(htmlContent);
+
+                // Store the fetched content and timestamp in cache
+                try {
+                    const cachePayload = JSON.stringify({ timestamp: Date.now(), htmlContent });
+                    sessionStorage.setItem(cacheKey, cachePayload);
+                    console.log(`Cached RSS feed for ${feedUrl}`);
+                } catch (e) {
+                    console.error("Error writing RSS cache:", e);
+                }
+
+            } catch (error) {
+                console.error(`Error fetching/parsing RSS feed via rss2json for ${feedUrl}:`, error);
+                feedItemsContainer.html(`<p class="error-message">Error loading news feed: ${error.message || 'Unknown error'}</p>`);
+            }
+        }
+
+        // Fetch WSB feed on document ready
+        $(document).ready(function() {
+            const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/new/.rss';
+            const wsbContainerId = 'wsb-rss-feed';
+            fetchAndDisplayRSS(wsbFeedUrl, wsbContainerId);
         });
     </script>
 
