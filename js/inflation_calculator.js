@@ -1,6 +1,6 @@
 cpi = new Object(); 
 cpi.OLDEST_YEAR = 1913; 
-cpi.LATEST_YEAR = 2024; 
+cpi.LATEST_YEAR = 2025; 
 
 cpi.rates = new Array(3); 
 cpi.rates[0] = 9.9;   //1913 
@@ -114,8 +114,8 @@ cpi.rates[107] = 258.811;	//2020
 cpi.rates[108] = 270.970;	//2021
 cpi.rates[109] = 292.655;	//2022
 cpi.rates[110] = 304.702;	//2023
-cpi.rates[111] = 313.689;       //2024
-
+cpi.rates[111] = 313.689; //2024
+cpi.rates[112] = 321.943; //2025
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
 function calculateInflation() { // Renamed to match HTML onclick
@@ -124,7 +124,7 @@ function calculateInflation() { // Renamed to match HTML onclick
   start = Number(document.getElementById("startYearField").value);
   end = Number(document.getElementById("endYearField").value); 
   
-  if (start >= 1913 && start <= 2024 && end >=1913 && end <=2024)
+  if (start >= 1913 && start <= 2025 && end >=1913 && end <=2025)
   {
   start_array = start - cpi.OLDEST_YEAR
   end_array = end - cpi.OLDEST_YEAR
@@ -134,7 +134,7 @@ function calculateInflation() { // Renamed to match HTML onclick
   document.getElementById("inflation-output").innerHTML =  dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span style='color: #ffa500 !important;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end; // Updated ID and added span
   }
   else{
-  error = "Data only available for years in range 1913-2024";
+  error = "Data only available for years in range 1913-2025";
   document.getElementById("inflation-output").innerHTML = error; // Updated ID
   }
 } 
