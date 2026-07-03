@@ -96,7 +96,7 @@ body {
      color: #ffa500; /* Orange text color (default, overridden by link style) */
      padding: 8px 0;
      text-align: center;
-     font-size: 0.9em;
+     font-size: 1em;
      border-bottom: 1px solid #555;
  }
  #advertisement a {
@@ -527,7 +527,7 @@ blockquote {
  #investmentTable { width: 100%; border-collapse: collapse; margin-top: 15px; } /* Restored width: 100% */
  #investmentTable th, #investmentTable td { border: 1px solid #444; padding: 8px; text-align: left; }
  #investmentTable th { background-color: #333; color: #00ff00; }
- #investmentTable input[type="text"], #investmentTable input[type="number"] { width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
+ #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: 1em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
  #investmentTable input[type="text"]:focus,
  #investmentTable input[type="number"]:focus {
      border-color: #00ff00; /* Green border on focus */
@@ -680,51 +680,6 @@ blockquote {
     color: #ff4444; /* Red for errors */
     font-weight: bold;
 }
-.powered-by {
-    text-align: center;
-    font-size: 0.8em;
-    color: #888;
-    margin-top: -15px; /* Adjust to pull it closer to H1 */
-    margin-bottom: 25px; /* Add space below */
-}
-/* Styles for dynamic content */
-.positive {
-    color: #33cc33; /* Lighter green for positive numbers */
-    font-weight: bold;
-}
-.negative {
-    color: #ff4444; /* Red for negative numbers */
-    font-weight: bold;
-}
-.highlight {
-    color: #33cc33; /* Lighter green for asterisk text */
-    font-weight: bold; /* Make it bold as well */
-}
-/* --- End market.html Specific Styles --- */
-
-/* --- Page-Specific Styles for market.html --- */
-#market-overview-content {
-    white-space: pre-wrap; /* Preserve line breaks from the AI response */
-    background-color: #2a2a2a;
-    padding: 15px;
-    border: 1px dashed #444;
-    margin-top: 20px;
-    min-height: 100px; /* Ensure it has some height while loading */
-}
-#overview-status {
-    font-size: 0.8em;
-    color: #aaa;
-    margin-top: 10px;
-    text-align: right;
-}
-.loading-placeholder {
-    color: #666;
-    font-style: italic;
-}
-.error-message {
-    color: #ff4444; /* Red for errors */
-    font-weight: bold;
-}
 /* --- End market.html Specific Styles --- */
  /* --- Custom Dropdown Selector Containers --- */
 
@@ -841,17 +796,6 @@ blockquote {
      cursor: default;
  }
  
-
-
-/* --- Page-Specific Styles for calculators.html --- */
-
-/* Calculator Styles (Shared) */
-@@ -899,7 +729,7 @@ blockquote {
-}
-/* --- End market.html Specific Styles --- */
-
-/* --- End RSS Feed Styles --- */
-
 /* --- RSS Feed Styles (market.html) --- */
 .rss-feed-container {
     margin-top: 30px; /* Space above the feed */
