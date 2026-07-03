@@ -728,6 +728,131 @@ blockquote {
     font-weight: bold;
 }
 /* --- End market.html Specific Styles --- */
+ /* --- Custom Dropdown Selector Containers --- */
+
+ #calculator-selector-container {
+     margin-bottom: 30px;
+     text-align: left; /* Align container content left */
+     position: relative; /* Needed for absolute positioning of menu */
+ }
+ /* --- Custom Dropdown Trigger Buttons --- */
+ 
+ #calculator-menu-trigger {
+     display: block; /* Make trigger full width */
+     width: 100%; /* Explicitly set full width */
+     text-align: center; /* Center text within the button */
+     margin-bottom: 5px;
+     /* Base button styles */
+     background-color: #1a1a1a;
+     color: #00ff00;
+     padding: 10px 20px;
+     border: 1px solid #00ff00;
+     border-radius: 0px;
+     cursor: pointer;
+     font-size: 1em;
+     font-weight: bold;
+     transition: background-color 0.3s, color 0.3s;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+     position: relative; /* For pseudo-element arrow */
+     padding-right: 30px; /* Make space for arrow */
+     /* Reset browser default appearance */
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+ }
+ /* Specific trigger styles if needed can go here */
+ #calculator-menu-trigger {
+     display: inline-block; /* Override for calculator page */
+ }
+ /* Dropdown arrow for triggers */
+ 
+ #calculator-menu-trigger::after {
+     content: '';
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 5px solid #00ff00; /* Green arrow */
+     pointer-events: none; /* Prevent arrow from interfering with clicks */
+ }
+ /* Trigger hover state */
+
+ #calculator-menu-trigger:hover {
+     background-color: #00ff00;
+     color: #0a0a0a;
+ }
+ /* Change arrow color on trigger hover */
+
+ #calculator-menu-trigger:hover::after {
+     border-top-color: #0a0a0a; /* Match dark text color */
+ }
+ /* --- Custom Dropdown Menus --- */
+
+ #calculator-menu {
+     display: none; /* Hide menu by default */
+     position: absolute;
+     top: 100%; /* Position below trigger */
+     left: 0; /* Align menu to the left */
+     width: 100%; /* Make menu full width */
+     background-color: #1a1a1a; /* Dark background for dropdown */
+     border: 1px solid #00ff00; /* Green border */
+     z-index: 50; /* Ensure it's above other content */
+     padding: 5px 0;
+     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Subtle green shadow */
+ }
+ 
+ #calculator-menu.active {
+     display: block; /* Show menu when active */
+ }
+ /* --- Custom Dropdown Options --- */
+ 
+ #calculator-menu .calculator-option {
+     display: block;
+     width: 100%;
+     margin: 0;
+     padding: 10px 15px;
+     text-align: left;
+     border: none;
+     border-bottom: 1px solid #333; /* Separator */
+     border-radius: 0;
+     font-size: 1em;
+     /* Base button styles */
+     background-color: #1a1a1a;
+     color: #00ff00;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+     font-weight: bold;
+ }
+
+ #calculator-menu .calculator-option:last-child {
+     border-bottom: none;
+ }
+ 
+ #calculator-menu .calculator-option:hover {
+     background-color: #00ff00;
+     color: #0a0a0a;
+ }
+ /* Style for the selected option */
+ 
+ #calculator-menu .calculator-option.active-selector {
+     background-color: #00ff00;
+     color: #0a0a0a;
+     cursor: default;
+ }
+ 
+
+
+/* --- Page-Specific Styles for calculators.html --- */
+
+/* Calculator Styles (Shared) */
+@@ -899,7 +729,7 @@ blockquote {
+}
+/* --- End market.html Specific Styles --- */
+
+/* --- End RSS Feed Styles --- */
 
 /* --- RSS Feed Styles (market.html) --- */
 .rss-feed-container {
