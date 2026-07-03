@@ -485,6 +485,7 @@ blockquote {
      margin-right: 10px;
      font-weight: bold;
      color: #00ff00; /* Green labels */
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
  }
  .calc-row input[type="number"],
  .calc-row input[type="text"],
@@ -496,6 +497,7 @@ blockquote {
      min-width: 100px;
      background-color: #111; /* Very dark input background */
      color: #e0e0e0; /* Light text in input */
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
  }
  .calc-row input[type="number"]:focus,
  .calc-row input[type="text"]:focus,
