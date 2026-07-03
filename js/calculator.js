@@ -74,7 +74,12 @@ function displayCompoundChart(years, balances) {
         console.error("Canvas element 'compoundInterestChart' not found.");
         return;
     }
-    const context = ctx.getContext('2d');
+	const chartContainer = document.getElementById("chartContainer");
+    if (chartContainer) {
+        chartContainer.style.display = 'block';
+    }    
+	
+	const context = ctx.getContext('2d');
 
     // Destroy previous chart instance if it exists
     if (compoundChartInstance) {
