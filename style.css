@@ -320,20 +320,15 @@ caption { /* Style for table captions */
 .calculateBtn {
     background-color: #1a1a1a; /* Dark background */
     color: #00ff00; /* Green text */
-    padding: 8px 15px; /* Default padding, adjust as needed */
+    padding: 10px 15px; /* Default padding, adjust as needed */
     border: 1px solid #00ff00; /* Green border */
     border-radius: 0px;
     cursor: pointer;
-    font-size: 0.9em; /* Default font size */
+    font-size: 1em;/* Default font size */
+    margin-top: 10px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-/* Specific padding/size for calculateBtn */
-.calculateBtn {
-    padding: 10px 20px;
-    font-size: 1em;
-    margin-top: 10px;
 }
 
 /* Shared Button Hover/Active Styles */
@@ -498,6 +493,7 @@ blockquote {
      background-color: #111; /* Very dark input background */
      color: #e0e0e0; /* Light text in input */
      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+     font-size: 1em;
  }
  .calc-row input[type="number"]:focus,
  .calc-row input[type="text"]:focus,
