@@ -61,7 +61,7 @@
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px); width:100%;"></div>
           <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-          <script type="text/javascript" src="https://tradingview.com" async>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
 {
   "colorTheme": "dark",
   "dateRange": "12M",
@@ -86,47 +86,27 @@
     {
       "title": "Indices",
       "symbols": [
-        {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500"
-        },
-        {
-          "s": "FOREXCOM:DJI",
-          "d": "Dow 30"
-        },
-        {
-          "s": "FOREXCOM:NSXUSD",
-          "d": "Nasdaq 100"
-        }
+        { "s": "FOREXCOM:SPXUSD", "d": "S&P 500" },
+        { "s": "FOREXCOM:DJI", "d": "Dow 30" },
+        { "s": "FOREXCOM:NSXUSD", "d": "Nasdaq 100" }
       ],
       "originalTitle": "Indices"
     },
     {
       "title": "Commodities",
       "symbols": [
-        {
-          "s": "TVC:SILVER",
-          "d": "Silver"
-        },
-        {
-          "s": "TVC:GOLD",
-          "d": "Gold"
-        }
+        { "s": "TVC:SILVER", "d": "Silver" },
+        { "s": "TVC:GOLD", "d": "Gold" }
       ],
       "originalTitle": "Commodities"
     },
     {
       "title": "Crypto",
       "symbols": [
-        {
-          "s": "BITSTAMP:BTCUSD",
-          "d": "Bitcoin"
-        },
-        {
-          "s": "BITSTAMP:ETHUSD",
-          "d": "Ethereum"
-        }
-      ]
+        { "s": "BINANCE:BTCUSDT", "d": "Bitcoin" },
+        { "s": "BINANCE:ETHUSDT", "d": "Ethereum" }
+      ],
+      "originalTitle": "Crypto"
     }
   ]
 }
