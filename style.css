@@ -96,7 +96,7 @@ body {
      color: #ffa500; /* Orange text color (default, overridden by link style) */
      padding: 8px 0;
      text-align: center;
-     font-size: 1em;
+     font-size: .9em;
      border-bottom: 1px solid #555;
  }
  #advertisement a {
@@ -493,7 +493,7 @@ blockquote {
      background-color: #111; /* Very dark input background */
      color: #e0e0e0; /* Light text in input */
      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-     font-size: 1em;
+     font-size: .9em;
  }
  .calc-row input[type="number"]:focus,
  .calc-row input[type="text"]:focus,
@@ -527,14 +527,14 @@ blockquote {
  #investmentTable { width: 100%; border-collapse: collapse; margin-top: 15px; } /* Restored width: 100% */
  #investmentTable th, #investmentTable td { border: 1px solid #444; padding: 8px; text-align: left; }
  #investmentTable th { background-color: #333; color: #00ff00; }
- #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: 1em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
+ #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: .9em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
  #investmentTable input[type="text"]:focus,
  #investmentTable input[type="number"]:focus {
      border-color: #00ff00; /* Green border on focus */
      outline: none; /* Remove default browser outline */
      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
  }
- #investmentTable button { background-color: #1a1a1a; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 0; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
+ #investmentTable button { background-color: #1a1a1a; font-size:.9em; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 0; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
  #investmentTable button:hover { background-color: #ff4444; color: #1a1a1a; /* Red background, dark text on hover */ }
  .rebalanceAmount.positive { color: #00ff00; } /* Green for buy */
  .rebalanceAmount.negative { color: #ff4444; } /* Red for sell */
