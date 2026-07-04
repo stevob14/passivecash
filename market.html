@@ -57,63 +57,30 @@
 
     <div class="content-container">
         <h1>Market Overview</h1>
-        <!-- TradingView Widget BEGIN -->
+        <style>
+  .tradingview-widget-container {
+    border: 1px dashed #444444;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgb(26, 26, 26);
+    box-sizing: border-box;
+    height:calc(100% - 32px); 
+    width:100%;
+  }
+</style>        <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px); width:100%;"></div>
-          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">Track all markets on TradingView</a></div>
-          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-{
-  "colorTheme": "dark",
-  "dateRange": "12M",
-  "showChart": true,
-  "locale": "en",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "showSymbolLogo": true,
-  "showFloatingTooltip": false,
-  "width": "100%",
-  "height": "660",
-  "plotLineColorGrowing": "rgba(8, 153, 129, 1)",
-  "plotLineColorFalling": "rgba(242, 54, 69, 1)",
-  "gridLineColor": "rgba(42, 46, 57, 0)",
-  "scaleFontColor": "rgba(134, 137, 147, 1)",
-  "belowLineFillColorGrowing": "rgba(8, 153, 129, 0.12)",
-  "belowLineFillColorFalling": "rgba(242, 54, 69, 0.12)",
-  "belowLineFillColorGrowingBottom": "rgba(8, 153, 129, 0)",
-  "belowLineFillColorFallingBottom": "rgba(242, 54, 69, 0)",
-  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-  "tabs": [
-    {
-      "title": "Indices",
-      "symbols": [
-        { "s": "FOREXCOM:SPXUSD", "d": "S&P 500" },
-        { "s": "FOREXCOM:DJI", "d": "Dow 30" },
-        { "s": "FOREXCOM:NSXUSD", "d": "Nasdaq 100" }
-      ],
-      "originalTitle": "Indices"
-    },
-    {
-      "title": "Commodities",
-      "symbols": [
-        { "s": "TVC:SILVER", "d": "Silver" },
-        { "s": "TVC:GOLD", "d": "Gold" }
-      ],
-      "originalTitle": "Commodities"
-    },
-    {
-      "title": "Crypto",
-      "symbols": [
-        { "s": "BINANCE:BTCUSDT", "d": "Bitcoin" },
-        { "s": "BINANCE:ETHUSDT", "d": "Ethereum" }
-      ],
-      "originalTitle": "Crypto"
-    }
-  ]
-}
-</script>
-
-        </div>
-        <!-- TradingView Widget END -->
+    <!-- Load TradingView's Web Component Engine -->
+    <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-market-overview.js"></script>
+    <tv-market-overview 
+      theme="dark"
+      symbol-sectors='[
+        {"sectionName":"Indices","symbols":["FOREXCOM:SPXUSD","FOREXCOM:NSXUSD","FOREXCOM:DJI"]},
+        {"sectionName":"Crypto","symbols":["BITSTAMP:BTCUSD","BITSTAMP:ETHUSD"]},
+        {"sectionName":"Commodities","symbols":["OANDA:XAUUSD","OANDA:XAGUSD"]}
+      ]' 
+      transparent
+    ></tv-market-overview>
+  </div>        <!-- TradingView Widget END -->
         <!-- WSB RSS Feed Section -->
         <div id="wsb-rss-feed" class="rss-feed-container">
             <h4>WallStreetBets Latest News</h4>
