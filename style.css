@@ -657,30 +657,6 @@ blockquote {
 
 /* --- End calculators.html Specific Styles --- */
 
-/* --- Page-Specific Styles for market.html --- */
-#market-overview-content {
-    white-space: pre-wrap; /* Preserve line breaks from the AI response */
-    background-color: #2a2a2a;
-    padding: 15px;
-    border: 1px dashed #444;
-    margin-top: 20px;
-    min-height: 100px; /* Ensure it has some height while loading */
-}
-#overview-status {
-    font-size: 0.8em;
-    color: #aaa;
-    margin-top: 10px;
-    text-align: right;
-}
-.loading-placeholder {
-    color: #666;
-    font-style: italic;
-}
-.error-message {
-    color: #ff4444; /* Red for errors */
-    font-weight: bold;
-}
-/* --- End market.html Specific Styles --- */
  /* --- Custom Dropdown Selector Containers --- */
 
  #calculator-selector-container {
