@@ -248,7 +248,7 @@ caption { /* Style for table captions */
 #directory {
     margin-bottom: 40px; /* More space after directory */
     padding: 15px;
-    border: 1px dashed #00ff00;
+    border: 1px dashed #444;
     background-color: #2a2a2a;
 }
 #directory h3 {
@@ -446,7 +446,7 @@ blockquote {
      border-radius: 0px; /* Sharp corners */
      margin-top: 20px;
      margin-bottom: 30px;
-     border: 1px dashed #00ff00; /* Dashed green border */
+     border: 1px dashed #444; /* Dashed green border */
      color: #e0e0e0; /* Ensure text is light */
      display: none; /* Hide calculators by default */
  }
