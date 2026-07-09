@@ -101,7 +101,6 @@
     <!-- RSS Feed Script -->
     <script>
     // --- Function to fetch and display RSS feed ---
-    // Copied and adapted from crypto.html (With 422 Fallback Protection)
     async function fetchAndDisplayRSS(feedUrl, containerId) {
         const feedItemsContainer = $(`#${containerId} .feed-items`);
         const cacheKey = `rss_feed_${feedUrl}`;
