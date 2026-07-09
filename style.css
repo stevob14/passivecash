@@ -824,10 +824,9 @@ blockquote {
     color: #ffa500 !important; /* Orange color, use !important to ensure override */
 }
 
-/* Style for error messages (e.g., in tickers) */
-.error-text {
+/* Style for error messages */
+.error-message {
     color: #ff4444; /* Red color */
-    font-style: italic;
 }
 
 /* --- End RSS Feed Styles --- */
