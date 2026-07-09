@@ -813,15 +813,9 @@ blockquote {
     text-decoration: none; /* Remove underline, inherit glow from general a:hover */
 }
 
-.rss-feed-container p { /* Style for loading/error messages */
-    font-style: italic;
-    color: #aaa;
-}
-
 /* Style for loading indicators */
-.loading-text,
-.rss-feed-container p.loading-text { /* Increase specificity for RSS loading */
-    color: #ffa500 !important; /* Orange color, use !important to ensure override */
+.loading-text{
+    color: #ffa500; /* Orange color*/
 }
 
 /* Style for error messages */
