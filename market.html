@@ -100,95 +100,107 @@
 
     <!-- RSS Feed Script -->
     <script>
-        // --- Function to fetch and display RSS feed ---
-        // Copied and adapted from crypto.html
-        async function fetchAndDisplayRSS(feedUrl, containerId) {
-            const feedItemsContainer = $(`#${containerId} .feed-items`); // Target the inner div
-            const cacheKey = `rss_feed_${feedUrl}`;
-            const cacheDuration = 60 * 60 * 1000; // 60 minutes in milliseconds
+    // --- Function to fetch and display RSS feed ---
+    // Copied and adapted from crypto.html (With 422 Fallback Protection)
+    async function fetchAndDisplayRSS(feedUrl, containerId) {
+        const feedItemsContainer = $(`#${containerId} .feed-items`);
+        const cacheKey = `rss_feed_${feedUrl}`;
+        const cacheDuration = 60 * 60 * 1000; // 60 minutes in milliseconds
 
-            // Try loading from cache first
-            try {
-                const cachedData = sessionStorage.getItem(cacheKey);
-                if (cachedData) {
-                    const { timestamp, htmlContent } = JSON.parse(cachedData);
-                    const now = Date.now();
-                    if (now - timestamp < cacheDuration) {
-                        console.log(`Using cached RSS feed for ${feedUrl}`);
-                        feedItemsContainer.html(htmlContent);
-                        return; // Exit function, cache is valid
-                    } else {
-                         console.log(`Cache expired for ${feedUrl}`);
-                    }
+        let cachedHtmlContent = null;
+
+        // 1. Try loading from cache first
+        try {
+            const cachedData = sessionStorage.getItem(cacheKey);
+            if (cachedData) {
+                const { timestamp, htmlContent } = JSON.parse(cachedData);
+                cachedHtmlContent = htmlContent; // Save this as a backup!
+                
+                if (Date.now() - timestamp < cacheDuration) {
+                    console.log(`Using valid cached RSS feed for ${feedUrl}`);
+                    feedItemsContainer.html(htmlContent);
+                    return; // Exit function, cache is valid and fresh
+                } else {
+                    console.log(`Cache expired for ${feedUrl}. Will try fetching fresh data.`);
                 }
-            } catch (e) {
-                console.error("Error reading RSS cache:", e);
-                // Proceed to fetch if cache read fails
+            }
+        } catch (e) {
+            console.error("Error reading RSS cache:", e);
+        }
+
+        // 2. Only show the loading state if we DON'T have an old cache to show while we wait
+        if (!cachedHtmlContent) {
+            feedItemsContainer.html('<p class="loading-text">Loading news...</p>');
+        }
+
+        // Using api.rss2json.com to convert RSS to JSON
+        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+
+        // 3. Fetch new data from the API
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+
+            if (data.status !== 'ok') {
+                throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
             }
 
-            // If cache is invalid or doesn't exist, fetch new data
-            feedItemsContainer.html('<p class="loading-text">Loading news...</p>'); // Show loading state
+            const items = data.items;
+            let htmlContent = '<ul>';
+            let count = 0;
 
-            // Using api.rss2json.com to convert RSS to JSON
-            const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+            if (items && items.length > 0) {
+                items.forEach(item => {
+                    if (count >= 10) return; // Limit to 10 news items for WSB
+                    const title = item.title || 'No title';
+                    const link = item.link || '#';
+                    htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer nofollow">${title}</a></li>`;
+                    count++;
+                });
+            }
 
+            htmlContent += '</ul>';
+
+            if (count === 0) {
+                htmlContent = '<p>News feed is empty or could not be loaded.</p>';
+            }
+
+            // Display the freshly fetched content
+            feedItemsContainer.html(htmlContent);
+
+            // Store the fetched content and timestamp in cache
             try {
-                const response = await fetch(apiUrl);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
+                const cachePayload = JSON.stringify({ timestamp: Date.now(), htmlContent });
+                sessionStorage.setItem(cacheKey, cachePayload);
+                console.log(`Cached RSS feed for ${feedUrl}`);
+            } catch (e) {
+                console.error("Error writing RSS cache:", e);
+            }
 
-                if (data.status !== 'ok') {
-                    throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
-                }
-
-                const items = data.items;
-                let htmlContent = '<ul>';
-                let count = 0;
-
-                if (items && items.length > 0) {
-                    items.forEach(item => {
-                        if (count >= 10) return; // Limit to 10 news items for WSB
-                        const title = item.title || 'No title';
-                        const link = item.link || '#';
-                        // Add rel="nofollow" for external links
-                        htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer nofollow">${title}</a></li>`;
-                        count++;
-                    });
-                }
-
-                htmlContent += '</ul>';
-
-                if (count === 0) {
-                    htmlContent = '<p>News feed is empty or could not be loaded.</p>'; // Store empty message too
-                }
-
-                // Display the fetched content
-                feedItemsContainer.html(htmlContent);
-
-                // Store the fetched content and timestamp in cache
-                try {
-                    const cachePayload = JSON.stringify({ timestamp: Date.now(), htmlContent });
-                    sessionStorage.setItem(cacheKey, cachePayload);
-                    console.log(`Cached RSS feed for ${feedUrl}`);
-                } catch (e) {
-                    console.error("Error writing RSS cache:", e);
-                }
-
-            } catch (error) {
-                console.error(`Error fetching/parsing RSS feed via rss2json for ${feedUrl}:`, error);
+        } catch (error) {
+            console.error(`Error fetching/parsing RSS feed via rss2json for ${feedUrl}:`, error);
+            
+            // 4. FALLBACK LOGIC: If API fails (like a 422), check if we have expired cache to display instead
+            if (cachedHtmlContent) {
+                console.warn(`API failed. Falling back to expired cache content to keep UI populated.`);
+                feedItemsContainer.html(cachedHtmlContent);
+            } else {
+                // If there is no cache at all and the API fails, show the error message
                 feedItemsContainer.html(`<p class="error-message">Error loading news feed: ${error.message || 'Unknown error'}</p>`);
             }
         }
+    }
 
-        // Fetch WSB feed on document ready
-        $(document).ready(function() {
-            const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/new/.rss';
-            const wsbContainerId = 'wsb-rss-feed';
-            fetchAndDisplayRSS(wsbFeedUrl, wsbContainerId);
-        });
-    </script>
+    // Fetch WSB feed on document ready
+    $(document).ready(function() {
+        const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/new/.rss';
+        const wsbContainerId = 'wsb-rss-feed';
+        fetchAndDisplayRSS(wsbFeedUrl, wsbContainerId);
+    });
+</script>
 
     <!-- Advertisement Script -->
     <script src="js/advertisement.js"></script>
