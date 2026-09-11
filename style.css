@@ -1,20 +1,23 @@
-/* PassiveCash.xyz Common Styles */
+/* PassiveCash.xyz Common Styles - Modern Dark Theme */
 html {
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
-    background-color: #0a0a0a; /* Dark background */
-    color: #e0e0e0; /* Light grey text */
-    line-height: 1.6;
+    background-color: #000000; /* True black background */
+    color: #e6edf3; /* Crisp readable light text */
+    line-height: 1.5;
 }
 .navbar {
-    background-color: #1a1a1a; /* Darker navbar */
-    padding: 10px 0;
-    color: #00ff00; /* Green text */
-    border-bottom: 1px solid #00ff00; /* Green border */
+    background-color: #000000; /* Deep black navbar */
+    padding: 12px 0;
+    color: #ffffff;
+    border-bottom: 1px solid #1e232b; /* Sleek hairline border */
     position: relative; /* Needed for absolute positioning of mobile menu */
 }
 .navbar .container { /* Container for navbar content */
@@ -23,25 +26,31 @@ body {
      align-items: center;
      max-width: 960px; /* Limit navbar content width */
      margin: auto; /* Center navbar content */
-     padding: 0 15px; /* Padding for navbar content */
+     padding: 0 20px; /* Padding for navbar content */
 }
  .navbar .logo {
-     color: #00ff00; /* Green logo */
+     color: #ffffff; /* Clean white logo */
      text-decoration: none;
-     font-size: 1.5em;
-     font-weight: bold;
+     font-size: 1.4em;
+     font-weight: 800;
+     letter-spacing: -0.5px;
      z-index: 10; /* Ensure logo is above mobile menu */
+     transition: opacity 0.15s ease;
  }
 
+.navbar .logo span, .navbar .logo:after {
+  color: #00c805; /* Electric green accent */
+}
+
 .navbar .logo:hover {
-  text-shadow: 0 0 5px #00ff00 !important;
+  opacity: 0.85;
 }
 /* Hamburger Button Styles */
 #hamburger-btn {
     display: none; /* Hidden by default */
     background: none;
     border: none;
-    color: #00ff00;
+    color: #00c805;
     font-size: 2em;
     cursor: pointer;
     padding: 0 5px;
@@ -52,9 +61,9 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: #00ff00;
+    background-color: #00c805;
     transition: all 0.3s ease-in-out;
-    /* Added for positioning during animation */
+    border-radius: 2px;
     position: relative;
 }
 
@@ -77,113 +86,225 @@ body {
     margin: 0;
     padding: 0;
     display: flex; /* Display links horizontally by default */
+    gap: 8px;
 }
 .navbar ul#nav-links li {
-    margin-left: 20px;
+    margin-left: 0;
 }
 .navbar ul#nav-links li a {
-    color: #00ff00; /* Green links */
+    color: #8b949e; /* Muted secondary text */
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    padding: 7px 14px;
+    border-radius: 20px; /* Rounded pill shape */
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.18s ease;
 }
-.navbar ul#nav-links li a:hover,
+.navbar ul#nav-links li a:hover {
+    color: #00c805;
+    background-color: rgba(0, 200, 5, 0.1);
+}
+.navbar ul#nav-links li a:active {
+    transform: scale(0.97);
+    background-color: rgba(0, 200, 5, 0.18);
+}
 .navbar ul#nav-links li a.active {
-    background-color: #00ff00; /* Green background on hover/active */
-    color: #0a0a0a; /* Dark text on hover/active */
+    background-color: #00c805; /* Green pill */
+    color: #000000; /* Black text on active green */
+    font-weight: 700;
 }
 
  /* Advertisement Bar Styles */
  #advertisement {
-     background-color: #333; /* Dark grey background */
-     color: #ffa500; /* Orange text color (default, overridden by link style) */
+     background-color: #0a0d11;
+     color: #ff9800;
      padding: 8px 0;
      text-align: center;
-     font-size: .9em;
-     border-bottom: 1px solid #555;
+     font-size: .88em;
+     border-bottom: 1px solid #1e232b;
  }
  #advertisement a {
-     color: #ffa500 !important; /* Ensure link color overrides default */
-     text-decoration: none; /* Remove underline */
+     color: #00c805 !important;
+     text-decoration: none;
+     font-weight: 600;
+     transition: all 0.15s ease;
  }
  #advertisement a:hover {
-     color: #ffc966 !important; /* Lighter orange on hover */
-     text-shadow: 0 0 5px #ffc966; /* Add glow effect on hover */
+     color: #00e006 !important;
+     text-decoration: underline;
  }
 
 
  .content-container { /* Container for page content */
      max-width: 960px;
      margin: 20px auto;
-     background: #1f1f1f; /* Slightly lighter dark background */
-     padding: 30px 30px 50px 30px; /* Added 50px bottom padding */
-     border-radius: 8px; /* Rounded corners */
-     border: 1px solid #00ff00; /* Green border */
-     box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Green glow effect */
-     color: #e0e0e0; /* Ensure text color is light */
+     background: #0d1015; /* Sleek dark elevated surface */
+     padding: 26px 28px 42px 28px;
+     border-radius: 14px; /* Smooth card curvature */
+     border: 1px solid #1e232b; /* Subtle hairline border */
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+     color: #e6edf3;
  }
 
 h1 {
-    color: #00ff00; /* Green headings */
+    color: #ffffff; /* Clean white heading */
     text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0 0 5px #00ff00; /* Green text glow */
+    font-size: 2.05rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 h2 { /* General H2 styling */
-    color: #00ff00; /* Green headings */
-    border-bottom: 1px solid #00ff00; /* Green border */
-    padding-bottom: 5px;
-    margin-bottom: 20px; /* Space below heading */
-    text-shadow: 0 0 3px #00ff00; /* Green text glow */
-    /* margin-top and scroll-margin-top are page/section specific */
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    border-bottom: 1px solid #1e232b;
+    padding-bottom: 6px;
+    margin-top: 22px;
+    margin-bottom: 12px;
 }
 
 h3 {
-    color: #33cc33; /* Lighter green for h3 */
-    margin-top: 30px;
+    color: #00c805; /* Electric green for h3 */
+    font-size: 1.18rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.25px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.2px;
+    margin-top: 16px;
+    margin-bottom: 6px;
 }
 
 p {
-    margin-bottom: 15px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #c9d1d9;
 }
 
 ul { /* General UL styling */
-    margin-left: 20px;
-    margin-bottom: 15px;
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 4px;
+    color: #c9d1d9;
+    line-height: 1.48;
+    font-size: 0.98rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+li::marker {
+    color: #00c805; /* Consistent electric green bullet */
+    font-size: 1.05em;
+}
+
+li strong,
+li b {
+    color: #ffffff;
 }
 
 a {
-    color: #66ccff; /* Light blue links */
+    color: #00c805; /* Electric green links */
     text-decoration: none;
+    transition: color 0.15s ease, opacity 0.15s ease;
 }
 
 a:hover {
-    color: #99ddff; /* Lighter blue on hover */
-    text-decoration: none; /* Ensure no underline on hover */
-    text-shadow: 0 0 5px #99ddff; /* Add glow effect on hover */
+    color: #00e006;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
+
+a:active {
+    color: #00b304;
+}
+
 /* --- Base Table Styles --- */
 table { /* Applies to all tables unless overridden */
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 18px;
+    border: 1px solid #1e232b;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #0b0e14;
 }
+
 th, td {
-    border: 1px solid #444; /* Dark grey table borders */
-    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #1e232b;
+    border-right: 1px solid #1e232b;
+    padding: 10px 14px;
     text-align: left;
 }
-th {
-    background-color: #333; /* Dark header background */
-    color: #00ff00; /* Green header text */
+
+th:last-child, td:last-child {
+    border-right: none;
 }
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 11px;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 11px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 11px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 11px;
+}
+
+th {
+    background-color: #12161d; /* Dark header background */
+    color: #8b949e; /* Crisp secondary label color */
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+}
+
+td {
+    color: #e6edf3;
+}
+
 caption { /* Style for table captions */
-    color: #00ff00; /* Green caption text */
-    font-weight: bold;
-    padding: 8px; /* Add padding for spacing */
-    text-align: center; /* Center caption text */
+    color: #00c805; /* Green caption */
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 6px 4px 8px 4px;
+    text-align: left;
+    letter-spacing: -0.2px;
 }
 
 
@@ -197,13 +318,13 @@ caption { /* Style for table captions */
 @media (max-width: 992px) { /* Increased breakpoint for earlier hamburger menu */
      /* Basic Responsive Styling */
      .content-container {
-         padding: 20px;
+         padding: 18px 16px 30px 16px;
      }
     h1 {
-        font-size: 2em;
+        font-size: 1.85rem;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.35rem;
     }
      /* Responsive Navbar */
      .navbar .container {
@@ -219,9 +340,9 @@ caption { /* Style for table captions */
          position: absolute;
          top: 100%; /* Position below navbar */
          left: 0;
-         background-color: #1a1a1a; /* Match navbar background */
-         padding: 10px 0; /* Add some padding */
-         border-top: 1px solid #00ff00; /* Separator */
+         background-color: #000000; /* Match navbar background */
+         padding: 8px 0; /* Add some padding */
+         border-top: 1px solid #1e232b; /* Separator */
          z-index: 100; /* Ensure menu is above content */
      }
      .navbar ul#nav-links.active {
@@ -235,8 +356,16 @@ caption { /* Style for table captions */
      }
      .navbar ul#nav-links li a {
          display: block; /* Make links take full width */
-         padding: 10px 0; /* Adjust padding */
-         border-bottom: 1px solid #333; /* Separator between links */
+         padding: 10px 16px; /* Adjust padding */
+         border-bottom: 1px solid #1e232b; /* Separator between links */
+         border-radius: 0;
+     }
+     .navbar ul#nav-links li a:hover {
+         color: #00c805;
+         background-color: rgba(0, 200, 5, 0.1);
+     }
+     .navbar ul#nav-links li a:active {
+         background-color: rgba(0, 200, 5, 0.18);
      }
      .navbar ul#nav-links li:last-child a {
          border-bottom: none; /* Remove border from last link */
@@ -250,17 +379,18 @@ caption { /* Style for table captions */
 
 /* Directory Styles */
 #directory {
-    margin-bottom: 40px; /* More space after directory */
-    padding: 15px;
-    border: 1px dashed #444;
-    background-color: #2a2a2a;
-    border-radius: 6px;
+    margin-bottom: 25px; /* Compact space after directory */
+    padding: 14px 18px;
+    border: 1px solid #1e232b;
+    background-color: #12161d;
+    border-radius: 12px;
 }
 #directory h3 {
     margin-top: 0;
-    color: #00ff00;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
+    color: #ffffff;
+    border-bottom: 1px solid #1e232b;
+    padding-bottom: 6px;
+    font-size: 1.05em;
 }
 #directory ul {
     list-style: none; /* Use custom marker or none */
@@ -268,22 +398,35 @@ caption { /* Style for table captions */
     padding-left: 0; /* Remove default padding */
 }
  #directory ul li {
-     margin-bottom: 8px; /* Space between items */
+     margin-bottom: 4px; /* Space between items */
  }
  #directory ul li a {
      cursor: pointer; /* Indicate clickable */
      display: block; /* Make link take full width for easier clicking */
-     padding: 3px 6px;
-     border-radius: 4px;
+     padding: 5px 10px;
+     border-radius: 8px;
+     color: #c9d1d9;
+     transition: all 0.18s ease;
+ }
+ #directory ul li a:hover {
+     background-color: rgba(0, 200, 5, 0.1);
+     color: #00c805;
+     text-decoration: none;
+ }
+ #directory ul li a:active {
+     transform: scale(0.98);
+     background-color: rgba(0, 200, 5, 0.18);
  }
  #directory ul li a::before {
-     content: "> "; /* Hacker-style marker */
-     color: #00ff00;
-     margin-right: 5px;
+     content: "• ";
+     color: #00c805;
+     margin-right: 8px;
+     font-weight: bold;
  }
  #directory ul li a.active-link {
-     font-weight: bold;
-     background-color: rgba(0, 255, 0, 0.1); /* Subtle green background for active link */
+     font-weight: 700;
+     background-color: rgba(0, 200, 5, 0.15); /* Subtle green background for active link */
+     color: #00c805;
  }
 
 
@@ -296,10 +439,10 @@ caption { /* Style for table captions */
 
 /* Content Section Styles (index.html) */
 .content-section {
-    margin-top: 30px; /* Space above active section */
-    padding-top: 20px; /* Space below heading */
-    border-top: 1px dashed #444; /* Separator */
-    scroll-margin-top: 30px; /* Offset for fixed headers (navbar + ad bar) - Decreased further */
+    margin-top: 20px; /* Space above active section */
+    padding-top: 14px; /* Space below heading */
+    border-top: 1px solid #1e232b; /* Sleek hairline separator */
+    scroll-margin-top: 20px;
 }
 /* --- Page Section Active State --- */
 .content-section.active,
@@ -310,31 +453,34 @@ caption { /* Style for table captions */
  /* Specific H2 adjustments for index.html sections */
  .content-section h2 {
      margin-top: 0;
-     /* scroll-margin-top removed to rely solely on JS calculation for click scroll */
  }
 
 /* Section Navigation Styles (index.html) */
 .section-nav {
     display: flex;
     justify-content: space-between; /* Pushes Prev/Next apart */
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px dashed #444; /* Separator */
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #1e232b;
 }
 /* --- Shared Button Styles --- */
 .section-nav button,
 .calculateBtn {
-    background-color: #1a1a1a; /* Dark background */
-    color: #00ff00; /* Green text */
-    padding: 10px 15px; /* Default padding, adjust as needed */
-    border: 1px solid #00ff00; /* Green border */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #00c805; /* Electric green */
+    color: #000000; /* Bold black text on green */
+    padding: 9px 20px;
+    border: none;
+    border-radius: 24px; /* Signature pill button */
     cursor: pointer;
-    font-size: 1em;/* Default font size */
-    margin-top: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.92em;
+    margin-top: 8px;
+    font-weight: 700;
+    transition: all 0.18s ease;
+    box-shadow: 0 2px 8px rgba(0, 200, 5, 0.22);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Shared Button Hover/Active Styles */
@@ -342,9 +488,20 @@ caption { /* Style for table captions */
 .section-nav button.active,
 .calculateBtn:hover,
 .calculateBtn.active-selector {
-    background-color: #00ff00; /* Green background */
-    color: #0a0a0a; /* Dark text */
+    background-color: #00e006;
+    color: #000000;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 200, 5, 0.35);
 }
+
+.section-nav button:active,
+.calculateBtn:active {
+    background-color: #00b304;
+    color: #000000;
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 1px 4px rgba(0, 200, 5, 0.2);
+}
+
 .section-nav .prev-btn {
     /* Specific styles if needed */
 }
@@ -354,18 +511,34 @@ caption { /* Style for table captions */
 }
 /* Table Styles specific to index.html (if any) can go here */
 blockquote {
-    border-left: 4px solid #00ff00; /* Green blockquote border */
-    padding-left: 15px;
-    margin: 20px 0;
+    background: linear-gradient(90deg, rgba(0, 200, 5, 0.08) 0%, rgba(18, 22, 29, 0.6) 100%);
+    border-left: 3px solid #00c805;
+    border-radius: 0 12px 12px 0;
+    padding: 14px 18px;
+    margin: 18px 0;
     font-style: italic;
-    color: #ccc; /* Lighter grey for quote */
-    background-color: #2a2a2a; /* Slightly different dark bg */
+    color: #e6edf3;
+    font-size: 0.98em;
+    line-height: 1.5;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+blockquote p {
+    margin-bottom: 0;
+    color: inherit;
 }
 
 
 /* --- Responsive Table Styles (index.html) --- */
 @media (max-width: 600px) {
     /* Responsive Tables */
+    table {
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        overflow: visible;
+        margin-bottom: 20px;
+    }
     table, thead, tbody, th, td, tr {
         display: block;
     }
@@ -374,41 +547,51 @@ blockquote {
         top: -9999px;
         left: -9999px;
     }
-    tr { border: 1px solid #444; margin-bottom: 10px; } /* Increased margin */
+    tr {
+        border: 1px solid #1e232b;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        background-color: #0b0e14;
+        padding: 12px 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
     /* Style for table caption on mobile */
     caption {
-        padding: 8px;
-        text-align: center; /* Center caption */
-        font-weight: bold;
-        color: #00ff00; /* Match label color */
-        border-bottom: 1px dashed #444; /* Separator below caption */
-        margin-bottom: 5px; /* Space below caption */
-        display: block; /* Ensure it takes block layout */
+        padding: 6px 0 10px 0;
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #00c805;
+        border-bottom: none;
+        margin-bottom: 6px;
+        display: block;
     }
     td {
         border: none;
-        border-bottom: 1px dashed #444; /* Dashed separator */
-        padding-left: 8px;  /* Reset padding */
-        padding-top: 8px;
-        padding-bottom: 8px;
-        white-space: normal;
-        text-align: left; /* Keep data aligned left */
-        display: block;
-    }
-     /* Remove bottom border from last td in a tr */
-     tr td:last-child {
-         border-bottom: none;
-     }
-    /* General rule for all table cell labels on mobile */
-    td:before {
-        padding-right: 10px; /* Keep some space */
+        border-bottom: 1px solid #1e232b;
+        padding: 10px 0;
         white-space: normal;
         text-align: left;
-        font-weight: bold;
-        color: #00ff00; /* Green label */
-        content: attr(data-label); /* Use data-label attribute */
-        display: block; /* Make label appear above data */
-        margin-bottom: 3px; /* Add space below label */
+        display: block;
+        color: #e6edf3;
+    }
+    /* Remove bottom border from last td in a tr */
+    tr td:last-child {
+        border-bottom: none;
+    }
+    /* General rule for all table cell labels on mobile */
+    td:before {
+        padding-right: 10px;
+        white-space: normal;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #8b949e;
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
     }
 
     /* Responsive Directory (index.html) */
@@ -447,111 +630,267 @@ blockquote {
 
  /* Calculator Styles (Shared) */
  .calculator-section {
-     background-color: #2a2a2a; /* Dark background for calc section */
-     padding: 20px;
-     border-radius: 6px; /* Rounded corners */
-     margin-top: 20px;
-     margin-bottom: 30px;
-     border: 1px dashed #444; /* Dashed green border */
-     color: #e0e0e0; /* Ensure text is light */
-     display: none; /* Hide calculators by default */
+     background-color: #12161d; /* Sleek dark card */
+     padding: 20px 22px;
+     border-radius: 12px;
+     margin-top: 15px;
+     margin-bottom: 22px;
+     border: 1px solid #1e232b; /* Sleek hairline border */
+     color: #e6edf3;
+     display: none;
  }
  .calculator-section.active {
      display: block; /* Show the active calculator */
  }
  /* --- Calculator Selector --- */
- /* Redundant rule block removed */
 
  /* Styles for Dropdown (Now applies to all sizes) */
  #calculator-selector-container {
      text-align: left; /* Align trigger button left */
  }
  #calculator-menu-trigger {
-     display: inline-block; /* Show trigger */
-     width: 100%; /* Make trigger full width */
-     text-align: center; /* Center text in trigger */
-     margin-bottom: 5px;
-     /* Inherits .calculateBtn styles, ensure overrides below if needed */
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 12px;
  }
- /* Redundant rule block removed */
- /* Redundant rule block removed */
  .calc-row {
-     margin-bottom: 15px;
+     margin-bottom: 12px;
      display: flex;
      align-items: center;
      flex-wrap: wrap;
  }
  .calc-row label {
-     flex-basis: 100%;
+     flex-basis: 45%;
      margin-right: 10px;
-     font-weight: bold;
-     color: #00ff00; /* Green labels */
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+     font-weight: 600;
+     color: #ffffff; /* Clean white labels */
+     font-size: 0.9em;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
  }
  .calc-row input[type="number"],
  .calc-row input[type="text"],
  .calc-row select {
      flex-grow: 1;
-     padding: 8px;
-     border: 1px solid #444; /* Default dark grey border */
-     border-radius: 4px; /* Rounded corners */
+     flex-basis: 48%;
+     padding: 8px 12px;
+     border: 1px solid #1e232b;
+     border-radius: 8px; /* Smooth rounded inputs */
      min-width: 100px;
-     background-color: #111; /* Very dark input background */
-     color: #e0e0e0; /* Light text in input */
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-     font-size: .9em;
+     background-color: #080a0e; /* Deep dark input background */
+     color: #ffffff;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+     font-size: .92em;
+     transition: border-color 0.2s ease, box-shadow 0.2s ease;
  }
  .calc-row input[type="number"]:focus,
  .calc-row input[type="text"]:focus,
  .calc-row select:focus {
-     border-color: #00ff00; /* Green border on focus */
-     outline: none; /* Remove default browser outline */
-     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
+     border-color: #00c805;
+     outline: none;
+     box-shadow: 0 0 0 2px rgba(0, 200, 5, 0.25); /* Focus glow */
  }
   .calc-row small {
      flex-basis: 100%;
      font-size: 0.8em;
-     color: #aaa; /* Lighter grey for small text */
+     color: #8b949e; /* Muted secondary text */
+     margin-top: 3px;
   }
- /* .calculateBtn rule block removed as styles are now grouped above */
  .calculator-results { /* Generic results class */
-     margin-top: 20px;
-     padding-top: 15px;
-     border-top: 1px dashed #00ff00; /* Dashed green border */
+     margin-top: 18px;
+     padding-top: 14px;
+     border-top: 1px solid #1e232b;
  }
  .calculator-results h3 {
      margin-top: 0;
-     color: #00ff00; /* Green results heading */
+     margin-bottom: 6px;
+     color: #ffffff;
+     font-size: 1.15em;
+     font-weight: 700;
  }
  .calculator-results p {
-     margin-bottom: 5px;
+     margin-bottom: 6px;
+     color: #c9d1d9;
+     font-size: 0.95em;
+     line-height: 1.48;
  }
- .calculator-results span {
-     font-weight: bold;
+ .calculator-results span,
+ .calculator-results .calc-result-value,
+ #inflation-output span,
+ #mortgage-output span {
+     font-weight: 700 !important;
+     color: #00c805 !important; /* Uniform electric green for all calculator results */
+     font-size: 1.1em;
  }
- /* Rebalancer specific */
- #investmentTable { width: 100%; border-collapse: collapse; margin-top: 15px; } /* Restored width: 100% */
- #investmentTable th, #investmentTable td { border: 1px solid #444; padding: 8px; text-align: left; }
- #investmentTable th { background-color: #333; color: #00ff00; }
- #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: .9em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 4px; padding: 6px; /* Added default border/padding */ }
- #investmentTable input[type="text"]:focus,
- #investmentTable input[type="number"]:focus {
-     border-color: #00ff00; /* Green border on focus */
-     outline: none; /* Remove default browser outline */
-     box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
- }
- #investmentTable button { background-color: #1a1a1a; font-size:.9em; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 4px; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
- #investmentTable button:hover { background-color: #ff4444; color: #1a1a1a; /* Red background, dark text on hover */ }
- .rebalanceAmount.positive { color: #00ff00; } /* Green for buy */
- .rebalanceAmount.negative { color: #ff4444; } /* Red for sell */
- .rebalanceAmount.neutral { color: #aaa; } /* Grey for hold */
- #rebalancer-summary p { margin: 5px 0; }
- #rebalancer-summary span { font-weight: bold; color: #00ff00; }
- #error-message { color: #ff4444; font-weight: bold; margin-top: 10px; }
 
- /* Responsive Calculator Styles */
+/* --- Interactive Chart Container & Card --- */
+#chartContainer {
+    background-color: #000000; /* Pitch black chart canvas matching site background */
+    border: 1px solid #1e232b;
+    border-radius: 14px;
+    padding: 18px 18px 12px 18px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.rh-chart-header {
+    margin-bottom: 12px;
+}
+.rh-chart-balance {
+    font-size: 2.1em;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+}
+.rh-chart-sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 0.92em;
+}
+.rh-pill-green {
+    color: #00c805;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+.rh-meta {
+    color: #8b949e;
+    font-size: 0.9em;
+}
+.rh-chart-error {
+    color: #ff5000;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.chart-canvas-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+}
+
+ /* Rebalancer Specific - Modern Table Styling */
+ #investmentTable {
+     width: 100%;
+     border-collapse: separate;
+     border-spacing: 0;
+     margin-top: 12px;
+     border: 1px solid #1e232b;
+     border-radius: 12px;
+     overflow: hidden;
+ }
+ #investmentTable th,
+ #investmentTable td {
+     border: none;
+     border-bottom: 1px solid #1e232b;
+     border-right: 1px solid #1e232b;
+     padding: 10px 12px;
+     text-align: left;
+ }
+ #investmentTable th:last-child,
+ #investmentTable td:last-child {
+     border-right: none;
+ }
+ #investmentTable thead th {
+     background-color: #12161d;
+     color: #8b949e;
+     font-size: 0.8em;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+ }
+ #investmentTable thead tr:first-child th:first-child {
+     border-top-left-radius: 11px;
+ }
+ #investmentTable thead tr:first-child th:last-child {
+     border-top-right-radius: 11px;
+ }
+ #investmentTable tfoot tr:last-child th {
+     border-bottom: none;
+     border-bottom-left-radius: 11px;
+     border-bottom-right-radius: 11px;
+ }
+  #investmentTable tbody tr {
+      transition: background-color 0.15s ease;
+  }
+  #investmentTable tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.02);
+  }
+  #investmentTable tbody tr:last-child td {
+      border-bottom: none;
+  }
+   #investmentTable td input[type="text"],
+   #investmentTable td input[type="number"] {
+       width: 90px;
+       padding: 6px 10px;
+       border-radius: 8px;
+       border: 1px solid #1e232b;
+       background-color: #080a0e;
+       color: #ffffff;
+       font-family: inherit;
+       font-size: 0.9em;
+       text-align: right;
+       transition: border-color 0.2s ease, box-shadow 0.2s ease;
+   }
+   #investmentTable td input[type="text"]:focus,
+   #investmentTable td input[type="number"]:focus {
+       border-color: #00c805;
+       outline: none;
+       box-shadow: 0 0 0 2px rgba(0, 200, 5, 0.25);
+   }
+   #investmentTable button {
+       background-color: rgba(255, 80, 0, 0.06);
+       color: #ff5000;
+       border: 1px solid rgba(255, 80, 0, 0.28);
+       border-radius: 14px;
+       padding: 5px 12px;
+       font-size: 0.82em;
+       font-weight: 600;
+       cursor: pointer;
+       transition: all 0.18s ease;
+       font-family: inherit;
+       letter-spacing: 0.01em;
+   }
+   #investmentTable button:hover {
+       background-color: rgba(255, 80, 0, 0.16);
+       border-color: #ff5000;
+       color: #ff5000;
+       box-shadow: 0 0 12px rgba(255, 80, 0, 0.25);
+   }
+   #investmentTable button:active {
+       background-color: rgba(255, 80, 0, 0.28);
+       color: #ff6b22;
+       transform: scale(0.97);
+   }
+  .rebalanceAmount.positive {
+      color: #00c805;
+      font-weight: 700;
+  } /* Green for buy */
+  .rebalanceAmount.negative {
+      color: #ff5000;
+      font-weight: 700;
+  } /* Red for sell */
+  .rebalanceAmount.neutral {
+      color: #8b949e;
+  }
+  #rebalancer-summary p { margin: 6px 0; color: #c9d1d9; }
+  #rebalancer-summary span { font-weight: 700; color: #00c805; }
+  #error-message { color: #ff5000; font-weight: bold; margin-top: 10px; }
+
+ /* Responsive Calculator Styles (Original Card-Transformation with Modern Dark Theme) */
  @media (max-width: 768px) {
     /* --- Mobile-Specific Rebalancer Table Styles --- */
+     #investmentTable {
+         border: none;
+         border-radius: 0;
+     }
+     #investmentTable thead tr:first-child th:first-child,
+     #investmentTable thead tr:first-child th:last-child,
+     #investmentTable tfoot tr:last-child th {
+         border-radius: 0;
+     }
     #investmentTable,
     #investmentTable thead,
     #investmentTable tbody,
@@ -567,35 +906,43 @@ blockquote {
         left: -9999px;
     }
     #investmentTable tr {
-        border: 1px solid #444; /* Dark grey border */
-        margin-bottom: 15px; /* Space out the "cards" */
+        border: 1px solid #1e232b;
+        background-color: #0b0e14;
+        border-radius: 12px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     }
     #investmentTable td {
         border: none;
-        border-bottom: 1px dashed #444; /* Dark dashed separator */
+        border-bottom: 1px solid #1e232b;
         position: relative;
-        padding-left: 50%; /* Make space for the label */
-        text-align: right; /* Align cell content to the right */
-        min-height: 30px; /* Ensure cells have some height */
-        display: flex; /* Use flex for better alignment */
-        align-items: center; /* Vertically center content */
-        justify-content: flex-end; /* Align content to the right */
+        padding-left: 50%;
+        text-align: right;
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
-     #investmentTable tr td:last-child {
-         border-bottom: none; /* Remove border from last cell in row */
-     }
+    #investmentTable tr td:last-child {
+        border-bottom: none;
+    }
     #investmentTable td:before {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); /* Vertically center label */
-        left: 10px;
-        width: 45%; /* Reserve space for the label */
+        transform: translateY(-50%);
+        left: 12px;
+        width: 45%;
         padding-right: 10px;
         white-space: nowrap;
-        text-align: left; /* Align label text to the left */
-        font-weight: bold;
-        content: attr(data-label); /* Use data-label attribute */
-        color: #00ff00; /* Green label */
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.88em;
+        content: attr(data-label);
+        color: #8b949e; /* Muted secondary slate */
     }
     /* Add data-label attributes via CSS content */
     #investmentTable td:nth-of-type(1):before { content: "Symbol"; }
@@ -607,57 +954,76 @@ blockquote {
     /* Style inputs within the mobile table cells */
     #investmentTable td input[type="number"],
     #investmentTable td input[type="text"] {
-        width: 100%; /* Make inputs fill the cell space */
-        text-align: right; /* Keep number alignment */
+        width: 100%;
+        max-width: 170px;
+        text-align: right;
     }
     /* Center the remove button in its cell */
     #investmentTable td:nth-of-type(5) {
-        padding-left: 10px; /* Reset padding */
+        padding-left: 12px;
         text-align: center;
-        justify-content: center; /* Center button horizontally */
+        justify-content: center;
     }
     #investmentTable td:nth-of-type(5):before {
-        content: ""; /* Hide label */
+        content: "";
     }
     #investmentTable td:nth-of-type(5) button {
-        width: auto; /* Let button size naturally */
-        padding: 5px 10px; /* Adjust button padding */
-        float: none; /* Remove float */
+        width: 100%;
+        padding: 8px 12px;
+        float: none;
+        border-radius: 8px;
     }
     /* Footer styling for mobile */
     #investmentTable tfoot tr {
-        border: none; /* No border for footer rows */
-        margin-bottom: 0;
+        border: 1px solid #1e232b;
+        background-color: #0b0e14;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        padding: 10px 14px;
     }
     #investmentTable tfoot th {
-        display: block; /* Make it block like other rows */
-        width: 100%;   /* Take full width */
-        box-sizing: border-box; /* Include padding/border in width */
-    /* Responsive Calculator General (max-width: 600px) */
-     .calc-row label {
-        flex-basis: 100%; /* Stack label above input */
-        margin-bottom: 5px;
-        margin-right: 0; /* Remove right margin */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background: transparent;
+        padding: 0;
+        box-sizing: border-box;
     }
+    #investmentTable tfoot th span {
+        font-weight: 700;
+        color: #ffffff;
+    }
+    #investmentTable tfoot th .tfoot-label {
+        font-weight: 600;
+        color: #8b949e;
+        font-size: 0.88em;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+    #investmentTable tfoot th #targetBalance {
+        color: #00c805;
+    }
+ }
+
+ /* Responsive Calculator General (max-width: 600px) */
+ @media (max-width: 600px) {
+     .calc-row label {
+         flex-basis: 100%;
+         margin-bottom: 5px;
+         margin-right: 0;
+     }
      .calc-row input[type="number"],
      .calc-row input[type="text"],
      .calc-row select {
-         width: 100%; /* Ensure input/select takes full width */
-         min-width: none; /* Remove min-width constraint */
+         width: 100%;
+         min-width: unset;
      }
      .calc-row small {
-         margin-left: 0 !important; /* Reset margin, ensure override */
-         flex-basis: auto; /* Allow small to fit naturally */
+         margin-left: 0 !important;
+         flex-basis: auto;
      }
-        text-align: left;
-        border-bottom: 1px solid #444;
-        padding: 8px 10px;
-        margin-bottom: 5px; /* Add some space below each footer row */
-    }
-    #investmentTable tfoot th span {
-        font-weight: normal;
-        color: #e0e0e0;
-    }
  }
 
 
@@ -667,206 +1033,265 @@ blockquote {
 
  #calculator-selector-container {
      margin-bottom: 30px;
-     text-align: left; /* Align container content left */
-     position: relative; /* Needed for absolute positioning of menu */
+     text-align: left;
+     position: relative; /* Needed for absolute positioning of dropdown menu */
+     z-index: 60;
  }
  /* --- Custom Dropdown Trigger Buttons --- */
  
  #calculator-menu-trigger {
-     display: block; /* Make trigger full width */
-     width: 100%; /* Explicitly set full width */
-     text-align: center; /* Center text within the button */
-     margin-bottom: 5px;
-     /* Base button styles */
-     background-color: #1a1a1a;
-     color: #00ff00;
-     padding: 10px 20px;
-     border: 1px solid #00ff00;
-     border-radius: 0px;
+     display: block;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 12px;
+     background-color: #12161d;
+     color: #ffffff;
+     padding: 12px 24px;
+     border: 1px solid #1e232b;
+     border-radius: 24px;
      cursor: pointer;
      font-size: 1em;
-     font-weight: bold;
-     transition: background-color 0.3s, color 0.3s;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-     position: relative; /* For pseudo-element arrow */
-     padding-right: 30px; /* Make space for arrow */
-     /* Reset browser default appearance */
+     font-weight: 700;
+     transition: all 0.2s ease;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+     position: relative;
+     padding-right: 35px;
      appearance: none;
      -webkit-appearance: none;
      -moz-appearance: none;
- }
- /* Specific trigger styles if needed can go here */
- #calculator-menu-trigger {
-     display: inline-block; /* Override for calculator page */
+     box-sizing: border-box;
  }
  /* Dropdown arrow for triggers */
  
  #calculator-menu-trigger::after {
      content: '';
      position: absolute;
-     right: 10px;
+     right: 18px;
      top: 50%;
      transform: translateY(-50%);
      border-left: 5px solid transparent;
      border-right: 5px solid transparent;
-     border-top: 5px solid #00ff00; /* Green arrow */
-     pointer-events: none; /* Prevent arrow from interfering with clicks */
+     border-top: 5px solid #00c805; /* Electric green arrow */
+     pointer-events: none;
  }
  /* Trigger hover state */
 
  #calculator-menu-trigger:hover {
-     background-color: #00ff00;
-     color: #0a0a0a;
+     background-color: rgba(0, 200, 5, 0.08);
+     border-color: #00c805;
+     color: #00c805;
  }
- /* Change arrow color on trigger hover */
+
+ #calculator-menu-trigger:active {
+     transform: scale(0.99);
+ }
 
  #calculator-menu-trigger:hover::after {
-     border-top-color: #0a0a0a; /* Match dark text color */
+     border-top-color: #00e006;
  }
  /* --- Custom Dropdown Menus --- */
 
  #calculator-menu {
-     display: none; /* Hide menu by default */
+     display: none;
      position: absolute;
-     top: 100%; /* Position below trigger */
-     left: 0; /* Align menu to the left */
-     width: 100%; /* Make menu full width */
-     background-color: #1a1a1a; /* Dark background for dropdown */
-     border: 1px solid #00ff00; /* Green border */
-     z-index: 50; /* Ensure it's above other content */
-     padding: 5px 0;
-     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Subtle green shadow */
+     top: calc(100% + 5px);
+     left: 0;
+     width: 100%;
+     background-color: #12161d;
+     border: 1px solid #1e232b;
+     border-radius: 14px;
+     z-index: 100;
+     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9);
+     overflow: hidden;
+     box-sizing: border-box;
  }
  
  #calculator-menu.active {
-     display: block; /* Show menu when active */
+     display: block;
  }
  /* --- Custom Dropdown Options --- */
  
- #calculator-menu .calculator-option {
-     display: block;
-     width: 100%;
-     margin: 0;
-     padding: 10px 15px;
-     text-align: left;
-     border: none;
-     border-bottom: 1px solid #333; /* Separator */
-     border-radius: 0;
-     font-size: 1em;
-     /* Base button styles */
-     background-color: #1a1a1a;
-     color: #00ff00;
-     cursor: pointer;
-     transition: background-color 0.3s, color 0.3s;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-     font-weight: bold;
+ #calculator-menu .calculator-option,
+ #calculator-menu button.calculateBtn {
+     display: block !important;
+     width: 100% !important;
+     margin: 0 !important;
+     padding: 13px 20px !important;
+     text-align: left !important;
+     border: none !important;
+     border-bottom: 1px solid #1a1f27 !important;
+     border-radius: 0 !important;
+     font-size: 0.92em !important;
+     background-color: #12161d !important;
+     color: #c9d1d9 !important;
+     cursor: pointer !important;
+     transition: all 0.15s ease !important;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+     font-weight: 600 !important;
+     box-shadow: none !important;
+     transform: none !important;
+     box-sizing: border-box !important;
  }
 
- #calculator-menu .calculator-option:last-child {
-     border-bottom: none;
+ #calculator-menu .calculator-option:last-child,
+ #calculator-menu button.calculateBtn:last-child {
+     border-bottom: none !important;
  }
  
- #calculator-menu .calculator-option:hover {
-     background-color: #00ff00;
-     color: #0a0a0a;
+ #calculator-menu .calculator-option:hover,
+ #calculator-menu button.calculateBtn:hover {
+     background-color: rgba(0, 200, 5, 0.10) !important;
+     color: #00c805 !important;
+     box-shadow: none !important;
+     transform: none !important;
+ }
+
+ #calculator-menu .calculator-option:active,
+ #calculator-menu button.calculateBtn:active {
+     background-color: rgba(0, 200, 5, 0.20) !important;
  }
  /* Style for the selected option */
  
- #calculator-menu .calculator-option.active-selector {
-     background-color: #00ff00;
-     color: #0a0a0a;
-     cursor: default;
+ #calculator-menu .calculator-option.active-selector,
+ #calculator-menu button.calculateBtn.active-selector {
+     background-color: rgba(0, 200, 5, 0.16) !important;
+     color: #00c805 !important;
+     font-weight: 700 !important;
+     cursor: default !important;
  }
+
+/* --- Table Scroll Wrapper --- */
+.table-scroll-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    border: none;
+    background: transparent;
+}
+@media (max-width: 768px) {
+    .table-scroll-wrapper {
+        overflow-x: visible;
+        margin-bottom: 16px;
+    }
+    #investmentTable tfoot tr:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* --- Code Tag Styling --- */
+code {
+    background-color: #12161d !important;
+    color: #00c805 !important;
+    border: 1px solid #1e232b !important;
+    border-radius: 8px !important;
+    padding: 6px 12px !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+    font-size: 0.9em !important;
+    display: inline-block;
+}
 /* --- Market Overview (market.html) --- */
 .tradingview-widget-container {
-    border-radius: 6px;
+    border-radius: 12px;
+    border: 1px solid #1e232b !important;
+    background-color: #12161d !important;
     overflow: hidden;
 }
 
 /* --- RSS Feed Styles (market.html) --- */
 .rss-feed-container {
-    margin-top: 30px; /* Space above the feed */
-    padding: 15px;
-    border: 1px dashed #444; /* Subtle border */
-    background-color: #1a1a1a; /* Slightly darker background */
-    border-radius: 6px;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #1e232b;
+    background-color: #12161d;
+    border-radius: 12px;
 }
 
 .rss-feed-container h4 {
-    color: #00ff00; /* Green heading */
+    color: #ffffff;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 1.1em;
-    border-bottom: 1px solid #333;
-    padding-bottom: 5px;
+    font-weight: 700;
+    border-bottom: 1px solid #1e232b;
+    padding-bottom: 8px;
 }
 
 .rss-feed-container ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
     padding-left: 0;
-    margin-bottom: 0; /* Remove default bottom margin */
+    margin-bottom: 0;
 }
 
 .rss-feed-container li {
-    margin-bottom: 8px; /* Space between feed items */
+    margin-bottom: 10px;
     font-size: 0.9em;
 }
 
 .rss-feed-container li a {
-    color: #66ccff; /* Light blue links */
+    color: #00c805;
+    transition: color 0.2s ease;
 }
 
 .rss-feed-container li a:hover {
-    color: #99ddff; /* Lighter blue on hover */
-    text-decoration: none; /* Remove underline, inherit glow from general a:hover */
+    color: #00e006;
+    text-decoration: underline;
 }
 
 /* Style for loading indicators */
 .loading-text{
-    color: #ffa500; /* Orange color*/
+    color: #ff9800;
 }
 
 /* Style for error messages */
 .error-message {
-    color: #ff4444; /* Red color */
+    color: #ff5000;
 }
 
 /* --- End RSS Feed Styles --- */
 
 /* --- Passive Cash Command Center Product Card --- */
 .command-center-card {
-    background-color: #1a1a1a;
-    border: 1px solid #00ff00;
-    padding: 16px 20px;
-    margin: 20px 0;
+    background: linear-gradient(180deg, #0d1510 0%, #0c120e 100%);
+    border: 1px solid rgba(0, 200, 5, 0.35);
+    padding: 18px 20px;
+    margin: 18px 0;
     position: relative;
-    border-radius: 6px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0, 200, 5, 0.08);
 }
 
 .command-center-card h3 {
-    color: #00ff00;
-    font-size: 1.15em;
+    color: #00c805;
+    font-size: 1.2em;
+    font-weight: 800;
     margin: 0 0 6px 0;
+    letter-spacing: -0.3px;
 }
 
 .command-center-card p.cc-desc {
-    color: #cccccc;
-    margin: 0 0 10px 0;
-    font-size: 0.9em;
-    line-height: 1.4;
+    color: #8b949e;
+    margin: 0 0 12px 0;
+    font-size: 0.92em;
+    line-height: 1.45;
 }
 
 .command-center-card ul.cc-features {
-    margin: 0 0 12px 0;
+    margin: 0 0 14px 0;
     padding-left: 20px;
     list-style-type: square;
 }
 
 .command-center-card ul.cc-features li {
-    font-size: 0.85em;
-    color: #cccccc;
-    margin-bottom: 4px;
+    font-size: 0.88em;
+    color: #c9d1d9;
+    margin-bottom: 5px;
     line-height: 1.4;
+}
+
+.command-center-card ul.cc-features li::marker {
+    color: #00c805;
 }
 
 .command-center-card ul.cc-features li strong {
@@ -877,21 +1302,22 @@ blockquote {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px dashed #444;
-    padding-top: 10px;
-    margin-top: 10px;
+    border-top: 1px solid #1e232b;
+    padding-top: 14px;
+    margin-top: 12px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 .cc-price-tag {
-    font-size: 0.9em;
-    color: #888888;
+    font-size: 0.95em;
+    color: #8b949e;
 }
 
 .cc-price-tag strong {
-    color: #00ff00;
-    font-size: 1.15em;
+    color: #00c805;
+    font-size: 1.25em;
+    font-weight: 800;
 }
 
 .command-center-card .calculateBtn {
@@ -899,6 +1325,8 @@ blockquote {
     display: inline-block;
     text-decoration: none;
     line-height: normal;
+    padding: 11px 26px;
+    font-size: 0.95em;
 }
 
 @media (max-width: 600px) {

@@ -13,3 +13,6 @@ cloudflare_worker.js
 # OS files
 .DS_Store
 Thumbs.db
+
+# Backups and temporary files
+*.terminal_backup

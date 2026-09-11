@@ -2,6 +2,8 @@ let compoundChartInstance = null; // Global variable to hold the chart instance
 
 function calculateCompoundInterest() {
     const outputElement = document.getElementById("output");
+    const chartContainer = document.getElementById("chartContainer");
+    const canvasWrapper = document.querySelector(".chart-canvas-wrapper");
     if (!outputElement) { console.error("Output element not found"); return; }
     outputElement.innerHTML = ""; // Clear previous results
 
@@ -14,13 +16,17 @@ function calculateCompoundInterest() {
 
     // --- Input Validation ---
     if (years <= 0) {
-        outputElement.innerHTML = "Investment Duration must be greater than 0";
-        if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; } // Clear chart on error
+        if (chartContainer) chartContainer.style.display = 'block';
+        if (canvasWrapper) canvasWrapper.style.display = 'none';
+        outputElement.innerHTML = `<div class="rh-chart-error">Investment Duration must be greater than 0.</div>`;
+        if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; }
         return false;
     }
     if (annualRate <= 0) {
-        outputElement.innerHTML = "Annual Interest Rate must be greater than 0";
-         if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; } // Clear chart on error
+        if (chartContainer) chartContainer.style.display = 'block';
+        if (canvasWrapper) canvasWrapper.style.display = 'none';
+        outputElement.innerHTML = `<div class="rh-chart-error">Annual Interest Rate must be greater than 0.</div>`;
+        if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; }
         return false;
     }
 
@@ -31,8 +37,10 @@ function calculateCompoundInterest() {
     else if (frequencyValue == "quarterly") { n = 4; }
     else if (frequencyValue == "yearly") { n = 1; }
     else {
-        outputElement.innerHTML = "Invalid compounding frequency selected.";
-         if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; } // Clear chart on error
+        if (chartContainer) chartContainer.style.display = 'block';
+        if (canvasWrapper) canvasWrapper.style.display = 'none';
+        outputElement.innerHTML = `<div class="rh-chart-error">Invalid compounding frequency selected.</div>`;
+        if (compoundChartInstance) { compoundChartInstance.destroy(); compoundChartInstance = null; }
         return false;
     }
 
@@ -54,103 +62,185 @@ function calculateCompoundInterest() {
         chartBalances.push(currentBalance);
     }
 
-    // --- Calculate Final Results for Text Output ---
+    // --- Calculate Final Results for Text Output (Hero Format) ---
     const finalBalance = chartBalances[chartBalances.length - 1];
     const totalContributions = monthlyContribution * 12 * years;
     const totalInterest = finalBalance - principal - totalContributions;
+    const totalInvested = principal + totalContributions;
+    const growthPercent = totalInvested > 0 ? ((totalInterest / totalInvested) * 100).toFixed(1) : 0;
 
-    // --- Display Text Results ---
-    outputElement.innerHTML = "Total Interest Earned: <span style='color: #ffa500 !important;'>" + totalInterest.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }) + "</span>" +
-                              "<br />Final Balance after " + years + " year(s): <span style='color: #ffa500 !important;'>" + finalBalance.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }) + "</span>" +
-                              "<br />Based on " + frequencyValue + " compounding.";
+    outputElement.innerHTML = `
+      <div class="rh-chart-header">
+        <div class="rh-chart-balance">${finalBalance.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })}</div>
+        <div class="rh-chart-sub">
+          <span class="rh-pill-green">+${totalInterest.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })} (+${growthPercent}%)</span>
+          <span class="rh-meta">Total Interest • ${years} yr (${frequencyValue})</span>
+        </div>
+      </div>
+    `;
+
+    if (canvasWrapper) canvasWrapper.style.display = 'block';
+    if (chartContainer) chartContainer.style.display = 'block';
 
     // --- Display Chart ---
-    displayCompoundChart(chartYears, chartBalances);
+    displayCompoundChart(chartYears, chartBalances, principal, monthlyContribution, finalBalance, totalInterest, growthPercent, frequencyValue);
 }
 
-function displayCompoundChart(years, balances) {
+function displayCompoundChart(years, balances, principal, monthlyContribution, finalBalance, totalInterest, growthPercent, frequencyValue) {
     const ctx = document.getElementById('compoundInterestChart');
     if (!ctx) {
         console.error("Canvas element 'compoundInterestChart' not found.");
         return;
     }
-	const chartContainer = document.getElementById("chartContainer");
+    const chartContainer = document.getElementById("chartContainer");
     if (chartContainer) {
         chartContainer.style.display = 'block';
     }    
 	
-	const context = ctx.getContext('2d');
+    const context = ctx.getContext('2d');
 
     // Destroy previous chart instance if it exists
     if (compoundChartInstance) {
         compoundChartInstance.destroy();
     }
 
+    // Reset header on mouse leave from canvas
+    ctx.onmouseleave = function() {
+        const balanceEl = document.querySelector('.rh-chart-balance');
+        const pillEl = document.querySelector('.rh-pill-green');
+        if (balanceEl && pillEl) {
+            balanceEl.textContent = finalBalance.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 });
+            pillEl.textContent = `+${totalInterest.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })} (+${growthPercent}%)`;
+        }
+    };
+
+    const formattedLabels = years.map(y => 'Yr ' + y);
+
     // Create new chart
     compoundChartInstance = new Chart(context, {
         type: 'line',
         data: {
-            labels: years,
+            labels: formattedLabels,
             datasets: [{
-                label: 'Investment Value',
+                label: 'Portfolio Value',
                 data: balances,
-                borderColor: '#00ff00', // Green line
-                backgroundColor: 'rgba(0, 255, 0, 0.1)', // Light green fill
-                tension: 0.1,
-                pointBackgroundColor: '#ffa500', // Orange points
-                pointBorderColor: '#e0e0e0',
-                pointHoverBackgroundColor: '#e0e0e0',
-                pointHoverBorderColor: '#ffa500',
-                fill: true // Enable fill below line
+                borderColor: '#00c805', // Electric green line
+                borderWidth: 2.5,
+                backgroundColor: function(context) {
+                    const chart = context.chart;
+                    const { ctx, chartArea } = chart;
+                    if (!chartArea) {
+                        return null;
+                    }
+                    const gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+                    gradient.addColorStop(0, 'rgba(0, 200, 5, 0.30)');
+                    gradient.addColorStop(0.7, 'rgba(0, 200, 5, 0.04)');
+                    gradient.addColorStop(1, 'rgba(0, 200, 5, 0.0)');
+                    return gradient;
+                },
+                tension: 0.35, // Sleek modern spline curve
+                pointRadius: 0, // Clean continuous line without dots
+                pointHoverRadius: 6,
+                pointHoverBackgroundColor: '#00c805',
+                pointHoverBorderColor: '#ffffff',
+                pointHoverBorderWidth: 2.5,
+                fill: true
             }]
         },
+        plugins: [{
+            id: 'rhVerticalHoverLine',
+            afterDraw: (chart) => {
+                const active = chart.tooltip ? (chart.tooltip.getActiveElements ? chart.tooltip.getActiveElements() : chart.tooltip._active) : null;
+                if (active && active.length > 0) {
+                    const x = active[0].element.x;
+                    const { ctx: c, chartArea } = chart;
+                    if (!chartArea) return;
+                    c.save();
+                    c.beginPath();
+                    c.moveTo(x, chartArea.top);
+                    c.lineTo(x, chartArea.bottom);
+                    c.lineWidth = 1;
+                    c.strokeStyle = 'rgba(255, 255, 255, 0.22)';
+                    c.setLineDash([4, 3]);
+                    c.stroke();
+                    c.restore();
+                }
+            }
+        }],
         options: {
             responsive: true,
-            maintainAspectRatio: true, // Allow chart to resize height
+            maintainAspectRatio: true,
+            interaction: {
+                mode: 'index',
+                intersect: false,
+            },
+            onHover: (event, activeElements) => {
+                const balanceEl = document.querySelector('.rh-chart-balance');
+                const pillEl = document.querySelector('.rh-pill-green');
+                if (!balanceEl || !pillEl) return;
+
+                if (activeElements && activeElements.length > 0) {
+                    const idx = activeElements[0].index;
+                    const curBal = balances[idx];
+                    const curYr = years[idx];
+                    const curContrib = (monthlyContribution || 0) * 12 * curYr;
+                    const curInterest = curBal - (principal || 0) - curContrib;
+                    const curInvested = (principal || 0) + curContrib;
+                    const curPct = curInvested > 0 ? ((curInterest / curInvested) * 100).toFixed(1) : 0;
+                    
+                    balanceEl.textContent = curBal.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 });
+                    pillEl.textContent = `${curInterest >= 0 ? '+' : ''}${curInterest.toLocaleString("en-US", { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })} (${curInterest >= 0 ? '+' : ''}${curPct}%) [Yr ${curYr}]`;
+                }
+            },
             plugins: {
                 legend: {
-                    labels: { color: '#e0e0e0' } // Light text for legend
+                    display: false // Minimalist style without cluttering legend
                 },
                 tooltip: {
-                    mode: 'index',
-                    intersect: false,
+                    backgroundColor: '#12161d',
+                    titleColor: '#8b949e',
+                    bodyColor: '#00c805',
+                    bodyFont: { weight: 'bold', size: 14 },
+                    borderColor: '#1e232b',
+                    borderWidth: 1,
+                    padding: 12,
+                    displayColors: false,
                     callbacks: {
                         label: function(context) {
-                            let label = context.dataset.label || '';
-                            if (label) {
-                                label += ': ';
-                            }
                             if (context.parsed.y !== null) {
-                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(context.parsed.y);
                             }
-                            return label;
+                            return '';
                         }
                     }
                 }
             },
             scales: {
                 x: {
-                    title: {
-                        display: true,
-                        text: 'Year',
-                        color: '#e0e0e0' // Light text for X axis title
+                    ticks: {
+                        color: '#8b949e',
+                        font: { size: 11, family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' },
+                        maxTicksLimit: 8
                     },
-                    ticks: { color: '#e0e0e0' }, // Light text for X axis labels
-                    grid: { color: 'rgba(224, 224, 224, 0.2)' } // Dim grid lines
+                    grid: { display: false }, // Clean style without vertical lines
+                    border: { display: false }
                 },
                 y: {
-                    title: {
-                        display: true,
-                        text: 'Value ($)',
-                        color: '#e0e0e0' // Light text for Y axis title
-                    },
+                    position: 'right', // Display values on the right edge
                     ticks: {
-                        color: '#e0e0e0', // Light text for Y axis labels
-                        callback: function(value, index, values) {
-                            return '$' + value.toLocaleString(); // Format Y axis labels as currency
+                        color: '#8b949e',
+                        font: { size: 11, family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' },
+                        callback: function(value) {
+                            if (value >= 1000000) return '$' + (value / 1000000).toFixed(1) + 'M';
+                            if (value >= 1000) return '$' + (value / 1000).toFixed(0) + 'k';
+                            return '$' + value;
                         }
                     },
-                    grid: { color: 'rgba(224, 224, 224, 0.2)' } // Dim grid lines
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.04)', // Very subtle horizontal hairline
+                        drawBorder: false
+                    },
+                    border: { display: false }
                 }
             }
         }
