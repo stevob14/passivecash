@@ -146,7 +146,7 @@ function calculateInflation() {
     start_cpi = cpi.rates[start_array];
     end_cpi = cpi.rates[end_array];
     result = dollar * (end_cpi / start_cpi);
-    document.getElementById("inflation-output").innerHTML = dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span style='color: #ffa500 !important;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end;
+    document.getElementById("inflation-output").innerHTML = dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span class='calc-result-value' style='color: #00c805 !important; font-weight: 700;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end;
   }
   else {
     error = "Data only available for years in range " + cpi.OLDEST_YEAR + "-" + cpi.LATEST_YEAR;

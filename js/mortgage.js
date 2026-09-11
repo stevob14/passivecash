@@ -72,7 +72,7 @@ function calculateMortgage() { // Renamed to match HTML onclick
 
   // display result
   var outputResult = document.getElementById("mortgage-output"); // Updated ID
-  outputResult.innerHTML = "Your estimated monthly payment is: <span style='color: #ffa500 !important;'>" + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span>";
+  outputResult.innerHTML = "Your estimated monthly payment is: <span class='calc-result-value' style='color: #00c805 !important; font-weight: 700;'>" + totalMonthlyPayment.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span>";
   // Clear error message on successful calculation
   var errorDiv = document.getElementById("mortgage-error"); // Ensure correct error div is cleared
   if (errorDiv) errorDiv.innerHTML = "";
