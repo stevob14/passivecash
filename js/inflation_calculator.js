@@ -1,8 +1,6 @@
 cpi = new Object(); 
 cpi.OLDEST_YEAR = 1913; 
-cpi.LATEST_YEAR = 2025; 
-
-cpi.rates = new Array(3); 
+cpi.rates = []; 
 cpi.rates[0] = 9.9;   //1913 
 cpi.rates[1] = 10;    //1914
 cpi.rates[2] = 10.1; 	//1915
@@ -116,26 +114,43 @@ cpi.rates[109] = 292.655;	//2022
 cpi.rates[110] = 304.702;	//2023
 cpi.rates[111] = 313.689; //2024
 cpi.rates[112] = 321.943; //2025
+cpi.rates[113] = 331.180; //2026
 // data provided by https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
 
-function calculateInflation() { // Renamed to match HTML onclick
-	//1970 Price x (2011 CPI / 1970 CPI) = 2011 Price
+// Compute latest available year dynamically from rates array
+cpi.LATEST_YEAR = cpi.OLDEST_YEAR + cpi.rates.length - 1;
+
+// Auto-initialize endYearField with the latest year on page load
+function initInflationCalculator() {
+  var endYear = document.getElementById("endYearField");
+  if (endYear) {
+    endYear.value = cpi.LATEST_YEAR;
+    endYear.placeholder = "e.g., " + cpi.LATEST_YEAR;
+  }
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initInflationCalculator);
+} else {
+  initInflationCalculator();
+}
+
+function calculateInflation() {
   dollar = Number(document.getElementById("dollarField").value);
   start = Number(document.getElementById("startYearField").value);
   end = Number(document.getElementById("endYearField").value); 
   
-  if (start >= 1913 && start <= 2025 && end >=1913 && end <=2025)
+  if (start >= cpi.OLDEST_YEAR && start <= cpi.LATEST_YEAR && end >= cpi.OLDEST_YEAR && end <= cpi.LATEST_YEAR)
   {
-  start_array = start - cpi.OLDEST_YEAR
-  end_array = end - cpi.OLDEST_YEAR
-  start_cpi = cpi.rates[start_array]
-  end_cpi = cpi.rates[end_array]
-  result = dollar * (end_cpi/start_cpi)
-  document.getElementById("inflation-output").innerHTML =  dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span style='color: #ffa500 !important;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end; // Updated ID and added span
+    start_array = start - cpi.OLDEST_YEAR;
+    end_array = end - cpi.OLDEST_YEAR;
+    start_cpi = cpi.rates[start_array];
+    end_cpi = cpi.rates[end_array];
+    result = dollar * (end_cpi / start_cpi);
+    document.getElementById("inflation-output").innerHTML = dollar.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + " in " + start + " is equivalent in purchasing power to ~<span style='color: #ffa500 !important;'>" + result.toLocaleString("en-US",{style:'currency',currency: 'USD', maximumFractionDigits:2}) + "</span> in " + end;
   }
-  else{
-  error = "Data only available for years in range 1913-2025";
-  document.getElementById("inflation-output").innerHTML = error; // Updated ID
+  else {
+    error = "Data only available for years in range " + cpi.OLDEST_YEAR + "-" + cpi.LATEST_YEAR;
+    document.getElementById("inflation-output").innerHTML = error;
   }
 } 
 

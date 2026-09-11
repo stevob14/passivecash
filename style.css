@@ -85,7 +85,7 @@ body {
     color: #00ff00; /* Green links */
     text-decoration: none;
     padding: 5px 10px;
-    border-radius: 0px;
+    border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 .navbar ul#nav-links li a:hover,
@@ -118,7 +118,7 @@ body {
      margin: 20px auto;
      background: #1f1f1f; /* Slightly lighter dark background */
      padding: 30px 30px 50px 30px; /* Added 50px bottom padding */
-     border-radius: 0px; /* Sharp corners */
+     border-radius: 8px; /* Rounded corners */
      border: 1px solid #00ff00; /* Green border */
      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Green glow effect */
      color: #e0e0e0; /* Ensure text color is light */
@@ -254,6 +254,7 @@ caption { /* Style for table captions */
     padding: 15px;
     border: 1px dashed #444;
     background-color: #2a2a2a;
+    border-radius: 6px;
 }
 #directory h3 {
     margin-top: 0;
@@ -272,7 +273,8 @@ caption { /* Style for table captions */
  #directory ul li a {
      cursor: pointer; /* Indicate clickable */
      display: block; /* Make link take full width for easier clicking */
-     padding: 3px 0;
+     padding: 3px 6px;
+     border-radius: 4px;
  }
  #directory ul li a::before {
      content: "> "; /* Hacker-style marker */
@@ -326,7 +328,7 @@ caption { /* Style for table captions */
     color: #00ff00; /* Green text */
     padding: 10px 15px; /* Default padding, adjust as needed */
     border: 1px solid #00ff00; /* Green border */
-    border-radius: 0px;
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
     font-size: 1em;/* Default font size */
     margin-top: 10px;
@@ -447,7 +449,7 @@ blockquote {
  .calculator-section {
      background-color: #2a2a2a; /* Dark background for calc section */
      padding: 20px;
-     border-radius: 0px; /* Sharp corners */
+     border-radius: 6px; /* Rounded corners */
      margin-top: 20px;
      margin-bottom: 30px;
      border: 1px dashed #444; /* Dashed green border */
@@ -492,7 +494,7 @@ blockquote {
      flex-grow: 1;
      padding: 8px;
      border: 1px solid #444; /* Default dark grey border */
-     border-radius: 0px; /* Sharp corners */
+     border-radius: 4px; /* Rounded corners */
      min-width: 100px;
      background-color: #111; /* Very dark input background */
      color: #e0e0e0; /* Light text in input */
@@ -531,14 +533,14 @@ blockquote {
  #investmentTable { width: 100%; border-collapse: collapse; margin-top: 15px; } /* Restored width: 100% */
  #investmentTable th, #investmentTable td { border: 1px solid #444; padding: 8px; text-align: left; }
  #investmentTable th { background-color: #333; color: #00ff00; }
- #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: .9em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 0px; padding: 6px; /* Added default border/padding */ }
+ #investmentTable input[type="text"], #investmentTable input[type="number"] { font-size: .9em; width: 90%; background-color: #111; color: #e0e0e0; border: 1px solid #444; border-radius: 4px; padding: 6px; /* Added default border/padding */ }
  #investmentTable input[type="text"]:focus,
  #investmentTable input[type="number"]:focus {
      border-color: #00ff00; /* Green border on focus */
      outline: none; /* Remove default browser outline */
      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Add subtle green glow on focus */
  }
- #investmentTable button { background-color: #1a1a1a; font-size:.9em; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 0; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
+ #investmentTable button { background-color: #1a1a1a; font-size:.9em; color: #ff4444; border: 1px solid #ff4444; padding: 3px 8px; cursor: pointer; border-radius: 4px; transition: background-color 0.3s, color 0.3s; /* Adjusted remove button */ }
  #investmentTable button:hover { background-color: #ff4444; color: #1a1a1a; /* Red background, dark text on hover */ }
  .rebalanceAmount.positive { color: #00ff00; } /* Green for buy */
  .rebalanceAmount.negative { color: #ff4444; } /* Red for sell */
@@ -775,13 +777,19 @@ blockquote {
      color: #0a0a0a;
      cursor: default;
  }
- 
+/* --- Market Overview (market.html) --- */
+.tradingview-widget-container {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
 /* --- RSS Feed Styles (market.html) --- */
 .rss-feed-container {
     margin-top: 30px; /* Space above the feed */
     padding: 15px;
     border: 1px dashed #444; /* Subtle border */
     background-color: #1a1a1a; /* Slightly darker background */
+    border-radius: 6px;
 }
 
 .rss-feed-container h4 {
@@ -832,6 +840,7 @@ blockquote {
     padding: 16px 20px;
     margin: 20px 0;
     position: relative;
+    border-radius: 6px;
 }
 
 .command-center-card h3 {
