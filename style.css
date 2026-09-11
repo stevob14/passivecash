@@ -824,3 +824,85 @@ blockquote {
 }
 
 /* --- End RSS Feed Styles --- */
+
+/* --- Passive Cash Command Center Product Card --- */
+.command-center-card {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    padding: 16px 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.command-center-card h3 {
+    color: #00ff00;
+    font-size: 1.15em;
+    margin: 0 0 6px 0;
+}
+
+.command-center-card p.cc-desc {
+    color: #cccccc;
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.command-center-card ul.cc-features {
+    margin: 0 0 12px 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.command-center-card ul.cc-features li {
+    font-size: 0.85em;
+    color: #cccccc;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.command-center-card ul.cc-features li strong {
+    color: #ffffff;
+}
+
+.cc-cta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #444;
+    padding-top: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cc-price-tag {
+    font-size: 0.9em;
+    color: #888888;
+}
+
+.cc-price-tag strong {
+    color: #00ff00;
+    font-size: 1.15em;
+}
+
+.command-center-card .calculateBtn {
+    margin-top: 0;
+    display: inline-block;
+    text-decoration: none;
+    line-height: normal;
+}
+
+@media (max-width: 600px) {
+    .cc-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .command-center-card .calculateBtn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Spreadsheet product files (keep off public git repository)
+*.xlsx
+create_passivecash_command_center.py
+generate_cloudflare_worker.py
+cloudflare_worker.js
+
+# OS files
+.DS_Store
+Thumbs.db
