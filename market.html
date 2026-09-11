@@ -14,8 +14,8 @@
 
       gtag('config', 'G-Q203YEXP0D');
     </script>
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <link rel="preload" href="style.css?v=2.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css?v=2.0"></noscript>
     <!-- Social Media Meta Tags -->
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -66,6 +66,8 @@
     box-sizing: border-box;
     height:calc(100% - 32px); 
     width:100%;
+    border-radius: 6px;
+    overflow: hidden;
   }
 </style>        <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
@@ -84,7 +86,15 @@
         <!-- WSB RSS Feed Section -->
         <div id="wsb-rss-feed" class="rss-feed-container">
             <h4>WallStreetBets Latest News</h4>
-            <div class="feed-items"><!-- RSS feed content will be loaded here --></div>
+            <div class="feed-items">
+                <ul>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Daily%20Discussion%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Daily Market & Stocks Discussion Thread</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Earnings%20Thread%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Weekly Earnings & Guidance Thread</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22DD%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Latest Due Diligence & Stock Analysis</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22News%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Trending Financial & Market News</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener noreferrer nofollow">Browse r/WallStreetBets Live Discussions &rarr;</a></li>
+                </ul>
+            </div>
         </div>
         <!-- End WSB RSS Feed Section -->
 
@@ -103,99 +113,69 @@
     // --- Function to fetch and display RSS feed ---
     async function fetchAndDisplayRSS(feedUrl, containerId) {
         const feedItemsContainer = $(`#${containerId} .feed-items`);
-        const cacheKey = `rss_feed_${feedUrl}`;
-        const cacheDuration = 60 * 60 * 1000; // 60 minutes in milliseconds
+        const cacheKey = `pc_rss_feed_${feedUrl}`;
+        const cacheDuration = 30 * 60 * 1000; // 30 minutes cache
 
-        let cachedHtmlContent = null;
-
-        // 1. Try loading from cache first
+        // 1. Try loading from persistent localStorage first
         try {
-            const cachedData = sessionStorage.getItem(cacheKey);
+            const cachedData = localStorage.getItem(cacheKey);
             if (cachedData) {
                 const { timestamp, htmlContent } = JSON.parse(cachedData);
-                cachedHtmlContent = htmlContent; // Save this as a backup!
-                
-                if (Date.now() - timestamp < cacheDuration) {
-                    console.log(`Using valid cached RSS feed for ${feedUrl}`);
+                if (htmlContent) {
                     feedItemsContainer.html(htmlContent);
-                    return; // Exit function, cache is valid and fresh
-                } else {
-                    console.log(`Cache expired for ${feedUrl}. Will try fetching fresh data.`);
+                    // If cache is fresh, keep it and exit
+                    if (Date.now() - timestamp < cacheDuration) {
+                        return;
+                    }
                 }
             }
         } catch (e) {
-            console.error("Error reading RSS cache:", e);
+            console.error("Error reading RSS localStorage:", e);
         }
 
-        // 2. Only show the loading state if we DON'T have an old cache to show while we wait
-        if (!cachedHtmlContent) {
-            feedItemsContainer.html('<p class="loading-text">Loading news...</p>');
-        }
-
-        // Using api.rss2json.com to convert RSS to JSON
+        // 2. Fetch fresh data quietly in background (without clearing the current content)
         const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
-
-        // 3. Fetch new data from the API
         try {
             const response = await fetch(apiUrl);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-
             if (data.status !== 'ok') {
                 throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
             }
 
             const items = data.items;
-            let htmlContent = '<ul>';
-            let count = 0;
-
             if (items && items.length > 0) {
+                let htmlContent = '<ul>';
+                let count = 0;
                 items.forEach(item => {
-                    if (count >= 10) return; // Limit to 10 news items for WSB
+                    if (count >= 10) return;
                     const title = item.title || 'No title';
                     const link = item.link || '#';
                     htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer nofollow">${title}</a></li>`;
                     count++;
                 });
+                htmlContent += '</ul>';
+
+                if (count > 0) {
+                    feedItemsContainer.html(htmlContent);
+                    try {
+                        localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), htmlContent }));
+                    } catch (e) {
+                        console.error("Error saving RSS to localStorage:", e);
+                    }
+                }
             }
-
-            htmlContent += '</ul>';
-
-            if (count === 0) {
-                htmlContent = '<p>News feed is empty or could not be loaded.</p>';
-            }
-
-            // Display the freshly fetched content
-            feedItemsContainer.html(htmlContent);
-
-            // Store the fetched content and timestamp in cache
-            try {
-                const cachePayload = JSON.stringify({ timestamp: Date.now(), htmlContent });
-                sessionStorage.setItem(cacheKey, cachePayload);
-                console.log(`Cached RSS feed for ${feedUrl}`);
-            } catch (e) {
-                console.error("Error writing RSS cache:", e);
-            }
-
         } catch (error) {
-            console.error(`Error fetching/parsing RSS feed via rss2json for ${feedUrl}:`, error);
-            
-            // 4. FALLBACK LOGIC: If API fails (like a 422), check if we have expired cache to display instead
-            if (cachedHtmlContent) {
-                console.warn(`API failed. Falling back to expired cache content to keep UI populated.`);
-                feedItemsContainer.html(cachedHtmlContent);
-            } else {
-                // If there is no cache at all and the API fails, show the error message
-                feedItemsContainer.html(`<p class="error-message">Error loading news feed: ${error.message || 'Unknown error'}</p>`);
-            }
+            // Quiet fallback: keep existing rendered content/links, never display an ugly red error on screen
+            console.warn(`Could not refresh RSS feed live (${error.message}). Preserving existing content.`);
         }
     }
 
     // Fetch WSB feed on document ready
     $(document).ready(function() {
-        const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/new/.rss';
+        const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/.rss';
         const wsbContainerId = 'wsb-rss-feed';
         fetchAndDisplayRSS(wsbFeedUrl, wsbContainerId);
     });
