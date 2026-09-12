@@ -38,12 +38,13 @@ body {
      transition: opacity 0.15s ease;
  }
 
-.navbar .logo span, .navbar .logo:after {
+.navbar .logo span {
   color: #00c805; /* Electric green accent */
+  text-shadow: 0 0 12px rgba(0, 200, 5, 0.4);
 }
 
 .navbar .logo:hover {
-  opacity: 0.85;
+  opacity: 0.88;
 }
 /* Hamburger Button Styles */
 #hamburger-btn {
