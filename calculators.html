@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Useful financial calculators including compound interest, inflation adjustment, mortgage payments, and portfolio rebalancing tools from PassiveCash.xyz.">
-    <title>Financial Calculators - PassiveCash.xyz</title>
+    <title>Free Financial Calculators: Compound Interest, Inflation &amp; Rebalancer | PassiveCash.xyz</title>
+    <meta name="description" content="Interactive financial calculators: compound interest with dynamic visualizer, portfolio rebalancer, CPI inflation adjustments, and mortgage payment estimator.">
+    <meta name="keywords" content="financial calculators, compound interest calculator, portfolio rebalancer, inflation calculator, mortgage calculator, investment calculator, DRIP calculator">
+    <meta name="author" content="PassiveCash.xyz">
+    <meta name="robots" content="index, follow">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q203YEXP0D"></script>
     <script>
@@ -14,48 +18,116 @@
 
       gtag('config', 'G-Q203YEXP0D');
     </script>
-    <link rel="preload" href="style.css?v=1.2" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css?v=1.2"></noscript>
-    <!-- Social Media Meta Tags -->
-    <!-- Open Graph / Facebook -->
+    <link rel="preload" href="style.css?v=1.3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css?v=1.3"></noscript>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+    <link rel="canonical" href="https://www.passivecash.xyz/calculators.html">
+
+    <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://www.passivecash.xyz/calculators.html">
-    <meta property="og:title" content="Financial Calculators - PassiveCash.xyz">
-    <meta property="og:description" content="Useful financial calculators including compound interest, inflation adjustment, mortgage payments, and portfolio rebalancing tools from PassiveCash.xyz.">
+    <meta property="og:title" content="Free Financial Calculators: Compound Interest, Inflation &amp; Rebalancer | PassiveCash.xyz">
+    <meta property="og:description" content="Interactive financial calculators: compound interest with dynamic visualizer, portfolio rebalancer, CPI inflation adjustments, and mortgage payment estimator.">
     <meta property="og:image" content="https://www.passivecash.xyz/images/logo.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="PassiveCash.xyz Financial Calculators">
     <meta property="og:site_name" content="PassiveCash.xyz">
-    <!-- Twitter -->
+
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.passivecash.xyz/calculators.html">
-    <meta name="twitter:title" content="Financial Calculators - PassiveCash.xyz">
-    <meta name="twitter:description" content="Useful financial calculators including compound interest, inflation adjustment, mortgage payments, and portfolio rebalancing tools from PassiveCash.xyz.">
+    <meta name="twitter:site" content="@passivecashxyz">
+    <meta name="twitter:creator" content="@passivecashxyz">
+    <meta name="twitter:title" content="Free Financial Calculators: Compound Interest, Inflation &amp; Rebalancer | PassiveCash.xyz">
+    <meta name="twitter:description" content="Interactive financial calculators: compound interest with dynamic visualizer, portfolio rebalancer, CPI inflation adjustments, and mortgage payment estimator.">
     <meta name="twitter:image" content="https://www.passivecash.xyz/images/logo.jpg">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.passivecash.xyz/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Financial Calculators",
+              "item": "https://www.passivecash.xyz/calculators.html"
+            }
+          ]
+        },
+        {
+          "@type": "WebApplication",
+          "name": "PassiveCash Financial Calculators",
+          "url": "https://www.passivecash.xyz/calculators.html",
+          "description": "Suite of free financial tools: compound interest growth calculator with interactive crosshair, target portfolio rebalancer, CPI inflation adjustment, and mortgage amortizer.",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.passivecash.xyz/calculators.html#command-center",
+          "name": "Universal Passive Cash & Dividend Command Center",
+          "description": "A universal multi-asset portfolio spreadsheet template built for Google Sheets, Microsoft Excel, and Apple Numbers.",
+          "image": "https://www.passivecash.xyz/images/logo.jpg",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00",
+            "price": "1.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2028-12-31"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-             <a href="index.html" class="logo">PassiveCash<span>.xyz</span></a>
-             <!-- Hamburger Button -->
-             <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
-                 <span class="bar"></span>
-                 <span class="bar"></span>
-                 <span class="bar"></span>
-             </button>
-             <!-- Navigation Links -->
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calculators.html" class="active">Calculators</a></li>
-                <li><a href="market.html">Market</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="disclaimer.html">Disclaimer</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                 <a href="index.html" class="logo">PassiveCash<span>.xyz</span></a>
+                 <!-- Hamburger Button -->
+                 <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                 </button>
+                 <!-- Navigation Links -->
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculators.html" class="active">Calculators</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Advertisement Bar -->
     <div id="advertisement"></div>
 
-    <div class="content-container">
+    <main class="content-container">
+        <h1>Free Financial &amp; Investment Calculators</h1>
+        <p class="page-intro-subtitle">Interactive tools to model compound growth, rebalance your asset allocation, adjust for CPI inflation, and calculate mortgage payments.</p>
 
         <div id="calculator-selector-container"> <!-- Renamed container -->
             <!-- Trigger button for mobile -->
@@ -312,7 +384,48 @@
             </ul>
         </div>
 
-    </div>
+    </main>
+
+    <!-- Semantic Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">PassiveCash<span>.xyz</span></a>
+                <p>Your comprehensive guide to generating automated, lasting passive cash flow through dividend growth, high-yield savings, options, and multi-asset investing.</p>
+                <p>View every penny as an employee working for your financial freedom 24/7.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculators.html">Financial Calculators</a></li>
+                    <li><a href="market.html">Market Overview</a></li>
+                    <li><a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" target="_blank" rel="noopener">Command Center Spreadsheet</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Calculators</h4>
+                <ul>
+                    <li><a href="calculators.html#compound">Compound Interest</a></li>
+                    <li><a href="calculators.html#rebalancer">Portfolio Rebalancer</a></li>
+                    <li><a href="calculators.html#inflation">CPI Inflation Calculator</a></li>
+                    <li><a href="calculators.html#mortgage">Mortgage Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect &amp; Legal</h4>
+                <ul>
+                    <li><a href="https://x.com/passivecashxyz" target="_blank" rel="noopener">X / Twitter (@passivecashxyz)</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 PassiveCash.xyz. All rights reserved.</span>
+            <span>Information provided for educational purposes only; not financial advice.</span>
+        </div>
+    </footer>
 
     <!-- Include jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
