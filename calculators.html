@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Free Financial Calculators: Compound Interest, Inflation &amp; Rebalancer | PassiveCash.xyz</title>
     <meta name="description" content="Interactive financial calculators: compound interest with dynamic visualizer, portfolio rebalancer, CPI inflation adjustments, and mortgage payment estimator.">
     <meta name="keywords" content="financial calculators, compound interest calculator, portfolio rebalancer, inflation calculator, mortgage calculator, investment calculator, DRIP calculator">
@@ -155,7 +156,7 @@
 
             <div class="cc-cta-row">
                 <span class="cc-price-tag">Price: <strong>$1.00</strong> (Instant .xlsx download)</span>
-                <a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" class="calculateBtn" target="_blank" rel="noopener">
+                <a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" class="calculateBtn" target="_blank" rel="noopener noreferrer">
                     Get Spreadsheet
                 </a>
             </div>
@@ -317,7 +318,7 @@
                 <li><b>Start Amount</b> = the value in the start year's dollars</li>
                 <li><b>CPI</b> = Consumer Price Index for the respective year</li>
             </ul>
-            <p>Inflation represents the rate at which the general level of prices for goods and services is rising, and subsequently, purchasing power is falling. This calculator uses <a href="https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/" target="_blank">historical CPI data</a> to show how the value of money changes over time due to inflation.</p>
+            <p>Inflation represents the rate at which the general level of prices for goods and services is rising, and subsequently, purchasing power is falling. This calculator uses <a href="https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/" target="_blank" rel="noopener noreferrer">historical CPI data</a> to show how the value of money changes over time due to inflation.</p>
         </div>
         <div id="mortgage" class="calculator-section calculator-content"> <!-- Updated ID -->
             <!-- Removed H2 Title -->
@@ -400,7 +401,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="calculators.html">Financial Calculators</a></li>
                     <li><a href="market.html">Market Overview</a></li>
-                    <li><a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" target="_blank" rel="noopener">Command Center Spreadsheet</a></li>
+                    <li><a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" target="_blank" rel="noopener noreferrer">Command Center Spreadsheet</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -415,7 +416,7 @@
             <div class="footer-col">
                 <h4>Connect &amp; Legal</h4>
                 <ul>
-                    <li><a href="https://x.com/passivecashxyz" target="_blank" rel="noopener">X / Twitter (@passivecashxyz)</a></li>
+                    <li><a href="https://x.com/passivecashxyz" target="_blank" rel="noopener noreferrer">X / Twitter (@passivecashxyz)</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="disclaimer.html">Disclaimer</a></li>
                 </ul>
@@ -575,8 +576,8 @@
 
     <!-- Hamburger Menu Script is now in js/main.js -->
 
-    <!-- Include Chart.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include Chart.js library (Pinned version with Subresource Integrity) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-9nhczxUqK87bcKHh20fSQcTGD4qq5GhayNYSYWqwBkINBhOfQLg/P5HG5lF1urn4" crossorigin="anonymous"></script>
 
     <!-- Load Individual Calculator Scripts -->
     <script src="js/calculator.js?v=rh9"></script>
