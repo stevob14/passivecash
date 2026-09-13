@@ -1,6 +1,10 @@
-const ads = []
-ads[0] = '<a href="https://join.robinhood.com/stephec1028" target="_blank" style="color: #ffa500 !important;">Robinhood - Get up to $200 in FREE stock</a>'
-ads[1] = '<a href="https://groundfloor.onelink.me/Jaqm/referral?code=od0e9f&af_dp=groundfloor%3A%2F%2F&deep_link_value=referral_code&deep_link_sub1=od0e9f" target="_blank" style="color: #ffa500 !important;">Groundfloor - Sign up now to get $50</a>'
-random = Math.floor(Math.random() * 2);
+const ads = [
+    '<a href="https://join.robinhood.com/stephec1028" target="_blank" rel="noopener noreferrer" style="color: #ffa500 !important;">Robinhood - Get up to $200 in FREE stock</a>',
+    '<a href="https://groundfloor.onelink.me/Jaqm/referral?code=od0e9f&af_dp=groundfloor%3A%2F%2F&deep_link_value=referral_code&deep_link_sub1=od0e9f" target="_blank" rel="noopener noreferrer" style="color: #ffa500 !important;">Groundfloor - Sign up now to get $50</a>'
+];
+const random = Math.floor(Math.random() * ads.length);
 
-document.getElementById("advertisement").innerHTML =  ads[random]
+const adEl = document.getElementById("advertisement");
+if (adEl) {
+    adEl.innerHTML = ads[random];
+}

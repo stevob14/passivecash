@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Live Stock Market Overview &amp; Financial News Feed | PassiveCash.xyz</title>
     <meta name="description" content="Live US stock market indices (S&amp;P 500, Nasdaq, Dow Jones) and real-time financial market news to keep your investment portfolio informed.">
     <meta name="keywords" content="stock market overview, S&P 500, Nasdaq, Dow Jones, market indices, financial news, WallStreetBets RSS, dividend investing news">
@@ -131,11 +132,11 @@
             <h4>WallStreetBets Latest News</h4>
             <div class="feed-items">
                 <ul>
-                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Daily%20Discussion%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Daily Market & Stocks Discussion Thread</a></li>
-                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Earnings%20Thread%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Weekly Earnings & Guidance Thread</a></li>
-                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22DD%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Latest Due Diligence & Stock Analysis</a></li>
-                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22News%22&sort=new" target="_blank" rel="noopener noreferrer nofollow">Trending Financial & Market News</a></li>
-                    <li><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener noreferrer nofollow">Browse r/WallStreetBets Live Discussions &rarr;</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Daily%20Discussion%22&sort=new" target="_blank" rel="nofollow noopener noreferrer">Daily Market & Stocks Discussion Thread</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22Earnings%20Thread%22&sort=new" target="_blank" rel="nofollow noopener noreferrer">Weekly Earnings & Guidance Thread</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22DD%22&sort=new" target="_blank" rel="nofollow noopener noreferrer">Latest Due Diligence & Stock Analysis</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/search/?q=flair%3A%22News%22&sort=new" target="_blank" rel="nofollow noopener noreferrer">Trending Financial & Market News</a></li>
+                    <li><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="nofollow noopener noreferrer">Browse r/WallStreetBets Live Discussions &rarr;</a></li>
                 </ul>
             </div>
         </div>
@@ -157,7 +158,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="calculators.html">Financial Calculators</a></li>
                     <li><a href="market.html">Market Overview</a></li>
-                    <li><a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" target="_blank" rel="noopener">Command Center Spreadsheet</a></li>
+                    <li><a href="https://buy.stripe.com/00weVd5ZQ7Vv6ZR0lwasg00" target="_blank" rel="noopener noreferrer">Command Center Spreadsheet</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -172,7 +173,7 @@
             <div class="footer-col">
                 <h4>Connect &amp; Legal</h4>
                 <ul>
-                    <li><a href="https://x.com/passivecashxyz" target="_blank" rel="noopener">X / Twitter (@passivecashxyz)</a></li>
+                    <li><a href="https://x.com/passivecashxyz" target="_blank" rel="noopener noreferrer">X / Twitter (@passivecashxyz)</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="disclaimer.html">Disclaimer</a></li>
                 </ul>
@@ -194,6 +195,33 @@
 
     <!-- RSS Feed Script -->
     <script>
+    // Helper to strictly validate http/https URLs to prevent javascript: or data: URI injection
+    function sanitizeUrl(rawUrl) {
+        try {
+            const parsed = new URL(rawUrl, window.location.origin);
+            if (parsed.protocol === 'https:' || parsed.protocol === 'http:') {
+                return parsed.href;
+            }
+        } catch (e) {}
+        return '#';
+    }
+
+    // Safely render RSS items into container using native DOM nodes & textContent
+    function renderFeedItems(container, items) {
+        const ul = document.createElement('ul');
+        items.forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = sanitizeUrl(item.link);
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer nofollow';
+            a.textContent = item.title || 'No title';
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+        container.empty().append(ul);
+    }
+
     // --- Function to fetch and display RSS feed ---
     async function fetchAndDisplayRSS(feedUrl, containerId) {
         const feedItemsContainer = $(`#${containerId} .feed-items`);
@@ -204,11 +232,12 @@
         try {
             const cachedData = localStorage.getItem(cacheKey);
             if (cachedData) {
-                const { timestamp, htmlContent } = JSON.parse(cachedData);
-                if (htmlContent) {
-                    feedItemsContainer.html(htmlContent);
+                const parsed = JSON.parse(cachedData);
+                const items = parsed.items;
+                if (Array.isArray(items) && items.length > 0) {
+                    renderFeedItems(feedItemsContainer, items);
                     // If cache is fresh, keep it and exit
-                    if (Date.now() - timestamp < cacheDuration) {
+                    if (Date.now() - parsed.timestamp < cacheDuration) {
                         return;
                     }
                 }
@@ -229,30 +258,28 @@
                 throw new Error(`rss2json API error: ${data.message || 'Failed to fetch feed'}`);
             }
 
-            const items = data.items;
-            if (items && items.length > 0) {
-                let htmlContent = '<ul>';
-                let count = 0;
-                items.forEach(item => {
-                    if (count >= 10) return;
-                    const title = item.title || 'No title';
-                    const link = item.link || '#';
-                    htmlContent += `<li><a href="${link}" target="_blank" rel="noopener noreferrer nofollow">${title}</a></li>`;
-                    count++;
-                });
-                htmlContent += '</ul>';
+            const rawItems = data.items;
+            if (rawItems && rawItems.length > 0) {
+                const sanitizedItems = [];
+                for (let i = 0; i < rawItems.length && sanitizedItems.length < 10; i++) {
+                    const item = rawItems[i];
+                    sanitizedItems.push({
+                        title: String(item.title || 'No title').slice(0, 300),
+                        link: sanitizeUrl(item.link)
+                    });
+                }
 
-                if (count > 0) {
-                    feedItemsContainer.html(htmlContent);
+                if (sanitizedItems.length > 0) {
+                    renderFeedItems(feedItemsContainer, sanitizedItems);
                     try {
-                        localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), htmlContent }));
+                        localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), items: sanitizedItems }));
                     } catch (e) {
                         console.error("Error saving RSS to localStorage:", e);
                     }
                 }
             }
         } catch (error) {
-            // Quiet fallback: keep existing rendered content/links, never display an ugly red error on screen
+            // Quiet fallback: keep existing rendered content/links, never display an error on screen
             console.warn(`Could not refresh RSS feed live (${error.message}). Preserving existing content.`);
         }
     }
