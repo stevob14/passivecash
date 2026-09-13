@@ -517,6 +517,23 @@
                 }
             });
 
+            // Handle footer & in-page navigation links to calculators to ensure section activates and scrolls to top
+            $('.site-footer a[href*="calculators.html"], .site-footer a[href^="#"], #nav-links a[href="calculators.html"]').on('click', function(e) {
+                const href = $(this).attr('href');
+                const hashIndex = href.indexOf('#');
+                const targetId = hashIndex !== -1 ? href.substring(hashIndex + 1) : '';
+                const validCalcTargets = ['compound', 'rebalancer', 'inflation', 'mortgage'];
+
+                if (validCalcTargets.includes(targetId)) {
+                    e.preventDefault();
+                    showCalculatorSection(targetId, true);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (href === 'calculators.html' || href === 'calculators.html#' || href === '#') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+
             // --- Handle Hash on Page Load and Back/Forward ---
             function handleCalcHashChange() {
                 const hash = window.location.hash;
@@ -535,10 +552,18 @@
             }
 
             // Listen for hash changes (back/forward buttons)
-            $(window).on('hashchange', handleCalcHashChange);
+            $(window).on('hashchange', function() {
+                handleCalcHashChange();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
 
             // Initial page load check
             handleCalcHashChange();
+            if (window.location.hash) {
+                setTimeout(function() {
+                    window.scrollTo(0, 0);
+                }, 10);
+            }
 
             // --- Initialize Calculators (assuming functions exist) ---
             // No init function needed for calculator.js as it uses onclick
