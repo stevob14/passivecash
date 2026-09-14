@@ -1430,6 +1430,28 @@ code {
     text-decoration: none;
 }
 
+.footer-badge {
+    margin-top: 14px;
+}
+
+.footer-badge a {
+    display: inline-block;
+    line-height: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-badge a:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.footer-badge img {
+    display: block;
+    height: 40px;
+    width: 182px;
+    border-radius: 9px;
+}
+
 .footer-bottom {
     max-width: 960px;
     margin: 20px auto 0 auto;
