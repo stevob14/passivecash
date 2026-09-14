@@ -41,6 +41,12 @@ In-depth walkthroughs covering core wealth-building and cash flow vehicles:
 
 ---
 
+## 📬 Support & Contact
+
+Have questions, suggestions, or feedback? Contact us directly at [support@passivecash.xyz](mailto:support@passivecash.xyz).
+
+---
+
 ## 📄 License
 
 This repository is maintained for educational purposes. All content is for informational and educational purposes only and does not constitute financial advice.
