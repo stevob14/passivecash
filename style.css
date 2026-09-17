@@ -1263,7 +1263,10 @@ code {
     box-shadow: 0 4px 25px rgba(0, 200, 5, 0.08);
 }
 
+.command-center-card h2,
 .command-center-card h3 {
+    border-bottom: none;
+    padding-bottom: 0;
     color: #00c805;
     font-size: 1.2em;
     font-weight: 800;
@@ -1461,7 +1464,7 @@ code {
     flex-wrap: wrap;
     gap: 12px;
     font-size: 0.82rem;
-    color: #6e7681;
+    color: #9ca3af;
 }
 
 .footer-bottom a {
