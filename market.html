@@ -19,6 +19,10 @@
 
       gtag('config', 'G-Q203YEXP0D');
     </script>
+    <link rel="preconnect" href="https://widgets.tradingview-widget.com" crossorigin>
+    <link rel="dns-prefetch" href="https://widgets.tradingview-widget.com">
+    <link rel="preconnect" href="https://s3.tradingview.com" crossorigin>
+    <link rel="dns-prefetch" href="https://s3.tradingview.com">
     <link rel="stylesheet" href="style.css?v=1.5">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
@@ -102,31 +106,284 @@
         <h1>Market Overview</h1>
         <p class="page-intro-subtitle">Real-time market indices, technical overview, and daily financial news.</p>
         <style>
-  .tradingview-widget-container {
-    border: 1px solid #1e232b;
-    padding: 15px;
-    margin-top: 30px;
-    background-color: #12161d;
-    box-sizing: border-box;
-    height:calc(100% - 32px); 
-    width:100%;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-</style>        <!-- TradingView Widget BEGIN -->
+            .tradingview-widget-container {
+                position: relative;
+                border: 1px solid #1e232b;
+                padding: 15px;
+                margin-top: 30px;
+                background-color: #12161d;
+                box-sizing: border-box;
+                min-height: 620px;
+                width: 100%;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .tv-skeleton-loader {
+                position: absolute;
+                inset: 0;
+                padding: 20px;
+                background: #12161d;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                transition: opacity 0.4s ease, visibility 0.4s ease;
+                pointer-events: none;
+            }
+            .tv-skeleton-loader.fade-out {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .tv-skeleton-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #1e232b;
+                padding-bottom: 14px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .tv-skeleton-tabs {
+                display: flex;
+                gap: 10px;
+            }
+            .tv-skeleton-tab {
+                height: 32px;
+                width: 90px;
+                border-radius: 6px;
+            }
+            .tv-skeleton-status {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.85rem;
+                color: #8b949e;
+            }
+            .tv-pulse-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #00c805;
+                box-shadow: 0 0 10px rgba(0, 200, 5, 0.8);
+                animation: tvPulse 1.4s infinite ease-in-out;
+            }
+            @keyframes tvPulse {
+                0%, 100% { opacity: 0.35; transform: scale(0.9); }
+                50% { opacity: 1; transform: scale(1.2); }
+            }
+            .tv-skeleton-body {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                flex: 1;
+                justify-content: space-between;
+                padding: 6px 0;
+            }
+            .tv-skeleton-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px;
+                border-radius: 8px;
+                background: #161b24;
+                border: 1px solid rgba(255, 255, 255, 0.03);
+            }
+            .tv-skeleton-left {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .tv-skeleton-icon {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+            }
+            .tv-skeleton-symbol {
+                width: 80px;
+                height: 16px;
+                border-radius: 4px;
+            }
+            .tv-skeleton-mid {
+                width: 140px;
+                height: 18px;
+                border-radius: 4px;
+            }
+            .tv-skeleton-right {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .tv-skeleton-price {
+                width: 70px;
+                height: 16px;
+                border-radius: 4px;
+            }
+            .tv-skeleton-change {
+                width: 60px;
+                height: 22px;
+                border-radius: 4px;
+            }
+            .tv-shimmer {
+                background: linear-gradient(90deg, #1b212c 25%, #252d3d 50%, #1b212c 75%);
+                background-size: 200% 100%;
+                animation: tvShimmer 1.8s infinite;
+            }
+            @keyframes tvShimmer {
+                0% { background-position: 200% 0; }
+                100% { background-position: -200% 0; }
+            }
+            @media (max-width: 600px) {
+                .tv-skeleton-mid { display: none; }
+            }
+        </style>
+        <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
-    <!-- Load TradingView's Web Component Engine -->
-    <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-market-overview.js"></script>
-    <tv-market-overview 
-      theme="dark"
-      symbol-sectors='[
-        {"sectionName":"Indices","symbols":["FOREXCOM:SPXUSD","FOREXCOM:NSXUSD","FOREXCOM:DJI"]},
-        {"sectionName":"Crypto","symbols":["BITSTAMP:BTCUSD","BITSTAMP:ETHUSD"]},
-        {"sectionName":"Commodities","symbols":["OANDA:XAUUSD","OANDA:XAGUSD"]}
-      ]' 
-      transparent
-    ></tv-market-overview>
-  </div>        <!-- TradingView Widget END -->
+            <!-- Sleek Dark Theme Skeleton Loader -->
+            <div id="tv-skeleton-loader" class="tv-skeleton-loader" aria-hidden="true">
+                <div class="tv-skeleton-header">
+                    <div class="tv-skeleton-tabs">
+                        <div class="tv-skeleton-tab tv-shimmer"></div>
+                        <div class="tv-skeleton-tab tv-shimmer"></div>
+                        <div class="tv-skeleton-tab tv-shimmer"></div>
+                    </div>
+                    <div class="tv-skeleton-status">
+                        <span class="tv-pulse-dot"></span>
+                        <span>Connecting live market feed...</span>
+                    </div>
+                </div>
+                <div class="tv-skeleton-body">
+                    <div class="tv-skeleton-row">
+                        <div class="tv-skeleton-left">
+                            <div class="tv-skeleton-icon tv-shimmer"></div>
+                            <div class="tv-skeleton-symbol tv-shimmer"></div>
+                        </div>
+                        <div class="tv-skeleton-mid tv-shimmer"></div>
+                        <div class="tv-skeleton-right">
+                            <div class="tv-skeleton-price tv-shimmer"></div>
+                            <div class="tv-skeleton-change tv-shimmer"></div>
+                        </div>
+                    </div>
+                    <div class="tv-skeleton-row">
+                        <div class="tv-skeleton-left">
+                            <div class="tv-skeleton-icon tv-shimmer"></div>
+                            <div class="tv-skeleton-symbol tv-shimmer"></div>
+                        </div>
+                        <div class="tv-skeleton-mid tv-shimmer"></div>
+                        <div class="tv-skeleton-right">
+                            <div class="tv-skeleton-price tv-shimmer"></div>
+                            <div class="tv-skeleton-change tv-shimmer"></div>
+                        </div>
+                    </div>
+                    <div class="tv-skeleton-row">
+                        <div class="tv-skeleton-left">
+                            <div class="tv-skeleton-icon tv-shimmer"></div>
+                            <div class="tv-skeleton-symbol tv-shimmer"></div>
+                        </div>
+                        <div class="tv-skeleton-mid tv-shimmer"></div>
+                        <div class="tv-skeleton-right">
+                            <div class="tv-skeleton-price tv-shimmer"></div>
+                            <div class="tv-skeleton-change tv-shimmer"></div>
+                        </div>
+                    </div>
+                    <div class="tv-skeleton-row">
+                        <div class="tv-skeleton-left">
+                            <div class="tv-skeleton-icon tv-shimmer"></div>
+                            <div class="tv-skeleton-symbol tv-shimmer"></div>
+                        </div>
+                        <div class="tv-skeleton-mid tv-shimmer"></div>
+                        <div class="tv-skeleton-right">
+                            <div class="tv-skeleton-price tv-shimmer"></div>
+                            <div class="tv-skeleton-change tv-shimmer"></div>
+                        </div>
+                    </div>
+                    <div class="tv-skeleton-row">
+                        <div class="tv-skeleton-left">
+                            <div class="tv-skeleton-icon tv-shimmer"></div>
+                            <div class="tv-skeleton-symbol tv-shimmer"></div>
+                        </div>
+                        <div class="tv-skeleton-mid tv-shimmer"></div>
+                        <div class="tv-skeleton-right">
+                            <div class="tv-skeleton-price tv-shimmer"></div>
+                            <div class="tv-skeleton-change tv-shimmer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load TradingView's Web Component Engine -->
+            <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-market-overview.js"></script>
+            <tv-market-overview 
+              theme="dark"
+              symbol-sectors='[
+                {"sectionName":"Indices","symbols":["FOREXCOM:SPXUSD","FOREXCOM:NSXUSD","FOREXCOM:DJI"]},
+                {"sectionName":"Crypto","symbols":["BITSTAMP:BTCUSD","BITSTAMP:ETHUSD"]},
+                {"sectionName":"Commodities","symbols":["OANDA:XAUUSD","OANDA:XAGUSD"]}
+              ]' 
+              transparent
+            ></tv-market-overview>
+
+            <!-- Skeleton Dismissal Script -->
+            <script>
+            (function() {
+                const loader = document.getElementById('tv-skeleton-loader');
+                const widget = document.querySelector('tv-market-overview');
+                if (!loader || !widget) return;
+
+                let dismissed = false;
+                function dismissLoader() {
+                    if (dismissed) return;
+                    dismissed = true;
+                    loader.classList.add('fade-out');
+                    setTimeout(function() {
+                        if (loader.parentNode) {
+                            loader.parentNode.removeChild(loader);
+                        }
+                    }, 450);
+                }
+
+                function attachIframeListener(iframe) {
+                    if (!iframe) return false;
+                    try {
+                        iframe.addEventListener('load', function() {
+                            setTimeout(dismissLoader, 150);
+                        });
+                        if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+                            setTimeout(dismissLoader, 150);
+                        }
+                    } catch (e) {
+                        setTimeout(dismissLoader, 350);
+                    }
+                    return true;
+                }
+
+                function checkReady() {
+                    const iframe = widget.querySelector('iframe') || (widget.shadowRoot && widget.shadowRoot.querySelector('iframe'));
+                    if (iframe) {
+                        attachIframeListener(iframe);
+                        setTimeout(dismissLoader, 900);
+                        return true;
+                    }
+                    return false;
+                }
+
+                if (!checkReady()) {
+                    const observer = new MutationObserver(function() {
+                        if (checkReady()) {
+                            observer.disconnect();
+                        }
+                    });
+                    observer.observe(widget, { childList: true, subtree: true });
+
+                    // Safety fallback timeout (e.g. adblocker blocking TradingView)
+                    setTimeout(function() {
+                        observer.disconnect();
+                        dismissLoader();
+                    }, 4000);
+                }
+            })();
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
         <!-- WSB RSS Feed Section -->
         <div id="wsb-rss-feed" class="rss-feed-container">
             <h4>WallStreetBets Latest News</h4>
@@ -188,15 +445,7 @@
         </div>
     </footer>
 
-    <!-- Include jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-
-    <!-- Hamburger Menu Script is now in js/main.js -->
-
-    <!-- Fetch and Display Market Overview -->
-    <!-- Removed the old script that fetched from the Flask app -->
-
-    <!-- RSS Feed Script -->
+    <!-- RSS Feed Script (Pure Vanilla JS - zero jQuery dependency) -->
     <script>
     // Helper to strictly validate http/https URLs to prevent javascript: or data: URI injection
     function sanitizeUrl(rawUrl) {
@@ -211,6 +460,7 @@
 
     // Safely render RSS items into container using native DOM nodes & textContent
     function renderFeedItems(container, items) {
+        if (!container) return;
         const ul = document.createElement('ul');
         items.forEach(item => {
             const li = document.createElement('li');
@@ -222,12 +472,13 @@
             li.appendChild(a);
             ul.appendChild(li);
         });
-        container.empty().append(ul);
+        container.innerHTML = '';
+        container.appendChild(ul);
     }
 
     // --- Function to fetch and display RSS feed ---
     async function fetchAndDisplayRSS(feedUrl, containerId) {
-        const feedItemsContainer = $(`#${containerId} .feed-items`);
+        const feedItemsContainer = document.querySelector('#' + containerId + ' .feed-items');
         const cacheKey = `pc_rss_feed_${feedUrl}`;
         const cacheDuration = 30 * 60 * 1000; // 30 minutes cache
 
@@ -287,17 +538,21 @@
         }
     }
 
-    // Fetch WSB feed on document ready
-    $(document).ready(function() {
+    // Fetch WSB feed on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/.rss';
+            fetchAndDisplayRSS(wsbFeedUrl, 'wsb-rss-feed');
+        });
+    } else {
         const wsbFeedUrl = 'https://www.reddit.com/r/wallstreetbets/.rss';
-        const wsbContainerId = 'wsb-rss-feed';
-        fetchAndDisplayRSS(wsbFeedUrl, wsbContainerId);
-    });
+        fetchAndDisplayRSS(wsbFeedUrl, 'wsb-rss-feed');
+    }
 </script>
 
-    <!-- Advertisement Script -->
-    <script src="js/advertisement.js"></script>
-    <script src="js/main.js"></script> <!-- Include consolidated main script -->
+    <!-- Advertisement & Main Scripts (Deferred for non-blocking load) -->
+    <script defer src="js/advertisement.js"></script>
+    <script defer src="js/main.js"></script>
 
 </body>
 </html>
