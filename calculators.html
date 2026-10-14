@@ -19,6 +19,8 @@
 
       gtag('config', 'G-Q203YEXP0D');
     </script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="style.css?v=1.5">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
@@ -136,7 +138,7 @@
 
             <!-- Menu containing the actual buttons -->
             <div id="calculator-menu">
-                 <button class="calculateBtn calculator-option" data-target="compound" data-display="Compound Interest">Compound Interest</button>
+                 <button class="calculateBtn calculator-option active-selector" data-target="compound" data-display="Compound Interest">Compound Interest</button>
                  <button class="calculateBtn calculator-option" data-target="rebalancer" data-display="Portfolio Rebalancer">Portfolio Rebalancer</button>
                  <button class="calculateBtn calculator-option" data-target="inflation" data-display="Inflation">Inflation</button>
                  <button class="calculateBtn calculator-option" data-target="mortgage" data-display="Mortgage">Mortgage</button>
@@ -146,7 +148,7 @@
 
 
         <!-- Calculators -->
-        <div id="compound" class="calculator-section calculator-content"> <!-- Updated ID, removed active -->
+        <div id="compound" class="calculator-section calculator-content active">
             <!-- Removed H2 Title -->
             <div id="compound-interest-calculator">
                 <div class="calc-row">
@@ -413,165 +415,162 @@
         </div>
     </footer>
 
-    <!-- Include jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-
-    <!-- Calculator Switching Logic -->
+    <!-- Calculator Switching Logic (Pure Vanilla JS - zero jQuery dependency) -->
     <script>
-        $(document).ready(function() {
-            // --- Custom Dropdown Logic (Adapted from crypto.html) ---
-            const calculatorMenuTrigger = $('#calculator-menu-trigger');
-            const calculatorMenu = $('#calculator-menu');
-            const calculatorOptions = $('#calculator-menu .calculator-option');
-            const calculatorSections = $('.calculator-section'); // Use .calculator-section
+        (function() {
+            const calculatorMenuTrigger = document.getElementById('calculator-menu-trigger');
+            const calculatorMenu = document.getElementById('calculator-menu');
+            const calculatorOptions = document.querySelectorAll('#calculator-menu .calculator-option');
+            const calculatorSections = document.querySelectorAll('.calculator-section');
+            const validCalcTargets = ['compound', 'rebalancer', 'inflation', 'mortgage'];
 
             // Toggle dropdown visibility
-            calculatorMenuTrigger.on('click', function(e) {
-                e.stopPropagation(); // Prevent click from immediately closing menu
-                calculatorMenu.toggleClass('active');
-            });
+            if (calculatorMenuTrigger && calculatorMenu) {
+                calculatorMenuTrigger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    calculatorMenu.classList.toggle('active');
+                });
+            }
 
-            // --- Function to show a specific calculator section ---
-            function showCalculatorSection(targetId, updateHistory = true) {
-                // Remove # if present
+            // Function to show a specific calculator section
+            function showCalculatorSection(targetId, updateHistory) {
+                if (updateHistory === undefined) updateHistory = true;
                 const cleanTargetId = targetId.startsWith('#') ? targetId.substring(1) : targetId;
+                const targetSection = document.getElementById(cleanTargetId);
 
-                const targetSection = $('#' + cleanTargetId);
-                const targetOption = calculatorOptions.filter(`[data-target="${cleanTargetId}"]`);
-
-                if (!targetSection.length) {
-                     console.warn(`Target section #${cleanTargetId} not found. Defaulting.`);
-                     // Default to compound if target is invalid
-                     showCalculatorSection('compound', false); // Call recursively with default, don't update history
-                     return;
+                if (!targetSection) {
+                    console.warn('Target section #' + cleanTargetId + ' not found. Defaulting to compound.');
+                    showCalculatorSection('compound', false);
+                    return;
                 }
+
+                let targetOption = null;
+                calculatorOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-target') === cleanTargetId) {
+                        targetOption = opt;
+                    }
+                });
 
                 // Update trigger button text using data-display
-                let buttonText = "Select Calculator"; // Fallback text
-                if (targetOption.length && targetOption.data('display')) {
-                     buttonText = targetOption.data('display');
+                let buttonText = "Select Calculator";
+                if (targetOption && targetOption.getAttribute('data-display')) {
+                    buttonText = targetOption.getAttribute('data-display');
                 } else {
-                     // If targetOption not found or missing data-display, use default
-                     const defaultOption = calculatorOptions.filter('[data-target="compound"]');
-                     if (defaultOption.length && defaultOption.data('display')) {
-                         buttonText = defaultOption.data('display');
-                     }
+                    const defaultOption = document.querySelector('#calculator-menu .calculator-option[data-target="compound"]');
+                    if (defaultOption && defaultOption.getAttribute('data-display')) {
+                        buttonText = defaultOption.getAttribute('data-display');
+                    }
                 }
-                calculatorMenuTrigger.text(buttonText); // Set the button text
-
-
-                // Hide other sections and show the target
-                const currentActiveSection = $('.calculator-section.active'); // Target calculator sections
-                if (currentActiveSection.attr('id') !== cleanTargetId) {
-                   currentActiveSection.removeClass('active');
-                   targetSection.addClass('active');
+                if (calculatorMenuTrigger) {
+                    calculatorMenuTrigger.textContent = buttonText;
                 }
+
+                // Hide other sections and show target
+                calculatorSections.forEach(function(sec) {
+                    if (sec.id === cleanTargetId) {
+                        sec.classList.add('active');
+                    } else {
+                        sec.classList.remove('active');
+                    }
+                });
 
                 // Update active state on options
-                calculatorOptions.removeClass('active-selector');
-                if(targetOption.length) {
-                    targetOption.addClass('active-selector');
-                } else {
-                    // Highlight default option if target option wasn't found
-                    calculatorOptions.filter('[data-target="compound"]').addClass('active-selector');
-                }
-
+                calculatorOptions.forEach(function(opt) {
+                    if (opt === targetOption) {
+                        opt.classList.add('active-selector');
+                    } else {
+                        opt.classList.remove('active-selector');
+                    }
+                });
 
                 // Update URL hash if requested and different
                 const currentHash = window.location.hash;
                 const newHash = '#' + cleanTargetId;
                 if (updateHistory && currentHash !== newHash) {
-                    if (history.pushState) {
-                        history.pushState(null, null, newHash);
+                    if (window.history.pushState) {
+                        window.history.pushState(null, null, newHash);
                     } else {
-                        window.location.hash = newHash; // Fallback
+                        window.location.hash = newHash;
                     }
                 }
             }
 
             // Handle option selection from dropdown
-            calculatorOptions.on('click', function() {
-                const targetId = $(this).data('target');
-                calculatorMenu.removeClass('active'); // Hide menu
-                showCalculatorSection(targetId, true); // Show section and update history
+            calculatorOptions.forEach(function(opt) {
+                opt.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    if (calculatorMenu) calculatorMenu.classList.remove('active');
+                    showCalculatorSection(targetId, true);
+                });
             });
 
             // Close dropdown if clicking outside
-            $(document).on('click', function(e) {
-                if (!calculatorMenu.is(e.target) && calculatorMenu.has(e.target).length === 0 && !calculatorMenuTrigger.is(e.target)) {
-                    calculatorMenu.removeClass('active');
+            document.addEventListener('click', function(e) {
+                if (calculatorMenu && !calculatorMenu.contains(e.target) && calculatorMenuTrigger && !calculatorMenuTrigger.contains(e.target)) {
+                    calculatorMenu.classList.remove('active');
                 }
             });
 
             // Handle footer & in-page navigation links to calculators to ensure section activates and scrolls to top
-            $('.site-footer a[href*="calculators.html"], .site-footer a[href^="#"], #nav-links a[href="calculators.html"]').on('click', function(e) {
-                const href = $(this).attr('href');
-                const hashIndex = href.indexOf('#');
-                const targetId = hashIndex !== -1 ? href.substring(hashIndex + 1) : '';
-                const validCalcTargets = ['compound', 'rebalancer', 'inflation', 'mortgage'];
+            document.querySelectorAll('.site-footer a[href*="calculators.html"], .site-footer a[href^="#"], #nav-links a[href="calculators.html"]').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href') || '';
+                    const hashIndex = href.indexOf('#');
+                    const targetId = hashIndex !== -1 ? href.substring(hashIndex + 1) : '';
 
-                if (validCalcTargets.includes(targetId)) {
-                    e.preventDefault();
-                    showCalculatorSection(targetId, true);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                } else if (href === 'calculators.html' || href === 'calculators.html#' || href === '#') {
-                    e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                    if (validCalcTargets.includes(targetId)) {
+                        e.preventDefault();
+                        showCalculatorSection(targetId, true);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else if (href === 'calculators.html' || href === 'calculators.html#' || href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
             });
 
-            // --- Handle Hash on Page Load and Back/Forward ---
+            // Handle Hash on Page Load and Back/Forward
             function handleCalcHashChange() {
                 const hash = window.location.hash;
-                const validCalcTargets = ['compound', 'rebalancer', 'inflation', 'mortgage']; // Keep this updated
-                let targetId = 'compound'; // Default
+                let targetId = 'compound';
 
                 if (hash && hash.length > 1) {
                     const potentialTarget = hash.substring(1);
                     if (validCalcTargets.includes(potentialTarget)) {
                         targetId = potentialTarget;
                     } else {
-                         console.warn(`Invalid calculator hash detected: ${hash}. Defaulting to compound.`);
+                        console.warn('Invalid calculator hash detected: ' + hash + '. Defaulting to compound.');
                     }
                 }
-                showCalculatorSection(targetId, false); // Show section without updating history again
+                showCalculatorSection(targetId, false);
             }
 
-            // Listen for hash changes (back/forward buttons)
-            $(window).on('hashchange', function() {
+            window.addEventListener('hashchange', function() {
                 handleCalcHashChange();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // Initial page load check
+            // Initial check on load
             handleCalcHashChange();
             if (window.location.hash) {
                 setTimeout(function() {
                     window.scrollTo(0, 0);
                 }, 10);
             }
-
-            // --- Initialize Calculators (assuming functions exist) ---
-            // No init function needed for calculator.js as it uses onclick
-            // No init function needed for rebalancer.js as it uses DOMContentLoaded and oninput
-            // No init function needed for inflation_calculator.js as it uses onclick
-            // No init function needed for mortgage.js as it uses onclick
-        });
+        })();
     </script>
 
-    <!-- Hamburger Menu Script is now in js/main.js -->
+    <!-- Include Chart.js library (Pinned version with Subresource Integrity - deferred for non-blocking load) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-9nhczxUqK87bcKHh20fSQcTGD4qq5GhayNYSYWqwBkINBhOfQLg/P5HG5lF1urn4" crossorigin="anonymous"></script>
 
-    <!-- Include Chart.js library (Pinned version with Subresource Integrity) -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-9nhczxUqK87bcKHh20fSQcTGD4qq5GhayNYSYWqwBkINBhOfQLg/P5HG5lF1urn4" crossorigin="anonymous"></script>
-
-    <!-- Load Individual Calculator Scripts -->
-    <script src="js/calculator.js?v=rh9"></script>
-    <script src="js/inflation_calculator.js?v=rh9"></script>
-    <script src="js/mortgage.js?v=rh9"></script>
-    <script src="js/rebalancer.js?v=rh9"></script>
+    <!-- Load Individual Calculator Scripts (deferred for parallel non-blocking load) -->
+    <script defer src="js/calculator.js?v=rh9"></script>
+    <script defer src="js/inflation_calculator.js?v=rh9"></script>
+    <script defer src="js/mortgage.js?v=rh9"></script>
+    <script defer src="js/rebalancer.js?v=rh9"></script>
     <!-- Advertisement Script -->
-    <script src="js/advertisement.js"></script>
-    <script src="js/main.js"></script> <!-- Include consolidated main script -->
+    <script defer src="js/advertisement.js"></script>
+    <script defer src="js/main.js"></script>
 
 </body>
 </html>
