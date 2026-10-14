@@ -113,7 +113,7 @@
                 margin-top: 30px;
                 background-color: #12161d;
                 box-sizing: border-box;
-                min-height: 620px;
+                min-height: 440px;
                 width: 100%;
                 border-radius: 12px;
                 overflow: hidden;
@@ -285,28 +285,6 @@
                             <div class="tv-skeleton-change tv-shimmer"></div>
                         </div>
                     </div>
-                    <div class="tv-skeleton-row">
-                        <div class="tv-skeleton-left">
-                            <div class="tv-skeleton-icon tv-shimmer"></div>
-                            <div class="tv-skeleton-symbol tv-shimmer"></div>
-                        </div>
-                        <div class="tv-skeleton-mid tv-shimmer"></div>
-                        <div class="tv-skeleton-right">
-                            <div class="tv-skeleton-price tv-shimmer"></div>
-                            <div class="tv-skeleton-change tv-shimmer"></div>
-                        </div>
-                    </div>
-                    <div class="tv-skeleton-row">
-                        <div class="tv-skeleton-left">
-                            <div class="tv-skeleton-icon tv-shimmer"></div>
-                            <div class="tv-skeleton-symbol tv-shimmer"></div>
-                        </div>
-                        <div class="tv-skeleton-mid tv-shimmer"></div>
-                        <div class="tv-skeleton-right">
-                            <div class="tv-skeleton-price tv-shimmer"></div>
-                            <div class="tv-skeleton-change tv-shimmer"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -334,6 +312,10 @@
                     if (dismissed) return;
                     dismissed = true;
                     loader.classList.add('fade-out');
+                    const container = document.querySelector('.tradingview-widget-container');
+                    if (container) {
+                        container.style.minHeight = 'auto';
+                    }
                     setTimeout(function() {
                         if (loader.parentNode) {
                             loader.parentNode.removeChild(loader);
