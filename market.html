@@ -300,19 +300,24 @@
               transparent
             ></tv-market-overview>
 
-            <!-- Skeleton Dismissal Script -->
+            <!-- Skeleton Dismissal Script (Instant detection via ResizeObserver & MutationObserver) -->
             <script>
             (function() {
                 const loader = document.getElementById('tv-skeleton-loader');
                 const widget = document.querySelector('tv-market-overview');
+                const container = document.querySelector('.tradingview-widget-container');
                 if (!loader || !widget) return;
 
                 let dismissed = false;
+                let ro = null;
+                let mo = null;
+
                 function dismissLoader() {
                     if (dismissed) return;
                     dismissed = true;
+                    if (ro) ro.disconnect();
+                    if (mo) mo.disconnect();
                     loader.classList.add('fade-out');
-                    const container = document.querySelector('.tradingview-widget-container');
                     if (container) {
                         container.style.minHeight = 'auto';
                     }
@@ -320,48 +325,55 @@
                         if (loader.parentNode) {
                             loader.parentNode.removeChild(loader);
                         }
-                    }, 450);
+                    }, 400);
                 }
 
-                function attachIframeListener(iframe) {
-                    if (!iframe) return false;
-                    try {
-                        iframe.addEventListener('load', function() {
-                            setTimeout(dismissLoader, 150);
-                        });
-                        if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
-                            setTimeout(dismissLoader, 150);
-                        }
-                    } catch (e) {
-                        setTimeout(dismissLoader, 350);
-                    }
-                    return true;
+                // 1. Immediate check: if already expanded or attributes set
+                if (widget.offsetHeight > 100 || widget.hasAttribute('exportparts')) {
+                    dismissLoader();
+                    return;
                 }
 
-                function checkReady() {
-                    const iframe = widget.querySelector('iframe') || (widget.shadowRoot && widget.shadowRoot.querySelector('iframe'));
-                    if (iframe) {
-                        attachIframeListener(iframe);
-                        setTimeout(dismissLoader, 900);
-                        return true;
-                    }
-                    return false;
-                }
-
-                if (!checkReady()) {
-                    const observer = new MutationObserver(function() {
-                        if (checkReady()) {
-                            observer.disconnect();
+                // 2. ResizeObserver: fires immediately when TradingView renders and widget expands (> 100px)
+                if (window.ResizeObserver) {
+                    ro = new ResizeObserver(function(entries) {
+                        for (let i = 0; i < entries.length; i++) {
+                            if (entries[i].contentRect.height > 100) {
+                                dismissLoader();
+                                break;
+                            }
                         }
                     });
-                    observer.observe(widget, { childList: true, subtree: true });
-
-                    // Safety fallback timeout (e.g. adblocker blocking TradingView)
-                    setTimeout(function() {
-                        observer.disconnect();
-                        dismissLoader();
-                    }, 4000);
+                    ro.observe(widget);
                 }
+
+                // 3. MutationObserver: fires as soon as TradingView mounts and sets component attributes (e.g. exportparts)
+                if (window.MutationObserver) {
+                    mo = new MutationObserver(function() {
+                        if (widget.offsetHeight > 100 || widget.hasAttribute('exportparts')) {
+                            dismissLoader();
+                        }
+                    });
+                    mo.observe(widget, { attributes: true });
+                }
+
+                // 4. Custom Elements definition lifecycle hook
+                if (window.customElements && customElements.whenDefined) {
+                    customElements.whenDefined('tv-market-overview').then(function() {
+                        if (widget.updateComplete) {
+                            widget.updateComplete.then(function() {
+                                if (widget.offsetHeight > 100) {
+                                    dismissLoader();
+                                }
+                            });
+                        }
+                    });
+                }
+
+                // 5. Safety fallback timeout (e.g. adblocker blocking TradingView entirely)
+                setTimeout(function() {
+                    dismissLoader();
+                }, 2500);
             })();
             </script>
         </div>
