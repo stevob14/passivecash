@@ -127,8 +127,14 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                transition: opacity 0.4s ease, visibility 0.4s ease;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.25s ease, visibility 0.25s ease;
                 pointer-events: none;
+            }
+            .tv-skeleton-loader.visible {
+                opacity: 1;
+                visibility: visible;
             }
             .tv-skeleton-loader.fade-out {
                 opacity: 0;
@@ -300,7 +306,7 @@
               transparent
             ></tv-market-overview>
 
-            <!-- Skeleton Dismissal Script (Instant detection via ResizeObserver & MutationObserver) -->
+            <!-- Skeleton Dismissal Script (Approach A: Graceful 200ms delay to eliminate flicker) -->
             <script>
             (function() {
                 const loader = document.getElementById('tv-skeleton-loader');
@@ -312,11 +318,20 @@
                 let ro = null;
                 let mo = null;
 
+                // Approach A: Only show skeleton if loading takes > 200ms (avoids flicker on fast connections)
+                const showTimer = setTimeout(function() {
+                    if (!dismissed) {
+                        loader.classList.add('visible');
+                    }
+                }, 200);
+
                 function dismissLoader() {
                     if (dismissed) return;
                     dismissed = true;
+                    clearTimeout(showTimer);
                     if (ro) ro.disconnect();
                     if (mo) mo.disconnect();
+                    loader.classList.remove('visible');
                     loader.classList.add('fade-out');
                     if (container) {
                         container.style.minHeight = 'auto';
@@ -325,7 +340,7 @@
                         if (loader.parentNode) {
                             loader.parentNode.removeChild(loader);
                         }
-                    }, 400);
+                    }, 300);
                 }
 
                 // 1. Immediate check: if already expanded or attributes set
